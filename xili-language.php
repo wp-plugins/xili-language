@@ -7,6 +7,7 @@ Author: MS
 Version: 0.9.3
 Author URI: http://www.xiligroup.com
 */ 
+# updated 090215 - add language in posts (and pages) list.
 # updated 090208 - fix forgotten theme_domain 
 # updated 090205 - fix page publish
 
@@ -28,6 +29,29 @@ Author URI: http://www.xiligroup.com
 /*multilingual for admin pages and menu*/
 
 load_plugin_textdomain('xili-language',PLUGINDIR.'/'.dirname(plugin_basename(__FILE__)), dirname(plugin_basename(__FILE__)));
+
+
+/**
+ * Add action link(s) to plugins page
+ * 
+ * @since 0.9.3
+ * @author MS
+ * @copyright Dion Hulse, http://dd32.id.au/wordpress-plugins/?configure-link and scripts@schloebe.de
+ */
+function xililang_filter_plugin_actions($links, $file){
+	static $this_plugin;
+
+	if( !$this_plugin ) $this_plugin = plugin_basename(__FILE__);
+
+	if( $file == $this_plugin ){
+		$settings_link = '<a href="options-general.php?page=language_page">' . __('Settings') . '</a>';
+		$links = array_merge( array($settings_link), $links); // before other links
+	}
+	return $links;
+}
+
+add_filter('plugin_action_links', 'xililang_filter_plugin_actions', 10, 2);
+
 
 
 function xili_language_activate() {
@@ -406,7 +430,9 @@ if (function_exists('xiliml_infunc_link_translate_desc')){
 // Actions
 //********************************************//
 
+//add_action('save_post', 'xili_language_add');
 add_action('publish_post', 'xili_language_add');
+//add_action('save_page', 'xili_language_add');
 add_action('publish_page', 'xili_language_add');
 add_action('admin_menu', 'myplugin_add_custom_box');
 
@@ -423,10 +449,46 @@ function myplugin_add_custom_box() {
 }
 add_action('admin_menu', 'xili_add_pages');
 
+/* inspired from custax */
+add_action('manage_posts_custom_column', 'xili_manage_column', 10, 2);
+add_filter('manage_edit_columns', 'xili_manage_column_name');
+
+add_action('manage_pages_custom_column', 'xili_manage_column', 10, 2);
+add_filter('manage_edit-pages_columns', 'xili_manage_column_name');
+
+
 //********************************************//
 // Administration - settings pages 
 //********************************************//
-
+//* display xililanguage in lists *//
+function xili_manage_column($name, $id) {
+		if($name != TAXONAME)
+			return;
+		$terms = wp_get_object_terms($id, TAXONAME);
+		$first = true;
+		foreach($terms AS $term) {
+			if($first)
+				$first = false;
+			else
+				echo ', ';
+			echo '<a href="' . 'options-general.php?page=language_page'.'">'; /* see more precise link ?*/
+			echo $term->name;
+			echo '</a>';
+		}
+	}
+function xili_manage_column_name($cols) {
+		$ends = array('comments', 'date', 'rel', 'visible');
+		$end = array();
+		foreach($cols AS $k=>$v) {
+			if(in_array($k, $ends)) {
+				$end[$k] = $v;
+				unset($cols[$k]);
+			}
+		}
+		$cols[TAXONAME] = __('Language','xili-language');
+		$cols = array_merge($cols, $end);
+		return $cols;
+	}
 /**/
 function language_menu() { 
 	$formtitle = __('Add a language','xili-language');
