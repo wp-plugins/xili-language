@@ -4,23 +4,26 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary, .mo file, .po file
 Requires at least: 2.6.2
 Tested up to: 2.7.1
-Stable tag: 0.9.3
+Stable tag: 0.9.4
 
 xili-language provides an automatic live selection of language (.mo files) in theme according to the language of current post(s). 
 
 == Description ==
 
-xili-language plugin provides an automatic selection of language in theme according to the language of one post. xili-language use *on the fly* the .mo files present in the theme's folder. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
+xili-language plugin provides an automatic selection of language in theme according to the language of one post in multilingual CMS site or multilingual blog. xili-language use *on the fly* the .mo files present in the theme's folder. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 
 **NEW :** 
+0.9.4 fixes and hooks from plugin to functions defined in functions.php, more than one lang in query (OR), some fixes,..
+
 0.9.3 include some fixes (to display title in `<a>` of cats list), add language in posts (and pages) list.
+
 xili-dictionary alpha is available [here](http://dev.xiligroup.com/?p=312 "why xili-dictionary ?")
 
 **Prerequisite**
-Verify that your theme is international compatible (translatable terms like _e('the term','mytheme') and no displayed text 'hardcoded' (example in theme 'default-i18n' of WP).
+Verify that your theme is international compatible (translatable terms like _e('the term','mytheme') and no displayed texts 'hardcoded' (example in theme 'default-i18n' of WP).
 
 **More infos and docs**
-…other texts and more descriptions [here](http://dev.xiligroup.com/?p=187 "why xili-language ?")
+… other texts and more descriptions [here](http://dev.xiligroup.com/?p=187 "why xili-language ?")
 
 **Compatibility**
 xili-language is full compatible with the plugin [xilitheme-select](http://wordpress.org/extend/plugins/xilitheme-select/ "xilitheme-select") to be used with iPhone, iPod Touch or other mobiles.
@@ -69,9 +72,23 @@ The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.c
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/).
 
+= 0.9.4 = fixes and hooks from plugin to functions definable in functions.php (list below)
 = 0.9.3 = third public release (beta) some fixes and display language in post/page lists
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
+= List of "hookable" functions and names in functions.php =
 
-© 090216 - MS - dev.xiligroup.com
+(for theme's developer : see php code to change the default CMS rules provided by xili-language)
+
+`xili_language_list` by `xiliml_infunc_language_list($before,$after)`
+`xiliml_language_head` by `xiliml_infunc_language_head()`
+`xiliml_cat_language` by `xiliml_infunc_cat_language ($content, $category)`
+`xiliml_the_other_posts` by `xiliml_infunc_the_other_posts($post_ID, $before,$after)`
+`xiliml_the_category` by `xili_infunc_the_category($post_ID, $separator,$echo)`
+`xiliml_modify_querytag` by `xiliml_infunc_modify_querytag()`
+`xiliml_link_append_lang` by `xiliml_infunc_link_append_lang($link)`
+`xiliml_taglink_append_lang` by `xiliml_infunc_taglink_append_lang($taglink)`
+`xiliml_link_translate_desc` by `xiliml_infunc_link_translate_desc( $description, $category,$context)`
+
+© 090221 - MS - dev.xiligroup.com
