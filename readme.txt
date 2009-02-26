@@ -4,19 +4,20 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary, .mo file, .po file
 Requires at least: 2.6.2
 Tested up to: 2.7.1
-Stable tag: 0.9.4
+Stable tag: 0.9.5
 
 xili-language provides an automatic live selection of language (.mo files) in theme according to the language of current post(s). 
 
 == Description ==
 
-xili-language plugin provides an automatic selection of language in theme according to the language of one post in multilingual CMS site or multilingual blog. xili-language use *on the fly* the .mo files present in the theme's folder. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
+xili-language plugin provides an automatic selection of language in theme according to the language of one post. xili-language use *on the fly* the .mo files present in the theme's folder. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 
-**NEW :** 
-0.9.4 fixes and add hooks for function in plugin to function defined in functions.php [see here](http://wordpress.org/extend/plugins/xili-language/other_notes/) - more than one lang in query (OR) - some fixes,..
+see soon 0.9.6 New settings UI according to new rules and styles of WP 2.7 (meta_boxes, js) - *ONLY USE WITH Wordpress 2.7 and more* -
 
+**NEW :**
+0.9.5 fixes for previous WP releases before equal WP 2.7 - list refresh - undefined lang -
+0.9.4 fixes and hooks from plugin to functions defined in functions.php
 0.9.3 include some fixes (to display title in `<a>` of cats list), add language in posts (and pages) list.
-
 xili-dictionary alpha is available [here](http://dev.xiligroup.com/?p=312 "why xili-dictionary ?")
 
 **Prerequisite**
@@ -72,23 +73,11 @@ The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.c
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/).
 
-= 0.9.4 = fixes and hooks from plugin to functions definable in functions.php (list below)
+= 0.9.5 = fixes for previous WP releases before WP 2.7 - list refresh - undefined lang -
+= 0.9.4 = fixes and hooks from plugin to functions defined in functions.php
 = 0.9.3 = third public release (beta) some fixes and display language in post/page lists
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-= List of "hookable" functions and names in functions.php =
 
-(for theme's developer : see php code to change the default CMS rules provided by xili-language)
-
-`xili_language_list` by `xiliml_infunc_language_list($before,$after)`
-`xiliml_language_head` by `xiliml_infunc_language_head()`
-`xiliml_cat_language` by `xiliml_infunc_cat_language ($content, $category)`
-`xiliml_the_other_posts` by `xiliml_infunc_the_other_posts($post_ID, $before,$after)`
-`xiliml_the_category` by `xili_infunc_the_category($post_ID, $separator,$echo)`
-`xiliml_modify_querytag` by `xiliml_infunc_modify_querytag()`
-`xiliml_link_append_lang` by `xiliml_infunc_link_append_lang($link)`
-`xiliml_taglink_append_lang` by `xiliml_infunc_taglink_append_lang($taglink)`
-`xiliml_link_translate_desc` by `xiliml_infunc_link_translate_desc( $description, $category,$context)`
-
-© 090221 - MS - dev.xiligroup.com
+© 090226 - MS - dev.xiligroup.com
