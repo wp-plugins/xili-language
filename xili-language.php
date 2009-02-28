@@ -362,7 +362,7 @@ function xiliml_the_other_posts ($post_ID,$before = " ", $after = ", ") {
 		foreach ($listlanguages as $language) {
 			$otherpost = get_post_meta($post_ID, 'lang-'.$language->slug, true);
 			if ('' != $otherpost && $language->slug != $curlang ) {
-				$output .= $before."<a href='?p=".$otherpost."' >".__($language->description,THEME_TEXTDOMAIN) ."</a>".$after;
+				$output .= $before."<a href='".get_permalink($otherpost)."' >".__($language->description,THEME_TEXTDOMAIN) ."</a>".$after; /* permalinks added 090228 */
 			}	
 		}
 	if ('' != $output) {_e('This post in',THEME_TEXTDOMAIN); echo $output;}
