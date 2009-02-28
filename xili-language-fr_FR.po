@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xili_language\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2009-02-26 10:29+0100\n"
+"Last-Translator: Michel SCRIBAN <michel@scriban.eu>\n"
+"Language-Team: Michel SCRIBAN <michel@scriban.eu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SearchPath-0: trunk\n"
+
+msgid "A new language was added."
+msgstr "Une nouvelle langue a été ajoutée."
+
+msgid "Language to update."
+msgstr "Langue à mettre à jour."
+
+msgid "A language was updated."
+msgstr "Une langue a été mise à jour."
+
+msgid "A language to delete."
+msgstr "Langue à effacer."
+
+msgid "A language was deleted."
+msgstr "Une langue a été supprimée."
+
+msgid "Find above the list of languages."
+msgstr "Voici la liste des langues."
+
+msgid "Language"
+msgstr "Langue"
+
+msgid "Full name:"
+msgstr "Nom complet :"
+
+msgid "Language slug:"
+msgstr "Code :"
+
+msgid "Note:"
+msgstr "Note et message :"
+
+msgid "Edit language"
+msgstr "Editer la langue"
+
+msgid "Delete language ?"
+msgstr "Supprimer la langue ?"
+
+msgid "This plugin was developped to test the new taxonomy, terms tables and tags specifications. <br /> Here a new taxonomy was created and used for languages of posts. <br /> New radiobuttons are available in Post (and Page) write and edit pages for selection by author. It is now updated for WP 2.7"
+msgstr "Ce plugin a été développé pour tester les nouvelles tables taxonomy et terms etc... <br />Ici, on teste la gestion des langues. <br />Dans la colonne droite des pages d'édition des pages et articles, il y a sur le côté droit un selecteur radio-bouton des langues à choisir. Il est mis à jour pour WP 2.7."
+
+msgid "Add a language"
+msgstr "Ajouter une langue"
+
+msgid "Add &raquo;"
+msgstr "Ajouter…"
+
+msgid "Delete &raquo;"
+msgstr "Supprimer…"
+
+msgid "Update &raquo;"
+msgstr "Mettre à jour…"
+
+msgid "Selected language"
+msgstr "Langue choisie"
+
+msgid "english"
+msgstr "anglais"
+
+msgid "belgium french"
+msgstr "belge"
+
+msgid "french"
+msgstr "français"
+
+msgid "undefined"
+msgstr "non définie"
+
