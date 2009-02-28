@@ -12,7 +12,7 @@ xili-language provides an automatic live selection of language (.mo files) in th
 
 xili-language plugin provides an automatic selection of language in theme according to the language of one post. xili-language use *on the fly* the .mo files present in the theme's folder. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 
-see soon 0.9.6 New settings UI according to new rules and styles of WP 2.7 (meta_boxes, js) - *ONLY USE WITH Wordpress 2.7 and more* -
+see soon 0.9.7 New settings UI according to new rules and styles of WP 2.7 (meta_boxes, js) - *ONLY USE WITH Wordpress 2.7 and more* -
 
 **NEW :**
 0.9.5 fixes for previous WP releases before equal WP 2.7 - list refresh - undefined lang -
