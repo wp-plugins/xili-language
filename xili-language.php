@@ -533,10 +533,8 @@ class xili_language {
 	  	<a href="#">=> <?php _e('Top') ;?></a>
 	<?php }
 	}
-	
-	
-	
-		
+
+
 	/**
 	 * to display the languages settings admin UI
 	 *
@@ -870,19 +868,17 @@ class xili_language {
 	 *
 	 * @since 0.9.0
 	 * can be hooked by add_action in functions.php
-	 *
+	 * updated 0.9.7 permalink
 	 *
 	 */
 		
 	function xiliml_the_other_posts ($post_ID,$before = " ", $after = ", ") {
-		//if (function_exists('xiliml_infunc_the_other_posts')) return xiliml_infunc_the_other_posts($post_ID, $before,$after);
-		
-			/* default here*/
+					/* default here*/
 		$listlanguages = get_terms(TAXONAME, array('hide_empty' => false));
 			foreach ($listlanguages as $language) {
 				$otherpost = get_post_meta($post_ID, 'lang-'.$language->slug, true);
 				if ('' != $otherpost && $language->slug != $curlang ) {
-					$output .= $before."<a href='?p=".$otherpost."' >".__($language->description,THEME_TEXTDOMAIN) ."</a>".$after;
+					$output .= $before."<a href='".get_permalink($otherpost)."' >".__($language->description,THEME_TEXTDOMAIN) ."</a>".$after;
 				}	
 			}
 		if ('' != $output) {_e('This post in',THEME_TEXTDOMAIN); echo $output;}
@@ -969,6 +965,7 @@ function xiliml_langinsearchform ($before='',$after='') { /* list of radio butto
 	}
 	do_action('xiliml_langinsearchform',$before,$after);	
 }
+
 /* example :  xiliml_the_category($post->ID) in each post in loop */
 function xiliml_the_category($post_ID, $separator = ', ' ,$echo = true) { /* replace the_category() */
 	global $xili_language;
@@ -977,6 +974,7 @@ function xiliml_the_category($post_ID, $separator = ', ' ,$echo = true) { /* rep
 	}
 	do_action('xiliml_the_category',$post_ID,$separator,$echo);
 }
+
 /* example :  xiliml_the_other_posts($post->ID)  in single.php under the title*/
 function xiliml_the_other_posts ($post_ID,$before = " ", $after = ", ") { /* display the other posts defined as in other lang */
 	global $xili_language;
@@ -985,10 +983,12 @@ function xiliml_the_other_posts ($post_ID,$before = " ", $after = ", ") { /* dis
 	}
 	do_action('xiliml_the_other_posts',$post_ID,$before, $after);
 }
+
 /* example :  xili_post_language($post->ID)  in post in loop */
 function xili_post_language($before = '<span class"xili-lang">(', $after =')</span>') { /* post language in loop*/
 	do_action('xili_post_language',$before, $after);
 }
+
 /* example :  xili_language_list()  in sidebar outside loop */
 function xili_language_list($before = '<li>', $after ='</li>') { /* list of languages i.e. in sidebar */
 	global $xili_language;
@@ -997,5 +997,4 @@ function xili_language_list($before = '<li>', $after ='</li>') { /* list of lang
 	}	
 	do_action('xili_language_list',$before,$after); 
 }
-
 ?>
