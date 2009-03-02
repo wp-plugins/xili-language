@@ -2,9 +2,9 @@
 Contributors: MS xiligroup
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary, .mo file, .po file
-Requires at least: 2.6.2
+Requires at least: 2.7
 Tested up to: 2.7.1
-Stable tag: 0.9.5
+Stable tag: 0.9.7
 
 xili-language provides an automatic live selection of language (.mo files) in theme according to the language of current post(s). 
 
@@ -12,12 +12,11 @@ xili-language provides an automatic live selection of language (.mo files) in th
 
 xili-language plugin provides an automatic selection of language in theme according to the language of one post. xili-language use *on the fly* the .mo files present in the theme's folder. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 
-see soon 0.9.7 New settings UI according to new rules and styles of WP 2.7 (meta_boxes, js) - *ONLY USE WITH Wordpress 2.7 and more* -
+**NEW: 0.9.7**
+Based on class and oop - New settings UI according to new rules and style of WP 2.7 (meta_boxes, js) - *ONLY USE WITH Wordpress 2.7 and more* - WITH NEW HOOKS (Action, Filter) usable in your functions.php.
+If you have used old method of hooks as in previous release, now you have the choice of name of your function but you must add `add_filter() or add_action()`. no change in database - beta release -
+Now contains *a second plug-in to install a widget* with list of languages if your theme is widgets ready.
 
-**NEW :**
-0.9.5 fixes for previous WP releases before equal WP 2.7 - list refresh - undefined lang -
-0.9.4 fixes and hooks from plugin to functions defined in functions.php
-0.9.3 include some fixes (to display title in `<a>` of cats list), add language in posts (and pages) list.
 xili-dictionary alpha is available [here](http://dev.xiligroup.com/?p=312 "why xili-dictionary ?")
 
 **Prerequisite**
@@ -73,11 +72,14 @@ The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.c
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/).
 
-= 0.9.5 = fixes for previous WP releases before WP 2.7 - list refresh - undefined lang -
+= 0.9.7 = OOP and CLASS coding - New settings UI according to new rules and style of WP 2.7 (meta_boxes, js)
+
+= 0.9.6 = New settings UI according to new rules and style of WP 2.7 (meta_boxes, js)
+
 = 0.9.4 = fixes and hooks from plugin to functions defined in functions.php
 = 0.9.3 = third public release (beta) some fixes and display language in post/page lists
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
 
-© 090226 - MS - dev.xiligroup.com
+© 090302 - MS - dev.xiligroup.com
