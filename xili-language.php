@@ -533,8 +533,10 @@ class xili_language {
 	  	<a href="#">=> <?php _e('Top') ;?></a>
 	<?php }
 	}
-
-
+	
+	
+	
+		
 	/**
 	 * to display the languages settings admin UI
 	 *
@@ -831,8 +833,6 @@ class xili_language {
 	 * @return list of languages of site for sidebar list.
 	 */
 	function xili_language_list($before = '<li>', $after ='</li>') {
-		//if (function_exists('xiliml_infunc_language_list')) return xiliml_infunc_language_list($before,$after);
-		
 			/* default here*/
 		$listlanguages = get_terms(TAXONAME, array('hide_empty' => false));
 		foreach ($listlanguages as $language) {
@@ -868,12 +868,12 @@ class xili_language {
 	 *
 	 * @since 0.9.0
 	 * can be hooked by add_action in functions.php
-	 * updated 0.9.7 permalink
+	 *
 	 *
 	 */
 		
 	function xiliml_the_other_posts ($post_ID,$before = " ", $after = ", ") {
-					/* default here*/
+			/* default here*/
 		$listlanguages = get_terms(TAXONAME, array('hide_empty' => false));
 			foreach ($listlanguages as $language) {
 				$otherpost = get_post_meta($post_ID, 'lang-'.$language->slug, true);
@@ -929,8 +929,6 @@ class xili_language {
 	 * @return echo the form.
 	 */
 	function xiliml_langinsearchform ($before='',$after='') {
-		//if (function_exists('xiliml_infunc_langinsearchform')) return xiliml_infunc_langinsearchform($before,$after);
-		
 				/* default here*/
 			$listlanguages = get_terms(TAXONAME, array('hide_empty' => false));
 			foreach ($listlanguages as $language) {
@@ -954,9 +952,11 @@ function get_cur_language($post_ID) {
 	global $xili_language;
 	return $xili_language->get_cur_language($post_ID);
 }
+
 	/* 
 	 * template tags for themes with current do_action tool (some are hookable functions) 
 	 */
+	 
 /* example - if(function_exists('xiliml_langinsearchform')) xiliml_langinsearchform () in searchform under submit */	 
 function xiliml_langinsearchform ($before='',$after='') { /* list of radio buttons for search form*/
 	global $xili_language;

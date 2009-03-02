@@ -15,6 +15,7 @@ xili-language plugin provides an automatic selection of language in theme accord
 **NEW: 0.9.7**
 Based on class and oop - New settings UI according to new rules and style of WP 2.7 (meta_boxes, js) - *ONLY USE WITH Wordpress 2.7 and more* - WITH NEW HOOKS (Action, Filter) usable in your functions.php.
 If you have used old method of hooks as in previous release, now you have the choice of name of your function but you must add `add_filter() or add_action()`. no change in database - beta release -
+Now contain a plug-in to install a widget with list of languages if your theme is widgets ready.
 
 xili-dictionary alpha is available [here](http://dev.xiligroup.com/?p=312 "why xili-dictionary ?")
 
@@ -81,4 +82,4 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/)
 = 0.9.0 = first public release (beta)
 
 
-© 090228 - MS - dev.xiligroup.com
+© 090302 - MS - dev.xiligroup.com
