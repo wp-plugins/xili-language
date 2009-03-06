@@ -7,15 +7,9 @@ Author: dev.xiligroup.com - MS
 Version: 0.9.7.1
 Author URI: http://dev.xiligroup.com
 */
+# updated 090306 - fix - add new tag the_xili_local_time() for date in theme and more...
 # updated 090304 - fix permalink bug in xili_language_list - add add_again_filter() for future uses
 # updated 090228 - Class and OOP - see 0.9.7 in comments of functions below - only for WP 2.7.x
-# updated 090226 - see 0.9.6 in comments of functions below - only for WP 2.7.x
-
-# updated 090226 - see 0.9.5 in comments of functions below
-# updated 090221 - more than one lang in query - better hooks for function placed in functions.php - some fixes 
-# updated 090215 - add language in posts (and pages) list.
-# updated 090208 - fix forgotten theme_domain 
-# updated 090205 - fix page publish
 
 # This plugin is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -286,6 +280,7 @@ class xili_language {
 	 * default rules - set curlang in head according rules 
 	 *
 	 * @since 0.9.7
+	 * @updated 0.9.7.1 - if no posts
 	 * 
 	 * default filter of xiliml_cur_lang_head
 	 * @param $curlang .
@@ -294,42 +289,51 @@ class xili_language {
 		if (has_filter('xiliml_cur_lang_head')) return apply_filters('xiliml_cur_lang_head',''); /* '' warning on some server need one arg by default*/
 		/* default */
 		global $post,$wp_query;
-			if(!is_front_page()) { /* every pages */
-				$curlang = $this->get_cur_language($post->ID); /* the first post give the current lang*/
-				if (is_page()) {
-					if (isset($_GET["loclang"])) {
-		    			$curlang=$_GET["loclang"];
-		    		/* get var to override the selected lang - ex. in bi-lingual contact*/
+			if (have_posts()) {
+				if(!is_front_page()) { /* every pages */
+					$curlang = $this->get_cur_language($post->ID); /* the first post give the current lang*/
+					if (is_page()) {
+						if (isset($_GET["loclang"])) {
+			    			$curlang=$_GET["loclang"];
+			    		/* get var to override the selected lang - ex. in bi-lingual contact*/
+						}
+					} 
+					elseif (is_search() && isset($_GET["lang"])) {
+						$curlang=$_GET["lang"]; /*useful when no result*/
 					}
-				} 
-				elseif (is_search() && isset($_GET["lang"])) {
-					$curlang=$_GET["lang"]; /*useful when no result*/
+				} else { /* front page */
+					if ( '' != $wp_query->query_vars[QUETAG] ) {
+						$curlang = $wp_query->query_vars[QUETAG];	
+					} else {
+						$curlang = strtolower(WPLANG); /* select here the default language of the site */
+					}	
 				}
-			} else { /* front page */
-				if ( '' != $wp_query->query_vars[QUETAG] ) {
-					$curlang = $wp_query->query_vars[QUETAG];	
-				} else {
-					$curlang = strtolower(WPLANG); /* select here the default language of the site */
-				}	
-			}
+			} else { /*no posts for instance in category + lang */
+			 	if (isset($_GET["lang"])) {
+			    		$curlang=$_GET["lang"];
+			    } else {
+			    		$curlang = strtolower(WPLANG); /* select here the default language of the site */
+			   	}
+			}	
 			return $curlang; /* as in external hook for filter*/
 	}
 	
 	/**
 	 *select .mo file 
 	 * @since 0.9.0
-	 * 
+	 * @updated 0.9.7.1
 	 * call by function in wp_head : see xiliml_language_head()
 	 * @param $curlang .
 	 */
 	function set_mofile($curlang) {
 	// load_theme_textdomain(THEME_TEXTDOMAIN); - replaced to be flexible -
 		if (defined('THEME_TEXTDOMAIN')) {$themetextdomain = THEME_TEXTDOMAIN; } else {$themetextdomain = 'ttd-not-defined';  }
+		if (defined('THEME_LANGS_FOLDER')) {$langfolder = '/'.str_replace("/","",THEME_LANGS_FOLDER).'/' ;} else {$langfolder = "/"; } /* added when .mo files are in subfolder of themes */
 		$listlanguages = get_terms(TAXONAME, array('hide_empty' => false,'slug' => $curlang));
 		$filename = $listlanguages[0]->name;
 		$filename .= '.mo';
 		if ('' != $filename) {
-			$mofile = get_template_directory() . "/$filename";	
+			$mofile = get_template_directory() .$langfolder."$filename";	
 			load_textdomain($themetextdomain,$mofile);
 		}
 	}
@@ -450,12 +454,7 @@ class xili_language {
 	  	endif;
 	 	return $translated_desc;
 	}
-	
-	
 	/* end cat description */
-
-
-	
 
 	/**
 	 * add admin menu and associated pages of admin UI
@@ -946,7 +945,14 @@ function the_curlang() {
 	global $xili_language;
 	return $xili_language->curlang;
 }
-
+/* since 0.9.7.1 can be used in theme for multilingual date */
+function the_xili_local_time($format='%B %d, %Y') {
+	global $xili_language;
+	$curlang = $xili_language->curlang;
+	$curlang = substr($curlang,0,3).strtoupper(substr($curlang,-2));
+	setlocale(LC_TIME, $curlang); /* work if server is ready */
+	return htmlentities(strftime(__($format,THEME_TEXTDOMAIN))); /* entities for some server */
+}
 function get_cur_language($post_ID) {
 	global $xili_language;
 	return $xili_language->get_cur_language($post_ID);

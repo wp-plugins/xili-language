@@ -4,7 +4,7 @@ Plugin Name: xili-language widget
 Plugin URI: http://dev.xiligroup.com/xili-language/
 Description: This plugin is a part of xili-language plugin. Add a optional widget to display list of languages in the sidebar.
 Author: dev.xiligroup.com - MS
-Version: 0.9.7
+Version: 0.9.7.1
 Author URI: http://dev.xiligroup.com
 */
 
@@ -47,7 +47,11 @@ class xili_language_Widget {
 		extract($args);
 
 		echo $before_widget.$before_title.__($WidgetTitle,THEME_TEXTDOMAIN).$after_title;
-		if (function_exists('xili_language_list')) xili_language_list();
+		if (function_exists('xili_language_list')) { 
+			echo '<ul>';
+				xili_language_list();
+			echo '</ul>';
+			}
 		echo $after_widget;
 	}
 
