@@ -1,20 +1,19 @@
 === xili-language ===
 Contributors: MS xiligroup
 Donate link: http://dev.xiligroup.com/
-Tags: theme,post,plugin,posts, page, category, admin,multilingual,taxonomy,dictionary, .mo file, .po file
+Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization
 Requires at least: 2.7
 Tested up to: 2.7.1
-Stable tag: 0.9.7.1
+Stable tag: 0.9.7.4
 
 xili-language provides an automatic live selection of language (.mo files) in theme according to the language of current post(s). 
 
 == Description ==
 
-xili-language plugin provides an automatic selection of language in theme according to the language of one post. xili-language use *on the fly* the .mo files present in the theme's folder. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
+xili-language plugin provides an automatic selection of language in theme according to the language of one post. xili-language use *on the fly* the .mo files present in the theme's folder. Themes with *localization* can be easily transformed in multilingual site. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 
-**NEW: 0.9.7.1**
-fixes (see code script), add subfolder for langs in theme (see note in [installation](http://wordpress.org/extend/plugins/xili-language/installation/) - add new tag for theme : the_xili_local_time() to display date...
-
+**NEW: 0.9.7.4**
+Add a box in post admin edit UI to easily set link to similar posts in other languages (as formerly with custom fields). More docs in php. See post about hooks in [dev.xiligroup.com](http://dev.xiligroup.com/?p=504) 
 **NEW: 0.9.7**
 Based on class and oop - New settings UI according to new rules and style of WP 2.7 (meta_boxes, js) - *ONLY USE WITH Wordpress 2.7 and more* - WITH NEW HOOKS (Action, Filter) usable in your functions.php.
 If you have used old method of hooks as in previous release, now you have the choice of name of your function but you must add `add_filter() or add_action()`. no change in database - beta release -
@@ -69,6 +68,7 @@ by
 	
 }`
 
+see the [recent post](http://dev.xiligroup.com/?p=427 "Transform a theme with localization").
 
 == Frequently Asked Questions ==
 
@@ -94,6 +94,7 @@ This first beta releases are for theme's creator or designer.
 The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.com/?p=187 "Why xili-language ?")
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/).
+= 0.9.7.4 = Add a box in post admin edit UI to easily set link to similar posts in other languages.
 = 0.9.7.1 = fixes, add subfolder for langs in theme - add new tag for theme : the_xili_local_time()
 = 0.9.7 = OOP and CLASS coding - New settings UI according to new rules and style of WP 2.7 (meta_boxes, js).
 
@@ -105,4 +106,4 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/)
 = 0.9.0 = first public release (beta)
 
 
-© 090306 - MS - dev.xiligroup.com
+© 090315 - MS - dev.xiligroup.com
