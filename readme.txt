@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization
 Requires at least: 2.7
 Tested up to: 2.7.1
-Stable tag: 0.9.8
+Stable tag: 0.9.8.1
 
 xili-language provides an automatic live selection of language (.mo files) in theme according to the language of current post(s). 
 
@@ -12,10 +12,12 @@ xili-language provides an automatic live selection of language (.mo files) in th
 
 xili-language plugin provides an automatic selection of language in theme according to the language of one post. xili-language use *on the fly* the .mo files present in the theme's folder.  Themes with *localization* can be easily transformed in multilingual site. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 
-= NEW: 0.9.8 =
+= NEW: 0.9.8.1 = 
+Counting only published posts and pages, add filter for widget's titles, in admin UI link to posts of one language, compatible with **xili-tidy-tags** plugin to display sub-selection (cloud) of tags according language. - a post [here](http://dev.xiligroup.com/xili-tidy-tags/ "why xili-tidy-tags ?").
+
+**NEW: 0.9.8**
 Data model now include default and future sub-group and sorting of languages.
 Add new hooks to define header metas or language attributes in html tag.
-
 **NEW: 0.9.7.5** 
 Add optional detection of browser language, fixes W3C errors, record undefined state of post,...
 **NEW: 0.9.7.4**
@@ -109,6 +111,7 @@ The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.c
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/).
 
+= 0.9.8.1 = Counting only published posts and pages, add filter for widget's titles, in admin UI link to posts of one language, compatible with xili-tidy-tags plugin.
 = 0.9.8 = data model now include future sub-group and sorting of languages.
 = 0.9.7.6 = Add new hooks to define header metas or language attributes in html tag...
 = 0.9.7.5 = Add detection of browser language, fixes W3C errors, record undefined state of post,...
@@ -124,4 +127,4 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/)
 = 0.9.0 = first public release (beta)
 
 
-© 090322 - MS - dev.xiligroup.com
+© 090329 - MS - dev.xiligroup.com
