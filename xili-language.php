@@ -1334,6 +1334,10 @@ function get_terms_of_groups_lite ($group_ids, $taxonomy, $taxonomy_child, $orde
 
 	return $listterms;
 }
+/* for backward compatibility - soon obsolete - please modify your theme's function.php */
+function get_terms_with_order ($group_ids, $taxonomy, $taxonomy_child, $order = '') {
+	return get_terms_of_groups_lite ($group_ids, $taxonomy, $taxonomy_child, $order);
+}	
 
 /**
  * function that improve taxinomy.php 
