@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization,widget
 Requires at least: 2.7
 Tested up to: 2.7.1
-Stable tag: 0.9.8.2
+Stable tag: 0.9.8.3
 
 xili-language provides an automatic selection of language (.mo) in theme according to the language of current post(s) for a multilingual website.
 
@@ -13,9 +13,11 @@ xili-language provides an automatic selection of language (.mo) in theme accordi
 xili-language plugin provides an automatic selection of language in theme according to the language of one post. xili-language use *on the fly* the .mo files present in the theme's folder.  Themes with *localization* can be easily transformed in multilingual site. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language.
 
-= NEW: 0.9.8.2 =
+= NEW 0.9.8.3 =
+In dashboard : for new post, pre-set default language of author according his browser's language.
+
+**NEW: 0.9.8.2**
 better query (`get_terms_of_groups_lite`) - fixes W3C xml:lang - multilingual widget
- 
 **NEW: 0.9.8.1**
 Counting only published posts and pages, add filter for widget's titles, in admin UI link to posts of one language, compatible with **xili-tidy-tags** plugin to display sub-selection (cloud) of tags according language. - A post [here](http://dev.xiligroup.com/xili-tidy-tags/ "why xili-tidy-tags ?").
 **NEW: 0.9.8**
@@ -105,6 +107,8 @@ www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also u
 4. coding extract with 'international' text in 'xiliphone' theme
 5. xili-dictionary : Admin Tools UI - list of translated terms 
 6. xili-dictionary : Admin Tools UI - functionalities windows
+7. xili-language : Admin Tools UI - pre-set default language of author according his browser's language.
+8. xili-tidy-tags : Admin Tools UI - see this compatible plugin to group tags according languages
 
 == More infos ==
 
@@ -114,6 +118,7 @@ The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.c
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/).
 
+= 0.9.8.3 = (dashboard) for new post, pre-set default language of author according his browser's language.
 = 0.9.8.2 = better query (`get_terms_of_groups_lite`) - fixes W3C xml:lang
 = 0.9.8.1 = Counting only published posts and pages, add filter for widget's titles, in admin UI link to posts of one language, compatible with xili-tidy-tags plugin.
 = 0.9.8 = data model now include future sub-group and sorting of languages.
@@ -131,4 +136,4 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/)
 = 0.9.0 = first public release (beta)
 
 
-© 090404 - MS - dev.xiligroup.com
+© 090422 - MS - dev.xiligroup.com
