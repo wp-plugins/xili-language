@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization,widget
 Requires at least: 2.7
 Tested up to: 2.7.1
-Stable tag: 0.9.8.3
+Stable tag: 0.9.9
 
 xili-language provides an automatic selection of language (.mo) in theme according to the language of current post(s) for a multilingual website.
 
@@ -13,9 +13,10 @@ xili-language provides an automatic selection of language (.mo) in theme accordi
 xili-language plugin provides an automatic selection of language in theme according to the language of one post. xili-language use *on the fly* the .mo files present in the theme's folder.  Themes with *localization* can be easily transformed in multilingual site. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language.
 
-= NEW 0.9.8.3 =
-In dashboard : for new post, pre-set default language of author according his browser's language.
+= NEW: 0.9.9 = now provides infos about **text direction** *ltr* ou *rtl* of languages (arabic, hebraic,...) of theme and of each post in loop see note [direction in installation](http://wordpress.org/extend/plugins/xili-language/installation/). Soon more infos and demos for designers if multilingual theme. Some fixes (thanks to Jacob about QuickEdit UI bug when post update).
 
+**NEW: 0.9.8.3**
+In dashboard : for new post, pre-set default language of author according his browser's language.
 **NEW: 0.9.8.2**
 better query (`get_terms_of_groups_lite`) - fixes W3C xml:lang - multilingual widget
 **NEW: 0.9.8.1**
@@ -88,6 +89,33 @@ see the [recent post](http://dev.xiligroup.com/?p=427 "Transform a theme with lo
 = Browser detection =
 To change the language of the frontpage according to the language of the visitor's browser, check the button in right small box in settings.
 
+= text direction, since 0.9.9 =
+
+Examples *for theme's designer* of functions to keep text **direction** of theme and of current post :
+
+`
+<?php 
+	$themelangdir = ((class_exists('xili_language')) ? the_cur_lang_dir() : array ()) ; ?>
+<div class="inside <?php echo $themelangdir['direction'] ?>">
+...
+
+`
+example in loop :
+`
+<?php while (have_posts()) : the_post(); 
+$langdir = ((class_exists('xili_language')) ? get_cur_post_lang_dir($post->ID) : array());
+?>
+      <div class="story <?php echo $langdir['direction'] ?>" >
+
+`
+minimal example in css :
+`
+.rtl {direction: rtl; text-align:right !important; font-size:130% !important;}
+.ltr {direction: ltr; text-align:left !important;}
+
+`
+**Caution** : *multilingual theme with both ltr and rtl texts needs a rigourous structure of the css !*
+
 = Wordpress 2.8 beta =
 Today, xili-language is 'compatible' with 'nightly' of next WP release.
 
@@ -118,6 +146,7 @@ The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.c
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/).
 
+= 0.9.9 = give dir of lang ltr or rtl, fixes for cat popup in post edit admin UI, fixes quick-edit update 
 = 0.9.8.3 = (dashboard) for new post, pre-set default language of author according his browser's language.
 = 0.9.8.2 = better query (`get_terms_of_groups_lite`) - fixes W3C xml:lang
 = 0.9.8.1 = Counting only published posts and pages, add filter for widget's titles, in admin UI link to posts of one language, compatible with xili-tidy-tags plugin.
@@ -136,4 +165,4 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/)
 = 0.9.0 = first public release (beta)
 
 
-© 090422 - MS - dev.xiligroup.com
+© 090426 - MS - dev.xiligroup.com
