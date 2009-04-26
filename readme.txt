@@ -13,7 +13,7 @@ xili-language provides an automatic selection of language (.mo) in theme accordi
 xili-language plugin provides an automatic selection of language in theme according to the language of one post. xili-language use *on the fly* the .mo files present in the theme's folder.  Themes with *localization* can be easily transformed in multilingual site. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language.
 
-= NEW: 0.9.9 = now provides infos about **text direction** *ltr* ou *rtl* of languages (arabic, hebraic,...) of theme and of each post in loop see note [direction in installation](http://wordpress.org/extend/plugins/xili-language/installation/). Soon more infos and demos for designers if multilingual theme. Some fixes (thanks to Jacob about QuickEdit UI bug when post update). (0.9.9.1 fixes for those that download 0.9.9 before 04/26 22h50 gmt - 1000 apologies)
+= NEW: 0.9.9 = now provides infos about **text direction** *ltr* ou *rtl* of languages (arabic, hebraic,...) of theme and of each post in loop see note [direction in installation](http://wordpress.org/extend/plugins/xili-language/installation/). Soon more infos and demos for designers if multilingual theme. Some fixes (thanks to Jacob about QuickEdit UI bug when post update). (0.9.9.1 corrects the error for those who have downloaded the 0.9.9 before 04/26 22h50 gmt - 1000 apologies)
 
 **NEW: 0.9.8.3**
 In dashboard : for new post, pre-set default language of author according his browser's language.
@@ -165,4 +165,4 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/)
 = 0.9.0 = first public release (beta)
 
 
-© 090426 - MS - dev.xiligroup.com
+© 090426 23:20 GMT - MS - dev.xiligroup.com
