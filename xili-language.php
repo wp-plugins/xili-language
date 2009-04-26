@@ -7,7 +7,7 @@ Author: dev.xiligroup.com - MS
 Version: 0.9.9
 Author URI: http://dev.xiligroup.com
 */
-
+# updated 090426 - 0.9.9.1 - fix error with new internal get_cur_language
 # updated 090426 - 0.9.9 - give dir of lang ltr or rtl, fixes for cat popup in post edit admin UI, fixes quick-edit update 
 # updated 090422 - 0.9.8.3 - (dashboard) for new post, set default language of author according his browser's language.
 # updated 090404 - 0.9.8.2 - better query (get_terms_of_groups_lite) - fixes W3C xml:lang
@@ -412,7 +412,7 @@ class xili_language {
 	 * default rules - set curlang in head according rules 
 	 *
 	 * @since 0.9.7
-	 * @updated 0.9.7.1 - if no posts
+	 * @updated 0.9.7.1 - if no posts 0.9.9.1
 	 * 
 	 * default filter of xiliml_cur_lang_head
 	 * @return $curlang .
@@ -423,8 +423,9 @@ class xili_language {
 		global $post,$wp_query;
 			if (have_posts()) {
 				if(!is_front_page()) { /* every pages */
-					$curlang = $this->get_cur_language($post->ID); /* the first post give the current lang*/
-					if ($curlang == false) $curlang = DEFAULTSLUG; /* can be changed if use hook */
+					$curlangdir = $this->get_cur_language($post->ID);
+					$curlang = $curlangdir['lang']; /* the first post give the current lang*/
+					if ($curlangdir == false) $curlang = DEFAULTSLUG; /* can be changed if use hook */
 					if (is_page()) {
 						if (isset($_GET["loclang"])) {
 			    			$curlang=$_GET["loclang"];
