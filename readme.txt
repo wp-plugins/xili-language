@@ -4,17 +4,18 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization,widget
 Requires at least: 2.7
 Tested up to: 2.7.1
-Stable tag: 0.9.9.2
+Stable tag: 0.9.9.3
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
 == Description ==
 
 xili-language plugin provides an automatic selection of language in theme according to the language of one post. xili-language use *on the fly* the .mo files present in the theme's folder.  Themes with *localization* can be easily transformed in multilingual site. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. The plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
-With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-tidy-tags/) plugin (beta), it is easier to create online via admin UI the files .mo of each languages.
+With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create online via admin UI the files .mo of each languages.
 
-== 0.9.9.2 == fixe class of metabox has-right-sidebar for 2.8 - some other admin UI sizing, W3C - improved template-tag default function `xiliml_the_other_posts()` display (if you had hook it in previous version, verify the hook of your functions.php, see php code lines 1314, 1650).
+= 0.9.9.3 = sub selection of pages for `wp_list_pages()` with &lang=, some fixes (other posts, options when activate,...) and soon [examples](http://dev.xiligroup.com/xili-language/) (how to install selected rss...)
 
+**0.9.9.2** fixe class of metabox has-right-sidebar for 2.8 - some other admin UI sizing, W3C - improved template-tag default function `xiliml_the_other_posts()` display (if you had hook it in previous version, verify the hook of your functions.php, see php code lines 1314, 1650).
 **NEW: 0.9.9** now provides infos about **text direction** *ltr* ou *rtl* of languages (arabic, hebraic,...) of theme and of each post in loop see note [direction in installation](http://wordpress.org/extend/plugins/xili-language/installation/). Soon more infos and demos for designers if multilingual theme. Some fixes (thanks to Jacob about QuickEdit UI bug when post update). (0.9.9.1 : corrects the error for those who have downloaded the 0.9.9 before 04/26 22h50 gmt - 1000 apologies - )
 **NEW: 0.9.8.3**
 In dashboard : for new post, pre-set default language of author according his browser's language.
@@ -147,6 +148,7 @@ The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.c
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/).
 
+= 0.9.9.3 = sub selection of pages for `wp_list_pages()` with `&lang=` , some fixes
 = 0.9.9 = give dir of lang ltr or rtl, fixes for cat popup in post edit admin UI, fixes quick-edit update  (0.9.9.1 fixes internal get_cur_language() that now deliver array. 0.9.9.2 fixe class of metabox has-right-sidebar for 2.8, W3C)
 = 0.9.8.3 = (dashboard) for new post, pre-set default language of author according his browser's language.
 = 0.9.8.2 = better query (`get_terms_of_groups_lite`) - fixes W3C xml:lang
@@ -166,4 +168,4 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/)
 = 0.9.0 = first public release (beta)
 
 
-© 090429 - MS - dev.xiligroup.com
+© 090509 - MS - dev.xiligroup.com
