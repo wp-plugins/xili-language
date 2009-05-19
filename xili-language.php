@@ -8,7 +8,7 @@ Version: 0.9.9.4
 Author URI: http://dev.xiligroup.com
 */
 
-# updated 090518 - 0.9.9.4 - Recent commments widget, Get_archives translatable, some fixes or improvements (front-page pages select)
+# updated 090519 - 0.9.9.4 - Recent commments widget, Get_archives translatable, some fixes or improvements (front-page pages select), fixe issue when cat desc is empty.
 # updated 090509 - 0.9.9.3 - fixe options when updating (Thanks Jacob)
 # updated 090429 - 0.9.9.2 - fixe class of metabox has-right-sidebar for WP 2.8 - updated
 # updated 090426 - 0.9.9.1 - fix error with new internal get_cur_language
@@ -771,7 +771,7 @@ class xili_language {
 	 * translate description of categories
 	 *
 	 * @since 0.9.0
-	 * update 0.9.7
+	 * update 0.9.7 - 0.9.9.4
 	 * can be hooked by filter add_filter('xiliml_link_translate_desc','yourfunction',2,4) in functions.php
 	 *
 	 *
@@ -780,7 +780,7 @@ class xili_language {
 		if (has_filter('xiliml_link_translate_desc')) return apply_filters('xiliml_link_translate_desc',$description,$category,$context,$this->curlang);
 		
 		/*default*/
-	  	if ($this->curlang) :
+	  	if ($this->curlang && ''!= $description) :
 	  			$translated_desc = __($description,THEME_TEXTDOMAIN) ;
 	  	else :
 	  			$translated_desc = $description;
@@ -1460,6 +1460,7 @@ class xili_language {
 	 * the_category() rewritten to keep new features of multilingual (and amp & pbs in link)
 	 *
 	 * @since 0.9.0
+	 * @updated 0.9.9.4
 	 * can be hooked by add_action xiliml_the_category in functions.php
 	 *
 	 */
@@ -1470,9 +1471,12 @@ class xili_language {
 		foreach ($the_cats_list as $the_cat) {
 			if ( 0 < $i )
 				$thelist .= $separator . ' ';
-			 	$the_catlink = '<a href="' . get_category_link($the_cat->term_id) . '" title="' . __(trim(attribute_escape(apply_filters( 'category_description', $the_cat->description, $the_cat->term_id ))),THEME_TEXTDOMAIN) . '" ' . $rel . '>';
+			$desc4title = trim(attribute_escape(apply_filters( 'category_description', $the_cat->description, $the_cat->term_id )));
+			
+			$title = ('' == $desc4title) ? __($the_cat->name,THEME_TEXTDOMAIN) : $desc4title;
+			$the_catlink = '<a href="' . get_category_link($the_cat->term_id) . '" title="' . $title . '" ' . $rel . '>';
 			//if ($curlang != DEFAULTSLUG) :
-	      		 $the_catlink .=  __($the_cat->name,THEME_TEXTDOMAIN).'</a>';;
+	      	$the_catlink .=  __($the_cat->name,THEME_TEXTDOMAIN).'</a>';;
 	      	//else :
 	      		 //$the_catlink .=  $the_cat->name.'</a>';;
 	      	//endif;
