@@ -3,8 +3,8 @@ Contributors: MS xiligroup
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization,widget,language,international
 Requires at least: 2.7
-Tested up to: 2.8-RC1
-Stable tag: 0.9.9.6
+Tested up to: 2.8
+Stable tag: 1.0
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -13,9 +13,9 @@ xili-language provides for a multilingual website an automatic selection of lang
 xili-language plugin provides an automatic selection of language in theme according to the language of displayed post(s). xili-language select *on the fly* the .mo files present in the theme's folder.  Themes with *localization* can be easily transformed in multilingual site. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create online via admin UI the files .mo of each languages.
 
-= 0.9.9.6 =
-add option 'typeone' in default languages list as one example for new multiple list widget.
+= 1.0 = New ways to choose default language of front-page, also compatible with new recent WP 2.8.
 
+** 0.9.9.6 ** add option 'typeone' in default languages list as one example for new multiple list widget.
 ** 0.9.9.5 ** php doc enhanced, link to modify linked posts in post edit UI
 ** 0.9.9.4 ** New widget for recent comments that can subselect those for current language. (a function `xiliml_recent_comments()` is also available if you want to create a template tag with resulting objects array). Sub selection of archives for `wp_get_archives()` with &lang= [see installation notes](http://wordpress.org/extend/plugins/xili-language/installation/). If frontpage is a page, select correlated page according language [see Other notes](http://wordpress.org/extend/plugins/xili-language/other_notes/). Some issues fixed.
 **0.9.9.3** sub selection of pages for `wp_list_pages()` with &lang=, some fixes (other posts, options when activate,...) and soon [examples](http://dev.xiligroup.com/xili-language/) (how to install selected rss...)
@@ -127,8 +127,8 @@ minimal example in css :
 Archives tags is a very complex template tag in his background and not very easy source hookable. So we decided to add few features : by adding query in vars of the function, it will be possible to display a monthly list of archives for a selected language - `wp_get_archives('..your.vars..&lang=fr_fr')` - or the current the theme language - `wp_get_archives('..your.vars..&lang=')` -. The displayed list of links will be translated and link restrited to display only archives of this language.
 
 
-= Wordpress 2.8 beta2 =
-Today, xili-language is 'compatible' with 'nightly' of next WP release.
+= Wordpress 2.8 =
+Today, xili-language is 'compatible'.
 
 == Frequently Asked Questions ==
 
@@ -162,6 +162,7 @@ The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.c
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/).
 
+= 1.0 = New ways to define default language of front-page, also compatible with new recent WP 2.8.
 = 0.9.9.6 = ready for new multiple widgets - fixed filter by in class
 = 0.9.9.5 = php doc enhanced, link to modify linked posts
 = 0.9.9.4 = Recent commments, Get_archives translatable, some fixes or improvements...
@@ -185,4 +186,4 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/)
 = 0.9.0 = first public release (beta)
 
 
-© 090607 - MS - dev.xiligroup.com
+© 090615 - MS - dev.xiligroup.com
