@@ -150,19 +150,11 @@ www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also u
 8. xili-tidy-tags : Admin Tools UI - see this compatible plugin to group tags according languages
 9. xili-language widget : Admin widgets UI - since 0.9.9.6, "multiple" languages list widget
 
-== More infos ==
+== Changelog ==
 
-= What happens if frontpage is a page ? =
-
-Before publishing an 'how-to', since 0.9.9.4, the plugin incorporates now features that are formerly possible through the hookable functions of xili-language. The page frontpage must have her clones in each other languages. As for posts, if the user's browser is not in the default language, xili-language will display the page in the corresponding language if set by the editor. Be patient, a detailled post will arrive soon... [here](http://dev.xiligroup.com/?p=708#tab-1)
-
-This first beta releases are for theme's creator or designer.
-
-The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.com/xili-language/ "Why xili-language ?")
-
-See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/).
-
-= 1.0 = New ways to define default language of front-page, also compatible with new recent WP 2.8.
+= 1.0 = 
+* New ways to define default language of front-page, 
+* also compatible with new recent WP 2.8.
 = 0.9.9.6 = ready for new multiple widgets - fixed filter by in class
 = 0.9.9.5 = php doc enhanced, link to modify linked posts
 = 0.9.9.4 = Recent commments, Get_archives translatable, some fixes or improvements...
@@ -185,5 +177,19 @@ See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/)
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
+
+© 090621 - MS - dev.xiligroup.com
+
+== More infos ==
+
+= What happens if frontpage is a page ? =
+
+Before publishing an 'how-to', since 0.9.9.4, the plugin incorporates now features that are formerly possible through the hookable functions of xili-language. The page frontpage must have her clones in each other languages. As for posts, if the user's browser is not in the default language, xili-language will display the page in the corresponding language if set by the editor. Be patient, a detailled post will arrive soon... [here](http://dev.xiligroup.com/?p=708#tab-1)
+
+This first beta releases are for theme's creator or designer.
+
+The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.com/xili-language/ "Why xili-language ?")
+
+See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/).
 
 © 090615 - MS - dev.xiligroup.com
