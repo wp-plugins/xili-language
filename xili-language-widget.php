@@ -4,7 +4,7 @@ Plugin Name: xili-language widget
 Plugin URI: http://dev.xiligroup.com/xili-language/
 Description: This plugin is a part of xili-language plugin. Add a optional widgets to display list of languages in the sidebar or recent comments. <strong>It now (0.9.9.6) possible to have multiple lists - <a href="widgets.php">Reinstall</a> the widget</strong>
 Author: dev.xiligroup.com - MS
-Version: 1.0.1
+Version: 1.0.2
 Author URI: http://dev.xiligroup.com
 */
 
