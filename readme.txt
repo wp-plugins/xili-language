@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization,widget,language,international
 Requires at least: 2.7
 Tested up to: 2.8.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -17,6 +17,7 @@ With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-t
 * New ways to choose default language of front-page, 
 * Also compatible with new recent WP 2.8.x
 * Fix unique id for category link hook (see expert's corner posts)
+* Fix unexpected like tags metabox added by WP 28 ( see [trac #10437](http://core.trac.wordpress.org/ticket/10437) ).
 
 = previous releases =
 ** 0.9.9.6 ** add option 'typeone' in default languages list as one example for new multiple list widget.
@@ -156,6 +157,7 @@ www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also u
 
 == Changelog ==
 
+= 1.0.2 = fix unexpected like tags metabox added by WP 28 in post edit UI - tracs #10437
 = 1.0 = 
 * New ways to define default language of front-page, 
 * also compatible with new recent WP 2.8.
@@ -183,7 +185,7 @@ www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also u
 = 0.9.0 = first public release (beta)
 
 
-© 090626 - MS - dev.xiligroup.com
+© 090719 - MS - dev.xiligroup.com
 
 == More infos ==
 
