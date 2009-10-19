@@ -3,8 +3,8 @@ Contributors: MS xiligroup
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization,widget,language,international
 Requires at least: 2.7
-Tested up to: 2.8.4
-Stable tag: 1.1
+Tested up to: 2.9-rare
+Stable tag: 1.1.8
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -13,16 +13,19 @@ xili-language provides for a multilingual website an automatic selection of lang
 xili-language plugin provides an automatic selection of language in theme according to the language of displayed post(s). xili-language select *on the fly* the .mo files present in the theme's folder.  Themes with *localization* can be easily transformed in multilingual site. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create online via admin UI the files .mo of each languages.
 
-= 1.1 =
+= 1.1.8 =
+This release adds new features dedicated to multilingual theme's creators and webmasters. Some new php functions, a folder to include functions shared by themes (not necessary to put functions in functions.php of the current theme); example with a shortcode to insert link inside content toward another post in a language. A post explaining these improvements can be found [here](http://dev.xiligroup.com/?cat=480&lang=en_us). Since this release, xili-language is also tested with future wordpress 2.9-rare.
+
+= previous releases =
+** 1.1 **
 * improve `xiliml_the_others_posts()` function and theme tag to be used in multilingual category loop and by option (array) to return an array of linked posts in other languages (useful for CMS webmasters) (array of lang  and id ) - the id is easily transformable in permalink with function `get_permalink()` when using this array.
 
-= 1.0.x = 
+** 1.0.x ** 
 * New ways to choose default language of front-page, 
 * Also compatible with new recent WP 2.8.x
 * Fix unique id for category link hook (see expert's corner posts)
 * Fix unexpected like tags metabox added by WP 28 ( see [trac #10437](http://core.trac.wordpress.org/ticket/10437) ).
 
-= previous releases =
 ** 0.9.9.6 ** add option 'typeone' in default languages list as one example for new multiple list widget.
 ** 0.9.9.5 ** php doc enhanced, link to modify linked posts in post edit UI
 ** 0.9.9.4 ** New widget for recent comments that can subselect those for current language. (a function `xiliml_recent_comments()` is also available if you want to create a template tag with resulting objects array). Sub selection of archives for `wp_get_archives()` with &lang= [see installation notes](http://wordpress.org/extend/plugins/xili-language/installation/). If frontpage is a page, select correlated page according language [see Other notes](http://wordpress.org/extend/plugins/xili-language/other_notes/). Some issues fixed.
@@ -135,7 +138,7 @@ minimal example in css :
 Archives tags is a very complex template tag in his background and not very easy source hookable. So we decided to add few features : by adding query in vars of the function, it will be possible to display a monthly list of archives for a selected language - `wp_get_archives('..your.vars..&lang=fr_fr')` - or the current the theme language - `wp_get_archives('..your.vars..&lang=')` -. The displayed list of links will be translated and link restrited to display only archives of this language.
 
 
-= Wordpress 2.8 =
+= Wordpress 2.9-rare =
 Today, xili-language is 'compatible'.
 
 == Frequently Asked Questions ==
@@ -189,7 +192,7 @@ www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also u
 = 0.9.0 = first public release (beta)
 
 
-© 090918 - MS - dev.xiligroup.com
+© 091018 - MS - dev.xiligroup.com
 
 == More infos ==
 
