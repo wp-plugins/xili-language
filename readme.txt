@@ -3,8 +3,8 @@ Contributors: MS xiligroup
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization,widget,language,international
 Requires at least: 2.7
-Tested up to: 2.9-rare
-Stable tag: 1.1.8
+Tested up to: 2.9
+Stable tag: 1.1.9
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -12,6 +12,11 @@ xili-language provides for a multilingual website an automatic selection of lang
 
 xili-language plugin provides an automatic selection of language in theme according to the language of displayed post(s). xili-language select *on the fly* the .mo files present in the theme's folder.  Themes with *localization* can be easily transformed in multilingual site. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create online via admin UI the files .mo of each languages.
+
+= 1.1.9 =
+Intermediate release
+Optional improve hooking ways to be compatible with l10n cache of Johan's plugin see line 2200. Automatic detection of `theme_text_domain` and languages (.mo) sub-folder in theme's folder. More infos in Settings UI Special sidebox.
+Fixes title of wp_get_archives links with current permalinks. Possible that very special permalinks need to use hook named `xiliml_get_archives_link`.
 
 = 1.1.8 =
 This release adds new features dedicated to multilingual theme's creators and webmasters. Some new php functions, a folder to include functions shared by themes (not necessary to put functions in functions.php of the current theme); example with a shortcode to insert link inside content toward another post in a language. A post explaining these improvements can be found [here](http://dev.xiligroup.com/?cat=480&lang=en_us). Since this release, xili-language is also tested with future wordpress 2.9-rare.
@@ -77,6 +82,17 @@ Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/sc
 4. Activate the plugin through the *'Plugins'* menu in WordPress,
 5. Go to the dashboard settings tab - language - and adapt default values if necessary by adding your languages in the catalog. You can set the order (1,2,3...) of the series. (used in `language_attributes()` template_tag).
 6. Modify each post by setting (checking) the language flag in xili-language sub-windows at the right of the editing window before publishing.
+
+= SPECIAL NOTE FOR VERSION >= 1.1.9 =
+
+With the cost of 50 lines more, plugin now detect automatically (if theme is good) `the theme_text_domain` and languages (.mo) sub-folder. It not mandatory to declare the two constats (but compatible with previous settings).
+Only encapsule the `load_theme_textdomain()` like in that example for a theme named fusion:
+
+`
+if (!class_exists('xili_language')) { // class in not (!) present...
+   load_theme_textdomain('fusion', get_template_directory() . '/lang');	
+}
+`
 
 = NOTE = 
 In the functions php file of the theme : replace by commenting `load_theme_textdomain` line  `//load_theme_textdomain('mythemename'); ` by a *define* `define('THEME_TEXTDOMAIN','mythemename'); //second text must be used in theme texts with _e( , ) or __( , )` where 'mythemename' is `'kubrik'` in default international theme.
@@ -155,14 +171,15 @@ www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also u
 2. the admin settings UI
 3. the language setting in post writting UI
 4. coding extract with 'international' text in 'xiliphone' theme
-5. xili-dictionary : Admin Tools UI - list of translated terms 
-6. xili-dictionary : Admin Tools UI - functionalities windows
-7. xili-language : Admin Tools UI - pre-set default language of author according his browser's language.
-8. xili-tidy-tags : Admin Tools UI - see this compatible plugin to group tags according languages
+5. xili-dictionary: Admin Tools UI - list of translated terms 
+6. xili-dictionary: Admin Tools UI - functionalities windows
+7. xili-language: Admin Tools UI - pre-set default language of author according his browser's language.
+8. xili-tidy-tags: Admin Tools UI - see this compatible plugin to group tags according languages
 9. xili-language widget : Admin widgets UI - since 0.9.9.6, "multiple" languages list widget
+10. xili-language: Special Admin UI sidebox - infos about theme's content for multilingual settings.
 
 == Changelog ==
-
+= 1.1.8 - 1.1.9 = new features for theme's developers - see code lines - Fix title of wp_get_archives links with current permalinks.
 = 1.1 = improve xiliml_the_others_posts function optionally to return an array of linked posts
 = 1.0.2 = fix unexpected like tags metabox added by WP 28 in post edit UI - tracs #10437
 = 1.0 = 
@@ -192,7 +209,7 @@ www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also u
 = 0.9.0 = first public release (beta)
 
 
-© 091018 - MS - dev.xiligroup.com
+© 091103 - MS - dev.xiligroup.com
 
 == More infos ==
 
