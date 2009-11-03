@@ -8,7 +8,7 @@ Version: 1.1.9
 Author URI: http://dev.xiligroup.com
 */
 
-# updated 091028 - 1.1.9 - optional improve hooking ways to be compatible with l10n cache of Johan see line 2200 - fix title of wp_get_archive links with current permalinks.
+# updated 091103 - 1.1.9 - optional improve hooking ways to be compatible with l10n cache of Johan see line 2200 - fix title of wp_get_archive links with current permalinks.
 # updated 091019 - 1.1.8 - gold functions and shortcode for linked posts - first tests with WP 2.9
 # updated 091007 - 1.1.es - tests - gold functions active - update undefined posts functions in library
 # updated 090918 - 1.1 - xiliml_the_other_posts function improved and upgraded for CMS webmasters
@@ -1435,7 +1435,7 @@ class xili_language {
 	function  on_sidebox_4_content() { 
 	 	$update_nonce = wp_create_nonce('xilimloptions');
 	 	?>
-	 	<fieldset style="margin:2px; padding:12px 6px; border:1px solid #ccc;"><legend><?php _e("Theme's informations:",'xili-language'); ?></legend>
+	 	<fieldset style="margin:2px; padding:12px 6px; border:1px solid #ccc;"><legend><?php echo __("Theme's informations:",'xili-dictionary').' ('.get_option("template").')'; ?></legend>
 	 	<p><?php if ("" != $this->xili_settings['theme_domain']) {
 	 		echo __('theme_domain:','xili-language').' '.$this->xili_settings['theme_domain'].'<br />'.__('as function like:','xili-language').'<i> _e(\'-->\',\''.$this->xili_settings['theme_domain'].'\');</i>'; 
 	 		} else { _e('Theme domain NOT defined','xili-language'); } ?><br />
