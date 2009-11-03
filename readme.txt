@@ -15,8 +15,8 @@ With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-t
 
 = 1.1.9 =
 Intermediate release
-Optional improve hooking ways to be compatible with l10n cache of Johan's plugin see line 2200. Automatic detection of `theme_text_domain` and languages (.mo) sub-folder in theme's folder. More infos in Settings UI Special sidebox.
-Fixes title of wp_get_archives links with current permalinks. Possible that very special permalinks need to use hook named `xiliml_get_archives_link`.
+Optional improve hooking ways to be compatible with l10n cache of Johan's plugin see line 2200. Automatic detection of `THEME_TEXT_DOMAIN` constant and languages (.mo) sub-folder in theme's folder. More infos in Settings UI Special sidebox.
+Fixes title of `wp_get_archives` links with current permalinks. Possible that very special permalinks need to use hook named `xiliml_get_archives_link`.
 
 = 1.1.8 =
 This release adds new features dedicated to multilingual theme's creators and webmasters. Some new php functions, a folder to include functions shared by themes (not necessary to put functions in functions.php of the current theme); example with a shortcode to insert link inside content toward another post in a language. A post explaining these improvements can be found [here](http://dev.xiligroup.com/?cat=480&lang=en_us). Since this release, xili-language is also tested with future wordpress 2.9-rare.
