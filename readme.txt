@@ -1,7 +1,7 @@
 === xili-language ===
-Contributors: MS xiligroup
+Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
-Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization,widget,language,international
+Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n
 Requires at least: 2.7
 Tested up to: 2.9
 Stable tag: 1.1.9
@@ -10,53 +10,46 @@ xili-language provides for a multilingual website an automatic selection of lang
 
 == Description ==
 
-xili-language plugin provides an automatic selection of language in theme according to the language of displayed post(s). xili-language select *on the fly* the .mo files present in the theme's folder.  Themes with *localization* can be easily transformed in multilingual site. It is dedicaced for theme's creator or webmaster with knowledges in CMS and WP and having tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories lists are translated also. xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
-With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create online via admin UI the files .mo of each languages.
+**xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s).**
+
+* xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. 
+* xili-language select *on the fly* the .mo files present in the theme's folder.  
+* Themes with *localization* can be easily transformed for realtime multilingual sites. 
+* xili-language is dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
+* xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
+* With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create or update online, via admin UI, the files .mo of each language.
 
 = 1.1.9 =
-Intermediate release
-Optional improve hooking ways to be compatible with l10n cache of Johan's plugin see line 2200. Automatic detection of `THEME_TEXT_DOMAIN` constant and languages (.mo) sub-folder in theme's folder. More infos in Settings UI Special sidebox.
-Fixes title of `wp_get_archives` links with current permalinks. Possible that very special permalinks need to use hook named `xiliml_get_archives_link`.
+Intermediate release :
+* Optional improving hooking ways to be compatible with l10n cache of Johan's plugin see line 2200. 
+* Automatic detection of `THEME_TEXT_DOMAIN` constant and languages (.mo) sub-folder in theme's folder. More infos in Settings UI Special sidebox.
+* Fixes title of `wp_get_archives` links with current permalinks. Possible that very special permalinks need to use hook named `xiliml_get_archives_link`.
 
 = 1.1.8 =
-This release adds new features dedicated to multilingual theme's creators and webmasters. Some new php functions, a folder to include functions shared by themes (not necessary to put functions in functions.php of the current theme); example with a shortcode to insert link inside content toward another post in a language. A post explaining these improvements can be found [here](http://dev.xiligroup.com/?cat=480&lang=en_us). Since this release, xili-language is also tested with future wordpress 2.9-rare.
+This release adds new features dedicated to multilingual theme's creators and webmasters. Some new php functions, a folder to include functions shared by themes (not necessary to put functions in functions.php of the current theme); example with a shortcode to insert link inside content toward another post in a language. A post explaining these improvements can be found [here](http://dev.xiligroup.com/?cat=480&lang=en_us). **Since this release, xili-language is also tested with future wordpress 2.9-rare.**
 
-= previous releases =
-** 1.1 **
+= summary of main features improved in previous releases up to 1.1 =
+
 * improve `xiliml_the_others_posts()` function and theme tag to be used in multilingual category loop and by option (array) to return an array of linked posts in other languages (useful for CMS webmasters) (array of lang  and id ) - the id is easily transformable in permalink with function `get_permalink()` when using this array.
-
-** 1.0.x ** 
 * New ways to choose default language of front-page, 
-* Also compatible with new recent WP 2.8.x
-* Fix unique id for category link hook (see expert's corner posts)
+* Fix unique id for category link hook [see expert's corner posts](http://dev.xiligroup.com/?p=1045)
 * Fix unexpected like tags metabox added by WP 28 ( see [trac #10437](http://core.trac.wordpress.org/ticket/10437) ).
+* add option 'typeone' in default languages list as one example for new multiple list widgets.
+* link to modify linked posts in post edit dashboard UI
+* New widget for recent comments that can subselect those for current language. (a function `xiliml_recent_comments()` is also available if you want to create a template tag with resulting objects array). Sub selection of archives for `wp_get_archives()` with &lang= [see installation notes](http://wordpress.org/extend/plugins/xili-language/installation/). If frontpage is a page, select correlated page according language [see Other notes](http://wordpress.org/extend/plugins/xili-language/other_notes/).
+* sub selection of pages for `wp_list_pages()` with &lang=, some fixes (other posts, options when activate,...) and soon [examples](http://dev.xiligroup.com/xili-language/) (how to install selected rss...)
+* Provides infos about **text direction** *ltr* ou *rtl* of languages (arabic, hebraic,...) of theme and of each post in loop see note [direction in installation](http://wordpress.org/extend/plugins/xili-language/installation/). Soon more infos and demos for designers if multilingual theme. Some fixes (thanks to Jacob about QuickEdit UI bug when post update).
+* In dashboard : for new post, pre-set default language of author according his browser's language.
+* W3C xml:lang - multilingual widget
+* Counting only published posts and pages, Filter for widget's titles, in admin UI link to posts of one language, compatible with **xili-tidy-tags** plugin to display sub-selection (cloud) of tags according language. - A post [here](http://dev.xiligroup.com/xili-tidy-tags/ "why xili-tidy-tags ?").
+* Data model include default and future sub-group and sorting of languages.
+* hooks to define header metas or language attributes in html tag.
+* Add optional detection of browser language, record undefined state of post,...
+* Add a box in post admin edit UI to easily set link to similar posts in other languages (as formerly with custom fields). More docs in php. (see post about hooks in [dev.xiligroup.com](http://dev.xiligroup.com/?p=504) 
+* Subfolder for langs in theme (see note in [installation](http://wordpress.org/extend/plugins/xili-language/installation/) - T ag for theme : `the_xili_local_time()` to display date...
+* Based on class and oop - New settings UI according to new rules and style of WP 2.7 (meta_boxes, js) - *ONLY USE WITH Wordpress 2.7 and more* - HOOKS (Action, Filter) usable in your functions.php.
 
-** 0.9.9.6 ** add option 'typeone' in default languages list as one example for new multiple list widget.
-** 0.9.9.5 ** php doc enhanced, link to modify linked posts in post edit UI
-** 0.9.9.4 ** New widget for recent comments that can subselect those for current language. (a function `xiliml_recent_comments()` is also available if you want to create a template tag with resulting objects array). Sub selection of archives for `wp_get_archives()` with &lang= [see installation notes](http://wordpress.org/extend/plugins/xili-language/installation/). If frontpage is a page, select correlated page according language [see Other notes](http://wordpress.org/extend/plugins/xili-language/other_notes/). Some issues fixed.
-**0.9.9.3** sub selection of pages for `wp_list_pages()` with &lang=, some fixes (other posts, options when activate,...) and soon [examples](http://dev.xiligroup.com/xili-language/) (how to install selected rss...)
-**0.9.9.2** fixe class of metabox has-right-sidebar for 2.8 - some other admin UI sizing, W3C - improved template-tag default function `xiliml_the_other_posts()` display (if you had hook it in previous version, verify the hook of your functions.php, see php code lines 1314, 1650).
-**NEW: 0.9.9** now provides infos about **text direction** *ltr* ou *rtl* of languages (arabic, hebraic,...) of theme and of each post in loop see note [direction in installation](http://wordpress.org/extend/plugins/xili-language/installation/). Soon more infos and demos for designers if multilingual theme. Some fixes (thanks to Jacob about QuickEdit UI bug when post update). (0.9.9.1 : corrects the error for those who have downloaded the 0.9.9 before 04/26 22h50 gmt - 1000 apologies - )
-**NEW: 0.9.8.3**
-In dashboard : for new post, pre-set default language of author according his browser's language.
-**NEW: 0.9.8.2**
-better query (`get_terms_of_groups_lite`) - fixes W3C xml:lang - multilingual widget
-**NEW: 0.9.8.1**
-Counting only published posts and pages, add filter for widget's titles, in admin UI link to posts of one language, compatible with **xili-tidy-tags** plugin to display sub-selection (cloud) of tags according language. - A post [here](http://dev.xiligroup.com/xili-tidy-tags/ "why xili-tidy-tags ?").
-**NEW: 0.9.8**
-Data model now include default and future sub-group and sorting of languages.
-Add new hooks to define header metas or language attributes in html tag.
-**NEW: 0.9.7.5** 
-Add optional detection of browser language, fixes W3C errors, record undefined state of post,...
-**NEW: 0.9.7.4**
-Add a box in post admin edit UI to easily set link to similar posts in other languages (as formerly with custom fields). More docs in php. (see post about hooks in [dev.xiligroup.com](http://dev.xiligroup.com/?p=504) 
-**NEW: 0.9.7.1**
-fixes (see code script), add subfolder for langs in theme (see note in [installation](http://wordpress.org/extend/plugins/xili-language/installation/) - add new tag for theme : `the_xili_local_time()` to display date...
-**NEW: 0.9.7**
-Based on class and oop - New settings UI according to new rules and style of WP 2.7 (meta_boxes, js) - *ONLY USE WITH Wordpress 2.7 and more* - WITH NEW HOOKS (Action, Filter) usable in your functions.php.
-If you have used old method of hooks as in previous release, now you have the choice of name of your function but you must add `add_filter() or add_action()`. no change in database - beta release -
-
-xili-dictionary is available [here](http://dev.xiligroup.com/?cat=394 "xili-dictionary posts")
+xili-dictionary is available [here](http://dev.xiligroup.com/xili-dictionary/ "xili-dictionary posts")
 
 **Prerequisite**
 Verify that your theme is international compatible (translatable terms like `_e('the term','mytheme')` and no displayed texts 'hardcoded' (example in theme 'default-i18n' of WP).
@@ -165,6 +158,20 @@ dev.xiligroup.com [here](http://dev.xiligroup.com/?p=187 "why xili-language ?")
 and
 www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also usable with mobile as iPhone.
 
+And as you can see in [stats], hundreds of sites use xili-language.
+
+= For commercial websites, is it possible to buy support ? = 
+Yes, use contact form [here](http://dev.xiligroup.com/?page_id=10).
+
+= Support Forum or contact form ? =
+
+Effectively, prefer [forum](http://forum.dev.xiligroup.com/) to obtain some support.
+
+= Does xiligroup provide free themes ? =
+
+No yet, but a lot of well designed themes like fusion or Arclite are very easily adaptable ( or the author incorporates automatic detection of xili-language as presented [here](http://dev.xiligroup.com/?p=427) ). And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoids to use poEdit to update .mo files with contents of terms of your database (categories, ...)
+
+
 == Screenshots ==
 
 1. an example of wp-content/themes folder
@@ -179,18 +186,19 @@ www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also u
 10. xili-language: Special Admin UI sidebox - infos about theme's content for multilingual settings.
 
 == Changelog ==
-= 1.1.8 - 1.1.9 = new features for theme's developers - see code lines - Fix title of wp_get_archives links with current permalinks.
-= 1.1 = improve xiliml_the_others_posts function optionally to return an array of linked posts
+= 1.1.8 - 1.1.9 = new features for theme's developers - see code lines - Fix title of `wp_get_archives` links with current permalinks.
+= 1.1 = improve `xiliml_the_others_posts` function optionally to return an array of linked posts
 = 1.0.2 = fix unexpected like tags metabox added by WP 28 in post edit UI - tracs #10437
 = 1.0 = 
 * New ways to define default language of front-page, 
 * also compatible with new recent WP 2.8.
 * Some fixes. Unique id for category link hook
+
 = 0.9.9.6 = ready for new multiple widgets - fixed filter by in class
 = 0.9.9.5 = php doc enhanced, link to modify linked posts
-= 0.9.9.4 = Recent commments, Get_archives translatable, some fixes or improvements...
+= 0.9.9.4 = Recent commments, 'Get_archives' translatable, some fixes or improvements...
 = 0.9.9.3 = sub selection of pages for `wp_list_pages()` with `&lang=` , some fixes
-= 0.9.9 = give dir of lang ltr or rtl, fixes for cat popup in post edit admin UI, fixes quick-edit update  (0.9.9.1 fixes internal get_cur_language() that now deliver array. 0.9.9.2 fixe class of metabox has-right-sidebar for 2.8, W3C)
+= 0.9.9 = give dir of lang ltr or rtl, fixes for cat popup in post edit admin UI, fixes quick-edit update  (0.9.9.1 fixes internal `get_cur_language()` that now deliver array. 0.9.9.2 fixe class of metabox has-right-sidebar for 2.8, W3C)
 = 0.9.8.3 = (dashboard) for new post, pre-set default language of author according his browser's language.
 = 0.9.8.2 = better query (`get_terms_of_groups_lite`) - fixes W3C xml:lang
 = 0.9.8.1 = Counting only published posts and pages, add filter for widget's titles, in admin UI link to posts of one language, compatible with xili-tidy-tags plugin.
@@ -199,7 +207,7 @@ www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also u
 = 0.9.7.5 = Add detection of browser language, fixes W3C errors, record undefined state of post,...
 = 0.9.7.4 = Add a box in post admin edit UI to easily set link to similar posts in other languages.
 = 0.9.7.1 = fixes, add subfolder for langs in theme - add new tag for theme : `the_xili_local_time()`
-= 0.9.7 = OOP and CLASS coding - New settings UI according to new rules and style of WP 2.7 (meta_boxes, js).
+= 0.9.7 = OOP and CLASS coding - New settings UI according to new rules and style of WP 2.7 (`meta_boxes`, js).
 
 = 0.9.6 = New settings UI according to new rules and style of WP 2.7 (meta_boxes, js)
 
@@ -209,7 +217,7 @@ www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also u
 = 0.9.0 = first public release (beta)
 
 
-© 091103 - MS - dev.xiligroup.com
+© 091105 - MS - dev.xiligroup.com
 
 == More infos ==
 
@@ -221,6 +229,6 @@ This first beta releases are for theme's creator or designer.
 
 The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.com/xili-language/ "Why xili-language ?")
 
-See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/).
+See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/) and [dev.xiligroup Forum](http://forum.dev.xiligroup.com/).
 
 © 2008-2009 - MS - dev.xiligroup.com
