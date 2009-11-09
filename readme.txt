@@ -158,7 +158,7 @@ dev.xiligroup.com [here](http://dev.xiligroup.com/?p=187 "why xili-language ?")
 and
 www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also usable with mobile as iPhone.
 
-And as you can see in [stats], hundreds of sites use xili-language.
+And as you can see in [stats](http://wordpress.org/extend/plugins/xili-language/stats/), hundreds of sites use xili-language.
 
 = For commercial websites, is it possible to buy support ? = 
 Yes, use contact form [here](http://dev.xiligroup.com/?page_id=10).
@@ -217,7 +217,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.0 = first public release (beta)
 
 
-© 091105 - MS - dev.xiligroup.com
+© 091109 - MS - dev.xiligroup.com
 
 == More infos ==
 
