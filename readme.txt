@@ -1,7 +1,7 @@
 === xili-language ===
 Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
-Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n
+Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n
 Requires at least: 2.7
 Tested up to: 2.9
 Stable tag: 1.1.9
@@ -10,7 +10,7 @@ xili-language provides for a multilingual website an automatic selection of lang
 
 == Description ==
 
-**xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s).**
+**xili-language provides for a bilingual (or multilingual) website an automatic selection of language (.mo) in theme according to the language of current post(s).**
 
 * xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. 
 * xili-language select *on the fly* the .mo files present in the theme's folder.  
