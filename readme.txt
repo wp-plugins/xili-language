@@ -1,7 +1,7 @@
 === xili-language ===
 Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
-Tags: theme,post,plugin,posts,page,category,admin,multilingual,taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n
+Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n
 Requires at least: 2.7
 Tested up to: 2.9
 Stable tag: 1.1.9
@@ -10,7 +10,7 @@ xili-language provides for a multilingual website an automatic selection of lang
 
 == Description ==
 
-**xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s).**
+**xili-language provides for a bilingual (or multilingual) website an automatic selection of language (.mo) in theme according to the language of current post(s).**
 
 * xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. 
 * xili-language select *on the fly* the .mo files present in the theme's folder.  
@@ -158,7 +158,7 @@ dev.xiligroup.com [here](http://dev.xiligroup.com/?p=187 "why xili-language ?")
 and
 www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also usable with mobile as iPhone.
 
-And as you can see in [stats], hundreds of sites use xili-language.
+And as you can see in [stats](http://wordpress.org/extend/plugins/xili-language/stats/), hundreds of sites use xili-language.
 
 = For commercial websites, is it possible to buy support ? = 
 Yes, use contact form [here](http://dev.xiligroup.com/?page_id=10).
