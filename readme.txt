@@ -217,7 +217,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.0 = first public release (beta)
 
 
-© 091105 - MS - dev.xiligroup.com
+© 100103 - MS - dev.xiligroup.com
 
 == More infos ==
 
@@ -231,4 +231,4 @@ The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.c
 
 See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/) and [dev.xiligroup Forum](http://forum.dev.xiligroup.com/).
 
-© 2008-2009 - MS - dev.xiligroup.com
+© 2008-2010 - MS - dev.xiligroup.com
