@@ -3,8 +3,8 @@ Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n
 Requires at least: 2.7
-Tested up to: 2.9
-Stable tag: 1.1.9
+Tested up to: 2.9.1
+Stable tag: 1.2.0
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -12,13 +12,15 @@ xili-language provides for a multilingual website an automatic selection of lang
 
 **xili-language provides for a bilingual (or multilingual) website an automatic selection of language (.mo) in theme according to the language of current post(s).**
 
-* xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. 
+* xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. *If the post is in gaelic, the texts of the theme will be in gaelic if the author checks the post as gaelic and if the theme contains the right .mo file for this target language.*
 * xili-language select *on the fly* the .mo files present in the theme's folder.  
 * Themes with *localization* can be easily transformed for realtime multilingual sites. 
 * xili-language is dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 * With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create or update online, via admin UI, the files .mo of each language.
 
+= 1.2.0 = 
+Full tests with lastest wp 2.9.1. New admin UI localization joined (RU - © see header of xili-language-ru_RU.po) 
 = 1.1.9 =
 Intermediate release :
 * Optional improving hooking ways to be compatible with l10n cache of Johan's plugin see line 2200. 
@@ -147,7 +149,7 @@ minimal example in css :
 Archives tags is a very complex template tag in his background and not very easy source hookable. So we decided to add few features : by adding query in vars of the function, it will be possible to display a monthly list of archives for a selected language - `wp_get_archives('..your.vars..&lang=fr_fr')` - or the current the theme language - `wp_get_archives('..your.vars..&lang=')` -. The displayed list of links will be translated and link restrited to display only archives of this language.
 
 
-= Wordpress 2.9-rare =
+= Wordpress 2.9.1 =
 Today, xili-language is 'compatible'.
 
 == Frequently Asked Questions ==
@@ -170,7 +172,6 @@ Effectively, prefer [forum](http://forum.dev.xiligroup.com/) to obtain some supp
 = Does xiligroup provide free themes ? =
 
 No yet, but a lot of well designed themes like fusion or Arclite are very easily adaptable ( or the author incorporates automatic detection of xili-language as presented [here](http://dev.xiligroup.com/?p=427) ). And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoids to use poEdit to update .mo files with contents of terms of your database (categories, ...)
-
 
 == Screenshots ==
 
@@ -216,10 +217,19 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
+© 20100109 - MS - dev.xiligroup.com
 
-© 100103 - MS - dev.xiligroup.com
+== Upgrade Notice ==
+
+Upgrading can be easily procedeed through WP admin UI or through ftp.
+
 
 == More infos ==
+
+= What about plugin settings UI localization ? =
+
+It is simple, if you have translated the settings UI of plugin in your mother language, you send us a message through the contact form that contains the link to your site where you have add the .po and .mo files. Don't forget to fill the header of the .po file with your name and email. If all is ok, the files will be added to the xili-language wp plugins repository. Because I am not able to verify the content, you remain responsible of your translation.
+
 
 = What happens if frontpage is a page ? =
 
