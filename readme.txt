@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n
 Requires at least: 2.7
 Tested up to: 2.9.1
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -18,7 +18,8 @@ xili-language provides for a multilingual website an automatic selection of lang
 * xili-language is dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 * With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create or update online, via admin UI, the files .mo of each language.
-
+= 1.2.1 = 
+Admin UI : fixes some directories issues for (rare) xamp servers - Some improvements in post edit UI.
 = 1.2.0 = 
 Full tests with lastest wp 2.9.1. New admin UI localization joined (RU - © see header of xili-language-ru_RU.po) 
 = 1.1.9 =
@@ -187,6 +188,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 10. xili-language: Special Admin UI sidebox - infos about theme's content for multilingual settings.
 
 == Changelog ==
+= 1.2.1 = fixes some directories issues in (rare) xamp servers - Some improvements in post edit UI.
 = 1.1.8 - 1.1.9 = new features for theme's developers - see code lines - Fix title of `wp_get_archives` links with current permalinks.
 = 1.1 = improve `xiliml_the_others_posts` function optionally to return an array of linked posts
 = 1.0.2 = fix unexpected like tags metabox added by WP 28 in post edit UI - tracs #10437
@@ -217,7 +219,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20100109 - MS - dev.xiligroup.com
+© 20100207 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
