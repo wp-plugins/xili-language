@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n
 Requires at least: 2.7
 Tested up to: 2.9.1
-Stable tag: 1.2.1
+Stable tag: 1.3.0
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -18,6 +18,11 @@ xili-language provides for a multilingual website an automatic selection of lang
 * xili-language is dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 * With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create or update online, via admin UI, the files .mo of each language.
+= 1.3.0 =
+* New functions to change and restore loop's language query-tag (see functions [table](http://dev.xiligroup.com/?p=1432) ).
+* Better dashboard post UI to create linked post: *from one post, it possible to create linked post in another language and the links are prefilled. Just need to save draft to save the links between root and translated posts filled by authors.*
+* fixes lost languages's link when trash or untrash (WP 2.9.1).
+* **Documentation**:  A new [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
 = 1.2.1 = 
 Admin UI : fixes some directories issues for (rare) xamp servers - Some improvements in post edit UI.
 = 1.2.0 = 
@@ -186,8 +191,10 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 8. xili-tidy-tags: Admin Tools UI - see this compatible plugin to group tags according languages
 9. xili-language widget : Admin widgets UI - since 0.9.9.6, "multiple" languages list widget
 10. xili-language: Special Admin UI sidebox - infos about theme's content for multilingual settings.
+11. xili-language: Post Edit UI - when clicking Add New, a new browser window is open and links input are prefilled.
 
 == Changelog ==
+= 1.3.0 = new functions for CMS usages. Better Post Edit UI. Fixes some issues when trash/untrash.
 = 1.2.1 = fixes some directories issues in (rare) xamp servers - Some improvements in post edit UI.
 = 1.1.8 - 1.1.9 = new features for theme's developers - see code lines - Fix title of `wp_get_archives` links with current permalinks.
 = 1.1 = improve `xiliml_the_others_posts` function optionally to return an array of linked posts
@@ -219,7 +226,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20100207 - MS - dev.xiligroup.com
+© 20100215 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
