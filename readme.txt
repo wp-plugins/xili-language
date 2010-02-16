@@ -3,8 +3,8 @@ Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n
 Requires at least: 2.7
-Tested up to: 2.9.1
-Stable tag: 1.3.0
+Tested up to: 2.9.2
+Stable tag: 1.3.1
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -18,22 +18,22 @@ xili-language provides for a multilingual website an automatic selection of lang
 * xili-language is dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 * With **xili-tidy-tags** plugin [here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create or update online, via admin UI, the files .mo of each language.
-= 1.3.0 =
+= 1.3.0, 1.3.1 =
 * New functions to change and restore loop's language query-tag (see functions [table](http://dev.xiligroup.com/?p=1432) ).
-* Better dashboard post UI to create linked post: *from one post, it possible to create linked post in another language and the links are prefilled. Just need to save draft to save the links between root and translated posts filled by authors.*
+* Better dashboard post UI to create linked post (and page): *from one post, it possible to create linked post in another language and the links are prefilled. Just need to save draft to save the links between root and translated posts filled by authors.* [See](http://dev.xiligroup.com/?p=1498)
 * fixes lost languages's link when trash or untrash (WP 2.9.1).
 * **Documentation**:  A new [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
-= 1.2.1 = 
-Admin UI : fixes some directories issues for (rare) xamp servers - Some improvements in post edit UI.
-= 1.2.0 = 
-Full tests with lastest wp 2.9.1. New admin UI localization joined (RU - © see header of xili-language-ru_RU.po) 
-= 1.1.9 =
+= to 1.2.1 from 1.1.8 = 
+* Admin UI : fixes some directories issues for (rare) xamp servers - Some improvements in post edit UI.
+
+* Full tests with lastest wp 2.9.1. New admin UI localization joined (RU - © see header of xili-language-ru_RU.po) 
+
 Intermediate release :
+
 * Optional improving hooking ways to be compatible with l10n cache of Johan's plugin see line 2200. 
 * Automatic detection of `THEME_TEXT_DOMAIN` constant and languages (.mo) sub-folder in theme's folder. More infos in Settings UI Special sidebox.
 * Fixes title of `wp_get_archives` links with current permalinks. Possible that very special permalinks need to use hook named `xiliml_get_archives_link`.
 
-= 1.1.8 =
 This release adds new features dedicated to multilingual theme's creators and webmasters. Some new php functions, a folder to include functions shared by themes (not necessary to put functions in functions.php of the current theme); example with a shortcode to insert link inside content toward another post in a language. A post explaining these improvements can be found [here](http://dev.xiligroup.com/?cat=480&lang=en_us). **Since this release, xili-language is also tested with future wordpress 2.9-rare.**
 
 = summary of main features improved in previous releases up to 1.1 =
@@ -155,7 +155,7 @@ minimal example in css :
 Archives tags is a very complex template tag in his background and not very easy source hookable. So we decided to add few features : by adding query in vars of the function, it will be possible to display a monthly list of archives for a selected language - `wp_get_archives('..your.vars..&lang=fr_fr')` - or the current the theme language - `wp_get_archives('..your.vars..&lang=')` -. The displayed list of links will be translated and link restrited to display only archives of this language.
 
 
-= Wordpress 2.9.1 =
+= Wordpress 2.9.2 =
 Today, xili-language is 'compatible'.
 
 == Frequently Asked Questions ==
@@ -194,6 +194,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 11. xili-language: Post Edit UI - when clicking Add New, a new browser window is open and links input are prefilled.
 
 == Changelog ==
+= 1.3.1 = Just to correct a minor omission - Add New works now for linked pages.
 = 1.3.0 = new functions for CMS usages. Better Post Edit UI. Fixes some issues when trash/untrash.
 = 1.2.1 = fixes some directories issues in (rare) xamp servers - Some improvements in post edit UI.
 = 1.1.8 - 1.1.9 = new features for theme's developers - see code lines - Fix title of `wp_get_archives` links with current permalinks.
@@ -226,7 +227,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20100215 - MS - dev.xiligroup.com
+© 20100216 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
