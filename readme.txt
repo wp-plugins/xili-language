@@ -3,7 +3,7 @@ Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n
 Requires at least: 2.7
-Tested up to: 2.9.2 - 3.0-alpha
+Tested up to: 2.9.2 - 3.0-beta1
 Stable tag: 1.4.2a
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
