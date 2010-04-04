@@ -23,7 +23,7 @@ xili-language provides for a multilingual website an automatic selection of lang
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
 = INFO =
-**INFO FOR TESTS: USE 1.4.2a version compatible with both WP 2.9.2 and WP3.0-alpha**
+**INFO FOR TESTS: USE 1.4.2a version compatible with both WP 2.9.2 and WP3.0-beta1**
 
 = 1.4.1 =
 * Browser's window title now translated for categories (`wp_title()`). Option in post edit UI to auto-search linked posts in other languages - [see this post](http://dev.xiligroup.com/?p=1498).
