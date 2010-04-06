@@ -3,8 +3,8 @@ Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n
 Requires at least: 2.7
-Tested up to: 2.9.2
-Stable tag: 1.4.1
+Tested up to: 3.0-beta
+Stable tag: 1.5.0
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -22,10 +22,18 @@ xili-language provides for a multilingual website an automatic selection of lang
 * **Documentation**:  A new [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
+= 1.5.0 = 
+* incorporate automatic detection of theme domain for WP 3.0 and his new default theme 'twentyten'
+* remains compatible for previous versions WP 2.9.x
+
+= 1.4.2a =
+* Rename two filters for compatibility with filters renamed by WP3.0. Incorporate posts edit UI modifications of WP3.0.
+* no unwanted message in homepage when theme-domain is not defined - plugin must be activated AFTER theme domain settings.
+* improved template_tags : xiliml_the_category, xiliml_the_other_posts (see source doc)
 = 1.4.1 =
 * Browser's window title now translated for categories (`wp_title()`). Option in post edit UI to auto-search linked posts in other languages - [see this post](http://dev.xiligroup.com/?p=1498).
 * New option to adapt the home query according rules defined by chief editor. If home page loop is filled by most recent posts (via index or home.php), formerly, by default xili-language is able to choose the theme's language but not to sub-select the loop (without php coding). Now when checking in Settings *'Modify home query'* - no need to be a php developer.
-* New widget for **recent posts** (able to choose language). This new widget solves conflicts or issues occuring when WP default widget is present (contains an *obscur* `wp_reset_query`). Also a choice of language of this list of recent posts is possible - not necessary the same of the current page. And you can install multiple widgets. **Replace WP Recent Widget by this one named** - *List of recent posts* -
+* New widget for **recent posts** (able to choose language). This new widget solves conflicts or issues occuring when WP default widget is present (contains an *obscur* `wp_reset_query`). Also a choice of language of this list of recent posts is possible - not necessary the same of the current page. And you can install multiple widgets. **Replace WP Recent Posts widget by this one named** - *List of recent posts* -
 
 = 1.3.x =
 * New functions to change and restore loop's language query-tag (see functions [table](http://dev.xiligroup.com/?p=1432) ).
@@ -110,9 +118,14 @@ Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/sc
 6. Modify each post by setting (checking) the language flag in xili-language box at the right of the post editing window before publishing.
 7. If you are webmaster and want to add lot of personalizations in your theme, visit [expert's corner](http://dev.xiligroup.com/?cat=480&lang=en_us).
 
-= SPECIAL NOTE FOR VERSION >= 1.1.9 =
+= SPECIAL NOTE FOR VERSION >= 1.5.0 and WP 3.0 =
 
-With the cost of 50 lines more, plugin now detect automatically (if theme is good) `the theme_text_domain` and languages (.mo) sub-folder. It not mandatory to declare the two constants (but compatible with previous settings).
+Nothing to do in functions.php : only verify that the theme is localizable and functions.php contains a function load_theme_textdomain(); and that the theme's folder contains .mo files (in root or a sub-folder) for each languages of your website. "twentyten" default WP theme is compatible.
+
+
+= SPECIAL NOTE FOR VERSION >= 1.1.9 and WP 2.9.x =
+
+With the cost of 50 lines more, plugin now detect automatically (if theme is good and contains 'domain' inside index.php like in kubrick) `the theme_text_domain` and languages (.mo) sub-folder. It not mandatory to declare the two constants (but compatible with previous settings). 
 Only encapsule the `load_theme_textdomain()` like in that example for a theme named fusion:
 
 `
@@ -120,6 +133,7 @@ if (!class_exists('xili_language')) { // class in not (!) present...
    load_theme_textdomain('fusion', get_template_directory() . '/lang');	
 }
 `
+Sometimes, it is necessary to declare constant like below because index.php of the theme don't contain `_e( , ) or __( , )` functions.
 
 = NOTE = 
 In the functions php file of the theme : replace by commenting `load_theme_textdomain` line  `//load_theme_textdomain('mythemename'); ` by a *define* `define('THEME_TEXTDOMAIN','mythemename'); //second text must be used in theme texts with _e( , ) or __( , )` where 'mythemename' is `'kubrik'` in default international theme.
@@ -251,6 +265,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 13. xili-language: Post Edit UI - Check option to auto search will be useful for editor when working on existing posts and with multiple authors.
 
 == Changelog ==
+= 1.5.0 = incorporate automatic detection of theme domain for WP 3.0 (compatible with WP 2.9.x)
 = 1.4.1 = wp_title translation for categories, () suppressed in cats list display -see FAQ-, auto-search linked posts option
 = 1.4.0 = Option to modify home query according rules by chief editor. Fixes gold functions. New Recent Posts Widget.
 = 1.3.1 = Just to correct a minor omission - Add New works now for linked pages.
@@ -286,7 +301,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20100221 - MS - dev.xiligroup.com
+© 20100404 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
