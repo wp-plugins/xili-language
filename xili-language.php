@@ -1511,7 +1511,7 @@ class xili_language {
 						foreach ($lines as $line) { 
 							$i = preg_match_all("/_[_e]\('(.*)', ?'(.*)'/Ui", $line, $matches,PREG_PATTERN_ORDER);
 		 					if ($i > 0) { 
-								$resultterms = array_merge ($resultterms, $matches[1]);
+								//$resultterms = array_merge ($resultterms, $matches[1]);
 								$domain = $matches[2][0];
 								$this->xili_settings['theme_domain'] = $domain;
 								update_option('xili_language_settings', $this->xili_settings);
