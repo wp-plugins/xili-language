@@ -22,6 +22,11 @@ xili-language provides for a multilingual website an automatic selection of lang
 * **Documentation**:  A new [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
+**IMPORTANT NOTE** : to prepare switch to WP3.0 (3.0-beta) single or multisite (wpmu) - see [Other versions](http://wordpress.org/extend/plugins/xili-language/download/). The most recent version remains compatible with current WP 2.9.x.
+
+TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) 
+
+
 = 1.5.0 = 
 * incorporate automatic detection of theme domain for WP 3.0 and his new default theme 'twentyten'
 * remains compatible for previous versions WP 2.9.x
