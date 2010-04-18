@@ -1,10 +1,10 @@
 === xili-language ===
 Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
-Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n
+Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n, wpmu
 Requires at least: 2.7
 Tested up to: 3.0-beta
-Stable tag: 1.5.0
+Stable tag: 1.5.2
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -17,13 +17,18 @@ xili-language provides for a multilingual website an automatic selection of lang
 * Themes with *localization* can be easily transformed for realtime multilingual sites. 
 * xili-language is dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
-* With **xili-tidy-tags** [plugin here](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create or update online, via admin UI, the files .mo of each language.
+
+**IMPORTANT NOTE** : to prepare switch to WP3.0 (3.0-beta) single or multisite (wpmu) - see [Other versions](http://wordpress.org/extend/plugins/xili-language/download/). The most recent version remains compatible with current WP 2.9.x.
+
+TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) 
+
+* With [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create or update online, via admin UI, the files .mo of each language.
 * xili-language plugin **does not create addition tables in the database**. xili-language simply makes proper use of the taxonomy tables and postmeta table offered by WordPress to define language and link items between them. Because xili-language plugin does not modify deeply the post edit UI, it is possible to use **iPhone / iPod Touch** Wordpress app to prepare and draft the post.
 * **Documentation**:  A new [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
-= 1.5.0 = 
-* incorporate automatic detection of theme domain for WP 3.0 and his new default theme 'twentyten'
+= 1.5.2 = 
+* WP 3.0 (mono or multisite): incorporates automatic detection of theme domain and his new default theme 'twentyten'
 * remains compatible for previous versions WP 2.9.x
 
 = 1.4.2a =
@@ -120,12 +125,15 @@ Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/sc
 
 = SPECIAL NOTE FOR VERSION >= 1.5.0 and WP 3.0 =
 
-Nothing to do in functions.php : only verify that the theme is localizable and functions.php contains a function load_theme_textdomain(); and that the theme's folder contains .mo files (in root or a sub-folder) for each languages of your website. "twentyten" default WP theme is compatible.
+Nothing to do in functions.php : only verify that the theme is localizable and functions.php contains a function `load_theme_textdomain();` and that the theme's folder contains .mo files (in root or a sub-folder) for each languages of your website. "twentyten" default WP theme is compatible.
 
+Plugin is backward compatible for theme of monosite. But if you upgrade, it is better to restore you theme with default `load_theme_textdomain();`. Delete lines concerned by constants THEME_TEXTDOMAIN and languages sub-folder THEME_LANGS_FOLDER.
+NOTE FOR THEMES DESIGNER : If your theme is compatible both for newest (>3.0-apha) and older versions, add some conditional lines.
 
-= SPECIAL NOTE FOR VERSION >= 1.1.9 and WP 2.9.x =
+= SPECIAL NOTE FOR VERSION >= 1.5.0 and WP 2.9.x =
 
-With the cost of 50 lines more, plugin now detect automatically (if theme is good and contains 'domain' inside index.php like in kubrick) `the theme_text_domain` and languages (.mo) sub-folder. It not mandatory to declare the two constants (but compatible with previous settings). 
+Example with 'fusion' theme that offers localization:
+
 Only encapsule the `load_theme_textdomain()` like in that example for a theme named fusion:
 
 `
@@ -133,17 +141,12 @@ if (!class_exists('xili_language')) { // class in not (!) present...
    load_theme_textdomain('fusion', get_template_directory() . '/lang');	
 }
 `
-Sometimes, it is necessary to declare constant like below because index.php of the theme don't contain `_e( , ) or __( , )` functions.
 
-= NOTE = 
-In the functions php file of the theme : replace by commenting `load_theme_textdomain` line  `//load_theme_textdomain('mythemename'); ` by a *define* `define('THEME_TEXTDOMAIN','mythemename'); //second text must be used in theme texts with _e( , ) or __( , )` where 'mythemename' is `'kubrik'` in default international theme.
-
-Another example with fusion theme that offer localization :
-
+Example with a theme theme that offer localization but not permit automatic detection (no terms with domain inside index.php) :
 replace
 
 `function init_language(){
-	load_theme_textdomain('fusion', get_template_directory() . '/lang');
+	load_theme_textdomain('thedomain', get_template_directory() . '/lang');
 }`
 
 by
@@ -151,14 +154,14 @@ by
 `function init_language(){
 	if (class_exists('xili_language')) {
 		define('THEME_TEXTDOMAIN','fusion');
-		define('THEME_LANGS_FOLDER','/lang');
 	} else {
-	   load_theme_textdomain('fusion', get_template_directory() . '/lang');	
+	   load_theme_textdomain('thedomain', get_template_directory() . '/lang');	
 	}
 	
 }`
 
-see the [recent post](http://dev.xiligroup.com/?p=427 "Transform a theme with localization").
+see the [post](http://dev.xiligroup.com/?p=427 "Transform a theme with localization").
+
 
 = Browser detection for visitors or authors =
 To change the language of the frontpage according to the language of the visitor's browser, check the popup in right small box in settings.
@@ -196,10 +199,11 @@ minimal example in css :
 Archives tags is a very complex template tag in his background and not very easy source hookable. So we decided to add few features : by adding query in vars of the function, it will be possible to display a monthly list of archives for a selected language - `wp_get_archives('..your.vars..&lang=fr_fr')` - or the current the theme language - `wp_get_archives('..your.vars..&lang=')` -. The displayed list of links will be translated and link restrited to display only archives of this language.
 
 
-= Wordpress 2.9.2 =
-Today, xili-language is 'compatible'.
-
 == Frequently Asked Questions ==
+
+= What about WPMU and the trilogy [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) ? =
+
+Since WP 3.0-alpha, if multisite is activated, the trilogy is now compatible and will include progressively some improvements dedicaded especially for WPMU context. Future specific docs will be available for registered webmasters.
 
 = How to see post or page ID in dashbord ? =
 
@@ -211,7 +215,7 @@ Yes, only translated cat name remains. But, if you want to recover the old behav
 `
 function my_rules_for_cat_language ($content, $category = null, $curlang='') {
 		if (!is_admin()) : /*to detect admin UI*/
-	      	$new_cat_name =  __($category->name,THEME_TEXTDOMAIN); 
+	      	$new_cat_name =  __($category->name,the_theme_domain()); 
 	      	if ($new_cat_name != $content) : 
 	      		$new_cat_name .= " (". $content .") ";
 	      	endif
@@ -265,7 +269,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 13. xili-language: Post Edit UI - Check option to auto search will be useful for editor when working on existing posts and with multiple authors.
 
 == Changelog ==
-= 1.5.0 = incorporate automatic detection of theme domain for WP 3.0 (compatible with WP 2.9.x)
+= 1.5.2 = incorporate automatic detection of theme domain for WP 3.0 (mono and multisite) (compatible with WP 2.9.x)
 = 1.4.1 = wp_title translation for categories, () suppressed in cats list display -see FAQ-, auto-search linked posts option
 = 1.4.0 = Option to modify home query according rules by chief editor. Fixes gold functions. New Recent Posts Widget.
 = 1.3.1 = Just to correct a minor omission - Add New works now for linked pages.
@@ -301,13 +305,13 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20100404 - MS - dev.xiligroup.com
+© 20100418 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
 As usually, don' forgot to backup the database before major upgrade.
 Upgrading can be easily procedeed through WP admin UI or through ftp.
-
+Verify you install latest version of trilogy.
 
 == More infos ==
 
