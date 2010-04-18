@@ -1,7 +1,7 @@
 === xili-language ===
 Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
-Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n, wpmu
+Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n, wpmu, multisite
 Requires at least: 2.7
 Tested up to: 3.0-beta
 Stable tag: 1.5.2
@@ -17,6 +17,8 @@ xili-language provides for a multilingual website an automatic selection of lang
 * Themes with *localization* can be easily transformed for realtime multilingual sites. 
 * xili-language is dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
+
+**IMPORTANT NOTE** : to prepare switch to WP3.0 (3.0-beta) single or multisite (wpmu) - see [Other versions](http://wordpress.org/extend/plugins/xili-language/download/). The most recent version remains compatible with current WP 2.9.x.
 
 TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) 
 
