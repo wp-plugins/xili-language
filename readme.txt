@@ -153,7 +153,7 @@ by
 
 `function init_language(){
 	if (class_exists('xili_language')) {
-		define('THEME_TEXTDOMAIN','fusion');
+		define('THEME_TEXTDOMAIN','thedomain');
 	} else {
 	   load_theme_textdomain('thedomain', get_template_directory() . '/lang');	
 	}
