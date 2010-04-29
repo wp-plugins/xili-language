@@ -4,21 +4,19 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n, wpmu
 Requires at least: 2.7
 Tested up to: 3.0-beta
-Stable tag: 1.5.2
+Stable tag: 1.5.3
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
 == Description ==
 
-**xili-language provides for a bilingual (or multilingual) website an automatic selection of language (.mo) in theme according to the language of current post(s).**
+**xili-language provides for a bilingual (or multilingual) website an automatic selection of language (.mo) in theme according to the language of current post(s) or page. Theme's behaviour can be fully personalized through hooks and api**
 
 * xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. *If the post is in gaelic, the texts of the theme will be in gaelic if the author checks the post as gaelic and if the theme contains the right .mo file for this target language.*
 * xili-language select *on the fly* the .mo files present in the theme's folder.  
 * Themes with *localization* can be easily transformed for realtime multilingual sites. 
 * xili-language is dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
-
-**IMPORTANT NOTE** : to prepare switch to WP3.0 (3.0-beta) single or multisite (wpmu) - see [Other versions](http://wordpress.org/extend/plugins/xili-language/download/). The most recent version remains compatible with current WP 2.9.x.
 
 TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) 
 
@@ -27,9 +25,10 @@ TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/
 * **Documentation**:  A new [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
-= 1.5.2 = 
+= 1.5.2, 3 = 
 * WP 3.0 (mono or multisite): incorporates automatic detection of theme domain and his new default theme 'twentyten'
 * remains compatible for previous versions WP 2.9.x
+* some fixes
 
 = 1.4.2a =
 * Rename two filters for compatibility with filters renamed by WP3.0. Incorporate posts edit UI modifications of WP3.0.
@@ -153,7 +152,7 @@ by
 
 `function init_language(){
 	if (class_exists('xili_language')) {
-		define('THEME_TEXTDOMAIN','fusion');
+		define('THEME_TEXTDOMAIN','thedomain');
 	} else {
 	   load_theme_textdomain('thedomain', get_template_directory() . '/lang');	
 	}
@@ -201,8 +200,8 @@ Archives tags is a very complex template tag in his background and not very easy
 
 == Frequently Asked Questions ==
 
-= What about WPMU and the trilogy [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) ? =
-
+= What about WPMU and the trilogy ? =
+[xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/)
 Since WP 3.0-alpha, if multisite is activated, the trilogy is now compatible and will include progressively some improvements dedicaded especially for WPMU context. Future specific docs will be available for registered webmasters.
 
 = How to see post or page ID in dashbord ? =
@@ -269,6 +268,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 13. xili-language: Post Edit UI - Check option to auto search will be useful for editor when working on existing posts and with multiple authors.
 
 == Changelog ==
+= 1.5.3 = fixes default_slug - both for wp and wpmu - thanks ju-ju.com
 = 1.5.2 = incorporate automatic detection of theme domain for WP 3.0 (mono and multisite) (compatible with WP 2.9.x)
 = 1.4.1 = wp_title translation for categories, () suppressed in cats list display -see FAQ-, auto-search linked posts option
 = 1.4.0 = Option to modify home query according rules by chief editor. Fixes gold functions. New Recent Posts Widget.
@@ -305,7 +305,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20100418 - MS - dev.xiligroup.com
+© 20100429 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
