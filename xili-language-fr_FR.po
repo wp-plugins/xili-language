@@ -1,0 +1,200 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xili_language\n"
+"POT-Creation-Date: 2009-04-04 11:58+0100\n"
+"PO-Revision-Date: 2010-02-20 23:01+0100\n"
+"Last-Translator: dev.xiligroup.com <contact@xiligroup.com>\n"
+"Language-Team: dev.xiligroup.com <contact@xiligroup.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: trunk\n"
+
+msgid "A new language was added."
+msgstr "Une nouvelle langue a été ajoutée."
+
+msgid "Language to update."
+msgstr "Langue à mettre à jour."
+
+msgid "A language was updated."
+msgstr "Une langue a été mise à jour."
+
+msgid "A language to delete."
+msgstr "Langue à effacer."
+
+msgid "A language was deleted."
+msgstr "Une langue a été supprimée."
+
+msgid "Find above the list of languages."
+msgstr "Voici la liste des langues."
+
+msgid "Language"
+msgstr "Langue"
+
+msgid "Languages"
+msgstr "Langues"
+
+msgid "List of languages"
+msgstr "Liste des langues"
+
+msgid "Full name"
+msgstr "Nom complet "
+
+msgid "Name"
+msgstr "Nom "
+
+msgid "Language slug"
+msgstr "Code "
+
+msgid "Order"
+msgstr "Ordre "
+
+msgid "Note:"
+msgstr "Note et message :"
+
+msgid "Update"
+msgstr "Mettre à jour "
+
+msgid "Edit language"
+msgstr "Editer la langue"
+
+msgid "Delete language ?"
+msgstr "Supprimer la langue ?"
+
+msgid "This plugin was developed with the taxonomies, terms tables and tags specifications. <br /> Here a new taxonomy was created and used for languages of posts and pages. <br /> New radiobuttons are available in Post (and Page) write and edit admin pages for selection by author. It is updated for WP 2.9 since 1.1"
+msgstr "Ce plugin a été développé sur la base des tables taxonomy et terms... <br />Ici, on règle la gestion des langues. <br />Dans la colonne droite des pages d'édition des pages et articles, il y a sur le côté droit un selecteur radio-bouton des langues à choisir. Il est mis à jour pour WP 2.9. depuis la version 1.1"
+
+msgid "Add a language"
+msgstr "Ajouter une langue"
+
+msgid "Add &raquo;"
+msgstr "Ajouter…"
+
+msgid "Delete &raquo;"
+msgstr "Supprimer…"
+
+msgid "Update &raquo;"
+msgstr "Mettre à jour…"
+
+msgid "Selected language"
+msgstr "Langue choisie"
+
+msgid "english"
+msgstr "anglais"
+
+msgid "belgium french"
+msgstr "belge"
+
+msgid "french"
+msgstr "français"
+
+msgid "german"
+msgstr "allemand"
+
+msgid "undefined"
+msgstr "non définie"
+
+msgid "Display"
+msgstr "Voir"
+
+msgid "Post ID"
+msgstr "N° du post"
+
+msgid "Page ID"
+msgstr "N° de page"
+
+msgid "Post's language"
+msgstr "Langue de l'article"
+
+msgid "Page's language"
+msgstr "Langue de la page"
+
+msgid "Linked posts"
+msgstr "Articles liés"
+
+msgid "Linked pages"
+msgstr "Pages liées"
+
+msgid "ID of posts in other languages:"
+msgstr "N° des articles en d'autres langues"
+
+msgid "ID of pages in other languages:"
+msgstr "N° des pages en d'autres langues"
+
+msgid "Check"
+msgstr "Cocher"
+
+msgid "to auto search linked posts. (read docs)"
+msgstr "pour auto-chercher les liens (lire la doc)"
+
+msgid "to auto search linked pages. (read docs)"
+msgstr "pour auto-chercher les liens (lire la doc)"
+
+msgid "Settings"
+msgstr "Réglages"
+
+msgid "Select by default browser language of visitor"
+msgstr "Choisir par défaut la langue du navigateur de l'internaute."
+
+msgid "For new post, pre-select by default: browser language of author"
+msgstr "Pour un nouvel article, choisir par défaut la langue du navigateur de l'auteur."
+
+msgid "Language of visitor's browser"
+msgstr "Langue du navigateur"
+
+msgid "Select language of the home page"
+msgstr "Choix de la langue de la page d'accueil"
+
+msgid "Software defined"
+msgstr "définie par logiciel"
+
+msgid "Enable gold functions"
+msgstr "Active les fonctions xilidev"
+
+msgid "Set undefined posts..."
+msgstr "Affecter une langue aux articles indéfinis..."
+
+msgid "Choose target language…"
+msgstr "Choisir la langue cible…"
+
+msgid "Error: other post not present !!!"
+msgstr "Erreur : l'article est absent !!!"
+
+msgid "Special"
+msgstr "Fonctions spéciales"
+
+msgid "Special Gold Actions"
+msgstr "Actions spéciales \"Or\""
+
+msgid "xili-language plugin : THEME_TEXTDOMAIN UNDEFINED"
+msgstr "Extension xili-language : Constante THEME_TEXTDOMAIN non définie"
+
+msgid "no theme domain in index.php"
+msgstr "pas de domaine theme détecté dans index.php"
+
+msgid "no index.php in theme, domain not set"
+msgstr "pas de fichier index.php dans le thème, domain non affecté"
+
+msgid "Theme's informations:"
+msgstr "Informations sur le thème :"
+
+msgid "theme_domain:"
+msgstr "domaine du thème :"
+
+msgid "as function like:"
+msgstr "tel qu'ici :"
+
+msgid "Theme domain NOT defined"
+msgstr "domaine du thème non défini"
+
+msgid "Languages sub-folder:"
+msgstr "Sous dossier des fichiers '.mo' :"
+
+msgid "Available MO files:"
+msgstr "Fichiers .mo disponibles :"
+
