@@ -25,7 +25,7 @@ TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/
 * **Documentation**:  A new [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
-= 1.5.2, 3, 4= 
+= 1.5.x = 
 * WP 3.0 (mono or multisite): incorporates automatic detection of theme domain and his new default theme 'twentyten'
 * remains compatible for previous versions WP 2.9.x
 * some fixes - see changes log.
