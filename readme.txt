@@ -1,5 +1,5 @@
 === xili-language ===
-Contributors: MS dev.xiligroup.com
+Contributors: michelwppi
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n, wpmu
 Requires at least: 2.7
