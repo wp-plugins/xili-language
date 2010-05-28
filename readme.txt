@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n, wpmu
 Requires at least: 2.7
 Tested up to: 3.0-beta
-Stable tag: 1.5.4
+Stable tag: 1.5.5
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -25,7 +25,7 @@ TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/
 * **Documentation**:  A new [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
-= 1.5.2, 3, 4= 
+= 1.5.2, 3, 4, 5 = 
 * WP 3.0 (mono or multisite): incorporates automatic detection of theme domain and his new default theme 'twentyten'
 * remains compatible for previous versions WP 2.9.x
 * some fixes - see changes log.
@@ -268,6 +268,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 13. xili-language: Post Edit UI - Check option to auto search will be useful for editor when working on existing posts and with multiple authors.
 
 == Changelog ==
+= 1.5.5 = add filters for comment form live translation (themedomain). Display info if list not set. Fixes linked post/page creation issue in WP3.
 = 1.5.4 = fixes widget title translation issue - recover previous behaviour
 = 1.5.3 = fixes default_slug - both for wp and wpmu - thanks ju-ju.com
 = 1.5.2 = incorporate automatic detection of theme domain for WP 3.0 (mono and multisite) (compatible with WP 2.9.x)
@@ -306,7 +307,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20100503 - MS - dev.xiligroup.com
+© 20100527 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
