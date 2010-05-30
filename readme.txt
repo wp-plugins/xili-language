@@ -3,7 +3,7 @@ Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n, wpmu
 Requires at least: 2.7
-Tested up to: 3.0-beta
+Tested up to: 3.0-RC1
 Stable tag: 1.5.5
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
@@ -27,6 +27,7 @@ TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/
 
 = 1.5.2, 3, 4, 5 = 
 * WP 3.0 (mono or multisite): incorporates automatic detection of theme domain and his new default theme 'twentyten'
+* A demo in multisite mode with WP 3.0 and 'twentyten' is [here](http://multilingual.wpmu.xilione.com).
 * remains compatible for previous versions WP 2.9.x
 * some fixes - see changes log.
 
