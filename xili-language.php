@@ -1418,6 +1418,7 @@ class xili_language {
 		$submit_text = __('Add &raquo;','xili-language');
 		$cancel_text = __('Cancel');
 		$action = '';
+		$language = '';
 		if (isset($_POST['reset'])) {
 			$action=$_POST['reset'];
 		} elseif ( isset($_POST['updateoptions']) || isset($_POST['innavenable']) ) {
@@ -1552,7 +1553,7 @@ class xili_language {
 		add_meta_box('xili-language-sidebox-3', __('Settings','xili-language'), array(&$this,'on_sidebox_3_content'), $this->thehook , 'side', 'core');
 		
 		/* form datas in array for do_meta_boxes() */
-		$data = array('message'=>$message,'messagepost'=>$messagepost,'action'=>$action, 'formtitle'=>$formtitle, 'language'=>$language,'submit_text'=>$submit_text,'cancel_text'=>$cancel_text,'browseroption'=>$this->browseroption, 'authorbrowseroption'=>$this->authorbrowseroption , 'functions_enable'=>$this->functions_enable, 'list_in_nav_enable'=>$this->xili_settings['in_nav_menu']);
+		$data = array('message'=>$message, 'action'=>$action, 'formtitle'=>$formtitle, 'language'=>$language,'submit_text'=>$submit_text,'cancel_text'=>$cancel_text,'browseroption'=>$this->browseroption, 'authorbrowseroption'=>$this->authorbrowseroption , 'functions_enable'=>$this->functions_enable, 'list_in_nav_enable'=>$this->xili_settings['in_nav_menu']);
 		?>
 		
 		<div id="xili-language-settings" class="wrap" style="min-width:750px">
@@ -2850,7 +2851,7 @@ function xiliml_get_the_translated_time($thetime, $format = '') {
 	$theformat = (''== $format) ? get_option('time_format') : $format ;
 	return the_xili_wp_local_time($theformat,strtotime(xiliml_get_the_time('m/d/Y H:i')));
 }
-add_filter('get_the_time','xiliml_get_the_translated_time',10,3);
+//add_filter('get_the_time','xiliml_get_the_translated_time',10,3);
 
 /** Clone w/o filter */
 function xiliml_get_the_time( $d = '', $post = null ) {
@@ -2884,12 +2885,12 @@ function xiliml_get_the_date( $d = '' ) {
 }
 
 /* filter for template tag: get_comment_date() */
-function xiliml_comment_date($comment_time, $format = '') {
+function xiliml3_comment_date($comment_time, $format = '') {
   $theformat = (''== $format) ? get_option('date_format') : $format ;
   return the_xili_wp_local_time($theformat, strtotime(get_comment_time ('m/d/Y H:i'))); 
   /* impossible to use get_comment_date as it is itself filtered*/
 }
-add_filter('get_comment_date','xiliml_comment_date',10,2);
+add_filter('get_comment_date','xiliml3_comment_date',10,2);
 
 
 /**

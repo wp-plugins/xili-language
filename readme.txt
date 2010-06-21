@@ -2,7 +2,7 @@
 Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n, wpmu
-Requires at least: 2.7
+Requires at least: 2.9
 Tested up to: 3.0
 Stable tag: 1.6.0
 
@@ -332,7 +332,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20100621 - MS - dev.xiligroup.com
+© 20100622 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
