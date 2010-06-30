@@ -15,6 +15,7 @@ xili-language provides for a multilingual website an automatic selection of lang
 * xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. *If the post is in gaelic, the texts of the theme will be in gaelic if the author checks the post as gaelic and if the theme contains the right .mo file for this target language.*
 * xili-language select *on the fly* the .mo files present in the theme's folder.  
 * Themes with *localization* can be easily transformed for realtime multilingual sites. 
+* **NEW:** With now WordPress 3.0, the default theme named **twentyten** can be used without php coding for a multilingual site [as shown here](http://multilingual.wpmu.xilione.com). Plugin works on mono or multisite mode. 
 * xili-language is dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 
@@ -234,7 +235,7 @@ Since WP 3.0-alpha, if multisite is activated, the trilogy is now compatible and
 
 = How to see post or page ID in dashbord ? =
 
-*Reveal IDs for WP Admin* is an efficient plugin [found](http://wordpress.org/extend/plugins/reveal-ids-for-wp-admin-25/) in WP repository.
+*Reveal IDs for WP Admin* is an efficient plugin [found](http://wordpress.org/extend/plugins/reveal-ids-for-wp-admin-25/) in WP repository. Now since 1.6.0, IDs are displayed in sidebox UI of post edit window.
 
 = Since 1.4.1, after the translated lines, the parenthesis containing root languages *disappear* in sidebar categories list ? =
 
@@ -336,7 +337,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20100629 - MS - dev.xiligroup.com
+© 20100630 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
