@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n, wpmu
 Requires at least: 2.7
 Tested up to: 3.0
-Stable tag: 1.6.0
+Stable tag: 1.6.1
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -15,6 +15,7 @@ xili-language provides for a multilingual website an automatic selection of lang
 * xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. *If the post is in gaelic, the texts of the theme will be in gaelic if the author checks the post as gaelic and if the theme contains the right .mo file for this target language.*
 * xili-language select *on the fly* the .mo files present in the theme's folder.  
 * Themes with *localization* can be easily transformed for realtime multilingual sites. 
+* **NEW:** With now WordPress 3.0, the default theme named **twentyten** can be used without php coding for a multilingual site [as shown here](http://multilingual.wpmu.xilione.com). Plugin works on mono or multisite mode. 
 * xili-language is dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 
@@ -24,6 +25,10 @@ TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/
 * xili-language plugin **does not create addition tables in the database**. xili-language simply makes proper use of the taxonomy tables and postmeta table offered by WordPress to define language and link items between them. Because xili-language plugin does not modify deeply the post edit UI, it is possible to use **iPhone / iPod Touch** Wordpress app to prepare and draft the post.
 * **Documentation**:  A new [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
+
+= 1.6.1 =
+* Add new features to manage sticky posts ( [see this post in demo website](http://multilingual.wpmu.xilione.com/) )
+* Fixes refresh of THEME_TEXTDOMAIN for old WP 2.9.x
 
 = 1.6.0 =
 * Improvements mainly for WP 3.0
@@ -230,7 +235,7 @@ Since WP 3.0-alpha, if multisite is activated, the trilogy is now compatible and
 
 = How to see post or page ID in dashbord ? =
 
-*Reveal IDs for WP Admin* is an efficient plugin [found](http://wordpress.org/extend/plugins/reveal-ids-for-wp-admin-25/) in WP repository.
+*Reveal IDs for WP Admin* is an efficient plugin [found](http://wordpress.org/extend/plugins/reveal-ids-for-wp-admin-25/) in WP repository. Now since 1.6.0, IDs are displayed in sidebox UI of post edit window.
 
 = Since 1.4.1, after the translated lines, the parenthesis containing root languages *disappear* in sidebar categories list ? =
 
@@ -281,17 +286,17 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 2. the admin settings UI
 3. the language setting in post writting UI
 4. coding extract with 'international' text in 'xiliphone' theme
-5. xili-dictionary: Admin Tools UI - list of translated terms 
-6. xili-dictionary: Admin Tools UI - functionalities windows
-7. xili-language: Admin Tools UI - set homepage and author according his browser's language.
-8. xili-tidy-tags: Admin Tools UI - see this compatible plugin to group tags according languages
-9. xili-language widget: Admin widgets UI - since 0.9.9.6, "multiple" languages list widget
-10. xili-language: Special Admin UI sidebox - infos about theme's content for multilingual settings.
-11. xili-language: Post Edit UI - when clicking Add New, a new browser window is open and links input are prefilled.
-12. xili-language widgets: the new "multiple" widget to display list of recent posts in a choosen language.
-13. xili-language: Post Edit UI - Check option to auto search will be useful for editor when working on existing posts and with multiple authors.
+5. xili-dictionary: Admin Tools UI - functionalities windows
+6. xili-language: Admin Tools UI - set homepage and author according his browser's language.
+7. xili-tidy-tags: Admin Tools UI - see this compatible plugin to group tags according languages
+8. xili-language widget: Admin widgets UI - since 0.9.9.6, "multiple" languages list widget
+11. xili-language: Special Admin UI sidebox - infos about theme's content for multilingual settings.
+12. xili-language: Post Edit UI - when clicking Add New, a new browser window is open and links input are prefilled.
+13. xili-language widgets: the new "multiple" widget to display list of recent posts in a choosen language.
+14. xili-language: Post Edit UI - Check option to auto search will be useful for editor when working on existing posts and with multiple authors.
 
 == Changelog ==
+= 1.6.1 = Add new features to manage sticky posts. Fixes refresh of THEME_TEXTDOMAIN for old WP 2.9.x
 = 1.6.0 = new features for WP3.0, see description tab and docs later.
 = 1.5.5 = add filters for comment form live translation (themedomain). Display info if list not set. Fixes linked post/page creation issue in WP3.
 = 1.5.4 = fixes widget title translation issue - recover previous behaviour
@@ -332,7 +337,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20100621 - MS - dev.xiligroup.com
+© 20100630 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
