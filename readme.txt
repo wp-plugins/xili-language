@@ -26,6 +26,11 @@ TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/
 * **Documentation**:  A new [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
+= roadmap =
+* the readme file is under complete rewritting.
+* some functions will improved by new hooks (front-page selection).
+* multilingual feature will be tested with new post-type introduced by WP 3.0.
+
 = 1.6.1 =
 * Add new features to manage sticky posts ( [see this post in demo website](http://multilingual.wpmu.xilione.com/) )
 * Fixes refresh of THEME_TEXTDOMAIN for old WP 2.9.x
