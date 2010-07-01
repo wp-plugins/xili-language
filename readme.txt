@@ -143,19 +143,22 @@ NOTE FOR THEMES DESIGNER : If your theme is compatible both for newest (>3.0-aph
 
 NOTE FOR COMMENT FORM IN WP 3.0:
 Today with WP3.0, comments form language is based on default language of admin UI and not on theme's language. xili-language solves this features. So you need to add this terms msgid in the .po of your theme for translation used by xili-language. In future version, xili-dictionary will add this option to avoid tedious copy and paste !
-`Name`
-`Email`
-`Website`
-`Comment`
-`You must be <a href="%s">logged in</a> to post a comment.`
-`Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>`
-`Your email address will not be published.`
-` Required fields are marked <span class="required">*</span>`
-`You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:`
-`Leave a Reply`
-`Leave a Reply to %s`
-`Cancel reply`
-`Post Comment`
+
+`
+Name
+Email
+Website
+Comment
+You must be <a href="%s">logged in</a> to post a comment.
+Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>
+Your email address will not be published.
+ Required fields are marked <span class="required">*</span>
+You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:
+Leave a Reply
+Leave a Reply to %s
+Cancel reply
+Post Comment
+`
 
 
 = SPECIAL NOTE FOR VERSION >= 1.5.0 and WP 2.9.x =
