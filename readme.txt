@@ -1,10 +1,10 @@
 === xili-language ===
 Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
-Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization,widget,language,international, i18n, l10n, wpmu
-Requires at least: 2.7
+Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite
+Requires at least: 2.9
 Tested up to: 3.0
-Stable tag: 1.6.1
+Stable tag: 1.7.1
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -15,7 +15,7 @@ xili-language provides for a multilingual website an automatic selection of lang
 * xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. *If the post is in gaelic, the texts of the theme will be in gaelic if the author checks the post as gaelic and if the theme contains the right .mo file for this target language.*
 * xili-language select *on the fly* the .mo files present in the theme's folder.  
 * Themes with *localization* can be easily transformed for realtime multilingual sites. 
-* **NEW:** With now WordPress 3.0, the default theme named **twentyten** can be used without php coding for a multilingual site [as shown here](http://multilingual.wpmu.xilione.com). Plugin works on mono or multisite mode. 
+* **NEW:** With now WordPress 3.0, the default theme named **twentyten** can be used without php coding for a multilingual site [as shown here](http://multilingual.wpmu.xilione.com). xili-language plugin works on mono or multisite mode. 
 * xili-language is dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a multilingual cms like website.
 
@@ -26,41 +26,30 @@ TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/
 * **Documentation**:  A new [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
-= 1.6.1 =
+= roadmap =
+* the readme file is under complete rewritting.
+* multilingual features tested with new post-type introduced by WP 3.0. Will be documented for webmasters (please send an email).
+
+= 1.7.0 - 1.7.1 =
+* some functions are improved through new hooks (front-page selection).
+* fixes unexpected rewritting (when permalinks is set) and fixes query of category without languages.
+* optional automatic insertion of selection by language of pages in top nav menu (WP 3.0 and twentyten) before list of languages. Possible to adapt parameters as in template-tag ` wp_pages_list()` .
+* **For developers:** `xiliml_cur_lang_head` filter is now obsolete and replace by `xiliml_curlang_action_wp` - see code source - the mechanism for frontpage (home recent posts list or page) is changed and don't now use redundant queries.
+* **For developers:** if you use `xili_language_list` hook action to create your own list - verify it if you use page as frontpage because 'hlang' querytag is now obsolete.
+* **Latest version compatible with WP 2.9.x**
+
+= 1.6.0 - 1.6.1 =
 * Add new features to manage sticky posts ( [see this post in demo website](http://multilingual.wpmu.xilione.com/) )
 * Fixes refresh of THEME_TEXTDOMAIN for old WP 2.9.x
-
-= 1.6.0 =
 * Improvements mainly for WP 3.0
 * more functions to transform without coding site based on famous new twentyten theme. (article later)
-* possible to complete top nav menu with languages list for website home selection.
+* possible to complete top nav menu with languages list for website home selection in two ways.
 * new functions for developpers/webmasters: `xili_get_listlanguages()`, see source.
 * example of language's definition (popup) to add new language.
 * Language list widget: list of available options added (hookable also).
 * some parts of source rewritten.
 
-= 1.5.2, 3, 4, 5 = 
-* WP 3.0 (mono or multisite): incorporates automatic detection of theme domain and his new default theme 'twentyten'
-* A demo in multisite mode with WP 3.0 and 'twentyten' is [here](http://multilingual.wpmu.xilione.com).
-* remains compatible for previous versions WP 2.9.x
-* some fixes - see changes log.
-
-= 1.3.x  to 1.4.2a =
-* Rename two filters for compatibility with filters renamed by WP3.0. Incorporate posts edit UI modifications of WP3.0.
-* no unwanted message in homepage when theme-domain is not defined - plugin must be activated AFTER theme domain settings.
-* improved template_tags : xiliml_the_category, xiliml_the_other_posts (see source doc)
-* Browser's window title now translated for categories (`wp_title()`). Option in post edit UI to auto-search linked posts in other languages - [see this post](http://dev.xiligroup.com/?p=1498).
-* New option to adapt the home query according rules defined by chief editor. If home page loop is filled by most recent posts (via index or home.php), formerly, by default xili-language is able to choose the theme's language but not to sub-select the loop (without php coding). Now when checking in Settings *'Modify home query'* - no need to be a php developer.
-* New widget for **recent posts** (able to choose language). This new widget solves conflicts or issues occuring when WP default widget is present (contains an *obscur* `wp_reset_query`). Also a choice of language of this list of recent posts is possible - not necessary the same of the current page. And you can install multiple widgets. **Replace WP Recent Posts widget by this one named** - *List of recent posts* -
-* New functions to change and restore loop's language query-tag (see functions [table](http://dev.xiligroup.com/?p=1432) ).
-* Better dashboard post UI to create linked post (and page): *from one post, it possible to create linked post in another language and the links are prefilled. Just need to save draft to save the links between root and translated posts filled by authors.* [See](http://dev.xiligroup.com/?p=1498)
-* fixes lost languages's link when trash or untrash (WP 2.9.1).
-
-
-= summary of main features improved in previous releases up to 1.2.1 =
-
-*(this chapter is rewritten for 1.4.1 - see readme in [previous versions](http://wordpress.org/extend/plugins/xili-language/download/) to read the chronology)*
-
+= xili-language and template tags =
 
 * xili-language "*translates*" template tags and permits some variations for webmasters:
 
@@ -83,13 +72,10 @@ improved `xiliml_the_others_posts()` function and theme tag to be used in multil
 
 * widget for recent comments that can subselect those for current language. (a function `xiliml_recent_comments()` is also available if you want to create a template tag with resulting objects array).
 
-* ...
-* Automatic detection of `THEME_TEXT_DOMAIN` constant and languages (.mo) sub-folder in theme's folder. More infos in Settings UI Special sidebox.
 
 = Technical infos =
 
-
-**Prerequisite: **
+**Prerequisite:**
 Verify that your theme is international compatible (translatable terms like `_e('the term','mytheme')` and no displayed texts 'hardcoded' (example in theme 'default-i18n' of WP).
 
 * Based on class and oop - New settings UI according to new rules and style of WP 2.7 (meta_boxes, js) - *ONLY USE WITH Wordpress 2.7 and more* - Hooks (Action, Filter) usable in your functions.php.
@@ -107,7 +93,8 @@ Verify that your theme is international compatible (translatable terms like `_e(
 * hooks to define header metas or language attributes in html tag.
 
 **More infos and docs**
-… other texts and more descriptions [here](http://dev.xiligroup.com/xili-language/ "why xili-language ?")
+
+* other texts and more descriptions [here](http://dev.xiligroup.com/xili-language/ "why xili-language ?")
 
 = Compatibility =
 
@@ -116,9 +103,6 @@ xili-language is compatible with the plugin [xili-dictionary](http://dev.xiligro
 xili-language is full compatible with the plugin [xilitheme-select](http://wordpress.org/extend/plugins/xilitheme-select/ "xilitheme-select") to be used with iPhone, iPod Touch or other mobiles.
 
 xili-language is compatible with the plugin [xili-tidy-tags](http://dev.xiligroup.com/xili-tidy-tags/ ). xili-tidy-tags lets you create multiple group of tags. That way, you can have a tag cloud for tags in English, another cloud for French tags, another for Spanish ones, and so on. You can also use the plugin for more than multilingual blogs. Basically, you can create any group of tags you want.
-
-
-
 
 More informations on the site [dev.xiligroup.com](http://dev.xiligroup.com/ "xiligroup plugins")
 
@@ -138,24 +122,27 @@ Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/sc
 
 Nothing to do in functions.php : only verify that the theme is localizable and functions.php contains a function `load_theme_textdomain();` and that the theme's folder contains .mo files (in root or a sub-folder) for each languages of your website. "twentyten" default WP theme is compatible.
 
-Plugin is backward compatible for theme of monosite. But if you upgrade, it is better to restore you theme with default `load_theme_textdomain();`. Delete lines concerned by constants THEME_TEXTDOMAIN and languages sub-folder THEME_LANGS_FOLDER.
+Plugin is backward compatible for theme of monosite. But if you upgrade, it is better to restore your theme with default `load_theme_textdomain();`. Delete lines concerned by constants THEME_TEXTDOMAIN and languages sub-folder THEME_LANGS_FOLDER.
 NOTE FOR THEMES DESIGNER : If your theme is compatible both for newest (>3.0-apha) and older versions, add some conditional lines.
 
 NOTE FOR COMMENT FORM IN WP 3.0:
-Today with WP3.0, comments form language is based on default language of admin UI and not on theme's language. xili-language solves this features. So you need to add this terms msgid in the .po of your theme for translation used by xili-language. In future version, xili-dictionary will add this option to avoid tedious copy and paste !
-`Name`
-`Email`
-`Website`
-`Comment`
-`You must be <a href="%s">logged in</a> to post a comment.`
-`Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>`
-`Your email address will not be published.`
-` Required fields are marked <span class="required">*</span>`
-`You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:`
-`Leave a Reply`
-`Leave a Reply to %s`
-`Cancel reply`
-`Post Comment`
+Today with WP3.0, comments form language is based on default language of admin UI and not on theme's language. xili-language solves this features. So you need to add this terms msgid in the .po of your theme for translation used by xili-language. In latest version, xili-dictionary adds this option to avoid tedious copy and paste !
+
+`
+Name
+Email
+Website
+Comment
+You must be <a href="%s">logged in</a> to post a comment.
+Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>
+Your email address will not be published.
+ Required fields are marked <span class="required">*</span>
+You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:
+Leave a Reply
+Leave a Reply to %s
+Cancel reply
+Post Comment
+`
 
 
 = SPECIAL NOTE FOR VERSION >= 1.5.0 and WP 2.9.x =
@@ -256,12 +243,13 @@ add_filter('xiliml_cat_language','my_rules_for_cat_language',2,3);
 
 `
 
-
 = Where can I see websites using this plugin ? =
 
 dev.xiligroup.com [here](http://dev.xiligroup.com/?p=187 "why xili-language ?")
 and
 www.xiliphone.mobi [here](http://www.xiliphone.mobi "a theme for mobile") also usable with mobile as iPhone.
+
+As multisite demo, visit the working site made with twentyone default theme: [as shown here](http://multilingual.wpmu.xilione.com) 
 
 And as you can see in [stats](http://wordpress.org/extend/plugins/xili-language/stats/), hundreds of sites use xili-language.
 
@@ -274,7 +262,7 @@ Yes, use contact form [here](http://dev.xiligroup.com/?page_id=10).
 
 = Support Forum or contact form ? =
 
-Effectively, prefer [forum](http://forum.dev.xiligroup.com/) to obtain some support.
+Effectively, prefer [forum](http://forum2.dev.xiligroup.com/) to obtain some support.
 
 = Does xiligroup provide free themes ? =
 
@@ -296,12 +284,38 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 14. xili-language: Post Edit UI - Check option to auto search will be useful for editor when working on existing posts and with multiple authors.
 
 == Changelog ==
-= 1.6.1 = Add new features to manage sticky posts. Fixes refresh of THEME_TEXTDOMAIN for old WP 2.9.x
-= 1.6.0 = new features for WP3.0, see description tab and docs later.
-= 1.5.5 = add filters for comment form live translation (themedomain). Display info if list not set. Fixes linked post/page creation issue in WP3.
-= 1.5.4 = fixes widget title translation issue - recover previous behaviour
-= 1.5.3 = fixes default_slug - both for wp and wpmu - thanks ju-ju.com
-= 1.5.2 = incorporate automatic detection of theme domain for WP 3.0 (mono and multisite) (compatible with WP 2.9.x)
+
+= 1.7.0 - 1.7.1 =
+* new messages in admin ui, multilingual pages in nav menu
+* new front-page mechanisms, ready for other post_types, better queries join
+* **latest version compatible with 2.9.x** (too much tests and options)
+
+= 1.6.x =
+* Add sticky_posts IDs array translation (Jacob's suggestion) - fixes refresh theme_textdomain for old WP 2.9.x)
+* DB queries reducing: xili_get_listlanguages() = list of language objects in settings (updated only when changed)
+* In WP 3.0, possible to complete top nav menu with lang list and more
+
+= 1.5.2, 3, 4, 5 = 
+* WP 3.0 (mono or multisite): incorporates automatic detection of theme domain and his new default theme 'twentyten'
+* A demo in multisite mode with WP 3.0 and 'twentyten' is [here](http://multilingual.wpmu.xilione.com).
+* remains compatible for previous versions WP 2.9.x
+* some fixes - see changes log.
+
+= 1.3.x  to 1.4.2a =
+* Rename two filters for compatibility with filters renamed by WP3.0. Incorporate posts edit UI modifications of WP3.0.
+* no unwanted message in homepage when theme-domain is not defined - plugin must be activated AFTER theme domain settings.
+* improved template_tags : xiliml_the_category, xiliml_the_other_posts (see source doc)
+* Browser's window title now translated for categories (`wp_title()`). Option in post edit UI to auto-search linked posts in other languages - [see this post](http://dev.xiligroup.com/?p=1498).
+* New option to adapt the home query according rules defined by chief editor. If home page loop is filled by most recent posts (via index or home.php), formerly, by default xili-language is able to choose the theme's language but not to sub-select the loop (without php coding). Now when checking in Settings *'Modify home query'* - no need to be a php developer.
+* New widget for **recent posts** (able to choose language). This new widget solves conflicts or issues occuring when WP default widget is present (contains an *obscur* `wp_reset_query`). Also a choice of language of this list of recent posts is possible - not necessary the same of the current page. And you can install multiple widgets. **Replace WP Recent Posts widget by this one named** - *List of recent posts* -
+* New functions to change and restore loop's language query-tag (see functions [table](http://dev.xiligroup.com/?p=1432) ).
+* Better dashboard post UI to create linked post (and page): *from one post, it possible to create linked post in another language and the links are prefilled. Just need to save draft to save the links between root and translated posts filled by authors.* [See](http://dev.xiligroup.com/?p=1498)
+* fixes lost languages's link when trash or untrash (WP 2.9.1).
+
+= summary of main features improved in previous releases up to 1.2.1 =
+
+*(this chapter is rewritten for 1.4.1 - see readme in [previous versions](http://wordpress.org/extend/plugins/xili-language/download/) to read the chronology)*
+
 = 1.4.1 = wp_title translation for categories, () suppressed in cats list display -see FAQ-, auto-search linked posts option
 = 1.4.0 = Option to modify home query according rules by chief editor. Fixes gold functions. New Recent Posts Widget.
 = 1.3.1 = Just to correct a minor omission - Add New works now for linked pages.
@@ -337,13 +351,13 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20100630 - MS - dev.xiligroup.com
+© 20100722 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
-As usually, don' forgot to backup the database before major upgrade.
+As usually, don't forget to backup the database before major upgrade or testing no-current version.
 Upgrading can be easily procedeed through WP admin UI or through ftp.
-Verify you install latest version of trilogy.
+Verify you install latest version of trilogy (xili-language, xili-tidy-tags, xili-dictionary).
 
 == More infos ==
 
@@ -354,7 +368,7 @@ It is simple, if you have translated the settings UI of plugin in your mother la
 
 = What happens if frontpage is a page ? =
 
-Since 0.9.9.4, the plugin incorporates now features that are formerly possible through the hookable functions of xili-language. The page frontpage must have her clones in each other languages. As for posts, if the user's browser is not in the default language, xili-language will display the page in the corresponding language if set by the editor. [home page of website dev.xiligroup.com](http://dev.xiligroup.com/) uses this feature.
+Since 0.9.9.4, the plugin incorporates now features that are formerly possible through the hookable functions of xili-language. The page as frontpage must have its clones in each other languages. Like for posts, if the user's browser is not in the default language, xili-language will display the page in the corresponding language if set by the editor. [home page of website dev.xiligroup.com](http://dev.xiligroup.com/) uses this feature. New mechanism with 3.0 and version 1.7.0
 
 
 The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.com/xili-language/ "Why xili-language ?")
