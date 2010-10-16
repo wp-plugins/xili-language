@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite
 Requires at least: 2.9
 Tested up to: 3.0
-Stable tag: 1.7.1
+Stable tag: 1.8.0
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -27,8 +27,10 @@ TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
 = roadmap =
-* the readme file is under complete rewritting.
-* multilingual features tested with new post-type introduced by WP 3.0. Will be documented for webmasters (please send an email).
+* the readme file is under continuous rewritting. Visit also [Forum](http://forum2.dev.xiligroup.com/) to obtain some support about now usable multililingual custom post.
+
+= 1.8.0 =
+* now, if checked in settings, a custom post type can be multilingual as post or page type.
 
 = 1.7.0 - 1.7.1 =
 * some functions are improved through new hooks (front-page selection).
@@ -278,13 +280,17 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 6. xili-language: Admin Tools UI - set homepage and author according his browser's language.
 7. xili-tidy-tags: Admin Tools UI - see this compatible plugin to group tags according languages
 8. xili-language widget: Admin widgets UI - since 0.9.9.6, "multiple" languages list widget
-11. xili-language: Special Admin UI sidebox - infos about theme's content for multilingual settings.
-12. xili-language: Post Edit UI - when clicking Add New, a new browser window is open and links input are prefilled.
-13. xili-language widgets: the new "multiple" widget to display list of recent posts in a choosen language.
-14. xili-language: Post Edit UI - Check option to auto search will be useful for editor when working on existing posts and with multiple authors.
+9. xili-language: Special Admin UI sidebox - infos about theme's content for multilingual settings.
+10. xili-language: Post Edit UI - when clicking Add New, a new browser window is open and links input are prefilled.
+11. xili-language: Widget to display recent posts in choosen language.
+12. xili-language: Post Edit UI - Check option to auto search will be useful for editor when working on existing posts and with multiple authors.
+13. Since 1.8.0, if checked in settings, a custom post type can be multilingual like post or page type.
+14. Edit screen: example of a custom post type named letter.
 
 == Changelog ==
 
+= 1.8.0 =
+* if checked in settings, a custom post type can be multilingual like post or page type.
 = 1.7.0 - 1.7.1 =
 * new messages in admin ui, multilingual pages in nav menu
 * new front-page mechanisms, ready for other post_types, better queries join
@@ -351,7 +357,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20100722 - MS - dev.xiligroup.com
+© 20101008 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
