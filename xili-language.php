@@ -725,7 +725,7 @@ class xili_language {
 	   		// in wp3 the detection is only done here (end user side by theme domain) so updated is mandatory for xili-dico
 	   		if ( $this->xili_settings['langs_folder'] != $langs_folder ) { 
 		 		$this->xili_settings['langs_folder'] = $langs_folder ;
-		 		update_option('xili_dictionary_settings', $this->xili_settings);
+		 		update_option('xili_language_settings', $this->xili_settings); // bug
 		 	}
 	   		return true;
 	   }	
