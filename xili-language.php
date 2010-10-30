@@ -8,7 +8,7 @@ Version: 1.8.1
 Author URI: http://dev.xiligroup.com
 */
 
-# updated 101028 - 1.8.1 - can choose the nav menu to insert automatically languages list - child theme compatibility - better date to strftime
+# updated 101030 - 1.8.1 - can choose the nav menu to insert automatically languages list - child theme compatibility - better date to strftime
 # updated 101008 - 1.8.0 - setting added to automatic adjontion of multilingual custom post type
 # updated 100721 - 1.7.1 - new messages in admin ui, multilingual pages in nav menu
 # updated 100713 - 1.7.0 - new front-page mechanisms, ready for other post_types, better queries join, fixes category query
