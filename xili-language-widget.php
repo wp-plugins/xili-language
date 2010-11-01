@@ -309,10 +309,10 @@ class xili_language_Widgets extends WP_Widget {
 		
 		$instance['title'] = strip_tags($new_instance['title']);
 		$instance['number'] = (int) $new_instance['number'];
-		$instance['beforelist'] = $new_instance['beforelist'];
-		$instance['beforeline'] = $new_instance['beforeline'];
-		$instance['afterline'] = $new_instance['afterline'];
-		$instance['afterlist'] = $new_instance['afterlist'];
+		$instance['beforelist'] = stripslashes($new_instance['beforelist']);
+		$instance['beforeline'] = stripslashes($new_instance['beforeline']);
+		$instance['afterline'] = stripslashes($new_instance['afterline']);
+		$instance['afterlist'] = stripslashes($new_instance['afterlist']);
 		$instance['theoption'] = strip_tags(stripslashes($new_instance['theoption']));
 		
 		return $instance;
