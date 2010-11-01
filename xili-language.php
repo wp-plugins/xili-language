@@ -2626,7 +2626,7 @@ class xili_language {
 					    $where .= " AND tt.term_id = $wherereqtag ";
 					}
 				$query = "SELECT * FROM $wpdb->comments".$join." WHERE comment_approved = '1' ".$where." ORDER BY comment_date_gmt DESC LIMIT $number"; 
-				echo $query;
+				//echo $query;
 				$comments = $wpdb->get_results($query);
 				wp_cache_add( 'xili_language_recent_comments', $comments, 'widget' );
 		}
