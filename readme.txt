@@ -6,7 +6,7 @@ Requires at least: 2.9
 Tested up to: 3.0
 Stable tag: 1.8.2
 
-xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
+xili-language lets you create and manage a WP website in multiple languages with yours or most famous localizable themes. 
 
 == Description ==
 
