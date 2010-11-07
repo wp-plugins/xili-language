@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite
 Requires at least: 2.9
 Tested up to: 3.0
-Stable tag: 1.8.0
+Stable tag: 1.8.4
 
 xili-language provides for a multilingual website an automatic selection of language (.mo) in theme according to the language of current post(s). 
 
@@ -27,8 +27,21 @@ TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
 = roadmap =
-* the readme file is under continuous rewritting. Visit also [Forum](http://forum2.dev.xiligroup.com/) to obtain some support about now usable multililingual custom post.
+* the readme file is under continuous rewritting. Visit also [Forum](http://forum2.dev.xiligroup.com/) to obtain more support about now usable multilingual custom post.
+* more features for creator of child themes.
+* next release 1.9 will stop compatibilty with WP 2.9 - to much tests !
+* delivery of a premium version (with attrative fees) packaged with professional support.
 
+= 1.8.3 - 1.8.4 =
+* query for posts with undefined language `lang=*`, improved widget languages list (condition)
+* widgets rewritten as widget class extend.
+* search form improved
+* fixes
+= 1.8.2 =
+* as expected by some webmasters, 'in' before language is not displayed before name in language list.
+* better automatic insertion of nav menu for theme with several location. 
+* now compatible with child theme - see [Forum](http://forum2.dev.xiligroup.com/forum.php?id=1)
+* improve date to strftime format translation.
 = 1.8.0 =
 * now, if checked in settings, a custom post type can be multilingual as post or page type.
 
@@ -289,6 +302,21 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 
 == Changelog ==
 
+= 1.8.4 = 
+* query with undefined lang `*`, (changed XILI_CATS_ALL)
+* widget languages list with display condition
+* fixes 
+* known issues : sometimes need to repeat add a language to see result in setting list.
+= 1.8.3 =
+* widgets rewritten as widget class extend.
+* search form improved
+= 1.8.2 =
+* fixes a annoying bug by beta 1.8.1 that disable listing of terms in xili-dictionary (detected after 24h)
+* as expected by some webmasters, 'in' before language is not displayed before name in language list.
+* better automatic insertion of nav menu for theme with several location. 
+* now compatible with child theme - see [Forum](http://forum2.dev.xiligroup.com/forum.php?id=1)
+* improve date to strftime format translation.
+* fixes in widget admin UI
 = 1.8.0 =
 * if checked in settings, a custom post type can be multilingual like post or page type.
 = 1.7.0 - 1.7.1 =
@@ -357,7 +385,7 @@ No yet, but a lot of well designed themes like fusion or Arclite are very easily
 = 0.9.2 = second public release (beta) ready to include xili-dictionary plugin (tools)
 = 0.9.0 = first public release (beta)
 
-© 20101008 - MS - dev.xiligroup.com
+© 20101107 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 
