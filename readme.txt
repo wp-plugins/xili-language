@@ -411,6 +411,6 @@ Since 0.9.9.4, the plugin incorporates now features that are formerly possible t
 
 The plugin post is frequently updated [dev.xiligroup.com](http://dev.xiligroup.com/xili-language/ "Why xili-language ?")
 
-See also the [Wordpress plugins forum](http://wordpress.org/tags/xili-language/) and [dev.xiligroup Forum](http://forum.dev.xiligroup.com/).
+See also the [dev.xiligroup Forum](http://forum2.dev.xiligroup.com/).
 
 © 2008-2010 - MS - dev.xiligroup.com
