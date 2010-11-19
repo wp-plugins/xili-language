@@ -34,7 +34,7 @@ TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/
 
 = 1.8.5 =
 * improve automatic languages sub-folder detection and caution message if `load_textdomain()` is missing and not active in functions.php
-* repairs oversight about bookmarks taxonomies (blogroll) : now it is possible in widget to sub-select links according language and in template tag wp_list_bookmarks()
+* repairs oversight about bookmarks taxonomies (blogroll) : now it is possible in widget to sub-select links according language and in template tag `wp_list_bookmarks()`
 = 1.8.3 - 1.8.4 =
 * query for posts with undefined language `lang=*`, improved widget languages list (condition)
 * widgets rewritten as widget class extend.
