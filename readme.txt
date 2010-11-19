@@ -32,6 +32,10 @@ TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/
 * next release 1.9 will stop compatibilty with WP 2.9 - to much tests !
 * delivery of a premium version (with attrative fees) packaged with professional support.
 
+= soon 1.8.5 =
+* [available in ](http://wordpress.org/extend/plugins/xili-language/download/)
+* improve automatic languages sub-folder detection and caution message if `load_textdomain()` is missing and not active in functions.php
+* repairs oversight about bookmarks taxonomies (blogroll) : now it is possible in widget to sub-select links according language and in template tag `wp_list_bookmarks()`
 = 1.8.3 - 1.8.4 =
 * query for posts with undefined language `lang=*`, improved widget languages list (condition)
 * widgets rewritten as widget class extend.
