@@ -1425,7 +1425,7 @@ class xili_language {
 			add_meta_box('xili-language-sidebox-1', __('Message','xili-language'), array(&$this,'on_sidebox_1_content'), $this->thehook , 'side', 'core');
 			add_meta_box('xili-language-sidebox-2', __('Info','xili-language'), array(&$this,'on_sidebox_2_content'), $this->thehook , 'side', 'core');
 			add_meta_box('xili-language-sidebox-4', __('Special','xili-language'), array(&$this,'on_sidebox_4_content'), $this->thehook , 'side', 'core');
-			
+			add_meta_box('xili-language-sidebox-mail', __('Mail & Support','xili-language'), array(&$this,'on_sidebox_mail_content'), $this->thehook , 'normal', 'low');
 	}
 
 	/**
@@ -1901,10 +1901,10 @@ class xili_language {
 			    
 		}
 		/* register the main boxes always available */
-		add_meta_box('xili-language-normal-1', __('List of languages','xili-language'), array(&$this,'on_normal_1_content'), $this->thehook , 'normal', 'core', 'high'); 
-		add_meta_box('xili-language-normal-2', __('Language','xili-language'), array(&$this,'on_normal_2_content'), $this->thehook , 'normal', 'core', 'high');
-		add_meta_box('xili-language-sidebox-3', __('Settings','xili-language'), array(&$this,'on_sidebox_3_content'), $this->thehook , 'side', 'core', 'high');
-		add_meta_box('xili-language-sidebox-mail', __('Mail & Support','xili-language'), array(&$this,'on_sidebox_mail_content'), $this->thehook , 'normal', 'core', 'low');
+		add_meta_box('xili-language-normal-1', __('List of languages','xili-language'), array(&$this,'on_normal_1_content'), $this->thehook , 'normal', 'high'); 
+		add_meta_box('xili-language-normal-2', __('Language','xili-language'), array(&$this,'on_normal_2_content'), $this->thehook , 'normal', 'high');
+		add_meta_box('xili-language-sidebox-3', __('Settings','xili-language'), array(&$this,'on_sidebox_3_content'), $this->thehook , 'side', 'high');
+		
 		
 		$themessages[1] = __('A language to delete.','xili-language');
 		$themessages[2] = __('A language was deleted.','xili-language');
