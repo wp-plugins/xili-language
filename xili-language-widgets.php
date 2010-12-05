@@ -180,8 +180,8 @@ class xili_Widget_Recent_Posts extends WP_Widget {
 class xili_WP_Widget_Recent_Comments extends WP_Widget {
 	
 	function xili_WP_Widget_Recent_Comments() {
-		$widget_ops = array('classname' => 'xili_widget_recent_comments', 'description' => __( 'The most recent comments by xili-language' ) );
-		$this->WP_Widget('xili-recent-comments', __('Recent Comments list'), $widget_ops);
+		$widget_ops = array('classname' => 'xili_widget_recent_comments', 'description' => __( 'The most recent comments by xili-language','xili-language-widget' ) );
+		$this->WP_Widget('xili-recent-comments', __('Recent Comments list','xili-language-widget'), $widget_ops);
 		$this->alt_option_name = 'xili_widget_recent_comments';
 
 		if ( is_active_widget(false, false, $this->id_base) )
