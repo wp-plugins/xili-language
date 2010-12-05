@@ -2909,6 +2909,7 @@ class xili_language {
  	*/
 	
 	function add_new_widgets() {
+		load_plugin_textdomain('xili-language-widget',PLUGINDIR.'/'.dirname(plugin_basename(__FILE__)), dirname(plugin_basename(__FILE__))); // 1.8.8.1 fixes translation and red messages
  		register_widget('xili_Widget_Recent_Posts'); // since 1.3.2
  		register_widget('xili_WP_Widget_Recent_Comments'); // since 1.8.3 
  		register_widget('xili_language_Widgets'); // since 1.8.3 
@@ -4022,7 +4023,7 @@ function xiliml3_comment_date($comment_time, $format = '') {
 add_filter('get_comment_date','xiliml3_comment_date',10,2);
 
 
-require_once (dirname(__FILE__) . '/xili-language-widget.php');
+require_once (dirname(__FILE__) . '/xili-language-widgets.php');
 
 
 /**
