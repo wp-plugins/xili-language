@@ -1,16 +1,16 @@
 === xili-language ===
 Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
-Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll
+Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 1.8.6
+Stable tag: 1.8.8
 
 xili-language lets you create and manage a WP website in multiple languages with yours or most famous localizable themes. Ready for CMS developers. 
 
 == Description ==
 
-**xili-language provides for a bilingual (or multilingual) website an automatic selection of language (.mo) in theme according to the language of current post(s) or page. Theme's behaviour can be fully personalized through hooks and api**
+**xili-language lets you create and manage a WP website in multiple languages with yours or most famous localizable themes. Ready for CMS developers. xili-language provides for a bilingual (or multilingual) website an automatic selection of language (.mo) in theme according to the language of current post(s) or page. Theme's behaviour can be fully personalized through hooks and api.**
 
 * xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. *If the post is in gaelic, the texts of the theme will be in gaelic if the author checks the post as gaelic and if the theme contains the right .mo file for this target language.*
 * xili-language select *on the fly* the .mo files present in the theme's folder.  
@@ -27,14 +27,17 @@ TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
 = roadmap =
-* the readme file is ending rewritting and will only contains infos for WP 3.
 * Visit also [Forum](http://forum2.dev.xiligroup.com/) to obtain more support about now usable multilingual custom post.
 * more features for creators of child themes.
-* next release 1.9 will stop compatibilty with WP 2.9 - to much tests !
+* next release 1.9 will stop compatibilty with WP 2.9 - too much tests !
 * delivery of a premium version (with attrative fees) packaged with professional support.
 
-= News from 1.8.0 to 1.8.6 =
+= News from 1.8.0 to 1.8.8 =
 
+* first very good tests of compatibility with WP 3.1.
+* add ways to use two letters `WPLANG` as japanese (xili-dictionary also updated to 1.3.3) - see [More Infos tab](http://wordpress.org/extend/plugins/xili-language/other_notes/) .
+* optional total uninstall with all datas and options set by xili-language (taxonomies, postmetas,… associated with posts and links).
+* options to switch domain (plugin or default) for gettext functions.
 * improve automatic languages sub-folder detection and caution message if `load_textdomain()` is missing and not active in functions.php
 * repairs oversight about bookmarks taxonomies (blogroll) : now it is possible in widget to sub-select links according language and in template tag `wp_list_bookmarks()`
 
@@ -237,6 +240,13 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 
 == Changelog ==
 
+= 1.8.6 to 1.8.8 =
+
+* complete gettext filters - include optional activation of the 3 widgets. - add use `WPLANG` with 2 chars as *ja* for japanese
+* add gettext filter to change domain for visitor side of widget and other plugins.
+* optional total uninstall with all datas and options set by xili-language.
+* readme rewritten - email metabox at bottom.
+
 = 1.8.5 =
 * improve automatic languages sub-folder detection and caution message if `load_textdomain()` is missing and not active in functions.php
 * repairs oversight about bookmarks taxonomies (blogroll) : now it is possible in widget to sub-select links according language and in template tag `wp_list_bookmarks()`
@@ -295,7 +305,7 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 * …
 = 0.9.0 = first public release (beta)
 
-© 20101122 - MS - dev.xiligroup.com
+© 20101205 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
@@ -308,6 +318,10 @@ Verify you install latest version of trilogy (xili-language, xili-tidy-tags, xil
 = What about plugin admin settings UI localization ? =
 
 It is simple, if you have translated the settings UI of plugin in your mother language, you send us a message through the contact form that contains the link to your site where you have add the .po and .mo files. Don't forget to fill the header of the .po file with your name and email. If all is ok, the files will be added to the xili-language wp plugins repository. Because I am not able to verify the content, you remain responsible of your translation.
+
+= What about languages with 2 letters WPLANG as in wp-config.php like japanese ? =
+
+Before version 1.8.8, it was necessary to change wp-config.php like japanese and set **WPLANG** to ISO : from *ja* to **ja_JA**. Now with 1.8.8, the trilogy is updated, it is not necessary. So very easy for a japanese to transform his site in a multilingual site by adding other language files. For other mother languages, just add the japanese (ja.mo) inside languages sub-folder ot the theme [kept here](http://ja.wordpress.org/).
 
 = What about bookmarks and sub-selection according current language of displayed loop ? =
 
