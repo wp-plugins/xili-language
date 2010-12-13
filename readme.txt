@@ -6,7 +6,7 @@ Requires at least: 3.0
 Tested up to: 3.1
 Stable tag: 1.8.9
 
-xili-language lets you create and manage a WP website in multiple languages with yours or most famous localizable themes. Ready for CMS developers. 
+xili-language lets you create and manage a WP website in multiple languages with yours or most famous localizable themes. Ready for CMS developers and designers. 
 
 == Description ==
 
@@ -317,7 +317,7 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 * …
 = 0.9.0 = first public release (beta)
 
-© 20101212 - MS - dev.xiligroup.com
+© 20101213 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
