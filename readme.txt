@@ -6,20 +6,20 @@ Requires at least: 3.0
 Tested up to: 3.1
 Stable tag: 1.8.9
 
-xili-language lets you create and manage a WP website in multiple languages with yours or most famous localizable themes. Ready for CMS developers. 
+xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
 == Description ==
 
-**xili-language provides for a bilingual (or multilingual) website an automatic selection of language (.mo) in theme according to the language of current post(s) or page. Theme's behaviour can be fully personalized through hooks and api.**
+**xili-language provides for a bilingual (or multilingual) website an automatic selection of language (.mo) in theme according to the language of current post(s) or page. Theme's behaviour can be fully personalized through hooks and api. Ready for CMS developers and designers.**
 
 * xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. *If the post is in gaelic, the texts of the theme will be in gaelic if the author checks the post as gaelic and if the theme contains the right .mo file for this target language.*
-* xili-language select *on the fly* the .mo files present in the theme's folder.  
+* xili-language select *on the fly* the multilingual .mo files present in the theme's folder.  
 * Themes with *localization* can be easily transformed for realtime multilingual sites. 
 * **NEW:** With now WordPress 3.0, the default theme named **twentyten** can be used without php coding for a multilingual site [as shown here](http://multilingual.wpmu.xilione.com). xili-language plugin works on mono or multisite mode. 
-* xili-language is dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
+* xili-language is also dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a cms like multilingual website.
 
-TRILOGY FOR MULTILINGUAL CMS SITE : [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) 
+TRILOGY FOR MULTILINGUAL CMS WEBSITE : [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) 
 
 * With [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create or update online, via admin UI, the files .mo of each language.
 * xili-language plugin **does not create addition tables in the database**. xili-language simply makes proper use of the taxonomy tables and postmeta table offered by WordPress to define language and link items between them. Because xili-language plugin does not modify deeply the post edit UI, it is possible to use **iPhone / iPod Touch** Wordpress app to prepare and draft the post.
@@ -246,7 +246,7 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 == Changelog ==
 
 = 1.8.9 =
-
+* add n in date formatting translation (1.8.9.1) 
 * filter by languages in Posts edit list.
 * add filter 'xili_nav_lang_list' to control nav menu automatic insertion by php webmasters.
 * add filter 'xili_nav_page_list' to control automatic sub-selection of pages.
@@ -317,7 +317,7 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 * …
 = 0.9.0 = first public release (beta)
 
-© 20101212 - MS - dev.xiligroup.com
+© 20101215 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
