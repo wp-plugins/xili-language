@@ -4208,7 +4208,7 @@ function xili_nav_page_list( $items, $args ) {
 		$pagelist = ''; 
 		$pagelist_args = $xili_language->xili_settings['args_page_in_nav_menu'].'&';
 		// sub-selection
-		$pagelist = wp_list_pages($pagelist_args."title_li=&echo=0&{QUETAG}=".$xili_language->curlang);
+		$pagelist = wp_list_pages($pagelist_args."title_li=&echo=0&".QUETAG."=".$xili_language->curlang);
 	
    		return $items.$pagelist;
    	} else {
