@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 1.8.9
+Stable tag: 1.9.0
 
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -28,12 +28,17 @@ TRILOGY FOR MULTILINGUAL CMS WEBSITE : [xili-language](http://wordpress.org/exte
 
 = roadmap =
 * Visit also [Forum](http://forum2.dev.xiligroup.com/) to obtain more support about now usable multilingual custom post.
-* More features for creators of child themes and websites with lot of languages.
-* Next release 1.9 - when WP 3.1 shipped - will stop compatibilty with WP 2.9 - too much tests !
 * Delivery of a *premium* version (with attractive fees) packaged with professional support.
+* cleaning source for only 3.0.x and 3.1
 
+= 1.9.0 =
+* release as current for WP 3.1
 = News from 1.8.0 to 1.8.9 =
 
+* 1.8.9.3: bulk edit in posts list
+* 1.8.9.2: add option to adapt nav home menu item (see nav menu settings box)
+* 1.8.9.1: twentyten-xili child theme : now use [version 1.0](http://multilingual.wpmu.xilione.com/300/episode-2-creation-of-a-multilingual-website-with-xili-language/)
+* 1.8.9.1: PHP Webmaster see [Changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 * For authors new popup/dropdown selector to filter by languages in Posts Edit list.
 * add filters to control nav menu automatic insertion (languages list and pages) by php webmasters.
 * add id and class for separator in nav menu automatic insertion.
@@ -245,8 +250,19 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 
 == Changelog ==
 
+= 1.9.0 = 
+* Released as current for 3.1
+= 1.8.9.2 1.8.9.3 =
+* bulk edit in posts list
+* add option to adapt nav home menu item
+= 1.8.9.1 =
+* add `n` in date formatting translation.
+* new column in dashboard to see visibility of a language in Languages list - new checkbox in edit and one in widget to subselect only visible langs.
+* twentyten-xili child theme : now use version 1.0
+* Webmaster : xili_language_list hook has now 5 params - see source.
+* Webmaster : to get linked post ID, don't use `get_post_meta` but `xl_get_linked_post_in` function (see lin #4115) (future changes in linking mechanisms)
+ 
 = 1.8.9 =
-* add n in date formatting translation (1.8.9.1) 
 * filter by languages in Posts edit list.
 * add filter 'xili_nav_lang_list' to control nav menu automatic insertion by php webmasters.
 * add filter 'xili_nav_page_list' to control automatic sub-selection of pages.
@@ -317,7 +333,7 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 * …
 = 0.9.0 = first public release (beta)
 
-© 20101215 - MS - dev.xiligroup.com
+© 20110226 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
@@ -352,4 +368,4 @@ The page as frontpage must have its clones in each other languages. Like for pos
 The plugin is frequently updated. Visit [Other versions](http://wordpress.org/extend/plugins/xili-language/download/).
 See also the [dev.xiligroup Forum](http://forum2.dev.xiligroup.com/).
 
-© 2008-2010 - MS - dev.xiligroup.com
+© 2008-2011 - MS - dev.xiligroup.com
