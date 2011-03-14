@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 1.9.0
+Stable tag: 1.9.1
 
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -31,6 +31,9 @@ TRILOGY FOR MULTILINGUAL CMS WEBSITE : [xili-language](http://wordpress.org/exte
 * Delivery of a *premium* version (with attractive fees) packaged with professional support.
 * cleaning source for only 3.0.x and 3.1
 
+= 1.9.1 =
+* improvements in xili widget recent posts (open also for custom posts)
+* fixes query_var issues when front-page as page
 = 1.9.0 =
 * release as current for WP 3.1
 = News from 1.8.0 to 1.8.9 =
@@ -250,6 +253,11 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 
 == Changelog ==
 
+= 1.9.1 =
+
+* fixes in xili widget recent posts - only post-type display by default - input added to add list of type (post,video,…) 
+* fixes query_var issues when front-page as page or list of posts (thanks to A B-M)
+
 = 1.9.0 = 
 * Released as current for 3.1
 = 1.8.9.2 1.8.9.3 =
@@ -333,7 +341,7 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 * …
 = 0.9.0 = first public release (beta)
 
-© 20110226 - MS - dev.xiligroup.com
+© 20110314 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
