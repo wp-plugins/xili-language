@@ -32,7 +32,7 @@ TRILOGY FOR MULTILINGUAL CMS WEBSITE : [xili-language](http://wordpress.org/exte
 * cleaning source for only 3.0.x and 3.1
 
 = 1.9.1 =
-* improvements in xili widget recent posts (open also for custom posts)
+* improvements in xili widget recent posts (can list also custom posts if available in CMS)
 * fixes query_var issues when front-page as page
 = 1.9.0 =
 * release as current for WP 3.1
