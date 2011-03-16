@@ -9,7 +9,7 @@ Author URI: http://dev.xiligroup.com
 License: GPLv2
 */
 
-# updated 110312 - 1.9.1 - fixes in xili widget recent posts - only post-type display by default - input added to add list of type (post,video,…) - fixes query_var issues when front-page as page
+# updated 110316 - 1.9.1 - fixes in xili widget recent posts - only post-type display by default - input added to add list of type (post,video,…) - fixes query_var issues when front-page as page
 # updated 110226 - 1.9.0 - release as current for WP 3.1
 # updated 110124 - 1.8.9.3 - add actions for bulk edit, prepare language taxonomy for permalink options
 # updated 110113 - 1.8.9.2 - add option to adapt nav home menu item
@@ -3283,7 +3283,7 @@ class xili_language {
 			<option value="wp-php-dev" ><?php _e('Good knowledge in WP, CMS and good in php','xili-language'); ?></option>
 			<option value="wp-plugin-theme" ><?php _e('WP theme and /or plugin developper','xili-language'); ?></option>
 		</select>
-		<br /><br />
+		</label><br /><br />
 		<label for="subject"><?php _e('Subject:','xili-language'); ?>
 		<input class="widefat" id="subject" name="subject" type="text" value="" /></label>
 		<select name="thema" id="thema" style="width:100%;">
