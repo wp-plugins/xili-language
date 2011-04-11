@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 1.9.1
+Stable tag: 2.0.0
 
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -27,44 +27,22 @@ TRILOGY FOR MULTILINGUAL CMS WEBSITE : [xili-language](http://wordpress.org/exte
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
 = roadmap =
-* Visit also [Forum](http://forum2.dev.xiligroup.com/) to obtain more support about now usable multilingual custom post.
+* Visit also [Forum](http://forum2.dev.xiligroup.com/) to obtain more support or contribute to others by publishing reports about your experience.
 * Delivery of a *premium* version (with attractive fees) packaged with professional support.
-* cleaning source for only 3.0.x and 3.1
+* REMEMBER : xili-language follows the WordPress story since more than 4 years. Initially designed for webmasters with knowledge in WP, PHP,… step by step the plugin will improved to be more and more plug and play. So don't forget to visit this [demo site](http://multilingual.wpmu.xilione.com).
+
+= 2.0.0 =
+* cleaning source for only 3.0.x and 3.1.x
+* improved readme
 
 = 1.9.1 =
-* improvements in xili widget recent posts (can list also custom posts if available in CMS)
+* improvements in xili widget recent posts (open also for custom posts)
 * fixes query_var issues when front-page as page
 = 1.9.0 =
 * release as current for WP 3.1
 = News from 1.8.0 to 1.8.9 =
 
-* 1.8.9.3: bulk edit in posts list
-* 1.8.9.2: add option to adapt nav home menu item (see nav menu settings box)
-* 1.8.9.1: twentyten-xili child theme : now use [version 1.0](http://multilingual.wpmu.xilione.com/300/episode-2-creation-of-a-multilingual-website-with-xili-language/)
-* 1.8.9.1: PHP Webmaster see [Changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
-* For authors new popup/dropdown selector to filter by languages in Posts Edit list.
-* add filters to control nav menu automatic insertion (languages list and pages) by php webmasters.
-* add id and class for separator in nav menu automatic insertion.
-* set language available in **quick-edit mode** of posts list.
-* first very good tests of compatibility with WP 3.1.
-* add ways to use two letters `WPLANG` as japanese (xili-dictionary also updated to 1.3.3) - see [More Infos tab](http://wordpress.org/extend/plugins/xili-language/other_notes/) .
-* optional total uninstall with all datas and options set by xili-language (taxonomies, postmetas,… associated with posts and links).
-* options to switch domain (plugin or default) for gettext functions.
-* improve automatic languages sub-folder detection and caution message if `load_textdomain()` is missing and not active in functions.php
-* repairs oversight about bookmarks taxonomies (blogroll) : now it is possible in widget to sub-select links according language and in template tag `wp_list_bookmarks()`
-
-* query for posts with undefined language `lang=*`, improved widget languages list (condition)
-* widgets rewritten as widget class extend.
-* search form improved
-* fixes
-
-* as expected by some webmasters, 'in' before language is not displayed before name in language list.
-* better automatic insertion of nav menu for theme with several location. 
-* now compatible with child theme - see [Forum](http://forum2.dev.xiligroup.com/forum.php?id=1)
-* improve date to strftime format translation.
-
-* now, if checked in settings, a custom post type can be multilingual as post or page type.
-
+* see [tab and chapter changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Technical infos =
 
@@ -103,8 +81,10 @@ More informations about other plugins in the website [dev.xiligroup.com](http://
 
 == Installation ==
 
+READ CAREFULLY ALL THE README AND PREREQUISITES
+
 1. Upload the folder containing `xili-language.php` and language files to the `/wp-content/plugins/` directory,
-2. Verify that your theme is international compatible - translatable terms like `_e('the term','mytheme')` and no text hardcoded - 
+2. Verify that your theme is international compatible - translatable terms like `_e('the term','mytheme')` and no text hardcoded - and contains .mo and .po files for each target language - (app poEdit and/or plugin [xili-dictionary](http://dev.xiligroup.com/xili-dictionary/) can be used)
 3. define domain name of your theme - see note at end list below, 
 4. Activate the plugin through the *'Plugins'* menu in WordPress,
 5. Go to the dashboard settings tab - language - and adapt default values if necessary by adding your languages in the catalog. You can set the order (1,2,3...) of the series. (used in `language_attributes()` template_tag).
@@ -253,6 +233,8 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 
 == Changelog ==
 
+= 2.0.0 =
+* erase old coding remaining for 2.9.x - Improve (progressivly) readme...
 = 1.9.1 =
 
 * fixes in xili widget recent posts - only post-type display by default - input added to add list of type (post,video,…) 
@@ -341,7 +323,7 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 * …
 = 0.9.0 = first public release (beta)
 
-© 20110314 - MS - dev.xiligroup.com
+© 20110410 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
