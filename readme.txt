@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 2.0.0
+Stable tag: 2.1.0
 
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -30,6 +30,10 @@ TRILOGY FOR MULTILINGUAL CMS WEBSITE : [xili-language](http://wordpress.org/exte
 * Visit also [Forum](http://forum2.dev.xiligroup.com/) to obtain more support or contribute to others by publishing reports about your experience.
 * Delivery of a *premium* version (with attractive fees) packaged with professional support.
 * REMEMBER : xili-language follows the WordPress story since more than 4 years. Initially designed for webmasters with knowledge in WP, PHP,… step by step the plugin will improved to be more and more plug and play. So don't forget to visit this [demo site](http://multilingual.wpmu.xilione.com).
+
+= 2.1.0 =
+* when singular (single or page) linked post in xili-language-list link of other languages. Previously, it was possible to offer this behaviour by using hook (filter) provided by the plugin. Now, for newbies, it will be easier to link posts according languages with widget.
+* for previous users : v2.1.0 is compatible with settings of previous release BUT introduces now a way to choose multiple locations - so revisit the settings page to confirm your previous choice or sets to new navigation way including singular links.
 
 = 2.0.0 =
 * cleaning source for only 3.0.x and 3.1.x
@@ -233,6 +237,8 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 
 == Changelog ==
 
+= 2.1.0 =
+* new navigation when singular linked post in xili_language_list, multiple nav menus location, new filter for xili_nav_lang_list see code
 = 2.0.0 =
 * erase old coding remaining for 2.9.x - Improve (progressivly) readme...
 = 1.9.1 =
@@ -242,7 +248,7 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 
 = 1.9.0 = 
 * Released as current for 3.1
-= 1.8.9.2 1.8.9.3 =
+= 1.8.9.2, 1.8.9.3 =
 * bulk edit in posts list
 * add option to adapt nav home menu item
 = 1.8.9.1 =
@@ -323,13 +329,14 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 * …
 = 0.9.0 = first public release (beta)
 
-© 20110410 - MS - dev.xiligroup.com
+© 20110521 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
 As usually, don't forget to backup the database before major upgrade or testing no-current version.
 Upgrading can be easily procedeed through WP admin UI or through ftp.
 Verify you install latest version of trilogy (xili-language, xili-tidy-tags, xili-dictionary).
+v2.1.0 is compatible with settings of previous release BUT introduces now a way to choose multiple navmenu locations - so revisit the settings page to confirm your previous choice or sets to new navigation way including singular links.
 
 == More infos ==
 
