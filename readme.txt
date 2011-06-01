@@ -23,43 +23,34 @@ TRILOGY FOR MULTILINGUAL CMS WEBSITE : [xili-language](http://wordpress.org/exte
 
 * With [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), it is now possible to display sub-selection (cloud) of **tags** according language. With [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) plugin (beta), it is easier to create or update online, via admin UI, the files .mo of each language.
 * xili-language plugin **does not create addition tables in the database**. xili-language simply makes proper use of the taxonomy tables and postmeta table offered by WordPress to define language and link items between them. Because xili-language plugin does not modify deeply the post edit UI, it is possible to use **iPhone / iPod Touch** Wordpress app to prepare and draft the post.
-* **Documentation**:  A new [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
+* **Documentation**:  A [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster.
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
 = roadmap =
-* Visit also [Forum](http://forum2.dev.xiligroup.com/) to obtain more support or contribute to others by publishing reports about your experience.
+* verifying that WP 3.2 is full compatible as first tests demonstrate it in mono and multisite mode.
 * Delivery of a *premium* version (with attractive fees) packaged with professional support.
-* REMEMBER : xili-language follows the WordPress story since more than 4 years. Initially designed for webmasters with knowledge in WP, PHP,… step by step the plugin will improved to be more and more plug and play. So don't forget to visit this [demo site](http://multilingual.wpmu.xilione.com).
+* improved documentation.
 
 = 2.1.0 =
-* when singular (single or page) linked post in xili-language-list link of other languages. Previously, it was possible to offer this behaviour by using hook (filter) provided by the plugin. Now, for newbies, it will be easier to link posts according languages with widget.
-* for previous users : v2.1.0 is compatible with settings of previous release BUT introduces now a way to choose multiple locations - so revisit the settings page to confirm your previous choice or sets to new navigation way including singular links.
+* when a singular (single or page) is displayed, linked posts of other languages are set in xili-language-list links . Previously, it was possible to offer this behaviour by using hook (filter) provided by the plugin. Now, for newbies, it will be easier to link posts according languages with widget.
+* for previous users of navigation menus : v2.1.0 is compatible with settings of previous release BUT introduces now a way to choose multiple menu locations - so revisit the settings page to confirm your previous choice or sets to new navigation way including singular links.
 
-= 2.0.0 =
-* cleaning source for only 3.0.x and 3.1.x
-* improved readme
+= News from 1.8.0 to 2.0.0 =
 
-= 1.9.1 =
-* improvements in xili widget recent posts (open also for custom posts)
-* fixes query_var issues when front-page as page
-= 1.9.0 =
-* release as current for WP 3.1
-= News from 1.8.0 to 1.8.9 =
-
-* see [tab and chapter changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
+* see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Technical infos =
 
+* REMEMBER : xili-language follows the WordPress story since more than 4 years. Initially designed for webmasters with knowledge in WP, PHP,… step by step the plugin will improved to be more and more plug and play. So don't forget to visit this [demo site](http://multilingual.wpmu.xilione.com) and [Forum](http://forum2.dev.xiligroup.com/).
+
 **Prerequisite:**
-Verify that your theme is international compatible (translatable terms like `_e('the term','mytheme')` and no displayed texts 'hardcoded' (example in default theme of WP named *twentyten* ).
+Verify that your theme is international compatible (translatable terms like `_e('the term','mythemedomaine')` and no displayed texts 'hardcoded' (example in default theme of WP named *twentyten* or *twentyeleven* ).
 
-* Works with WP 3.0 in mono or multisite. For version 2.9 and less, use release 1.7 or less
-
-* Optional improving hooking ways to be compatible with l10n cache of Johan's plugin see line 2200. 
+* Works with WP > 3.0 in mono or multisite. For version 2.9 and less, use release 1.7 or less
 
 **CMS**
 
-* Contains features dedicated to multilingual theme's creators and webmasters. 
+* Contains features dedicated to multilingual theme's creators and webmasters. Don't forget to read documented source code.
 
 **Documentation for developers**
 
@@ -71,7 +62,8 @@ A [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical feature
 
 **More infos and docs**
 
-* Other posts, articles and more descriptions [here](http://dev.xiligroup.com/xili-language/ "why xili-language ?") and [here](http://multilingual.wpmu.xilione.com).
+* Other posts, articles and more descriptions [here](http://dev.xiligroup.com/xili-language/ "why xili-language ?") and [here in action](http://multilingual.wpmu.xilione.com).
+* Visit also [Forum](http://forum2.dev.xiligroup.com/) to obtain more support or contribute to others by publishing reports about your experience.
 
 = Compatibility =
 
@@ -88,10 +80,10 @@ More informations about other plugins in the website [dev.xiligroup.com](http://
 READ CAREFULLY ALL THE README AND PREREQUISITES
 
 1. Upload the folder containing `xili-language.php` and language files to the `/wp-content/plugins/` directory,
-2. Verify that your theme is international compatible - translatable terms like `_e('the term','mytheme')` and no text hardcoded - and contains .mo and .po files for each target language - (app poEdit and/or plugin [xili-dictionary](http://dev.xiligroup.com/xili-dictionary/) can be used)
-3. define domain name of your theme - see note at end list below, 
+2. Verify that your theme is international compatible - translatable terms like `_e('the term','mytheme')` and no text hardcoded - and contains .mo and .po files for each target language - (application poEdit and/or plugin [xili-dictionary](http://dev.xiligroup.com/xili-dictionary/) can be used)
+3. verify that a domain name is defined in your theme - see note at end list below, 
 4. Activate the plugin through the *'Plugins'* menu in WordPress,
-5. Go to the dashboard settings tab - language - and adapt default values if necessary by adding your languages in the catalog. You can set the order (1,2,3...) of the series. (used in `language_attributes()` template_tag).
+5. Go to the dashboard settings tab - languages - and adapt default values if necessary by adding your languages in the catalog. You can set the order (1,2,3...) of the series. (used in `language_attributes()` template_tag).
 6. Modify each post by setting (checking) the language in xili-language box at the right of the post editing window before publishing.
 7. If you are webmaster and want to add lot of personalizations in your theme, visit [expert's corner](http://dev.xiligroup.com/?cat=480&lang=en_us).
 
@@ -99,13 +91,14 @@ READ CAREFULLY ALL THE README AND PREREQUISITES
 
 = SPECIAL NOTE FOR XILI-LANGUAGE VERSION >= 1.5.0 and WP 3.0 =
 
-*Nothing to do in functions.php as in former version of WP and xili-language* : only verify that the theme is localizable and functions.php contains a function `load_theme_textdomain();` and that the theme's folder contains .mo files (in root or a sub-folder) for each languages of your website. "twentyten" default WP theme is compatible with help of a child theme "twentyten-xili".
+*Nothing to do in functions.php as in former version of WP and xili-language* : only verify that the theme is localizable and functions.php contains a function `load_theme_textdomain();` and that the theme's folder contains .mo files (in root or a language sub-folder) for each languages of your website. "twentyten" default WP theme is compatible with help of a child theme "twentyten-xili" available [here in action and downloadable](http://multilingual.wpmu.xilione.com) .
 
 Plugin is backward compatible for theme of monosite. But if you upgrade xili-language, it is better to restore your theme with default `load_theme_textdomain();`. Delete lines concerned by constants THEME_TEXTDOMAIN and languages sub-folder THEME_LANGS_FOLDER.
 
-NOTE FOR THEMES DESIGNER : If your theme is compatible both for newest (>3.0-apha) and older versions, add some conditional lines.
+= NOTE FOR THEMES DESIGNER =
+If your theme is compatible both for newest (>3.0-apha) and older versions, add some conditional lines.
 
-NOTE FOR COMMENT FORM IN WP 3.0:
+= NOTE FOR COMMENT FORM IN WP 3.0 =
 Today with WP3.0, comments form language is based on default language of admin UI and not on theme's language. xili-language solves this features. So you need to add this terms msgid in the .po of your theme for translation used by xili-language. In latest version, xili-dictionary adds this option to avoid tedious copy and paste !
 
 = Browser detection for visitors or authors =
@@ -114,7 +107,7 @@ To change the default language of a new post according to the language of the au
 
 = xili-language and widgets =
 
-Three widgets are created to enrich sidebar : list of languages, recent posts and recent comments with sub-selection according current language
+Three widgets are created to enrich sidebar : list of languages, recent posts and recent comments with sub-selection according current language.
 
 = xili-language and shortcode =
 
@@ -130,7 +123,7 @@ The most current template tags don't need special work: `wp_list_categories()`, 
 
 `wp_get_archives` 
 Possible that very special permalinks need to use hook named `xiliml_get_archives_link`. -
-Sub selection of archives for `wp_get_archives()` with &lang= [see installation notes](http://wordpress.org/extend/plugins/xili-language/installation/).
+Sub selection of archives for `wp_get_archives()` with &lang= (see § below)
 
 `wp_list_pages()` with optional query tag &lang=
 
@@ -214,7 +207,9 @@ Effectively, prefer [forum](http://forum2.dev.xiligroup.com/) to obtain some sup
 
 No yet, but a lot of well designed themes like fusion or Arclite are very easily adaptable. 
 Only, a child theme of **twentyten** is shipped here for [demo](http://multilingual.wpmu.xilione.com/300/episode-2-creation-of-a-multilingual-website-with-xili-language/).
-And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoids to use poEdit to update .mo files with contents of terms of your database (categories, ...)
+
+= Is poEdit mandatory to edit .po and to build .mo file ? =
+[xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoids to use poEdit to update .mo files with contents of terms of your database (categories, ...)
 
 == Screenshots ==
 
@@ -329,7 +324,7 @@ And [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoi
 * …
 = 0.9.0 = first public release (beta)
 
-© 20110521 - MS - dev.xiligroup.com
+© 20110601 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
