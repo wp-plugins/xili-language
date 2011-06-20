@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 2.1.0
+Stable tag: 2.1.1
 
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -232,6 +232,8 @@ Only, a child theme of **twentyten** is shipped here for [demo](http://multiling
 
 == Changelog ==
 
+= 2.1.1 = 
+* fixes uninstall white screen
 = 2.1.0 =
 * new navigation when singular linked post in xili_language_list, multiple nav menus location, new filter for xili_nav_lang_list see code
 = 2.0.0 =
@@ -324,7 +326,7 @@ Only, a child theme of **twentyten** is shipped here for [demo](http://multiling
 * …
 = 0.9.0 = first public release (beta)
 
-© 20110601 - MS - dev.xiligroup.com
+© 20110620 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
