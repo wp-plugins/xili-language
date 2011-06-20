@@ -10,9 +10,11 @@
  */
 
 
-if ( ! defined( 'WP_UNINSTALL_PLUGIN' || is_multisite() ) ) // must done site by site 
+if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) || is_multisite()  ) { // must done site by site 
+// fixed with 2.1.1 thanks to Edward
+	echo 'error: impossible to delete in multisite' ;
 	exit();
-
+}
 // check if delete_settings is set 
 
 $xl_settings = get_option('xili_language_settings');
