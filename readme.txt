@@ -233,7 +233,7 @@ Only, a child theme of **twentyten** is shipped here for [demo](http://multiling
 == Changelog ==
 
 = 2.1.1 = 
-* fixes uninstall white screen
+* fixes uninstall white screen, fixes focus error
 = 2.1.0 =
 * new navigation when singular linked post in xili_language_list, multiple nav menus location, new filter for xili_nav_lang_list see code
 = 2.0.0 =
