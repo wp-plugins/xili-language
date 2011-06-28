@@ -8,8 +8,8 @@ Version: 2.1.1
 Author URI: http://dev.xiligroup.com
 License: GPLv2
 */
-
-# updated 110620 - 2.1.1 - fixes uninstall error
+# updated 110628 - 2.1.1 - fixes focus error
+# updated 110620 - 2.1.1 - fixes uninstall error 
 # updated 110503 - 2.1.0 - new list types when singular linked post in xili_language_list, multiple location options for nav menu
 # updated 110410 - 2.0.0 - erase old coding remaining for 2.9.x - Improve (slowly) readme...
 # updated 110316 - 1.9.1 - fixes in xili widget recent posts - only post-type display by default - input added to add list of type (post,video,…) - fixes query_var issues when front-page as page
@@ -2645,8 +2645,8 @@ class xili_language {
 				
 				?>
 				
-				</select><br />
-				<?php
+				</select></label><br />
+				<?php // focus
 			} 
 				?>
 			</fieldset>
