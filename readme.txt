@@ -27,7 +27,7 @@ TRILOGY FOR MULTILINGUAL CMS WEBSITE : [xili-language](http://wordpress.org/exte
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
 = roadmap =
-* Delivering of twentyeleven-xili, demo theme child of twentyeleven.
+* Delivery of free twentyeleven-xili, [demo theme](http://2011.wpmu.xilione.com/) child theme of Twenty Eleven.
 * Delivery of a *premium* version (with attractive fees) packaged with professional support.
 * improved documentation.
 
