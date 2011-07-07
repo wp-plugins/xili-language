@@ -3,8 +3,8 @@ Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese
 Requires at least: 3.0
-Tested up to: 3.1
-Stable tag: 2.1.1
+Tested up to: 3.2
+Stable tag: 2.2.0
 
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -27,10 +27,14 @@ TRILOGY FOR MULTILINGUAL CMS WEBSITE : [xili-language](http://wordpress.org/exte
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
 = roadmap =
-* verifying that WP 3.2 is full compatible as first tests demonstrate it in mono and multisite mode.
+* Delivering of twentyeleven-xili, demo theme child of twentyeleven.
 * Delivery of a *premium* version (with attractive fees) packaged with professional support.
 * improved documentation.
 
+= 2.2.0 =
+* ready for permalink uses in language (need special functions).
+* languages settings menu in admin bar.
+* deep tests with official release of WP 3.2
 = 2.1.0 =
 * when a singular (single or page) is displayed, linked posts of other languages are set in xili-language-list links . Previously, it was possible to offer this behaviour by using hook (filter) provided by the plugin. Now, for newbies, it will be easier to link posts according languages with widget.
 * for previous users of navigation menus : v2.1.0 is compatible with settings of previous release BUT introduces now a way to choose multiple menu locations - so revisit the settings page to confirm your previous choice or sets to new navigation way including singular links.
@@ -212,32 +216,37 @@ Only, a child theme of **twentyten** is shipped here for [demo](http://multiling
 [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoids to use poEdit to update .mo files with contents of terms of your database (categories, ...)
 
 == Screenshots ==
+Here a selection of main screenshots.
 
-1. an example of wp-content/themes folder
-2. the admin settings UI
-3. the language setting in post writting UI
-4. coding extract with 'international' text in 'xiliphone' theme
-5. xili-dictionary: Admin Tools UI - functionalities windows
+1. an example of wp-content/themes folder.
+2. the admin settings UI.
+3. the language setting in post writting UI.
+4. Source coding extract with 'international' text in 'xiliphone' theme.
+5. xili-dictionary: Admin Tools UI - functionalities windows.
 6. xili-language: Admin Tools UI - set homepage and author according his browser's language.
-7. xili-tidy-tags: Admin Tools UI - see this compatible plugin to group tags according languages
-8. xili-language widget: Admin widgets UI - since 0.9.9.6, "multiple" languages list widget
+7. xili-tidy-tags: Admin Tools UI - see this compatible plugin to group tags according languages.
+8. xili-language widget: Admin widgets UI - since 0.9.9.6, "multiple" languages list widget.
 9. xili-language: Special Admin UI sidebox - infos about theme's content for multilingual settings.
 10. xili-language: Post Edit UI - when clicking Add New, a new browser window is open and links input are prefilled.
-11. xili-language: Widget to display recent posts in choosen language.
-12. xili-language: Post Edit UI - Check option to auto search will be useful for editor when working on existing posts and with multiple authors.
+11. xili-language: Widget to display recent posts in choosen target language.
+12. xili-language: Post Edit UI - Check option to auto search will be useful for editor when working on existing posts and with multiple authors to collect translated linked posts.
 13. Since 1.8.0, if checked in settings, a custom post type can be multilingual like post or page type.
-14. Edit screen: example of a custom post type named letter.
+14. Edit screen: example of a custom post type named book.
 15. Blogroll and bookmarks taxonomies and language sub-selection.
-16. Dashboard: Posts edit list with language sub-selection.
+16. Dashboard: Posts edit list with language sub-selection, quick edit and bulk edit available.
+17. Since 2.2.0, new xili-language trilogy menu in admin bar menu to group main settings for multilingual website.
 
 == Changelog ==
 
+= 2.2.0 =
+* source reviewed, folder reorganized, ready for option with lang inside permalink. Screenshots renewed from WP 3.2 RC
+* deep tests with official release of WP 3.2
 = 2.1.1 = 
 * fixes uninstall white screen, fixes focus error
 = 2.1.0 =
 * new navigation when singular linked post in xili_language_list, multiple nav menus location, new filter for xili_nav_lang_list see code
 = 2.0.0 =
-* erase old coding remaining for 2.9.x - Improve (progressivly) readme...
+* erase old coding remaining for 2.9.x - Improve (progressively) readme...
 = 1.9.1 =
 
 * fixes in xili widget recent posts - only post-type display by default - input added to add list of type (post,video,…) 
@@ -326,12 +335,12 @@ Only, a child theme of **twentyten** is shipped here for [demo](http://multiling
 * …
 = 0.9.0 = first public release (beta)
 
-© 20110620 - MS - dev.xiligroup.com
+© 20110707 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
 As usually, don't forget to backup the database before major upgrade or testing no-current version.
-Upgrading can be easily procedeed through WP admin UI or through ftp.
+Upgrading can be easily procedeed through WP admin UI or through ftp (delete previous release folder before upgrading via ftp).
 Verify you install latest version of trilogy (xili-language, xili-tidy-tags, xili-dictionary).
 v2.1.0 is compatible with settings of previous release BUT introduces now a way to choose multiple navmenu locations - so revisit the settings page to confirm your previous choice or sets to new navigation way including singular links.
 
