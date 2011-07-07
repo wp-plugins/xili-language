@@ -1,0 +1,137 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xili_language\n"
+"POT-Creation-Date: 2009-04-04 11:58+0100\n"
+"PO-Revision-Date: 2010-01-03 10:27+0200\n"
+"Last-Translator: Fat Cow <zhr@tut.by>\n"
+"Language-Team: FatCow <zhr@tut.by>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: trunk\n"
+
+msgid "A new language was added."
+msgstr "Новый язык добавлен."
+
+msgid "Language to update."
+msgstr "Язык обновлен."
+
+msgid "A language was updated."
+msgstr "Язык был обновлен."
+
+msgid "A language to delete."
+msgstr "Язык удален."
+
+msgid "A language was deleted."
+msgstr "Язык был удален."
+
+msgid "Find above the list of languages."
+msgstr "Найти в списке языков выше."
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "List of languages"
+msgstr "Список языков"
+
+msgid "Full name"
+msgstr "Полное имя"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Language slug"
+msgstr "Языковой слоган"
+
+msgid "Order"
+msgstr "Выбор"
+
+msgid "Note:"
+msgstr "Памятка:"
+
+msgid "Update"
+msgstr "Обновить"
+
+msgid "Edit language"
+msgstr "Редактировать язык"
+
+msgid "Delete language ?"
+msgstr "Удалить язык?"
+
+msgid "This plugin was developed with the taxonomies, terms tables and tags specifications. <br /> Here a new taxonomy was created and used for languages of posts. <br /> New radiobuttons are available in Post (and Page) write and edit pages for selection by author. It is updated for WP 2.8 since 1.0"
+msgstr "Этот плагин был разработан с таксономий, терминов и таблиц тегов спецификации. <br />Новая таксономия была создана и используется для языков постов. <br />Новые элементы доступны по выбору автора. Обновлен для WP 2.8 с 1.0 "
+
+msgid "Add a language"
+msgstr "Добавить язык"
+
+msgid "Add &raquo;"
+msgstr "Добавить…"
+
+msgid "Delete &raquo;"
+msgstr "Удалить…"
+
+msgid "Update &raquo;"
+msgstr "Обновить…"
+
+msgid "Selected language"
+msgstr "Выбранный язык"
+
+msgid "english"
+msgstr "английский"
+
+msgid "belgium french"
+msgstr "бельгийский французский"
+
+msgid "french"
+msgstr "французский"
+
+msgid "german"
+msgstr "немецкий"
+
+msgid "undefined"
+msgstr "не определен"
+
+msgid "Display"
+msgstr "отображать"
+
+msgid "Post ID"
+msgstr "ID поста"
+
+msgid "Post's language"
+msgstr "язык поста"
+
+msgid "Page's language"
+msgstr "Язык страницы"
+
+msgid "Linked posts"
+msgstr "Пост"
+
+msgid "Linked pages"
+msgstr "Страницы"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Select by default browser language of visitor"
+msgstr "Выберите язык браузера посетителя по умолчанию"
+
+msgid "For new post, pre-select by default: browser language of author"
+msgstr "для нового поста, предварительно выбранный язык браузера посетителя по умолчанию"
+
+msgid "Language of visitor's browser"
+msgstr "Язык браузера посетителя"
+
+msgid "Select language of the home page"
+msgstr "Выберите язык домашнюю страницу"
+
+msgid "Software defined"
+msgstr "Программное обеспечение определено"
+
+msgid "Enable gold functions"
+msgstr "Включение золотой функции "
+
