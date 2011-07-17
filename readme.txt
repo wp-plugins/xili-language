@@ -95,8 +95,6 @@ READ CAREFULLY ALL THE README AND PREREQUISITES
 
 = XILI-LANGUAGE VERSION >=1.8.0 is NOT compatible with WP less than 3.0 =
 
-= XILI-LANGUAGE VERSION >=1.8.0 is not compatible with WP less than 3.0 =
-
 = SPECIAL NOTE FOR XILI-LANGUAGE VERSION >= 1.5.0 and WP 3.0 =
 
 *Nothing to do in functions.php as in former versions of WP and xili-language* : only verify that the theme is localizable and functions.php contains a function `load_theme_textdomain();` and that the theme's folder contains .mo files (in root or a language sub-folder) for each languages of your website. "twentyten" default WP theme is compatible with help of a child theme "twentyten-xili" available [here in action and downloadable](http://multilingual.wpmu.xilione.com) .
