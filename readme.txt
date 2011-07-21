@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese
 Requires at least: 3.0
 Tested up to: 3.2
-Stable tag: 2.2.0
+Stable tag: 2.2.1
 
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -27,11 +27,11 @@ TRILOGY FOR MULTILINGUAL CMS WEBSITE : [xili-language](http://wordpress.org/exte
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
 = roadmap =
-* Delivering of twentyeleven-xili, demo theme child of twentyeleven.
+* Delivery of free twentyeleven-xili, [demo theme](http://2011.wpmu.xilione.com/) child theme of Twenty Eleven.
 * Delivery of a *premium* version (with attractive fees) packaged with professional support.
 * improved documentation.
 
-= 2.2.0 =
+= 2.2.0 - 2.2.1 =
 * ready for permalink uses in language (need special functions).
 * languages settings menu in admin bar.
 * deep tests with official release of WP 3.2
@@ -238,6 +238,8 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
+= 2.2.1 =
+fixes error in navmenu and defaults options of xili_language_list.
 = 2.2.0 =
 * source reviewed, folder reorganized, ready for option with lang inside permalink. Screenshots renewed from WP 3.2 RC
 * deep tests with official release of WP 3.2
@@ -335,7 +337,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 = first public release (beta)
 
-© 20110707 - MS - dev.xiligroup.com
+© 20110721 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
