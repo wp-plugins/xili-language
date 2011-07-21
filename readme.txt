@@ -89,7 +89,9 @@ READ CAREFULLY ALL THE README AND PREREQUISITES
 4. Activate the plugin through the *'Plugins'* menu in WordPress,
 5. Go to the dashboard settings tab - languages - and adapt default values if necessary by adding your languages in the catalog. You can set the order (1,2,3...) of the series. (used in `language_attributes()` template_tag).
 6. Modify each post by setting (checking) the language in xili-language box at the right of the post editing window before publishing.
-7. If you are webmaster and want to add lot of personalizations in your theme, visit [expert's corner](http://dev.xiligroup.com/?cat=480&lang=en_us).
+7. Before using your own theme, to understand how xili-language works, install the child theme of twentyten shown in this commented [demo site](http://multilingual.wpmu.xilione.com).
+8. Child of TwentyTen and Child of Twenty Eleven themes include a navigation menu - [downloadable here](http://multilingual.wpmu.xilione.com/download/) -. In xili-language settings it is possible to insert automatically languages menu in the menu previously set by you.
+9. If you are webmaster and want to add lot of personalizations in your theme, visit [expert's corner](http://dev.xiligroup.com/?cat=480&lang=en_us).
 
 = XILI-LANGUAGE VERSION >=1.8.0 is not compatible with WP less than 3.0 =
 
