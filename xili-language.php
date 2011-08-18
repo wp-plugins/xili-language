@@ -3195,7 +3195,7 @@ class xili_language {
 			</tr>
 			<?php if ( $action=='delete' ) :?>
 			<tr>
-				<th scope="row" valign="top" align="right"><label for="multilingual_links_erase"><span style="color:red" ><?php _e('Erase multilingual features of concerned posts by this language being erased !','xili-language') ?></span</label>&nbsp;:&nbsp;</th>
+				<th scope="row" valign="top" align="right"><label for="multilingual_links_erase"><span style="color:red" ><?php _e('Erase multilingual features of concerned posts by this language being erased !','xili-language') ?></span></label>&nbsp;:&nbsp;</th>
 				<td><input name="multilingual_links_erase" id="multilingual_links_erase" type="checkbox" value="erase" /></td>
 				
 			</tr>
