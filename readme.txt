@@ -1,10 +1,10 @@
 === xili-language ===
 Contributors: MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
-Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese
+Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer
 Requires at least: 3.0
-Tested up to: 3.2
-Stable tag: 2.2.1
+Tested up to: 3.3
+Stable tag: 2.2.2
 
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -27,13 +27,15 @@ TRILOGY FOR MULTILINGUAL CMS WEBSITE : [xili-language](http://wordpress.org/exte
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action.
 
 = roadmap =
-* Delivery of free twentyeleven-xili, [demo theme](http://2011.wpmu.xilione.com/) child theme of Twenty Eleven.
 * Delivery of a *premium* version (with attractive fees) packaged with professional support.
-* improved documentation.
+* Improved documentation for template tags and functions - [started here](http://dev.xiligroup.com/?cat=393&lang=en_us&post_type=xilifunctions).
 
-= 2.2.0 - 2.2.1 =
+= 2.2.0 - 2.2.2 =
 * ready for permalink uses in language (need special functions).
 * languages settings menu in admin bar.
+* fixes - `wp_list_pages` improved for current language subselection (see code)
+* improved date formatting options if no *Server Entities Charset* for language like khmer.
+* improved search form - findposts ajax added in linked metabox for post and page
 * deep tests with official release of WP 3.2
 = 2.1.0 =
 * when a singular (single or page) is displayed, linked posts of other languages are set in xili-language-list links . Previously, it was possible to offer this behaviour by using hook (filter) provided by the plugin. Now, for newbies, it will be easier to link posts according languages with widget.
@@ -217,6 +219,7 @@ Only, a child theme of **twentyten** is shipped here for [demo](http://multiling
 = Is poEdit mandatory to edit .po and to build .mo file ? =
 [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/) avoids to use poEdit to update .mo files with contents of terms of your database (categories, ...)
 
+
 == Screenshots ==
 Here a selection of main screenshots.
 
@@ -240,8 +243,12 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
+= 2.2.2 =
+* fixes - `wp_list_pages` improved for current language subselection (see code)
+* improved date formatting options if no *Server Entities Charset* for rare languages.
+* improved search form - findposts ajax added in linked metabox for post and page
 = 2.2.1 =
-fixes error in navmenu and defaults options of xili_language_list.
+* fixes error in navmenu and defaults options of xili_language_list.
 = 2.2.0 =
 * source reviewed, folder reorganized, ready for option with lang inside permalink. Screenshots renewed from WP 3.2 RC
 * deep tests with official release of WP 3.2
@@ -339,7 +346,7 @@ fixes error in navmenu and defaults options of xili_language_list.
 * …
 = 0.9.0 = first public release (beta)
 
-© 20110721 - MS - dev.xiligroup.com
+© 20111004 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
