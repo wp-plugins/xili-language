@@ -9,7 +9,7 @@ Author URI: http://dev.xiligroup.com
 License: GPLv2
 */
 
-# updated 111101 - 2.3.1 - fixes and avoid notices - optimized findposts ajax for linked posts
+# updated 111106 - 2.3.1 - fixes and avoid notices - optimized findposts ajax for linked posts
 # updated 111023 - 2.3.0 - ready for multi nav menu - ready for enlarged selection to undefined posts
 # updated 111008 - 2.2.3 - improved code - clean warning - permalink rare issues solved when page switch on front (next)
 # updated 111004 - 2.2.2 - fixes closing /span, perma_lang - `wp_list_pages`improved for current language - improved search form - findposts ajax in linked metabox - improved date formatting options if no Server Entities Charset for rare language.
@@ -1143,7 +1143,10 @@ class xili_language {
 		 		$this->xili_settings['langs_folder'] = $langs_folder ;
 		 		update_option( 'xili_language_settings', $this->xili_settings );
 		 	}
+		 	// to restore theme mo if theme datas and terms in admin ui….
+		 	if ( is_admin() ) load_textdomain( $domain, str_replace('wx_YZ', get_locale(), $mofile )); // 2.3.1 - 18h18
 	   		return true;
+	   		
 	   	}	
 	}
 	
