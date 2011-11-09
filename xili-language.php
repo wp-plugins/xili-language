@@ -1855,8 +1855,7 @@ class xili_language {
 							$translated_array[] = $trans_id;
 						} else {
 							if ( $this->sticky_keep_original === true ) $translated_array[] = $id; 
-							// set by webmaster  in theme functions
-							// $xili_language->sticky_keep_original = true;
+							
 						}
 					} else {
 						$translated_array[] = $id;
@@ -3948,7 +3947,7 @@ class xili_language {
 					$class = ' class="lang-'.$language->slug.'"';
 					
 					if ( ( is_single() || is_page() ) && !is_front_page() ) {	
-						$link = $xili_language->link_of_linked_post ( $post->ID, $language->slug ) ;
+						$link = $this->link_of_linked_post ( $post->ID, $language->slug ) ;
 						$title = sprintf (__('Current post in %s', $this->thetextdomain ), __($language->description, $this->thetextdomain ) ) ;
 					} else {
 						$link = ( $lang_perma ) ? str_replace ( '%lang%', $language->slug, $currenturl ) : $currenturl.QUETAG."=".$language->slug ;
