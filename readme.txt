@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer
 Requires at least: 3.2
 Tested up to: 3.3
-Stable tag: 2.3.1
+Stable tag: 2.3.2
 
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -30,7 +30,7 @@ TRILOGY FOR MULTILINGUAL CMS WEBSITE : [xili-language](http://wordpress.org/exte
 * Delivery of a *premium* version (with attractive fees) packaged with professional support.
 * Improved documentation for template tags and functions - [started here](http://dev.xiligroup.com/?cat=393&lang=en_us&post_type=xilifunctions).
 
-= 2.3.0 - 2.3.1 =
+= 2.3.0 - 2.3.2 =
 * optimized findposts ajax for linked posts
 * ready for multi nav menus [see this post](http://2011.wpmu.xilione.com/?p=160)
 * ready for enlarged selection of undefined posts
@@ -247,8 +247,8 @@ Here a selection of main screenshots.
 17. Since 2.2.0, new xili-language trilogy menu in admin bar menu to group main settings for multilingual website.
 
 == Changelog ==
-= 2.3.1 = 
-* fixes and avoid notices 
+= 2.3.1, 2.3.2 = 
+* fixes and avoid notices, fixes support emailing 
 * optimized findposts ajax for linked posts
 = 2.3.0 =
 * IMPORTANT: DON'T FORGET TO BACKUP BEFORE UPGRADING.
@@ -359,7 +359,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 = first public release (beta)
 
-© 20111106 - MS - dev.xiligroup.com
+© 20111116 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
