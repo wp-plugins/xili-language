@@ -1,0 +1,443 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xili_language\n"
+"POT-Creation-Date: 2009-04-04 11:58+0100\n"
+"PO-Revision-Date: 2011-11-13 13:45+0100\n"
+"Last-Translator: dev.xiligroup <contact@xiligroup.com>\n"
+"Language-Team: dev.xiligroup.com <contact@xiligroup.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: trunk\n"
+
+msgid "xili-language plugin"
+msgstr "Extension xili-language"
+
+msgid "A new language was added."
+msgstr "Une nouvelle langue a été ajoutée."
+
+msgid "Language to update."
+msgstr "Langue à mettre à jour."
+
+msgid "A language was updated."
+msgstr "Une langue a été mise à jour."
+
+msgid "Error when updating."
+msgstr "Erreur lors de la mise à jour."
+
+msgid "A language to delete."
+msgstr "Langue à effacer."
+
+msgid "A language was deleted."
+msgstr "Une langue a été supprimée."
+
+msgid "Go to Nav-menus in Themes to validate changes"
+msgstr "Visiter la page des menus dans Apparence pour valider les changements"
+
+msgid "Options are updated: home language = %s, For Author language of a new post = %s, xilidev functions = %s, Automatic Nav Menu = %s, Selection of pages in Nav Menu = %s"
+msgstr "Les options sont mises à jour : Langue de la page d'accueil = %s, Pour un nouvel article, langue par défaut = %s, Fonctions xilidev = %s, Adjonction des langues dans le menu de navigation = %s, Insertion d'une sélection de pages dans le menu = %s"
+
+msgid "Find above the list of languages."
+msgstr "Voici la liste des langues."
+
+msgid "Language"
+msgstr "Langue"
+
+msgid "View all languages"
+msgstr "Voir toutes les langues"
+
+msgid "See list of languages…"
+msgstr "Voir la liste des langues…"
+
+msgid "Without language"
+msgstr "Langue non définie"
+
+msgid "Languages"
+msgstr "Langues"
+
+msgid "Languages ©xili"
+msgstr "Langues ©xili"
+
+msgid "List of languages"
+msgstr "Liste des langues"
+
+msgid "Examples"
+msgstr "Exemples "
+
+msgid "Full name"
+msgstr "Nom complet "
+
+msgid "Name"
+msgstr "Nom "
+
+msgid "Language slug"
+msgstr "Code "
+
+msgid "Order"
+msgstr "Ordre "
+
+msgid "Note:"
+msgstr "Note et message :"
+
+msgid "Update"
+msgstr "Mettre à jour "
+
+msgid "Edit language"
+msgstr "Editer la langue"
+
+msgid "Delete language ?"
+msgstr "Supprimer la langue ?"
+
+msgid "This plugin was developed with the taxonomies, terms tables and tags specifications. <br /> Here a new taxonomy was created and used for languages of posts and pages. <br /> New radiobuttons are available in Post (and Page) write and edit admin pages for selection by author and also in Quick Edit mode of Posts list. It is updated for WP 3.1 since 1.8.8 version."
+msgstr "Ce plugin a été développé sur la base des tables taxonomy et terms... <br />Ici, on règle la gestion des langues. <br />Dans la colonne droite des pages d'édition des pages et articles, il y a sur le côté droit un selecteur radio-bouton des langues à choisir. De même, un menu liste est disponible dans le mode -modification rapide- de la liste des articles. Il est mis à jour pour WP 3.1. depuis la version 1.8.8."
+
+msgid "Add a language"
+msgstr "Ajouter une langue"
+
+msgid "Add &raquo;"
+msgstr "Ajouter…"
+
+msgid "hidden"
+msgstr "masquée"
+
+msgid "Delete &raquo;"
+msgstr "Supprimer…"
+
+msgid "Update &raquo;"
+msgstr "Mettre à jour…"
+
+msgid "Choose…"
+msgstr "Choisir…"
+
+msgid "Selected language"
+msgstr "Langue choisie"
+
+msgid "english"
+msgstr "anglais"
+
+msgid "belgium french"
+msgstr "belge"
+
+msgid "french"
+msgstr "français"
+
+msgid "german"
+msgstr "allemand"
+
+msgid "undefined"
+msgstr "non définie"
+
+msgid "Display"
+msgstr "Voir"
+
+msgid "Post ID"
+msgstr "N° du post"
+
+msgid "Page ID"
+msgstr "N° de page"
+
+msgid "Post's language"
+msgstr "Langue de l'article"
+
+msgid "Page's language"
+msgstr "Langue de la page"
+
+msgid "The list of languages is not defined. Go to: "
+msgstr "La liste des langues n'est pas définie. Activer les "
+
+msgid "Linked posts"
+msgstr "Articles liés"
+
+msgid "Linked pages"
+msgstr "Pages liées"
+
+msgid "ID of %s in other languages:"
+msgstr "N° des %s en d'autres langues"
+
+msgid "Check"
+msgstr "Cocher"
+
+msgid "to auto search linked %s. (read docs)"
+msgstr "pour auto-chercher les liens (lire la doc)"
+
+msgid "Find %s"
+msgstr "Trouver les %s"
+
+msgid "Settings"
+msgstr "Réglages"
+
+msgid "Select by default browser language of visitor"
+msgstr "Choisir par défaut la langue du navigateur de l'internaute."
+
+msgid "For new post, pre-select by default: browser language of author"
+msgstr "Pour un nouvel article, choisir par défaut la langue du navigateur de l'auteur."
+
+msgid "Language of visitor's browser"
+msgstr "Langue du navigateur"
+
+msgid "Language of dashboard"
+msgstr "Langue de l'admin."
+
+msgid "if not found"
+msgstr "si absente "
+
+msgid "Select language of the home page"
+msgstr "Choix de la langue de la page d'accueil"
+
+msgid "Theme's language when categories in 'all'"
+msgstr "Langue si catégories en toute langue"
+
+msgid "Language of first post in loop"
+msgstr "Langue du premier post listé"
+
+msgid "Modify home query"
+msgstr "Sous sélection à l'accueil"
+
+msgid "Software defined"
+msgstr "définie par logiciel"
+
+msgid "Enable gold functions"
+msgstr "Active les fonctions xilidev"
+
+msgid "Enable widgets"
+msgstr "Active les widgets"
+
+msgid "Current theme has no widgets support."
+msgstr "Le thème actif ne peut avoir de widgets."
+
+msgid "Bookmarks widget settings"
+msgstr "Réglages du widget Liens"
+
+msgid "Check the bookmark's categories where to enable multilanguage features."
+msgstr "Cocher les catégories de liens où la sélection par langue sera active."
+
+msgid "Link's language"
+msgstr "Language du lien"
+
+msgid "Check the language for this link"
+msgstr "Cocher la langue affectée au lien"
+
+msgid "Ever"
+msgstr "Toute"
+
+msgid "Set undefined posts..."
+msgstr "Affecter une langue aux articles indéfinis..."
+
+msgid "Choose target language…"
+msgstr "Choisir la langue cible…"
+
+msgid "Error: other post not present !!!"
+msgstr "Erreur : l'article est absent !!!"
+
+msgid "Special"
+msgstr "Fonctions spéciales"
+
+msgid "Special Gold Actions"
+msgstr "Actions spéciales \"Or\""
+
+msgid "xili-language plugin : THEME_TEXTDOMAIN UNDEFINED"
+msgstr "Extension xili-language : Constante THEME_TEXTDOMAIN non définie"
+
+msgid "no theme domain in index.php"
+msgstr "pas de domaine theme détecté dans index.php"
+
+msgid "no index.php in theme, domain not set"
+msgstr "pas de fichier index.php dans le thème, domain non affecté"
+
+msgid "Theme's informations:"
+msgstr "Informations sur le thème :"
+
+msgid "theme_domain:"
+msgstr "domaine du thème :"
+
+msgid "CAUTION: no load_theme_textdomain() in functions.php - review the content of file in the current theme or choose another canonical theme."
+msgstr "ATTENTION : il n'y a pas de load_theme_textdomain() dans functions.php - réviser ce fichier du thème courant or choisir un thème WP canonique."
+
+msgid "as function like:"
+msgstr "tel qu'ici :"
+
+msgid "Theme domain NOT defined"
+msgstr "domaine du thème non défini"
+
+msgid "Languages sub-folder:"
+msgstr "Sous dossier des fichiers '.mo' :"
+
+msgid "Available MO files:"
+msgstr "Fichiers .mo disponibles :"
+
+msgid "Nav menu: Home links in each language"
+msgstr "Menu de nav. : Liens accueil selon langue"
+
+msgid "child of"
+msgstr "fils de"
+
+msgid "This theme doesn't contain active Nav Menu. List of languages cannot be automatically added."
+msgstr "Ce thème ne contient pas de menu de navigation. La liste des liens de l'accueil dans les langues ne peut être ajoutée automatiquement."
+
+msgid "See <a href=\"%s\" title=\"Menu Items definition\">Appearance Menus activation</a> settings."
+msgstr "Voir l'<a href=\"%s\" title=\"Définition du menu\">activation du menu de navigation</a>."
+
+msgid "Choose location of nav menu where languages list will be automatically inserted:"
+msgstr "Choisir l'emplacement du menu où la liste des langues est insérée automatiquement :"
+
+msgid "Choose location of nav menu where sub-selection of pages list will be automatically inserted according current displayed language:"
+msgstr "Choisir l'emplacement du menu où la liste de la sous-sélection (selon la langue) des pages est insérée automatiquement :"
+
+msgid "Add list in nav menu"
+msgstr "Adjonction de la liste des langues"
+
+msgid "Menu Home item with lang."
+msgstr "Item Accueil avec sélection langue"
+
+msgid "Add selection of pages in nav menu"
+msgstr "Adjonction d'une sélection des pages"
+
+msgid "Theme's nav menu items settings:"
+msgstr "Pré-réglages des items du menu de navigation :"
+
+msgid "This theme doesn't contain active Nav Menu."
+msgstr "Ce thème ne contient pas de menu de navigation actif."
+
+msgid "See <a href=\"%s\" title=\"Menu Items definition\">Appearance Menus</a> settings."
+msgstr "Voir l'<a href=\"%s\" title=\"Définition des items du menu\">activation des items du menu de navigation</a>."
+
+msgid "This theme (%s) contains %d Nav Menu(s)."
+msgstr "Ce thème (%s) contient %d menu(s) actif(s)."
+
+msgid "Choose nav menu where languages list will be manually inserted:"
+msgstr "Selectionner le menu où les langues vont être insérées manuellement :"
+
+msgid "Be aware that list is already automatically inserted (see above) !"
+msgstr "Attention, il y a déjà une insertion automatique des liens d'accueil (voir ci-dessus) !"
+
+msgid "Do you want to add list of language links at the end ?"
+msgstr "Voulez-vous ajouter les liens pour la page des réglages ?"
+
+msgid "Add menu items"
+msgstr "Ajout des items"
+
+msgid "Things to remember to set xili-language:"
+msgstr "Eléments à retenir pour paramétrer xili-language afin d'obtenir un site multilingue :"
+
+msgid "Verify that the theme is localizable (like kubrick, fusion or twentyten)."
+msgstr "Verifier que le thème utilisé soit bien localisable (tel que kubrick, fusion, twentyten ou twentyeleven)."
+
+msgid "Define the list of targeted languages."
+msgstr "Définir la liste des langues utilisées."
+
+msgid "Prepare .po and .mo files for each language with poEdit or xili-dictionary plugin."
+msgstr "Prépare les fichiers .po et .mo de chaque langue avec poEdit ou mieux l'extension xili-dictionary."
+
+msgid "<a href=\"http://dev.xiligroup.com/xili-language\" target=\"_blank\">Xili-language Plugin Documentation</a>"
+msgstr "<a href=\"http://dev.xiligroup.com/xili-language\" target=\"_blank\">Documentation de l'extension xili-language</a>"
+
+msgid "<a href=\"http://codex.wordpress.org/\" target=\"_blank\">WordPress Documentation</a>"
+msgstr "<a href=\"http://codex.wordpress.org/\" target=\"_blank\">Documentation WordPress (codex)</a>"
+
+msgid "<a href=\"http://forum2.dev.xiligroup.com/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"http://forum2.dev.xiligroup.com/\" target=\"_blank\">Forum Support</a>"
+
+msgid "If your website contains custom post type: check those which need to be multilingual. xili-language will add automatically edit meta boxes."
+msgstr "Si votre site contient des contenus personnalisés (custom post): cocher ceux qui seront multilingues. xili-language va ajouter automatiquement les boites d'édition et de choix."
+
+msgid "Multilingual custom posts"
+msgstr "Contenus personnalisés multilingues"
+
+msgid "One custom post (%s) is available."
+msgstr "Un contenu personnalisé (%s) est activé."
+
+msgid "More than one custom post (%s) are available."
+msgstr "Des contenus personnalisés (%s) sont activés."
+
+msgid "Check the custom to enable multilanguage features."
+msgstr "Cocher les contenus pour activer le mode multilingue."
+
+msgid "Mail & Support"
+msgstr "Courriel et support"
+
+msgid "Mail to dev.xiligroup"
+msgstr "Courriel pour dev.xiligroup"
+
+msgid "Cc:"
+msgstr "Cc :"
+
+msgid "Type of webmaster:"
+msgstr "Type de webmestre :"
+
+msgid "Define your experience as webmaster…"
+msgstr "Décrivez votre expérience en webmestre…"
+
+msgid "Newbie in WP"
+msgstr "Novice en WP"
+
+msgid "Good knowledge in WP and few in php"
+msgstr "Bon niveau en WP mais peu en php"
+
+msgid "Good knowledge in WP, CMS and good in php"
+msgstr "Bon niveau en WP, CMS et bon en php"
+
+msgid "WP theme and /or plugin developper"
+msgstr "Développeur de themes WP et/ou de Plugin pour WP"
+
+msgid "Subject:"
+msgstr "Objet :"
+
+msgid "Choose topic..."
+msgstr "Choisir le thème..."
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Question"
+msgstr "Question"
+
+msgid "Encouragement"
+msgstr "Encouragement"
+
+msgid "Support need"
+msgstr "Demande de support"
+
+msgid "Your message here…"
+msgstr "Ecrire votre message…"
+
+msgid "Before send the mail, be accurate, check the infos to inform support and complete textarea. A copy (Cc:) is sent to webmaster email (modify it if needed)."
+msgstr "Avant d'envoyer le courriel, soyez précis, cocher les infos à envoyer au support et compléter les autres champs. Une copie est envoyée au webmestre (courriel à modifier si nécessaire)."
+
+msgid "Send email"
+msgstr "Envoyer le courriel"
+
+msgid "Thanks for your email. A copy was sent to %s (%s)"
+msgstr "Merci pour votre courriel dont une copie est envoyé à %s (%s)"
+
+msgid "Issue in your email. NOT sent to Cc: %s or the return address %s is not good !"
+msgstr "Anomalie dans votre courriel. NON envoyé en Cc à %s ou l'adresse de retour est incorrect !"
+
+msgid "Email sent."
+msgstr "Courriel envoyé"
+
+msgid "Uninstall Options"
+msgstr "Options de désinstallation"
+
+msgid "Delete DB plugin's datas"
+msgstr "Supprimer les données de l'extension dans la base de données !"
+
+msgid "CAUTION: When checking below, after deactivating xili-language plugin, if delete it through plugins list, ALL the xili-language datas in database will be definitively ERASED !!! (only multilingual features)"
+msgstr "ATTENTION : En cochant ci-dessous, après avoir désactivé l'extension xili-language si sa suppression est lancée, TOUTES les données de l'extension seront définitivement SUPPRIMEES !!! (pas les articles et liens mais leurs affectations multilingues)"
+
+msgid "Erase multilingual features of concerned posts by this language being erased !"
+msgstr "ATTENTION en cochant : les spécifications des articles concernés par cette langue seront effacés définitivement !"
+
+msgid "Languages by ©xiligroup"
+msgstr "Gestion des langues par ©xiligroup"
+
+msgid "Languages menu by ©xiligroup"
+msgstr "Menus de réglages des languages par ©xiligroup"
+
+msgid "Translation with %s tools"
+msgstr "Traduction avec la boite à outils %s"
+
