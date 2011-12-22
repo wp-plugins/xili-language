@@ -1,0 +1,242 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xili_language\n"
+"POT-Creation-Date: 2009-04-04 11:58+0100\n"
+"PO-Revision-Date: 2010-07-02 10:00+0100\n"
+"Last-Translator: dev.xiligroup.com <contact@xiligroup.com>\n"
+"Language-Team: dev.xiligroup.com <contact@xiligroup.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: VENEZUELA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: trunk\n"
+
+msgid "A new language was added."
+msgstr "Un nuevo idioma ha sido agregado."
+
+msgid "Language to update."
+msgstr "Idioma a actualizar."
+
+msgid "A language was updated."
+msgstr "Se ha actualizado un idioma."
+
+msgid "A language to delete."
+msgstr "Idioma a ser borrado."
+
+msgid "A language was deleted."
+msgstr "El idioma se ha borrado."
+
+msgid "Find above the list of languages."
+msgstr "Lista de idiomas (arriba)."
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Languages"
+msgstr "Idiomas"
+
+msgid "List of languages"
+msgstr "Lista de idiomas"
+
+msgid "Full name"
+msgstr "Nombre Completo"
+
+msgid "Name"
+msgstr "Nombre"
+
+msgid "Language slug"
+msgstr "Slung del idioma (nombre sin espacios y en minúsculas)"
+
+msgid "Order"
+msgstr "Orden"
+
+msgid "Note:"
+msgstr "Nota:"
+
+msgid "Update"
+msgstr "Actualizar"
+
+msgid "Edit language"
+msgstr "Editar idioma"
+
+msgid "Delete language ?"
+msgstr "Borrar idioma?"
+
+msgid "This plugin was developed with the taxonomies, terms tables and tags specifications. <br /> Here a new taxonomy was created and used for languages of posts and pages. <br /> New radiobuttons are available in Post (and Page) write and edit admin pages for selection by author. It is updated for WP 3.0 since 1.5"
+msgstr "Este plugin se ha desarrollado tomando en cuenta la tabla de taxonomías, términos y etiquetas. <br /> Se ha creado una nueva taxonomía para ser usado por los idiomas en el modo de edición y creación de páginas y entradas. <br /> A partir de este momento dispone de botones en las entradas (y páginas) para seleccionar el idioma. Actualizado para WP 3.0 desde su version 1.5"
+
+msgid "Add a language"
+msgstr "Agregar idioma"
+
+msgid "Add &raquo;"
+msgstr "Agregar &raquo;"
+
+msgid "Delete &raquo;"
+msgstr "Borrar &raquo;"
+
+msgid "Update &raquo;"
+msgstr "Actualizar &raquo;"
+
+msgid "Choose…"
+msgstr "Seleccionar..."
+
+msgid "Selected language"
+msgstr "Seleccionar idioma"
+
+msgid "english"
+msgstr "ingles"
+
+msgid "belgium french"
+msgstr "belga"
+
+msgid "french"
+msgstr "frances"
+
+msgid "german"
+msgstr "aleman"
+
+msgid "undefined"
+msgstr "no definido"
+
+msgid "Display"
+msgstr "Mostrar"
+
+msgid "Post ID"
+msgstr "ID de la entrada"
+
+msgid "Page ID"
+msgstr "ID de la página"
+
+msgid "Post's language"
+msgstr "Idiomas de la entrada"
+
+msgid "Page's language"
+msgstr "Idiomas de las páginas"
+
+msgid "The list of languages is not defined. Go to: "
+msgstr "No se ha definido una lista de idiomas. Para ir a hacerlo:"
+
+msgid "Linked posts"
+msgstr "Entradas linkeadas"
+
+msgid "Linked pages"
+msgstr "Páginas Linkeadas"
+
+msgid "ID of posts in other languages:"
+msgstr "ID de las entradas en otros idiomas:"
+
+msgid "ID of pages in other languages:"
+msgstr "ID de las páginas en otros idiomas:"
+
+msgid "Check"
+msgstr "Checkear"
+
+msgid "to auto search linked posts. (read docs)"
+msgstr "para encontrar de forma automática entradas linkeadas. (Ver Documentación)"
+
+msgid "to auto search linked pages. (read docs)"
+msgstr "para encontrar de forma automática páginas linkeadas. (Ver Documentación)"
+
+msgid "Settings"
+msgstr "Configuración"
+
+msgid "Select by default browser language of visitor"
+msgstr "Seleccionar de forma automática el idioma del explorador"
+
+msgid "For new post, pre-select by default: browser language of author"
+msgstr "Para las nuevas entradas seleccionar de forma automática el idioma del explorador."
+
+msgid "Language of visitor's browser"
+msgstr "Idioma del explorador del visitante"
+
+msgid "Select language of the home page"
+msgstr "Seleccionar idioma de la página principal"
+
+msgid "Software defined"
+msgstr "Definidor por el Software"
+
+msgid "Enable gold functions"
+msgstr "Habilitar las funciones de oro"
+
+msgid "Set undefined posts..."
+msgstr "Macar entradas no definidas..."
+
+msgid "Choose target language…"
+msgstr "Seleccionar idioma..."
+
+msgid "Error: other post not present !!!"
+msgstr "Error: no existen otras entradas !!!"
+
+msgid "Special"
+msgstr "Especial"
+
+msgid "Special Gold Actions"
+msgstr "Acción de Oro especial"
+
+msgid "xili-language plugin : THEME_TEXTDOMAIN UNDEFINED"
+msgstr "xili-language plugin : la variable THEME_TEXTDOMAIN no está definida"
+
+msgid "no theme domain in index.php"
+msgstr "no existe un dominio para el tema definido en index.php"
+
+msgid "no index.php in theme, domain not set"
+msgstr "no existe el archivo index.php en el tema, no se ha podido fijar el dominio"
+
+msgid "Theme's informations:"
+msgstr "Información del Tema:"
+
+msgid "theme_domain:"
+msgstr "dominio del tema:"
+
+msgid "as function like:"
+msgstr "como la siguiente función:"
+
+msgid "Theme domain NOT defined"
+msgstr "el dominio de tema no se ha definido"
+
+msgid "Languages sub-folder:"
+msgstr "Sub-Carpeta para los idiomas:"
+
+msgid "Available MO files:"
+msgstr "Archivos .MO disponibles:"
+
+msgid "Nav menu: Home links in each language"
+msgstr "Menú de Navegación: Enlace de inicio en cada lenguaje"
+
+msgid "This theme doesn't contain active Nav Menu. List of languages cannot be automatically added."
+msgstr "Este tema no contiene un Menú de Navegación activo. Por ello la lista de idiomas no se puede ser agregada de forma atutomática."
+
+msgid "See <a href=\"%s\" title=\"Menu Items definition\">Appearance Menus activation</a> settings."
+msgstr "Ver <a href=\"%s\" title=\"Definición del Menú\">activación del menú de navegación</a>."
+
+msgid "Add list in nav menu"
+msgstr "Agregar lista en el menú de navegación"
+
+msgid "Theme's nav menu items settings:"
+msgstr "Configuración del menú de navegación del tema:"
+
+msgid "This theme doesn't contain active Nav Menu."
+msgstr "Este tema no contiene un Menú de Navegación activo."
+
+msgid "See <a href=\"%s\" title=\"Menu Items definition\">Appearance Menus</a> settings."
+msgstr "Ver <a href=\"%s\" title=\"Definición del Menú\">activación del menú de navegación</a>."
+
+msgid "This theme (%s) contains \"%s\" Nav Menu."
+msgstr "Este tema (%s) contiene \"%s\" Menú de Navegación."
+
+msgid "This menu has %s item(s);"
+msgstr "Este menú tiene %s item(s)."
+
+msgid "Be aware that list is already automatically inserted (see above) !"
+msgstr "Tome en cuenta que la lista se crea de forma automatica (ver arriba)"
+
+msgid "Do you want to add list of language links at the end ?"
+msgstr "Desea agregar una lista con un enlace para cada idioma al final?"
+
+msgid "Add menu items"
+msgstr "Agregar times al menú"
+
