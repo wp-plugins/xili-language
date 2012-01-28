@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready
 Requires at least: 3.2
 Tested up to: 3.3
-Stable tag: 2.4.0
+Stable tag: 2.4.1
 
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -68,7 +68,8 @@ With around 5000 php lines, xili-language is not everything…
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * **as is** : see no warranty chapter in license GPLv2.
 
-= NEW Version 2.4.0 =
+= NEW Version 2.4.0, 2.4.1 =
+* Settings pages are now organized in 4 tabs with more online infos.
 * automatic rtl.css adding if present in theme like twentyten or twentyeleven - So supports better arabic, persian, hebraic and other *right to left* languages.
 * new way and options to manage dates translation using class wp_locale - before activation: read carefully [this keynote](http://dev.xiligroup.com/?p=2275)
 
@@ -254,25 +255,27 @@ The page as frontpage must have its clones in each other languages. Like for pos
 == Screenshots ==
 Here a selection of main screenshots.
 
-1. an example of wp-content/themes folder.
-2. the admin settings UI.
-3. the language setting in post writting UI.
-4. Source coding extract with 'international' text in 'xiliphone' theme.
-5. xili-dictionary: Admin Tools UI - functionalities windows.
-6. xili-language: Admin Tools UI - set homepage and author according his browser's language.
-7. xili-tidy-tags: Admin Tools UI - see this compatible plugin to group tags according languages.
-8. xili-language widget: Admin widgets UI - since 0.9.9.6, "multiple" languages list widget.
-9. xili-language: Special Admin UI sidebox - infos about theme's content for multilingual settings.
+1. an example of wp-content/themes folder and his languages sub-folder.
+2. Source coding extract with 'international' text in 'xiliphone' theme.
+3. The plugin settings UI - first tab: the languages list and edit form to add or edit.
+4. The plugin settings UI - second tab: Settings of front-end and languages behaviour.
+5. The plugin settings UI - third tab: Settings for navigation menus and experts.
+6. the language setting in post writting UI.
+7. xili-dictionary: Admin Tools UI - functionalities windows.
+8. xili-tidy-tags: Admin Tools UI - see this compatible plugin to group tags according languages.
+9. xili-language widget: Admin widgets UI - since 0.9.9.6, "multiple" languages list widget.
 10. xili-language: Post Edit UI - when clicking Add New, a new browser window is open and links input are prefilled.
 11. xili-language: Widget to display recent posts in choosen target language.
 12. xili-language: Post Edit UI - Check option to auto search will be useful for editor when working on existing posts and with multiple authors to collect translated linked posts.
-13. Since 1.8.0, if checked in settings, a custom post type can be multilingual like post or page type.
-14. Edit screen: example of a custom post type named book.
-15. Blogroll and bookmarks taxonomies and language sub-selection.
-16. Dashboard: Posts edit list with language sub-selection, quick edit and bulk edit available.
-17. Since 2.2.0, new xili-language trilogy menu in admin bar menu to group main settings for multilingual website.
+13. Edit screen: example of a custom post type named book.
+14. Blogroll and bookmarks taxonomies and language sub-selection.
+15. Dashboard: Posts edit list with language sub-selection, quick edit and bulk edit available.
+16. Since 2.2.0, new xili-language trilogy menu in admin bar menu to group main settings for multilingual website.
 
 == Changelog ==
+= 2.4.1 = 
+* Settings pages are now organized in 4 tabs.
+
 = 2.4.0 =
 * improvements of readme started.
 * automatic rtl.css adding if present in theme like twentyten or twentyeleven - So supports better arabic, persian, hebraic and other *right to left* languages.
@@ -391,7 +394,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 = first public release (beta)
 
-© 20120125 - MS - dev.xiligroup.com
+© 20120128 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
