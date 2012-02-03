@@ -2,7 +2,7 @@
 Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready
-Requires at least: 3.2
+Requires at least: 3.2.1
 Tested up to: 3.3.1
 Stable tag: 2.4.1
 
@@ -51,7 +51,7 @@ With around 5000 php lines, xili-language is not everything…
 
 * xili-language plugin **does not create additional tables in the database**. xili-language simply makes proper use of the taxonomy tables and postmeta table offered by WordPress to define language and link items between them. Because xili-language plugin does not modify deeply the post edit UI, it is possible to use **iPhone / iPod Touch** Wordpress app to prepare and draft the post.
 
-* xili-language plugin does not replace the author or the editor. No automatic translation. Content strategist is the master of the languages, the contents and the navigation inside the website. With xili-dictionary, webmaster can translate the theme's items. For design, the creator is free to choose text or graphic. xili-language does not provide flags !
+* xili-language plugin does not replace the author or the editor. No automatic translation. Content strategist is the master of the languages, the contents and the navigation inside the website. With xili-dictionary, webmaster can translate the theme's items. For design, the creator is free to choose text or graphic. xili-language does not provide flags ! Some good examples [here](http://www.famfamfam.com/lab/icons/flags/).
 
 = Newbie, WP user, Developer,… =
 
@@ -69,9 +69,12 @@ With around 5000 php lines, xili-language is not everything…
 * **as is** : see no warranty chapter in license GPLv2.
 
 = NEW Version 2.4.0, 2.4.1 =
+*2012-01-28*
+
 * Settings pages are now organized in 4 tabs with more online infos.
 * automatic rtl.css adding if present in theme like twentyten or twentyeleven - So supports better arabic, persian, hebraic and other *right to left* languages.
 * new way and options to manage dates translation using class wp_locale - before activation: read carefully [this keynote](http://dev.xiligroup.com/?p=2275)
+
 
 = News from 1.8.0 to 2.4.0 =
 
@@ -275,7 +278,6 @@ Here a selection of main screenshots.
 == Changelog ==
 = 2.4.1 = 
 * Settings pages are now organized in 4 tabs.
-
 = 2.4.0 =
 * improvements of readme started.
 * automatic rtl.css adding if present in theme like twentyten or twentyeleven - So supports better arabic, persian, hebraic and other *right to left* languages.
@@ -394,7 +396,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 = first public release (beta)
 
-© 20120128 - MS - dev.xiligroup.com
+© 20120203 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
