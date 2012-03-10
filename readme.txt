@@ -2,8 +2,8 @@
 Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready
-Requires at least: 3.2
-Tested up to: 3.3.2
+Requires at least: 3.2.1
+Tested up to: 3.3.1
 Stable tag: 2.4.3
 
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
@@ -69,7 +69,7 @@ With around 5000 php lines, xili-language is not everything…
 * **as is** : see no warranty chapter in license GPLv2.
 
 = NEW Version 2.4.0, 2.4.3 =
-* 2012-03-09
+* Last Updated 2012-03-09
 * Settings pages are now organized in 4 tabs with more online infos.
 * automatic rtl.css adding if present in theme like twentyten or twentyeleven - So supports better arabic, persian, hebraic and other *right to left* languages.
 * new way and options to manage dates translation using class wp_locale - before activation: read carefully [this keynote](http://dev.xiligroup.com/?p=2275)
@@ -278,7 +278,7 @@ Here a selection of main screenshots.
 == Changelog ==
 
 = 2.4.3 =
-* 2012-03-09
+* Last Updated 2012-03-09
 * ready for the new version of xili-dictionary 2 that uses now custom post type to store msg line.
 * compatible with themes with language files in sub-sub-folder of theme.
 = 2.4.1 = 
