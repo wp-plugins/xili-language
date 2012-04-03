@@ -83,7 +83,7 @@ With around 5000 php lines, xili-language is not everything…
 = Roadmap =
 
 * Improved documentation for template tags and functions - [started here](http://dev.xiligroup.com/?cat=393&lang=en_us&post_type=xilifunctions).
-* New dashboard UI incorporating latest WP core libraries.
+* New dashboard UI incorporating latest WP core libraries. [New version 2.5 release candidate 1 is available here](http://wordpress.org/extend/plugins/xili-language/download/).
 * Delivery of a *premium* version (with powerful features and attractive fees) packaged with professional support.
 
 
