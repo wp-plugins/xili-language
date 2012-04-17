@@ -265,7 +265,7 @@ Here a selection of main screenshots.
 3. The plugin settings UI - first tab: the languages list and edit form to add or edit.
 4. The plugin settings UI - second tab: Settings of front-end and languages behaviour.
 5. The plugin settings UI - third tab: Settings for navigation menus and experts.
-6. The language dashboard in post writting UI under the content textarea. For more infos and how to, visit the [http://wiki.xiligroup.org/index.php/Xili-language_v2.5#Getting_started_:_linking_posts_with_different_language).
+6. The language dashboard in post writting UI under the content textarea. For more infos and how to, visit the [wiki website](http://wiki.xiligroup.org/index.php/Xili-language_v2.5#Getting_started_:_linking_posts_with_different_language).
 7. List of posts with language column and infos about linked posts. For more infos and how to, visit the [wiki website](http://wiki.xiligroup.org/index.php/Xili-language_v2.5).
 8. Dashboard: Posts edit list with language sub-selection, quick edit and bulk edit available.
 9. xili-dictionary v.2
