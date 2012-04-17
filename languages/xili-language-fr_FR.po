@@ -1,0 +1,1318 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xili_language\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-15 21:05+0100\n"
+"PO-Revision-Date: 2012-04-15 21:15+0100\n"
+"Last-Translator: dev.xiligroup <contact@xiligroup.com>\n"
+"Language-Team: dev.xiligroup.com <contact@xiligroup.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: xili-language.php:647
+msgid "A term with the name provided already exists."
+msgstr "Un terme existe déjà."
+
+#: xili-language.php:787
+#, php-format
+msgid "%s of this %s"
+msgstr "%s : %s"
+
+#: xili-language.php:787
+msgid "Translations"
+msgstr "Traductions"
+
+#: xili-language.php:844
+#, php-format
+msgid "This list gathers together the titles and infos about (now and future) linked posts by language. For more info, visit the <a href=\"%s\">wiki</a> website."
+msgstr "La liste ci-contre regroupe les titres et informations sur les articles liés (présent ou futur) selon leur langue. Plus plus d'infos, visiter <a href=\"%s\">les pages wiki</a>."
+
+#: xili-language.php:860
+msgid "Refresh links series"
+msgstr "Rafraichir la série des liens"
+
+#: xili-language.php:860
+msgid "Refresh links"
+msgstr "Rafraichir les liens"
+
+#: xili-language.php:863
+msgid "set post to:"
+msgstr "cocher en :"
+
+#: xili-language.php:863
+#: xili-language.php:3168
+#: xili-language.php:3250
+#: xili-language.php:4794
+#: xili-language.php:5174
+msgid "undefined"
+msgstr "non définie"
+
+#: xili-language.php:889
+#, php-format
+msgid "link to edit post %d in %s"
+msgstr "lien pour éditer l'article %d en %s"
+
+#: xili-language.php:890
+#, php-format
+msgid "<a href=\"%1$s\" title=\"%2$s\" >%3$s</a>"
+msgstr ""
+
+#: xili-language.php:942
+msgid "Your browser language preset by default for this new post..."
+msgstr "Préselection de la langue du navigateur pour ce nouvel article..."
+
+#: xili-language.php:999
+#: xili-language.php:3142
+#: xili-language.php:3166
+#: xili-language.php:3247
+#: xili-language.php:3479
+#: xili-language.php:4754
+msgid "Language"
+msgstr "Langue"
+
+#: xili-language.php:999
+#: xili-language.php:4484
+msgid "ID"
+msgstr ""
+
+#: xili-language.php:999
+msgid "Title"
+msgstr "Titre"
+
+#: xili-language.php:999
+msgid "Status"
+msgstr "Statut"
+
+#: xili-language.php:999
+#: xili-language.php:1026
+#: xili-language.php:4638
+msgid "Edit"
+msgstr "Modifier"
+
+#: xili-language.php:1024
+msgid "uneditable"
+msgstr "non modifiable"
+
+#: xili-language.php:1036
+#: xili-language.php:1080
+msgid "Privately Published"
+msgstr ""
+
+#: xili-language.php:1039
+#: xili-language.php:1083
+msgid "Published"
+msgstr ""
+
+#: xili-language.php:1042
+#: xili-language.php:1086
+msgid "Scheduled"
+msgstr ""
+
+#: xili-language.php:1045
+#: xili-language.php:1089
+msgid "Pending Review"
+msgstr ""
+
+#: xili-language.php:1048
+#: xili-language.php:1092
+msgid "Trash"
+msgstr "Corbeille"
+
+#: xili-language.php:1052
+#: xili-language.php:1096
+msgid "Draft"
+msgstr ""
+
+#: xili-language.php:1063
+#: xili-language.php:1106
+msgid "Search linked post"
+msgstr "Recherche articles liés "
+
+#: xili-language.php:1063
+#: xili-language.php:1106
+#: xili-language.php:3063
+msgid "Search"
+msgstr ""
+
+#: xili-language.php:1065
+#: xili-language.php:1109
+#: xili-language.php:3111
+msgid "not yet translated"
+msgstr "non traduit"
+
+#: xili-language.php:1066
+#: xili-language.php:1110
+msgid "Create"
+msgstr "Créer"
+
+#: xili-language.php:1066
+#: xili-language.php:1110
+#, php-format
+msgid "For create a linked draft translation in %s"
+msgstr "Pour créer un brouillon de traduction en %s"
+
+#: xili-language.php:1123
+msgid "select one of these languages !"
+msgstr "choisir une des langues !"
+
+#: xili-language.php:1156
+#, php-format
+msgid "Please translate in %s: "
+msgstr "A traduire en %s"
+
+#: xili-language.php:2801
+msgid "Languages by ©xiligroup"
+msgstr "Gestion des langues par ©xiligroup"
+
+#: xili-language.php:2802
+msgid "Languages menu by ©xiligroup"
+msgstr "Menus de réglages des languages par ©xiligroup"
+
+#: xili-language.php:2811
+#: xili-language.php:2815
+msgid "Languages settings"
+msgstr "Réglages langues"
+
+#: xili-language.php:2820
+#: xili-language.php:2824
+#, php-format
+msgid "Tidy %s settings"
+msgstr "Réglages Tidy %s"
+
+#: xili-language.php:2820
+#: xili-language.php:2824
+#: xili-language.php:2828
+#: xili-language.php:2832
+msgid "Tags"
+msgstr "Mots clés"
+
+#: xili-language.php:2828
+#: xili-language.php:2832
+#, php-format
+msgid "%s groups"
+msgstr "groupes %s"
+
+#: xili-language.php:2848
+#, php-format
+msgid "Translation with %s tools"
+msgstr "Traduction avec la boite à outils %s"
+
+#: xili-language.php:2852
+msgid "xili-language : how to"
+msgstr "Assistance, support xili-language"
+
+#: xili-language.php:2859
+msgid "About ©xiligroup plugins"
+msgstr "A propos des extensions ©xiligroup"
+
+#: xili-language.php:2886
+#: xili-language.php:2889
+#: xili-language.php:2892
+#: xili-language.php:2895
+msgid "xili-language plugin"
+msgstr "Extension xili-language"
+
+#: xili-language.php:2886
+msgid "Languages ©xili"
+msgstr "Langues ©xili"
+
+#: xili-language.php:2907
+#: xili-language.php:4946
+msgid "Message"
+msgstr "Message"
+
+#: xili-language.php:2908
+#: xili-language.php:2925
+#: xili-language.php:2940
+#: xili-language.php:2952
+msgid "Info"
+msgstr "Information"
+
+#: xili-language.php:2912
+msgid "Uninstall Options"
+msgstr "Options de désinstallation"
+
+#: xili-language.php:2924
+#: xili-language.php:2937
+msgid "Current theme infos"
+msgstr "Infos sur le thème actif"
+
+#: xili-language.php:2939
+msgid "Special"
+msgstr "Fonctions spéciales"
+
+#: xili-language.php:2965
+#: xili-language.php:3035
+#: xili-language.php:3617
+msgid "Settings"
+msgstr "Réglages"
+
+#: xili-language.php:2966
+msgid "Informations and Getting started:"
+msgstr "Informations et prise en main :"
+
+#: xili-language.php:2966
+msgid "Xili Wiki"
+msgstr ""
+
+#: xili-language.php:2967
+msgid "Forum and Support"
+msgstr "Forum et support"
+
+#: xili-language.php:2968
+msgid "Donate"
+msgstr "Donation"
+
+#: xili-language.php:2982
+msgid "Congratulations for choosing xili-language to built a multilingual website. To work optimally, 2 other plugins are recommended"
+msgstr "Félicitations pour avoir choisi xili-language pour bâtir le site multilingue. Pour un fonctionnement optimum, deux autres extensions sont recommandées."
+
+#: xili-language.php:2989
+#: xili-language.php:4237
+#: xili-language.php:4277
+msgid "child of"
+msgstr "fils de"
+
+#: xili-language.php:2994
+#, php-format
+msgid "For Appearance the current active theme is <em>%s</em>"
+msgstr "Pour l'apparence, le thème actif est <em>%s</em>"
+
+#: xili-language.php:2997
+#, php-format
+msgid "This theme <em>%s</em> seems to not contain localization function (load_theme_textdomain) to be used for a multilingual website"
+msgstr "Ce thème <em>%s</em> semble ne pas contenir la fonction de localisation (load_theme_textdomain) pour être utilisé pour un site multilingue"
+
+#: xili-language.php:2999
+#, php-format
+msgid "This theme <em>%s</em> seems to contain localization function to be used for a multilingual website"
+msgstr "Ce thème <em>%s</em> semble contenir la fonction de localisation pour faire un site multilingue"
+
+#: xili-language.php:3003
+msgid "More infos about"
+msgstr "Plus d'infos sur"
+
+#: xili-language.php:3012
+msgid "active"
+msgstr ""
+
+#: xili-language.php:3016
+msgid "inactive"
+msgstr ""
+
+#: xili-language.php:3018
+msgid "not installed"
+msgstr "non installée"
+
+#: xili-language.php:3022
+#, php-format
+msgid "Plugin %s is %s"
+msgstr "L'extension %s est %s"
+
+#: xili-language.php:3054
+#, php-format
+msgid "Find %s"
+msgstr "Trouver les %s"
+
+#: xili-language.php:3074
+msgid "Select"
+msgstr "Choisir"
+
+#: xili-language.php:3097
+msgid "See list of languages…"
+msgstr "Voir la liste des langues…"
+
+#: xili-language.php:3113
+msgid "translated in:"
+msgstr "traduit en :"
+
+#: xili-language.php:3218
+msgid "View all languages"
+msgstr "Voir toutes les langues"
+
+#: xili-language.php:3220
+msgid "Without language"
+msgstr "Langue non définie"
+
+#: xili-language.php:3249
+msgid "&mdash; No Change &mdash;"
+msgstr ""
+
+#: xili-language.php:3332
+msgid "Add &raquo;"
+msgstr "Ajouter…"
+
+#: xili-language.php:3333
+msgid "Cancel"
+msgstr ""
+
+#: xili-language.php:3391
+#: xili-language.php:3485
+msgid "A new language was added."
+msgstr "Une nouvelle langue a été ajoutée."
+
+#: xili-language.php:3407
+msgid "Update &raquo;"
+msgstr "Mettre à jour…"
+
+#: xili-language.php:3409
+#: xili-language.php:3483
+msgid "Language to update."
+msgstr "Langue à mettre à jour."
+
+#: xili-language.php:3428
+#: xili-language.php:3484
+msgid "A language was updated."
+msgstr "Une langue a été mise à jour."
+
+#: xili-language.php:3438
+msgid "Delete &raquo;"
+msgstr "Supprimer…"
+
+#: xili-language.php:3441
+#: xili-language.php:3481
+msgid "A language to delete."
+msgstr "Langue à effacer."
+
+#: xili-language.php:3463
+#: xili-language.php:3482
+msgid "A language was deleted."
+msgstr "Une langue a été supprimée."
+
+#: xili-language.php:3473
+msgid "Find above the list of languages."
+msgstr "Voici la liste des langues."
+
+#: xili-language.php:3478
+msgid "List of languages"
+msgstr "Liste des langues"
+
+#: xili-language.php:3486
+msgid "Error when updating."
+msgstr "Erreur lors de la mise à jour."
+
+#: xili-language.php:3487
+msgid "Error when adding."
+msgstr "Erreur lors de la création."
+
+#: xili-language.php:3499
+#: xili-language.php:3631
+#: xili-language.php:3759
+#: xili-language.php:3853
+msgid "Languages"
+msgstr "Langues"
+
+#: xili-language.php:3558
+msgid "posts are set in:"
+msgstr "articles sans langue :"
+
+#: xili-language.php:3558
+#: xili-language.php:3561
+msgid "category"
+msgstr "categorie"
+
+#: xili-language.php:3561
+msgid "posts are undefined in"
+msgstr "articles indéfinis en"
+
+#: xili-language.php:3609
+#, php-format
+msgid "Options are updated: home language = %s, For Author language of a new post = %s, xilidev functions = %s "
+msgstr "Options mise à jour : home language = %s, For Author language of a new post = %s, xilidev functions = %s "
+
+#: xili-language.php:3679
+msgid "Go to Nav-menus in Themes to validate changes"
+msgstr "Visiter la page des menus dans Apparence pour valider les changements"
+
+#: xili-language.php:3698
+msgid "Locations menu not set: go to menus settings"
+msgstr "Pas d'espace menu : aller aux réglages menus"
+
+#: xili-language.php:3713
+#, php-format
+msgid "Options are updated: Automatic Nav Menu = %s, Selection of pages in Nav Menu = %s"
+msgstr "Options mises à jour : Automatic Nav Menu = %s, Selection of pages in Nav Menu = %s"
+
+#: xili-language.php:3741
+#, php-format
+msgid "Options are updated %s "
+msgstr "Options mises à jour %s"
+
+#: xili-language.php:3748
+msgid "Navigation menus"
+msgstr "Menu(s) de navigation"
+
+#: xili-language.php:3830
+#: xili-language.php:3839
+msgid "Email sent."
+msgstr "Courriel envoyé"
+
+#: xili-language.php:3832
+#, php-format
+msgid "Thanks for your email. A copy was sent to %s (%s)"
+msgstr "Merci pour votre courriel dont une copie est envoyé à %s (%s)"
+
+#: xili-language.php:3835
+#, php-format
+msgid "Issue in your email. NOT sent to Cc: %s or the return address %s is not good !"
+msgstr "Anomalie dans votre courriel. NON envoyé en Cc à %s ou l'adresse de retour %s est incorrect !"
+
+#: xili-language.php:3840
+msgid "Email not sent. Please verify email field"
+msgstr "Courriel non envoyé. Vérifier le champ email."
+
+#: xili-language.php:3842
+msgid "Mail & Support"
+msgstr "Courriel et support"
+
+#: xili-language.php:3866
+#, php-format
+msgid "For support, before sending an email with the form below, don't forget to visit the readme as %shere%s and the links listed in contextual help tab (on top left)."
+msgstr "Pour le support, avant d'envoyer un courriel via le formulaire ci-dessous, ne pas oublier de relire le texte joint à l'extension %sici%s et les textes des liens disponibles dans l'aide contextuelle (en haut à gauche)."
+
+#: xili-language.php:3883
+msgid "Languages page"
+msgstr "Liste des langues"
+
+#: xili-language.php:3884
+msgid "Languages front-end settings"
+msgstr "Réglages langues"
+
+#: xili-language.php:3885
+msgid "Settings for experts"
+msgstr "Réglages experts"
+
+#: xili-language.php:3886
+msgid "xili-language support"
+msgstr "Assistance, support xili-language"
+
+#: xili-language.php:3931
+msgid "Author"
+msgstr ""
+
+#: xili-language.php:3991
+msgid "no load_theme_textdomain in functions.php"
+msgstr "pas de load_theme_textdomain dans functions.php"
+
+#: xili-language.php:4020
+#: xili-language.php:4903
+msgid "Note:"
+msgstr "Note et message :"
+
+#: xili-language.php:4030
+msgid "This plugin was developed with the taxonomies, terms tables and tags specifications. <br /> xili-language create a new taxonomy used for languages of posts and pages and custom post types. For settings (basic or expert), 4 tabs were available since v. 2.4.1.<br /><br /> To attach a language to post, radiobuttons are available in Post (and Page) write and edit admin pages for selection by author and also in Quick Edit bulk mode of Posts list. It is updated for WP 3.3 since 2.3 version."
+msgstr "Ce plugin a été développé sur la base des tables taxonomy et terms... <br /> xili-language crée une taxinomie pour spécifier la langue de chaque article (de tout type). Ici, on définit la liste et on fait les réglages la gestion des langues. Depuis la version 2.4.1, les éléments de réglages sont répartis selon 4 onglets.<br />Dans la colonne droite des pages d'édition des pages et articles, il y a sur le côté droit un selecteur radio-bouton des langues à choisir. De même, un menu déroulant est disponible dans le mode -modification rapide- de la liste des articles. Il est mis à jour pour WP 3.3. depuis la version 2.3."
+
+#: xili-language.php:4044
+msgid "Here select language of the home page"
+msgstr "Sélectionner la langue de la page d'accueil"
+
+#: xili-language.php:4046
+msgid "Select language of the home page"
+msgstr "Choix de la langue de la page d'accueil"
+
+#: xili-language.php:4053
+#: xili-language.php:4098
+msgid "Software defined"
+msgstr "définie par logiciel"
+
+#: xili-language.php:4054
+#: xili-language.php:4099
+msgid "Language of visitor's browser"
+msgstr "Langue du navigateur"
+
+#: xili-language.php:4067
+msgid "if not found"
+msgstr "si absente "
+
+#: xili-language.php:4073
+msgid "Language of dashboard"
+msgstr "Langue de l'admin."
+
+#: xili-language.php:4087
+msgid "Modify home query"
+msgstr "Sous sélection à l'accueil"
+
+#: xili-language.php:4092
+msgid "Here select language of the theme items when a category is displayed without language sub-selection"
+msgstr "Sélection de la langue des éléments du thème quand une catégorie est affichée sans sous-sélection de langue"
+
+#: xili-language.php:4094
+msgid "Theme's language when categories in 'all'"
+msgstr "Langue si catégories en toute langue"
+
+#: xili-language.php:4100
+msgid "Language of first post in loop"
+msgstr "Langue du premier post listé"
+
+#: xili-language.php:4115
+msgid "For new post, in post edit author side:"
+msgstr "Dans l'interface de création, du côté de l'auteur :"
+
+#: xili-language.php:4118
+msgid "For new post, pre-select by default: browser language of author"
+msgstr "Pour un nouvel article, choisir par défaut la langue du navigateur de l'auteur."
+
+#: xili-language.php:4122
+msgid "Enable gold functions"
+msgstr "Active les fonctions xilidev"
+
+#: xili-language.php:4142
+msgid "Multilingual custom posts"
+msgstr "Contenus personnalisés multilingues"
+
+#: xili-language.php:4143
+#, php-format
+msgid "One custom post (%s) is available."
+msgstr "Un contenu personnalisé (%s) est activé."
+
+#: xili-language.php:4143
+#, php-format
+msgid "More than one custom post (%s) are available."
+msgstr "Des contenus personnalisés (%s) sont activés."
+
+#: xili-language.php:4145
+msgid "Check the custom to enable multilanguage features."
+msgstr "Cocher les contenus pour activer le mode multilingue."
+
+#: xili-language.php:4157
+msgid "Enable widgets"
+msgstr "Active les widgets"
+
+#: xili-language.php:4159
+msgid "Current theme has no widgets support."
+msgstr "Le thème actif ne peut avoir de widgets."
+
+#: xili-language.php:4166
+msgid "Bookmarks widget settings"
+msgstr "Réglages du widget Liens"
+
+#: xili-language.php:4167
+msgid "Check the bookmark's categories where to enable multilanguage features."
+msgstr "Cocher les catégories de liens où la sélection par langue sera active."
+
+#: xili-language.php:4169
+msgid "All Links"
+msgstr ""
+
+#: xili-language.php:4185
+#: xili-language.php:4222
+#: xili-language.php:4341
+#: xili-language.php:4368
+#: xili-language.php:4976
+msgid "Update"
+msgstr "Mettre à jour "
+
+#: xili-language.php:4199
+msgid "Permalinks rules"
+msgstr ""
+
+#: xili-language.php:4200
+msgid "force permalinks flush"
+msgstr ""
+
+#: xili-language.php:4203
+msgid "Translation domains settings"
+msgstr "Réglage du domaine de traduction"
+
+#: xili-language.php:4204
+msgid "For experts in multilingual CMS: Check to modify domains switching."
+msgstr ""
+
+#: xili-language.php:4207
+msgid "Switch all domains excepted default WP"
+msgstr ""
+
+#: xili-language.php:4216
+msgid "Locale (date) translation"
+msgstr ""
+
+#: xili-language.php:4217
+msgid "Since v2.4, new way for locale (wp_locale) translation."
+msgstr "Depuis la v. 2.4, nouveau mode pour la traduction de WP_Locale."
+
+#: xili-language.php:4218
+msgid "Mode wp_locale"
+msgstr ""
+
+#: xili-language.php:4242
+msgid "Theme type and domain:"
+msgstr "Type et domaine du thème :"
+
+#: xili-language.php:4246
+msgid "theme_domain:"
+msgstr "domaine du thème :"
+
+#: xili-language.php:4246
+msgid "as function like:"
+msgstr "tel qu'ici :"
+
+#: xili-language.php:4248
+msgid "Theme domain NOT defined"
+msgstr "domaine du thème non défini"
+
+#: xili-language.php:4253
+msgid "Language files:"
+msgstr "Fichiers langue"
+
+#: xili-language.php:4255
+msgid "Languages sub-folder:"
+msgstr "Sous dossier des fichiers '.mo' :"
+
+#: xili-language.php:4256
+msgid "Available MO files:"
+msgstr "Fichiers .mo disponibles :"
+
+#: xili-language.php:4260
+msgid "CAUTION: no load_theme_textdomain() in functions.php - review the content of file in the current theme or choose another canonical theme."
+msgstr "ATTENTION : il n'y a pas de load_theme_textdomain() dans functions.php - réviser ce fichier du thème courant or choisir un thème WP canonique."
+
+#: xili-language.php:4285
+msgid "Nav menu: Home links in each language"
+msgstr "Menu de navigation : Liens accueil selon langue"
+
+#: xili-language.php:4293
+msgid "Choose location(s) of nav menu(s) where languages list will be automatically inserted. For each location, choose the type of list. Experts can create their own list by using api (hook) available in plugin."
+msgstr "Choisir le(s) emplacement(s) de menu(s) où la liste des langues est insérée automatiquement. Pour chaque lieu, choisir le type de liste. Les experts peuvent créer leurs propres listes en utilisant les apis disponibles dans l'extension."
+
+#: xili-language.php:4312
+msgid "Type"
+msgstr ""
+
+#: xili-language.php:4337
+msgid "Add list in nav menu"
+msgstr "Adjonction de la liste des langues"
+
+#: xili-language.php:4340
+msgid "Menu Home item with lang."
+msgstr "Item Accueil avec sélection langue"
+
+#: xili-language.php:4345
+msgid "Nav menu: Automatic sub-selection of pages according current language"
+msgstr "Menu de navigation : Sous-sélection automatique des pages insérées selon la langue courante"
+
+#: xili-language.php:4347
+msgid "Choose location of nav menu where sub-selection of pages list will be automatically inserted according current displayed language:"
+msgstr "Choisir l'emplacement du menu où la liste de la sous-sélection (selon la langue) des pages est insérée automatiquement :"
+
+#: xili-language.php:4364
+msgid "Add selection of pages in nav menu"
+msgstr "Adjonction d'une sélection des pages"
+
+#: xili-language.php:4366
+msgid "Args"
+msgstr ""
+
+#: xili-language.php:4370
+msgid "This theme doesn't contain active Nav Menu. List of languages cannot be automatically added."
+msgstr "Ce thème ne contient pas de menu de navigation. La liste des liens de l'accueil dans les langues ne peut être ajoutée automatiquement."
+
+#: xili-language.php:4371
+#, php-format
+msgid "See <a href=\"%s\" title=\"Menu Items definition\">Appearance Menus activation</a> settings."
+msgstr "Voir l'<a href=\"%s\" title=\"Définition du menu\">activation du menu de navigation</a>."
+
+#: xili-language.php:4377
+msgid "Theme's nav menu items settings"
+msgstr "Pré-écriture des items du menu de navigation"
+
+#: xili-language.php:4382
+#, php-format
+msgid "This theme (%s) contains %d Nav Menu(s)."
+msgstr "Ce thème (%s) contient %d menu(s) actif(s)."
+
+#: xili-language.php:4383
+msgid "Choose nav menu where languages list will be manually inserted:"
+msgstr "Selectionner le menu où les langues vont être insérées manuellement :"
+
+#: xili-language.php:4400
+#: xili-language.php:4412
+#, php-format
+msgid "See <a href=\"%s\" title=\"Menu Items definition\">Appearance Menus</a> settings."
+msgstr "Voir l'<a href=\"%s\" title=\"Définition des items du menu\">activation des items du menu de navigation</a>."
+
+#: xili-language.php:4402
+msgid "Be aware that list is already automatically inserted (see above) !"
+msgstr "Attention, il y a déjà une insertion automatique des liens d'accueil (voir ci-dessus) !"
+
+#: xili-language.php:4407
+msgid "Do you want to add list of language links at the end ?"
+msgstr "Voulez-vous ajouter les liens pour la page des réglages ?"
+
+#: xili-language.php:4408
+msgid "Add menu items"
+msgstr "Ajout des items"
+
+#: xili-language.php:4411
+msgid "This theme doesn't contain active Nav Menu."
+msgstr "Ce thème ne contient pas de menu de navigation actif."
+
+#: xili-language.php:4419
+msgid "Special Gold Actions"
+msgstr "Actions spéciales \"Or\""
+
+#: xili-language.php:4468
+msgid "language items added"
+msgstr "Une nouvelle langue a été ajoutée"
+
+#: xili-language.php:4470
+msgid "seems to be set"
+msgstr "semble être réglé"
+
+#: xili-language.php:4485
+#: xili-language.php:4528
+msgid "Name"
+msgstr "Nom "
+
+#: xili-language.php:4486
+#: xili-language.php:4536
+msgid "Full name"
+msgstr "Nom complet "
+
+#: xili-language.php:4487
+#: xili-language.php:4532
+msgid "Language slug"
+msgstr "Code "
+
+#: xili-language.php:4488
+#: xili-language.php:4541
+msgid "Order"
+msgstr "Ordre "
+
+#: xili-language.php:4489
+msgid "Vis."
+msgstr ""
+
+#: xili-language.php:4490
+msgid "Posts"
+msgstr "Articles"
+
+#: xili-language.php:4491
+msgid "Action"
+msgstr ""
+
+#: xili-language.php:4499
+msgid "Add a language"
+msgstr "Ajouter une langue"
+
+#: xili-language.php:4522
+msgid "Examples"
+msgstr "Exemples "
+
+#: xili-language.php:4525
+msgid "ISO Language-Codes"
+msgstr "Code ISO de la langue"
+
+#: xili-language.php:4525
+msgid "ISO Country-Codes"
+msgstr ""
+
+#: xili-language.php:4543
+msgid "hidden"
+msgstr "masquée"
+
+#: xili-language.php:4544
+msgid "Server Entities Charset:"
+msgstr ""
+
+#: xili-language.php:4550
+msgid "Erase multilingual features of concerned posts by this language being erased !"
+msgstr "ATTENTION en cochant : les spécifications des articles concernés par cette langue seront effacés définitivement !"
+
+#: xili-language.php:4581
+msgid "Choose…"
+msgstr "Choisir…"
+
+#: xili-language.php:4640
+msgid "Delete"
+msgstr "Supprimer"
+
+#: xili-language.php:4765
+msgid "Link's language"
+msgstr "Language du lien"
+
+#: xili-language.php:4782
+msgid "Check the language for this link"
+msgstr "Cocher la langue affectée au lien"
+
+#: xili-language.php:4793
+msgid "Ever"
+msgstr "Toute"
+
+#: xili-language.php:4868
+msgid "Things to remember to set xili-language:"
+msgstr "Eléments à retenir pour paramétrer xili-language afin d'obtenir un site multilingue :"
+
+#: xili-language.php:4870
+msgid "Verify that the theme is localizable (like kubrick, fusion or twentyten)."
+msgstr "Vérifier que le thème utilisé soit bien localisable (tel que kubrick, fusion, twentyten ou twentyeleven)."
+
+#: xili-language.php:4871
+msgid "Define the list of targeted languages."
+msgstr "Définir la liste des langues utilisées."
+
+#: xili-language.php:4872
+msgid "Prepare .po and .mo files for each language with poEdit or xili-dictionary plugin."
+msgstr "Préparer les fichiers .po et .mo de chaque langue avec poEdit ou mieux l'extension xili-dictionary."
+
+#: xili-language.php:4873
+msgid "If your website contains custom post type: check those which need to be multilingual. xili-language will add automatically edit meta boxes."
+msgstr "Si votre site contient des contenus personnalisés (custom post): cocher ceux qui seront multilingues. xili-language va ajouter automatiquement les boites d'édition et de choix."
+
+#: xili-language.php:4876
+msgid "For more information:"
+msgstr "Pour plus d'informations :"
+
+#: xili-language.php:4877
+msgid "<a href=\"http://dev.xiligroup.com/xili-language\" target=\"_blank\">Xili-language Plugin Documentation</a>"
+msgstr "<a href=\"http://dev.xiligroup.com/xili-language\" target=\"_blank\">Documentation de l'extension xili-language</a>"
+
+#: xili-language.php:4878
+msgid "<a href=\"http://wiki.xiligroup.org/\" target=\"_blank\">Xili Wiki Documentation</a>"
+msgstr "<a href=\"http://wiki.xiligroup.org\" target=\"_blank\">Documents xili wiki</a>"
+
+#: xili-language.php:4879
+msgid "<a href=\"http://forum2.dev.xiligroup.com/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"http://forum2.dev.xiligroup.com/\" target=\"_blank\">Forum Support</a>"
+
+#: xili-language.php:4880
+msgid "<a href=\"http://codex.wordpress.org/\" target=\"_blank\">WordPress Documentation</a>"
+msgstr "<a href=\"http://codex.wordpress.org/\" target=\"_blank\">Documentation WordPress (codex)</a>"
+
+#: xili-language.php:4906
+msgid "Mail to dev.xiligroup"
+msgstr "Courriel pour dev.xiligroup"
+
+#: xili-language.php:4907
+msgid "Cc: (Reply to:)"
+msgstr "Cc: (Répondre à:)"
+
+#: xili-language.php:4934
+msgid "Type of webmaster:"
+msgstr "Type de webmestre :"
+
+#: xili-language.php:4936
+msgid "Define your experience as webmaster…"
+msgstr "Décrivez votre expérience en webmestre…"
+
+#: xili-language.php:4937
+msgid "Newbie in WP"
+msgstr "Novice en WP"
+
+#: xili-language.php:4938
+msgid "Good knowledge in WP and few in php"
+msgstr "Bon niveau en WP mais peu en php"
+
+#: xili-language.php:4939
+msgid "Good knowledge in WP, CMS and good in php"
+msgstr "Bon niveau en WP, CMS et bon en php"
+
+#: xili-language.php:4940
+msgid "WP theme and /or plugin developper"
+msgstr "Développeur de themes WP et/ou de Plugin pour WP"
+
+#: xili-language.php:4942
+msgid "Subject:"
+msgstr "Objet :"
+
+#: xili-language.php:4945
+msgid "Choose topic..."
+msgstr "Choisir le thème..."
+
+#: xili-language.php:4947
+msgid "Question"
+msgstr "Question"
+
+#: xili-language.php:4948
+msgid "Encouragement"
+msgstr "Encouragement"
+
+#: xili-language.php:4949
+msgid "Support need"
+msgstr "Demande de support"
+
+#: xili-language.php:4951
+msgid "Your message here…"
+msgstr "Ecrire votre message…"
+
+#: xili-language.php:4954
+msgid "Before send the mail, be accurate, check the infos to inform support and complete textarea. A copy (Cc:) is sent to webmaster email (modify it if needed)."
+msgstr "Avant d'envoyer le courriel, soyez précis, cocher les infos à envoyer au support et compléter les autres champs. Une copie est envoyée au webmestre (courriel à modifier si nécessaire)."
+
+#: xili-language.php:4957
+msgid "Send email"
+msgstr "Envoyer le courriel"
+
+#: xili-language.php:4971
+msgid "CAUTION: When checking below, after deactivating xili-language plugin, if delete it through plugins list, ALL the xili-language datas in database will be definitively ERASED !!! (only multilingual features)"
+msgstr "ATTENTION : En cochant ci-dessous, après avoir désactivé l'extension xili-language si sa suppression est lancée, TOUTES les données de l'extension seront définitivement SUPPRIMEES !!! (pas les articles et liens mais leurs affectations multilingues)"
+
+#: xili-language.php:4973
+msgid "Delete DB plugin's datas"
+msgstr "Supprimer les données de l'extension dans la base de données !"
+
+#: xili-language.php:5024
+#: xili-language.php:5068
+#: xili-language.php:5118
+msgid "Posts selected"
+msgstr "Articles sélectionnés"
+
+#: xili-language.php:5024
+#: xili-language.php:5068
+#: xili-language.php:5118
+msgid "in "
+msgstr "dans"
+
+#: xili-language.php:5039
+#: xili-language.php:5087
+#, php-format
+msgid "Current post in %s"
+msgstr "Article courant en %s"
+
+#: xili-language.php:5042
+#: xili-language.php:5090
+#, php-format
+msgid "Posts selected in %s"
+msgstr "Articles sélectionnés en %s"
+
+#: xili-language.php:5292
+msgid "All"
+msgstr "Tous"
+
+#: xili-language.php:5366
+msgid "Uncommon filename"
+msgstr "Nom de fichier incorrect"
+
+#: xili-language.php:5399
+msgid "Uncategorized"
+msgstr "Non classé"
+
+#: xili-language.php:5412
+#: xili-language.php:5415
+#: xili-language.php:5422
+#: xili-language.php:5435
+#: xili-language.php:5438
+#: xili-language.php:5445
+#, php-format
+msgid "View all posts in %s"
+msgstr "Voir les articles en %s"
+
+#: xili-language.php:5483
+#: xili-language.php:5493
+#: xili-language.php:5506
+msgid "Sunday"
+msgstr ""
+
+#: xili-language.php:5484
+#: xili-language.php:5494
+#: xili-language.php:5507
+msgid "Monday"
+msgstr ""
+
+#: xili-language.php:5485
+#: xili-language.php:5495
+#: xili-language.php:5508
+msgid "Tuesday"
+msgstr ""
+
+#: xili-language.php:5486
+#: xili-language.php:5496
+#: xili-language.php:5509
+msgid "Wednesday"
+msgstr ""
+
+#: xili-language.php:5487
+#: xili-language.php:5497
+#: xili-language.php:5510
+msgid "Thursday"
+msgstr ""
+
+#: xili-language.php:5488
+#: xili-language.php:5498
+#: xili-language.php:5511
+msgid "Friday"
+msgstr ""
+
+#: xili-language.php:5489
+#: xili-language.php:5499
+#: xili-language.php:5512
+msgid "Saturday"
+msgstr ""
+
+#: xili-language.php:5493
+msgid "S_Sunday_initial"
+msgstr ""
+
+#: xili-language.php:5494
+msgid "M_Monday_initial"
+msgstr ""
+
+#: xili-language.php:5495
+msgid "T_Tuesday_initial"
+msgstr ""
+
+#: xili-language.php:5496
+msgid "W_Wednesday_initial"
+msgstr ""
+
+#: xili-language.php:5497
+msgid "T_Thursday_initial"
+msgstr ""
+
+#: xili-language.php:5498
+msgid "F_Friday_initial"
+msgstr ""
+
+#: xili-language.php:5499
+msgid "S_Saturday_initial"
+msgstr ""
+
+#: xili-language.php:5506
+msgid "Sun"
+msgstr ""
+
+#: xili-language.php:5507
+msgid "Mon"
+msgstr ""
+
+#: xili-language.php:5508
+msgid "Tue"
+msgstr ""
+
+#: xili-language.php:5509
+msgid "Wed"
+msgstr ""
+
+#: xili-language.php:5510
+msgid "Thu"
+msgstr ""
+
+#: xili-language.php:5511
+msgid "Fri"
+msgstr ""
+
+#: xili-language.php:5512
+msgid "Sat"
+msgstr ""
+
+#: xili-language.php:5515
+#: xili-language.php:5530
+msgid "January"
+msgstr ""
+
+#: xili-language.php:5516
+#: xili-language.php:5531
+msgid "February"
+msgstr ""
+
+#: xili-language.php:5517
+#: xili-language.php:5532
+msgid "March"
+msgstr ""
+
+#: xili-language.php:5518
+#: xili-language.php:5533
+msgid "April"
+msgstr ""
+
+#: xili-language.php:5519
+#: xili-language.php:5534
+msgid "May"
+msgstr ""
+
+#: xili-language.php:5520
+#: xili-language.php:5535
+msgid "June"
+msgstr ""
+
+#: xili-language.php:5521
+#: xili-language.php:5536
+msgid "July"
+msgstr ""
+
+#: xili-language.php:5522
+#: xili-language.php:5537
+msgid "August"
+msgstr ""
+
+#: xili-language.php:5523
+#: xili-language.php:5538
+msgid "September"
+msgstr ""
+
+#: xili-language.php:5524
+#: xili-language.php:5539
+msgid "October"
+msgstr ""
+
+#: xili-language.php:5525
+#: xili-language.php:5540
+msgid "November"
+msgstr ""
+
+#: xili-language.php:5526
+#: xili-language.php:5541
+msgid "December"
+msgstr ""
+
+#: xili-language.php:5530
+msgid "Jan_January_abbreviation"
+msgstr ""
+
+#: xili-language.php:5531
+msgid "Feb_February_abbreviation"
+msgstr ""
+
+#: xili-language.php:5532
+msgid "Mar_March_abbreviation"
+msgstr ""
+
+#: xili-language.php:5533
+msgid "Apr_April_abbreviation"
+msgstr ""
+
+#: xili-language.php:5534
+msgid "May_May_abbreviation"
+msgstr ""
+
+#: xili-language.php:5535
+msgid "Jun_June_abbreviation"
+msgstr ""
+
+#: xili-language.php:5536
+msgid "Jul_July_abbreviation"
+msgstr ""
+
+#: xili-language.php:5537
+msgid "Aug_August_abbreviation"
+msgstr ""
+
+#: xili-language.php:5538
+msgid "Sep_September_abbreviation"
+msgstr ""
+
+#: xili-language.php:5539
+msgid "Oct_October_abbreviation"
+msgstr ""
+
+#: xili-language.php:5540
+msgid "Nov_November_abbreviation"
+msgstr ""
+
+#: xili-language.php:5541
+msgid "Dec_December_abbreviation"
+msgstr ""
+
+#: xili-language.php:5548
+msgid "am"
+msgstr "am"
+
+#: xili-language.php:5549
+msgid "pm"
+msgstr ""
+
+#: xili-language.php:5550
+msgid "AM"
+msgstr ""
+
+#: xili-language.php:5551
+msgid "PM"
+msgstr ""
+
+#: xili-language.php:5557
+msgid "number_format_thousands_sep"
+msgstr ""
+
+#: xili-language.php:5561
+msgid "number_format_decimal_point"
+msgstr ""
+
+#: xili-language.php:6412
+msgid "Installation of xili-language is not completed."
+msgstr "L'installation de xili-language est incomplète."
+
+#: xili-language.php:6414
+#, php-format
+msgid "This xili-language version (%s) need WordPress Version more than %s; installed release is %s."
+msgstr "Cette version de xili-language (%s) nécessite la version  WordPress > %s; La version installée : %s."
+
+#: xili-language.php:6416
+#, php-format
+msgid "Upgrade WordPress Version to more %s or use xili-language version less than %s"
+msgstr "Mettre à jour la version WordPress > %s ou utiliser xili-language version < %s"
+
+#~ msgid "Browser language"
+#~ msgstr "Langue du navigateur"
+
+#~ msgid "Selected language"
+#~ msgstr "Langue choisie"
+
+#~ msgid "The list of languages is not defined. Go to: "
+#~ msgstr "La liste des langues n'est pas définie. Activer les "
+
+#~ msgid "ID of %s in other languages:"
+#~ msgstr "N° des %s en d'autres langues"
+
+#~ msgid "to auto search linked %s. (read docs)"
+#~ msgstr "pour auto-chercher les liens %s (lire la doc)"
+
+#~ msgid "Display"
+#~ msgstr "Voir"
+
+#~ msgid "Check"
+#~ msgstr "Cocher"
+
+#~ msgid "Edit language"
+#~ msgstr "Editer la langue"
+
+#~ msgid "Delete language ?"
+#~ msgstr "Supprimer la langue ?"
+
+#~ msgid "english"
+#~ msgstr "anglais"
+
+#~ msgid "belgium french"
+#~ msgstr "belge"
+
+#~ msgid "french"
+#~ msgstr "français"
+
+#~ msgid "german"
+#~ msgstr "allemand"
+
+#~ msgid "Page ID"
+#~ msgstr "N° de page"
+
+#~ msgid "Page's language"
+#~ msgstr "Langue de la page"
+
+#~ msgid "Linked pages"
+#~ msgstr "Pages liées"
+
+#~ msgid "Select by default browser language of visitor"
+#~ msgstr "Choisir par défaut la langue du navigateur de l'internaute."
+
+#~ msgid "Set undefined posts..."
+#~ msgstr "Affecter une langue aux articles indéfinis..."
+
+#~ msgid "Choose target language…"
+#~ msgstr "Choisir la langue cible…"
+
+#~ msgid "Error: other post not present !!!"
+#~ msgstr "Erreur : l'article est absent !!!"
+
+#~ msgid "xili-language plugin : THEME_TEXTDOMAIN UNDEFINED"
+#~ msgstr "Extension xili-language : Constante THEME_TEXTDOMAIN non définie"
+
+#~ msgid "no index.php in theme, domain not set"
+#~ msgstr "pas de fichier index.php dans le thème, domain non affecté"
+
+#~ msgid "Cc:"
+#~ msgstr "Cc :"
