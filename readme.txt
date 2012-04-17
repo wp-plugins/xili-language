@@ -88,8 +88,8 @@ Contrary to popular belief, GPL doesn't say that everything must be zero-cost, j
 
 = Roadmap =
 
-* Improved documentation for template tags and functions - [started here](http://dev.xiligroup.com/?cat=393&lang=en_us&post_type=xilifunctions).
-* Delivery of a *premium* version (with powerful features and attractive fees) packaged with professional service and support.
+* Improved documentation for template tags and functions - [started here in xili wiki](http://wiki.xiligroup.org).
+* Delivery of a *premium* services kit (with powerful features and attractive fees) packaged with professional training and support.
 
 
 == Installation ==
