@@ -14,6 +14,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 * xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. *If the post is in gaelic, the texts of the theme will be in gaelic if the author checks the post as gaelic and if the theme contains the right .mo file for this target language.*
 
+* A new interface with a list of titles (and links) to help you write articles and their translations.
+
 * xili-language select *on the fly* the multilingual .mo files present in the theme's folder.
 
 * xili-language uses custom taxonomy to specify language of post, page and custom post.
@@ -71,7 +73,7 @@ Contrary to popular belief, GPL doesn't say that everything must be zero-cost, j
 
 = NEW Version 2.5.0 =
 * Last Updated 2012-04-15
-* The new design benefits from the gains of the concept of xili-dictionary 2.0. A new metabox now contains the list of (now and future linked translated posts). 
+* The new design benefits from the gains of the concept of xili-dictionary 2.0. A new metabox now contains the list of (now and future) linked translated posts. 
 * This box replaces the previous two metaboxes designed at the origin of xili-language. For more info, visit the [wiki website](http://wiki.xiligroup.org).
 
 
@@ -399,7 +401,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20120415 - MS - dev.xiligroup.com
+© 20120418 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
