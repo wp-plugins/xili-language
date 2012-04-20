@@ -50,7 +50,7 @@ xili-language lets you create and manage multilingual WP site in several languag
 * [xili-tidy-tags plugin](http://wordpress.org/extend/plugins/xili-tidy-tags/): With xili-tidy-tags, it is now possible to display sub-selection (cloud) of **tags** according language and semantic trans-language group (trademark,…). 
 
 = That this plugin does not =
-With around 5000 php lines, xili-language is not everything…
+*With around 5000 php lines, xili-language is not everything…*
 
 * xili-language plugin **does not create additional tables in the database**. xili-language simply makes proper use of the taxonomy tables and postmeta table offered by WordPress to define language and link items between them. Because xili-language plugin does not modify deeply the post edit UI, it is possible to use **iPhone / iPod Touch** Wordpress app to prepare and draft the post.
 
@@ -72,10 +72,9 @@ Contrary to popular belief, GPL doesn't say that everything must be zero-cost, j
 * **as is** : see no warranty chapter in license GPLv2.
 
 = NEW Version 2.5.0 =
-* Last Updated 2012-04-15
-* The new design benefits from the gains of the concept of xili-dictionary 2.0. A new metabox now contains the list of (now and future) linked translated posts. 
+* Last Updated 2012-04-18
+* A new metabox now contains the list of (now and future) linked translated posts. The new design benefits from the gains of the concept of xili-dictionary 2.0.  
 * This box replaces the previous two metaboxes designed at the origin of xili-language. For more info, visit the [wiki website](http://wiki.xiligroup.org).
-
 
 = Versions 2.4.0, 2.4.4 =
 * Settings pages are now organized in 4 tabs with more online infos.
@@ -90,6 +89,7 @@ Contrary to popular belief, GPL doesn't say that everything must be zero-cost, j
 
 = Roadmap =
 
+* improve performance by better separation between backend and frontend (2 classes)
 * Improved documentation for template tags and functions - [started here in xili wiki](http://wiki.xiligroup.org).
 * Delivery of a *premium* services kit (with powerful features and attractive fees) packaged with professional training and support.
 
@@ -280,7 +280,7 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
-= 2.5.0 (2012-04-15) =
+= 2.5.0 (2012-04-18) =
 * new metabox centralizing translations and links of posts, in head: hreflang link meta
 * pre-tests with WP 3.4: fixes metaboxes columns
 
