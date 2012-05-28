@@ -2635,7 +2635,12 @@ class xili_language_admin extends xili_language {
 	 			if ( file_exists( $this->style_flag_folder_path . $language->slug .'.png' ) ) {
 	 				echo "span.lang-". $language->slug ." { background: url(". $folder_url . $language->slug .'.png' .") no-repeat 0% center } \n";
 	 				echo "span.curlang.lang-" . $language->slug ." a { color:#f5f5f5; text-indent:-9999px ;}\n";
-	 				echo "span.curlang.lang-" . $language->slug ." { margin-left:5px; color:#f5f5f5; display:inline-block; height:18px; width:25px; text-indent:-9999px ; }\n";
+	 				
+	 				if ( class_exists( 'xili_tidy_tags' ) ) {
+	 					echo "div#xtt-edit-tag span.curlang.lang-" . $language->slug ." { margin-left:5px; color:#f5f5f5; display:inline-block; height:18px; width:25px; text-indent:-9999px ; }\n";
+	 				
+	 				}
+	 				
 	 			} else {
 	 				echo "span.curlang.lang-" . $language->slug ." a { font-size:100%; text-align: left; }\n";
 	 			}
