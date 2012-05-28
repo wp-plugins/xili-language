@@ -3,8 +3,8 @@ Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready
 Requires at least: 3.3.1
-Tested up to: 3.4-b2
-Stable tag: 2.5.0
+Tested up to: 3.4-rc
+Stable tag: 2.6.0
 
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -29,7 +29,7 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 = Links and documentation to read before activating =
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action and other tabs [here](http://wordpress.org/extend/plugins/xili-language/other_notes/).
-* [xili wiki](http://wiki.xiligroup.org/index.php/Xili-language_v2.5),
+* [xili wiki](http://wiki.xiligroup.org/index.php/Xili-language_v2.6:_what%27s_new_with_xili-dictionary_v2.1),
 * [multilingual](http://multilingual.wpmu.xilione.com) theme and how to,
 * [news and history](http://dev.xiligroup.com/xili-language/),
 * [forum](http://forum2.dev.xiligroup.com/) to read experience of users and obtain some support,
@@ -71,8 +71,13 @@ Contrary to popular belief, GPL doesn't say that everything must be zero-cost, j
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * **as is** : see no warranty chapter in license GPLv2.
 
-= NEW Version 2.5.0 =
-* Last Updated 2012-04-18
+= NEW Version 2.6.0 =
+* Last Updated 2012-05-28
+* Able to detect and use local files (local-xx_XX.mo) containing translations of local website datas created by xili-dictionary >= 2.1.
+* More infos in categories list about translations. Links with xili-dictionary.
+* MAJOR UPDATE: See short presentation of new in the [wiki xili](http://wiki.xiligroup.org/index.php/Xili-language_v2.6:_what%27s_new_with_xili-dictionary_v2.1))
+
+= Version 2.5.0 =
 * A new metabox now contains the list of (now and future) linked translated posts. The new design benefits from the gains of the concept of xili-dictionary 2.0.  
 * This box replaces the previous two metaboxes designed at the origin of xili-language. For more info, visit the [wiki website](http://wiki.xiligroup.org).
 
@@ -277,8 +282,14 @@ Here a selection of main screenshots.
 13. Blogroll and bookmarks taxonomies and language sub-selection.
 14. Since 2.2.0, new xili-language trilogy menu in admin bar menu to group main settings for multilingual website.
 
+* See illustrated presentations in the [wiki](http://wiki.xiligroup.org/).
 
 == Changelog ==
+
+= 2.6.0 (2012-05-28) =
+* short presentation in the [wiki](http://wiki.xiligroup.org/index.php/Xili-language_v2.6:_what%27s_new_with_xili-dictionary_v2.1)
+* Able to detect and use local files (local-xx_XX.mo) containing translations of local website datas created by xili-dictionary >= 2.1.
+* More infos in categories list about translations. Links with xili-dictionary.
 
 = 2.5.0 (2012-04-18) =
 * new metabox centralizing translations and links of posts, in head: hreflang link meta
@@ -401,7 +412,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20120418 - MS - dev.xiligroup.com
+© 20120528 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
