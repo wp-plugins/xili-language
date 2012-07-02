@@ -1,0 +1,1654 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xili_language\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-28 16:15+0100\n"
+"PO-Revision-Date: 2012-06-28 16:17+0100\n"
+"Last-Translator: dev.xiligroup <contact@xiligroup.com>\n"
+"Language-Team: dev.xiligroup.com <contact@xiligroup.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: xili-language.php:526
+msgid "A term with the name provided already exists."
+msgstr "Un terme existe déjà."
+
+#: xili-language.php:685
+#, php-format
+msgid "Please translate in %s:"
+msgstr "A traduire en %s :"
+
+#: xili-language.php:2243
+msgid "no load_theme_textdomain in functions.php"
+msgstr "pas de load_theme_textdomain dans functions.php"
+
+#: xili-language.php:2306
+msgid "language items added"
+msgstr "Une nouvelle langue a été ajoutée"
+
+#: xili-language.php:2308
+msgid "seems to be set"
+msgstr "semble être réglé"
+
+#: xili-language.php:2462
+#: xili-language.php:2506
+#: xili-language.php:2556
+msgid "Posts selected"
+msgstr "Articles sélectionnés"
+
+#: xili-language.php:2462
+#: xili-language.php:2506
+#: xili-language.php:2556
+msgid "in "
+msgstr "dans"
+
+#: xili-language.php:2477
+#: xili-language.php:2525
+#, php-format
+msgid "Current post in %s"
+msgstr "Article courant en %s"
+
+#: xili-language.php:2480
+#: xili-language.php:2528
+#, php-format
+msgid "Posts selected in %s"
+msgstr "Articles sélectionnés en %s"
+
+#: xili-language.php:2613
+#: xili-includes/xl-class-admin.php:2317
+#: xili-includes/xl-class-admin.php:2826
+#: xili-includes/xl-class-admin.php:2887
+#: xili-includes/xl-class-admin.php:3256
+msgid "undefined"
+msgstr "non définie"
+
+#: xili-language.php:2731
+msgid "All"
+msgstr "Tous"
+
+#: xili-language.php:2800
+msgid "Uncategorized"
+msgstr "Non classé"
+
+#: xili-language.php:2813
+#: xili-language.php:2816
+#: xili-language.php:2823
+#: xili-language.php:2836
+#: xili-language.php:2839
+#: xili-language.php:2846
+#, php-format
+msgid "View all posts in %s"
+msgstr "Voir les articles en %s"
+
+#: xili-language.php:2885
+#: xili-language.php:2895
+#: xili-language.php:2908
+msgid "Sunday"
+msgstr ""
+
+#: xili-language.php:2886
+#: xili-language.php:2896
+#: xili-language.php:2909
+msgid "Monday"
+msgstr ""
+
+#: xili-language.php:2887
+#: xili-language.php:2897
+#: xili-language.php:2910
+msgid "Tuesday"
+msgstr ""
+
+#: xili-language.php:2888
+#: xili-language.php:2898
+#: xili-language.php:2911
+msgid "Wednesday"
+msgstr ""
+
+#: xili-language.php:2889
+#: xili-language.php:2899
+#: xili-language.php:2912
+msgid "Thursday"
+msgstr ""
+
+#: xili-language.php:2890
+#: xili-language.php:2900
+#: xili-language.php:2913
+msgid "Friday"
+msgstr ""
+
+#: xili-language.php:2891
+#: xili-language.php:2901
+#: xili-language.php:2914
+msgid "Saturday"
+msgstr ""
+
+#: xili-language.php:2895
+msgid "S_Sunday_initial"
+msgstr ""
+
+#: xili-language.php:2896
+msgid "M_Monday_initial"
+msgstr ""
+
+#: xili-language.php:2897
+msgid "T_Tuesday_initial"
+msgstr ""
+
+#: xili-language.php:2898
+msgid "W_Wednesday_initial"
+msgstr ""
+
+#: xili-language.php:2899
+msgid "T_Thursday_initial"
+msgstr ""
+
+#: xili-language.php:2900
+msgid "F_Friday_initial"
+msgstr ""
+
+#: xili-language.php:2901
+msgid "S_Saturday_initial"
+msgstr ""
+
+#: xili-language.php:2908
+msgid "Sun"
+msgstr ""
+
+#: xili-language.php:2909
+msgid "Mon"
+msgstr ""
+
+#: xili-language.php:2910
+msgid "Tue"
+msgstr ""
+
+#: xili-language.php:2911
+msgid "Wed"
+msgstr ""
+
+#: xili-language.php:2912
+msgid "Thu"
+msgstr ""
+
+#: xili-language.php:2913
+msgid "Fri"
+msgstr ""
+
+#: xili-language.php:2914
+msgid "Sat"
+msgstr ""
+
+#: xili-language.php:2917
+#: xili-language.php:2932
+msgid "January"
+msgstr ""
+
+#: xili-language.php:2918
+#: xili-language.php:2933
+msgid "February"
+msgstr ""
+
+#: xili-language.php:2919
+#: xili-language.php:2934
+msgid "March"
+msgstr ""
+
+#: xili-language.php:2920
+#: xili-language.php:2935
+msgid "April"
+msgstr ""
+
+#: xili-language.php:2921
+#: xili-language.php:2936
+msgid "May"
+msgstr ""
+
+#: xili-language.php:2922
+#: xili-language.php:2937
+msgid "June"
+msgstr ""
+
+#: xili-language.php:2923
+#: xili-language.php:2938
+msgid "July"
+msgstr ""
+
+#: xili-language.php:2924
+#: xili-language.php:2939
+msgid "August"
+msgstr ""
+
+#: xili-language.php:2925
+#: xili-language.php:2940
+msgid "September"
+msgstr ""
+
+#: xili-language.php:2926
+#: xili-language.php:2941
+msgid "October"
+msgstr ""
+
+#: xili-language.php:2927
+#: xili-language.php:2942
+msgid "November"
+msgstr ""
+
+#: xili-language.php:2928
+#: xili-language.php:2943
+msgid "December"
+msgstr ""
+
+#: xili-language.php:2932
+msgid "Jan_January_abbreviation"
+msgstr ""
+
+#: xili-language.php:2933
+msgid "Feb_February_abbreviation"
+msgstr ""
+
+#: xili-language.php:2934
+msgid "Mar_March_abbreviation"
+msgstr ""
+
+#: xili-language.php:2935
+msgid "Apr_April_abbreviation"
+msgstr ""
+
+#: xili-language.php:2936
+msgid "May_May_abbreviation"
+msgstr ""
+
+#: xili-language.php:2937
+msgid "Jun_June_abbreviation"
+msgstr ""
+
+#: xili-language.php:2938
+msgid "Jul_July_abbreviation"
+msgstr ""
+
+#: xili-language.php:2939
+msgid "Aug_August_abbreviation"
+msgstr ""
+
+#: xili-language.php:2940
+msgid "Sep_September_abbreviation"
+msgstr ""
+
+#: xili-language.php:2941
+msgid "Oct_October_abbreviation"
+msgstr ""
+
+#: xili-language.php:2942
+msgid "Nov_November_abbreviation"
+msgstr ""
+
+#: xili-language.php:2943
+msgid "Dec_December_abbreviation"
+msgstr ""
+
+#: xili-language.php:2950
+msgid "am"
+msgstr "am"
+
+#: xili-language.php:2951
+msgid "pm"
+msgstr ""
+
+#: xili-language.php:2952
+msgid "AM"
+msgstr ""
+
+#: xili-language.php:2953
+msgid "PM"
+msgstr ""
+
+#: xili-language.php:2959
+msgid "number_format_thousands_sep"
+msgstr ""
+
+#: xili-language.php:2963
+msgid "number_format_decimal_point"
+msgstr ""
+
+#: xili-language.php:3833
+#: xili-language.php:3845
+msgid "Installation of xili-language is not completed."
+msgstr "L'installation de xili-language est incomplète."
+
+#: xili-language.php:3835
+#, php-format
+msgid "This xili-language version (%s) need PHP Version more than %s; installed release is %s."
+msgstr "Cette version de xili-language (%s) nécessite la version  PHP > %s; La version PHP installée : %s."
+
+#: xili-language.php:3837
+#, php-format
+msgid "Find a server with PHP Version to more %s or use xili-language version less or equal to %s"
+msgstr "Trouver un serveur avec un PHP > %s ou utiliser xili-language version =< %s"
+
+#: xili-language.php:3847
+#, php-format
+msgid "This xili-language version (%s) need WordPress Version more than %s; installed release is %s."
+msgstr "Cette version de xili-language (%s) nécessite la version  WordPress > %s; La version installée : %s."
+
+#: xili-language.php:3849
+#, php-format
+msgid "Upgrade WordPress Version to more %s or use xili-language version less than %s"
+msgstr "Mettre à jour la version WordPress > %s ou utiliser xili-language version < %s"
+
+#: xili-includes/xili-language-widgets.php:55
+msgid "The most recent posts on your blog by xili-language"
+msgstr "Les articles les plus récents par xili-language"
+
+#: xili-includes/xili-language-widgets.php:56
+msgid "List of recent posts"
+msgstr "Liste des articles récents"
+
+#: xili-includes/xili-language-widgets.php:78
+msgid "Recent Posts"
+msgstr "Articles récents"
+
+#: xili-includes/xili-language-widgets.php:167
+#: xili-includes/xili-language-widgets.php:291
+#: xili-includes/xili-language-widgets.php:376
+msgid "Title:"
+msgstr "Titre :"
+
+#: xili-includes/xili-language-widgets.php:172
+msgid "Language:"
+msgstr "Langue :"
+
+#: xili-includes/xili-language-widgets.php:174
+msgid "All languages"
+msgstr "Toutes les langues"
+
+#: xili-includes/xili-language-widgets.php:175
+msgid "Current language"
+msgstr "Langue courante"
+
+#: xili-includes/xili-language-widgets.php:186
+msgid "Post type(s):"
+msgstr "Type(s) de post :"
+
+#: xili-includes/xili-language-widgets.php:190
+msgid "Number of posts to show:"
+msgstr "Nombre de posts à voir"
+
+#: xili-includes/xili-language-widgets.php:192
+msgid "(at most 15)"
+msgstr "(au maxi. 15)"
+
+#: xili-includes/xili-language-widgets.php:208
+msgid "The most recent comments by xili-language"
+msgstr "Les commentaires les plus récents par xili-language"
+
+#: xili-includes/xili-language-widgets.php:209
+msgid "Recent Comments list"
+msgstr "Liste des commentaires récents"
+
+#: xili-includes/xili-language-widgets.php:243
+msgid "Recent Comments"
+msgstr "Récents commentaires"
+
+#: xili-includes/xili-language-widgets.php:262
+#, php-format
+msgid "%1$s on %2$s"
+msgstr "%1$s en %2$s"
+
+#: xili-includes/xili-language-widgets.php:294
+msgid "Number of comments to show:"
+msgstr "Nombre visible :"
+
+#: xili-includes/xili-language-widgets.php:312
+msgid "List of available languages by xili-language plugin"
+msgstr "Liste des langues disponibles par l'extension xili-language"
+
+#: xili-includes/xili-language-widgets.php:313
+#: xili-includes/xl-class-admin.php:684
+msgid "List of languages"
+msgstr "Liste des langues"
+
+#: xili-includes/xili-language-widgets.php:388
+#: xili-includes/xili-language-widgets.php:398
+#: xili-includes/xl-class-admin.php:1516
+msgid "Type"
+msgstr "Type"
+
+#: xili-includes/xili-language-widgets.php:402
+msgid "Hide:"
+msgstr "Masquer :"
+
+#: xili-includes/xili-language-widgets.php:404
+msgid "HTML tags of list"
+msgstr "Liste des balises HTML"
+
+#: xili-includes/xili-language-widgets.php:405
+msgid "before list"
+msgstr "Avant la liste"
+
+#: xili-includes/xili-language-widgets.php:408
+msgid "before line"
+msgstr "Après la ligne"
+
+#: xili-includes/xili-language-widgets.php:411
+msgid "after line"
+msgstr "Après la ligne"
+
+#: xili-includes/xili-language-widgets.php:414
+msgid "after list"
+msgstr "Après la liste"
+
+#: xili-includes/xili-language-widgets.php:417
+msgid "Condition"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:130
+msgid "Languages by ©xiligroup"
+msgstr "Gestion des langues par ©xiligroup"
+
+#: xili-includes/xl-class-admin.php:131
+msgid "Languages menu by ©xiligroup"
+msgstr "Menus de réglages des languages par ©xiligroup"
+
+#: xili-includes/xl-class-admin.php:140
+#: xili-includes/xl-class-admin.php:144
+msgid "Languages settings"
+msgstr "Réglages langues"
+
+#: xili-includes/xl-class-admin.php:149
+#: xili-includes/xl-class-admin.php:153
+#, php-format
+msgid "Tidy %s settings"
+msgstr "Réglages Tidy %s"
+
+#: xili-includes/xl-class-admin.php:149
+#: xili-includes/xl-class-admin.php:153
+#: xili-includes/xl-class-admin.php:157
+#: xili-includes/xl-class-admin.php:161
+msgid "Tags"
+msgstr "Mots clés"
+
+#: xili-includes/xl-class-admin.php:157
+#: xili-includes/xl-class-admin.php:161
+#, php-format
+msgid "%s groups"
+msgstr "groupes %s"
+
+#: xili-includes/xl-class-admin.php:177
+#, php-format
+msgid "Translation with %s tools"
+msgstr "Traduction avec la boite à outils %s"
+
+#: xili-includes/xl-class-admin.php:181
+msgid "xili-language : how to"
+msgstr "Assistance, support xili-language"
+
+#: xili-includes/xl-class-admin.php:188
+msgid "About ©xiligroup plugins"
+msgstr "A propos des extensions ©xiligroup"
+
+#: xili-includes/xl-class-admin.php:215
+#: xili-includes/xl-class-admin.php:285
+#: xili-includes/xl-class-admin.php:823
+msgid "Settings"
+msgstr "Réglages"
+
+#: xili-includes/xl-class-admin.php:216
+msgid "Informations and Getting started:"
+msgstr "Informations et prise en main :"
+
+#: xili-includes/xl-class-admin.php:216
+msgid "Xili Wiki"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:217
+msgid "Forum and Support"
+msgstr "Forum et support"
+
+#: xili-includes/xl-class-admin.php:218
+msgid "Donate"
+msgstr "Donation"
+
+#: xili-includes/xl-class-admin.php:232
+msgid "Congratulations for choosing xili-language to built a multilingual website. To work optimally, 2 other plugins are recommended"
+msgstr "Félicitations pour avoir choisi xili-language pour bâtir le site multilingue. Pour un fonctionnement optimum, deux autres extensions sont recommandées."
+
+#: xili-includes/xl-class-admin.php:239
+#: xili-includes/xl-class-admin.php:1442
+#: xili-includes/xl-class-admin.php:1481
+msgid "child of"
+msgstr "fils de"
+
+#: xili-includes/xl-class-admin.php:244
+#, php-format
+msgid "For Appearance the current active theme is <em>%s</em>"
+msgstr "Pour l'apparence, le thème actif est <em>%s</em>"
+
+#: xili-includes/xl-class-admin.php:247
+#, php-format
+msgid "This theme <em>%s</em> seems to not contain localization function (load_theme_textdomain) to be used for a multilingual website"
+msgstr "Ce thème <em>%s</em> semble ne pas contenir la fonction de localisation (load_theme_textdomain) pour être utilisé pour un site multilingue"
+
+#: xili-includes/xl-class-admin.php:249
+#, php-format
+msgid "This theme <em>%s</em> seems to contain localization function to be used for a multilingual website"
+msgstr "Ce thème <em>%s</em> semble contenir la fonction de localisation pour faire un site multilingue"
+
+#: xili-includes/xl-class-admin.php:253
+msgid "More infos about"
+msgstr "Plus d'infos sur"
+
+#: xili-includes/xl-class-admin.php:262
+msgid "active"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:266
+msgid "inactive"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:268
+msgid "not installed"
+msgstr "non installée"
+
+#: xili-includes/xl-class-admin.php:272
+#, php-format
+msgid "Plugin %s is %s"
+msgstr "L'extension %s est %s"
+
+#: xili-includes/xl-class-admin.php:306
+#: xili-includes/xl-class-admin.php:311
+#: xili-includes/xl-class-admin.php:314
+#: xili-includes/xl-class-admin.php:317
+msgid "xili-language plugin"
+msgstr "Extension xili-language"
+
+#: xili-includes/xl-class-admin.php:306
+msgid "Languages ©xili"
+msgstr "Langues ©xili"
+
+#: xili-includes/xl-class-admin.php:383
+msgid "Docs about xili-language"
+msgstr "Docs sur xili-language"
+
+#: xili-includes/xl-class-admin.php:386
+msgid "To define languages"
+msgstr "Pour définir les langues"
+
+#: xili-includes/xl-class-admin.php:387
+msgid "This screen is designed to define the list of languages assigned to this website. Use the form below to add a new language with the help of preset list (popup) or by input your own ISO code."
+msgstr "Cet écran est destiné pour définir la liste des langues de ce site web. Le formulaire ci-dessous permet d’ajouter une nouvelle langue avec l’aide de la pré-liste (menu popup) ou en saisissant un autre code ISO."
+
+#: xili-includes/xl-class-admin.php:388
+#: xili-includes/xl-class-admin.php:397
+#: xili-includes/xl-class-admin.php:405
+#: xili-includes/xl-class-admin.php:414
+#: xili-includes/xl-class-admin.php:422
+#, php-format
+msgid "Before to question dev.xiligroup support, do not forget to visit %s documentation"
+msgstr "Avant de questionner le support dev.xiligroup, ne pas oublier de lire la documentation %s"
+
+#: xili-includes/xl-class-admin.php:395
+msgid "To define front-page"
+msgstr "Personnaliser la page d’accueil"
+
+#: xili-includes/xl-class-admin.php:396
+msgid "This screen contains selectors to define the behaviour of frontpage according languages and visitors browser."
+msgstr "Cet écran contient les réglages pour définir la langue de la page d’accueil selon le contenu et le navigateur du visiteur."
+
+#: xili-includes/xl-class-admin.php:403
+msgid "Infos about current theme"
+msgstr "Infos sur le thème actif"
+
+#: xili-includes/xl-class-admin.php:404
+msgid "This metabox contains infos about the theme and the joined available language files (.mo)."
+msgstr "Cette case contient les infos sur le thème actif et les fichiers langue (.mo) disponibles."
+
+#: xili-includes/xl-class-admin.php:412
+#: xili-includes/xl-class-admin.php:420
+msgid "For documented webmaster"
+msgstr "Pour le webmestre qui se documente"
+
+#: xili-includes/xl-class-admin.php:413
+msgid "This screen contains nice selectors and features to customize menus and other objects for your CMS multilingual website."
+msgstr "Cet écran contient des réglages et propriétés pour personnaliser les menus et autres objets du site web CMS multilingue."
+
+#: xili-includes/xl-class-admin.php:421
+msgid "This metabox contains advanced selectors and features to customize behaviours, style and other objects like widgets for your CMS multilingual website."
+msgstr "Cette case contient des réglages et propriétés pour personnaliser les comportements, style et autres objets tel les widgets du site web CMS multilingue."
+
+#: xili-includes/xl-class-admin.php:429
+msgid "In direct with support"
+msgstr "En direct avec le support"
+
+#: xili-includes/xl-class-admin.php:430
+#, php-format
+msgid "Before to question dev.xiligroup support, do not forget to check needed website infos and to visit %s documentation"
+msgstr "Avant de questionner le support dev.xiligroup, n’oubliez pas de cocher les infos du site et de lire la doc. sur %s"
+
+#: xili-includes/xl-class-admin.php:467
+#: xili-includes/xl-class-admin.php:1678
+msgid "Message"
+msgstr "Message"
+
+#: xili-includes/xl-class-admin.php:468
+#: xili-includes/xl-class-admin.php:487
+#: xili-includes/xl-class-admin.php:505
+#: xili-includes/xl-class-admin.php:520
+msgid "Info"
+msgstr "Information"
+
+#: xili-includes/xl-class-admin.php:471
+msgid "Uninstall Options"
+msgstr "Options de désinstallation"
+
+#: xili-includes/xl-class-admin.php:486
+#: xili-includes/xl-class-admin.php:502
+msgid "Current theme infos"
+msgstr "Infos sur le thème actif"
+
+#: xili-includes/xl-class-admin.php:504
+msgid "Special"
+msgstr "Fonctions spéciales"
+
+#: xili-includes/xl-class-admin.php:538
+msgid "Add &raquo;"
+msgstr "Ajouter…"
+
+#: xili-includes/xl-class-admin.php:539
+msgid "Cancel"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:597
+#: xili-includes/xl-class-admin.php:691
+msgid "A new language was added."
+msgstr "Une nouvelle langue a été ajoutée."
+
+#: xili-includes/xl-class-admin.php:613
+msgid "Update &raquo;"
+msgstr "Mettre à jour…"
+
+#: xili-includes/xl-class-admin.php:615
+#: xili-includes/xl-class-admin.php:689
+msgid "Language to update."
+msgstr "Langue à mettre à jour."
+
+#: xili-includes/xl-class-admin.php:634
+#: xili-includes/xl-class-admin.php:690
+msgid "A language was updated."
+msgstr "Une langue a été mise à jour."
+
+#: xili-includes/xl-class-admin.php:644
+msgid "Delete &raquo;"
+msgstr "Supprimer…"
+
+#: xili-includes/xl-class-admin.php:647
+#: xili-includes/xl-class-admin.php:687
+msgid "A language to delete."
+msgstr "Langue à effacer."
+
+#: xili-includes/xl-class-admin.php:669
+#: xili-includes/xl-class-admin.php:688
+msgid "A language was deleted."
+msgstr "Une langue a été supprimée."
+
+#: xili-includes/xl-class-admin.php:679
+msgid "Find above the list of languages."
+msgstr "Voici la liste des langues."
+
+#: xili-includes/xl-class-admin.php:685
+#: xili-includes/xl-class-admin.php:2152
+#: xili-includes/xl-class-admin.php:2679
+#: xili-includes/xl-class-admin.php:2824
+#: xili-includes/xl-class-admin.php:2884
+#: xili-includes/xl-class-admin.php:2933
+#: xili-includes/xl-class-admin.php:3278
+msgid "Language"
+msgstr "Langue"
+
+#: xili-includes/xl-class-admin.php:692
+msgid "Error when updating."
+msgstr "Erreur lors de la mise à jour."
+
+#: xili-includes/xl-class-admin.php:693
+msgid "Error when adding."
+msgstr "Erreur lors de la création."
+
+#: xili-includes/xl-class-admin.php:705
+#: xili-includes/xl-class-admin.php:837
+#: xili-includes/xl-class-admin.php:967
+#: xili-includes/xl-class-admin.php:1061
+msgid "Languages"
+msgstr "Langues"
+
+#: xili-includes/xl-class-admin.php:764
+msgid "posts are set in:"
+msgstr "articles sans langue :"
+
+#: xili-includes/xl-class-admin.php:764
+#: xili-includes/xl-class-admin.php:767
+msgid "category"
+msgstr "categorie"
+
+#: xili-includes/xl-class-admin.php:767
+msgid "posts are undefined in"
+msgstr "articles indéfinis en"
+
+#: xili-includes/xl-class-admin.php:815
+#, php-format
+msgid "Options are updated: home language = %s, For Author language of a new post = %s, xilidev functions = %s "
+msgstr "Options mise à jour : home language = %s, For Author language of a new post = %s, xilidev functions = %s "
+
+#: xili-includes/xl-class-admin.php:885
+msgid "Go to Nav-menus in Themes to validate changes"
+msgstr "Visiter la page des menus dans Apparence pour valider les changements"
+
+#: xili-includes/xl-class-admin.php:904
+msgid "Locations menu not set: go to menus settings"
+msgstr "Pas d'espace menu : aller aux réglages menus"
+
+#: xili-includes/xl-class-admin.php:919
+#, php-format
+msgid "Options are updated: Automatic Nav Menu = %s, Selection of pages in Nav Menu = %s"
+msgstr "Options mises à jour : Automatic Nav Menu = %s, Selection of pages in Nav Menu = %s"
+
+#: xili-includes/xl-class-admin.php:949
+#, php-format
+msgid "Options are updated %s "
+msgstr "Options mises à jour %s"
+
+#: xili-includes/xl-class-admin.php:956
+msgid "Navigation menus"
+msgstr "Menu(s) de navigation"
+
+#: xili-includes/xl-class-admin.php:1038
+#: xili-includes/xl-class-admin.php:1047
+msgid "Email sent."
+msgstr "Courriel envoyé"
+
+#: xili-includes/xl-class-admin.php:1040
+#, php-format
+msgid "Thanks for your email. A copy was sent to %s (%s)"
+msgstr "Merci pour votre courriel dont une copie est envoyé à %s (%s)"
+
+#: xili-includes/xl-class-admin.php:1043
+#, php-format
+msgid "Issue in your email. NOT sent to Cc: %s or the return address %s is not good !"
+msgstr "Anomalie dans votre courriel. NON envoyé en Cc à %s ou l'adresse de retour %s est incorrect !"
+
+#: xili-includes/xl-class-admin.php:1048
+msgid "Email not sent. Please verify email field"
+msgstr "Courriel non envoyé. Vérifier le champ email."
+
+#: xili-includes/xl-class-admin.php:1050
+msgid "Mail & Support"
+msgstr "Courriel et support"
+
+#: xili-includes/xl-class-admin.php:1074
+#, php-format
+msgid "For support, before sending an email with the form below, don't forget to visit the readme as %shere%s and the links listed in contextual help tab (on top left)."
+msgstr "Pour le support, avant d'envoyer un courriel via le formulaire ci-dessous, ne pas oublier de relire le texte joint à l'extension %sici%s et les textes des liens disponibles dans l'aide contextuelle (en haut à gauche)."
+
+#: xili-includes/xl-class-admin.php:1104
+#: xili-includes/xl-class-admin.php:3323
+msgid "Languages page"
+msgstr "Liste des langues"
+
+#: xili-includes/xl-class-admin.php:1105
+#: xili-includes/xl-class-admin.php:3324
+msgid "Languages front-end settings"
+msgstr "Réglages langues"
+
+#: xili-includes/xl-class-admin.php:1106
+#: xili-includes/xl-class-admin.php:3325
+msgid "Settings for experts"
+msgstr "Réglages experts"
+
+#: xili-includes/xl-class-admin.php:1107
+#: xili-includes/xl-class-admin.php:3326
+msgid "xili-language support"
+msgstr "Assistance, support xili-language"
+
+#: xili-includes/xl-class-admin.php:1152
+msgid "Author"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1207
+#: xili-includes/xl-class-admin.php:1635
+msgid "Note:"
+msgstr "Note et message :"
+
+#: xili-includes/xl-class-admin.php:1217
+msgid "This plugin was developed with the taxonomies, terms tables and WP specifications. <br /> xili-language create a new taxonomy used for language of posts and pages and custom post types. For settings (basic or expert), 4 tabs were available since v. 2.4.1.<br /><br /> To attach a language to a post, a box gathering infos in available in new and edit post admin side pages. Also, selectors are in Quick Edit bulk mode of Posts list. It is updated for WP 3.3 and 3.4 since 2.5 version."
+msgstr "Ce plugin a été développé sur la base des tables <em>taxonomy et terms</em> et les spécifications WP... <br /> xili-language crée une taxinomie pour spécifier la langue de chaque article (de tout type). Ici, on définit la liste et on fait les réglages la gestion des langues. Depuis la version 2.4.1, les éléments de réglages sont répartis selon 4 onglets.<br />Dans l'écran d'édition d'un article, une boite regroupe tous les éléments pour voir les traductions et créer des nouvelles liées à celle affichée. De même, un menu déroulant est disponible dans le mode -modification rapide- de la liste des articles. Il est mis à jour pour WP 3.3. et 3.4 depuis la version 2.5."
+
+#: xili-includes/xl-class-admin.php:1231
+msgid "Here select language of the home page"
+msgstr "Sélectionner la langue de la page d'accueil"
+
+#: xili-includes/xl-class-admin.php:1233
+msgid "Select language of the home page"
+msgstr "Choix de la langue de la page d'accueil"
+
+#: xili-includes/xl-class-admin.php:1240
+#: xili-includes/xl-class-admin.php:1285
+msgid "Software defined"
+msgstr "définie par logiciel"
+
+#: xili-includes/xl-class-admin.php:1241
+#: xili-includes/xl-class-admin.php:1286
+msgid "Language of visitor's browser"
+msgstr "Langue du navigateur"
+
+#: xili-includes/xl-class-admin.php:1254
+msgid "if not found"
+msgstr "si absente "
+
+#: xili-includes/xl-class-admin.php:1260
+msgid "Language of dashboard"
+msgstr "Langue de l'admin."
+
+#: xili-includes/xl-class-admin.php:1274
+msgid "Modify home query"
+msgstr "Sous sélection à l'accueil"
+
+#: xili-includes/xl-class-admin.php:1279
+msgid "Here select language of the theme items when a category is displayed without language sub-selection"
+msgstr "Sélection de la langue des éléments du thème quand une catégorie est affichée sans sous-sélection de langue"
+
+#: xili-includes/xl-class-admin.php:1281
+msgid "Theme's language when categories in 'all'"
+msgstr "Langue si catégories en toute langue"
+
+#: xili-includes/xl-class-admin.php:1287
+msgid "Language of first post in loop"
+msgstr "Langue du premier post listé"
+
+#: xili-includes/xl-class-admin.php:1302
+msgid "For new post, in post edit author side:"
+msgstr "Dans l'interface de création, du côté de l'auteur :"
+
+#: xili-includes/xl-class-admin.php:1305
+msgid "For new post, pre-select by default: browser language of author"
+msgstr "Pour un nouvel article, choisir par défaut la langue du navigateur de l'auteur."
+
+#: xili-includes/xl-class-admin.php:1309
+msgid "Enable gold functions"
+msgstr "Active les fonctions xilidev"
+
+#: xili-includes/xl-class-admin.php:1329
+msgid "Multilingual custom posts"
+msgstr "Contenus personnalisés multilingues"
+
+#: xili-includes/xl-class-admin.php:1330
+#, php-format
+msgid "One custom post (%s) is available."
+msgstr "Un contenu personnalisé (%s) est activé."
+
+#: xili-includes/xl-class-admin.php:1330
+#, php-format
+msgid "More than one custom post (%s) are available."
+msgstr "Des contenus personnalisés (%s) sont activés."
+
+#: xili-includes/xl-class-admin.php:1332
+msgid "Check the custom to enable multilanguage features."
+msgstr "Cocher les contenus pour activer le mode multilingue."
+
+#: xili-includes/xl-class-admin.php:1344
+msgid "Enable widgets"
+msgstr "Active les widgets"
+
+#: xili-includes/xl-class-admin.php:1346
+msgid "Current theme has no widgets support."
+msgstr "Le thème actif ne peut avoir de widgets."
+
+#: xili-includes/xl-class-admin.php:1353
+msgid "Bookmarks widget settings"
+msgstr "Réglages du widget Liens"
+
+#: xili-includes/xl-class-admin.php:1354
+msgid "Check the bookmark's categories where to enable multilanguage features."
+msgstr "Cocher les catégories de liens où la sélection par langue sera active."
+
+#: xili-includes/xl-class-admin.php:1356
+msgid "All Links"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1372
+#: xili-includes/xl-class-admin.php:1427
+#: xili-includes/xl-class-admin.php:1545
+#: xili-includes/xl-class-admin.php:1572
+#: xili-includes/xl-class-admin.php:1708
+msgid "Update"
+msgstr "Mettre à jour "
+
+#: xili-includes/xl-class-admin.php:1386
+msgid "Permalinks rules"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1387
+msgid "force permalinks flush"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1390
+msgid "Translation domains settings"
+msgstr "Réglage du domaine de traduction"
+
+#: xili-includes/xl-class-admin.php:1391
+msgid "For experts in multilingual CMS: Check to modify domains switching."
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1394
+msgid "Switch all domains excepted default WP"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1403
+msgid "Dashboard style: External xl-style.css"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1407
+msgid "There is no style for dashboard"
+msgstr "Il n'y a pas de style pour le tableau de bord"
+
+#: xili-includes/xl-class-admin.php:1414
+msgid "Activate xl-style.css"
+msgstr "Activer xl-style.css"
+
+#: xili-includes/xl-class-admin.php:1416
+msgid "Locale (date) translation"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1417
+msgid "Since v2.4, new way for locale (wp_locale) translation."
+msgstr "Depuis la v. 2.4, nouveau mode pour la traduction de WP_Locale."
+
+#: xili-includes/xl-class-admin.php:1418
+msgid "Mode wp_locale"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1420
+msgid "Redirect to created post"
+msgstr "Redirection vers l'édition de l'article créé"
+
+#: xili-includes/xl-class-admin.php:1421
+msgid "After creating a linked post in other language, the Edit post is automatically displayed."
+msgstr "Après avoir créé un article dans une autre langue, l'écran d'édition de ce nouvel article est automatiquement affiché."
+
+#: xili-includes/xl-class-admin.php:1422
+msgid "Redirection"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1447
+msgid "Theme type and domain:"
+msgstr "Type et domaine du thème :"
+
+#: xili-includes/xl-class-admin.php:1451
+msgid "theme_domain:"
+msgstr "domaine du thème :"
+
+#: xili-includes/xl-class-admin.php:1451
+msgid "as function like:"
+msgstr "tel qu'ici :"
+
+#: xili-includes/xl-class-admin.php:1453
+msgid "Theme domain NOT defined"
+msgstr "domaine du thème non défini"
+
+#: xili-includes/xl-class-admin.php:1458
+msgid "Language files:"
+msgstr "Fichiers langue"
+
+#: xili-includes/xl-class-admin.php:1460
+msgid "Languages sub-folder:"
+msgstr "Sous dossier des fichiers '.mo' :"
+
+#: xili-includes/xl-class-admin.php:1461
+msgid "Available MO files:"
+msgstr "Fichiers .mo disponibles :"
+
+#: xili-includes/xl-class-admin.php:1464
+msgid "CAUTION: no load_theme_textdomain() in functions.php - review the content of file in the current theme or choose another canonical theme."
+msgstr "ATTENTION : il n'y a pas de load_theme_textdomain() dans functions.php - réviser ce fichier du thème courant or choisir un thème WP canonique."
+
+#: xili-includes/xl-class-admin.php:1489
+msgid "Nav menu: Home links in each language"
+msgstr "Menu de navigation : Liens accueil selon langue"
+
+#: xili-includes/xl-class-admin.php:1497
+msgid "Choose location(s) of nav menu(s) where languages list will be automatically inserted. For each location, choose the type of list. Experts can create their own list by using api (hook) available in plugin."
+msgstr "Choisir le(s) emplacement(s) de menu(s) où la liste des langues est insérée automatiquement. Pour chaque lieu, choisir le type de liste. Les experts peuvent créer leurs propres listes en utilisant les apis disponibles dans l'extension."
+
+#: xili-includes/xl-class-admin.php:1541
+msgid "Add list in nav menu"
+msgstr "Adjonction de la liste des langues"
+
+#: xili-includes/xl-class-admin.php:1544
+msgid "Menu Home item with lang."
+msgstr "Item Accueil avec sélection langue"
+
+#: xili-includes/xl-class-admin.php:1549
+msgid "Nav menu: Automatic sub-selection of pages according current language"
+msgstr "Menu de navigation : Sous-sélection automatique des pages insérées selon la langue courante"
+
+#: xili-includes/xl-class-admin.php:1551
+msgid "Choose location of nav menu where sub-selection of pages list will be automatically inserted according current displayed language:"
+msgstr "Choisir l'emplacement du menu où la liste de la sous-sélection (selon la langue) des pages est insérée automatiquement :"
+
+#: xili-includes/xl-class-admin.php:1568
+msgid "Add selection of pages in nav menu"
+msgstr "Adjonction d'une sélection des pages"
+
+#: xili-includes/xl-class-admin.php:1570
+msgid "Args"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1574
+msgid "This theme doesn't contain active Nav Menu. List of languages cannot be automatically added."
+msgstr "Ce thème ne contient pas de menu de navigation. La liste des liens de l'accueil dans les langues ne peut être ajoutée automatiquement."
+
+#: xili-includes/xl-class-admin.php:1575
+#, php-format
+msgid "See <a href=\"%s\" title=\"Menu Items definition\">Appearance Menus activation</a> settings."
+msgstr "Voir l'<a href=\"%s\" title=\"Définition du menu\">activation du menu de navigation</a>."
+
+#: xili-includes/xl-class-admin.php:1581
+msgid "Theme's nav menu items settings"
+msgstr "Pré-écriture des items du menu de navigation"
+
+#: xili-includes/xl-class-admin.php:1586
+#, php-format
+msgid "This theme (%s) contains %d Nav Menu(s)."
+msgstr "Ce thème (%s) contient %d menu(s) actif(s)."
+
+#: xili-includes/xl-class-admin.php:1587
+msgid "Choose nav menu where languages list will be manually inserted:"
+msgstr "Selectionner le menu où les langues vont être insérées manuellement :"
+
+#: xili-includes/xl-class-admin.php:1604
+#: xili-includes/xl-class-admin.php:1616
+#, php-format
+msgid "See <a href=\"%s\" title=\"Menu Items definition\">Appearance Menus</a> settings."
+msgstr "Voir l'<a href=\"%s\" title=\"Définition des items du menu\">activation des items du menu de navigation</a>."
+
+#: xili-includes/xl-class-admin.php:1606
+msgid "Be aware that list is already automatically inserted (see above) !"
+msgstr "Attention, il y a déjà une insertion automatique des liens d'accueil (voir ci-dessus) !"
+
+#: xili-includes/xl-class-admin.php:1611
+msgid "Do you want to add list of language links at the end ?"
+msgstr "Voulez-vous ajouter les liens pour la page des réglages ?"
+
+#: xili-includes/xl-class-admin.php:1612
+msgid "Add menu items"
+msgstr "Ajout des items"
+
+#: xili-includes/xl-class-admin.php:1615
+msgid "This theme doesn't contain active Nav Menu."
+msgstr "Ce thème ne contient pas de menu de navigation actif."
+
+#: xili-includes/xl-class-admin.php:1623
+msgid "Special Gold Actions"
+msgstr "Actions spéciales \"Or\""
+
+#: xili-includes/xl-class-admin.php:1638
+msgid "Mail to dev.xiligroup"
+msgstr "Courriel pour dev.xiligroup"
+
+#: xili-includes/xl-class-admin.php:1639
+msgid "Cc: (Reply to:)"
+msgstr "Cc: (Répondre à:)"
+
+#: xili-includes/xl-class-admin.php:1666
+msgid "Type of webmaster:"
+msgstr "Type de webmestre :"
+
+#: xili-includes/xl-class-admin.php:1668
+msgid "Define your experience as webmaster…"
+msgstr "Décrivez votre expérience en webmestre…"
+
+#: xili-includes/xl-class-admin.php:1669
+msgid "Newbie in WP"
+msgstr "Novice en WP"
+
+#: xili-includes/xl-class-admin.php:1670
+msgid "Good knowledge in WP and few in php"
+msgstr "Bon niveau en WP mais peu en php"
+
+#: xili-includes/xl-class-admin.php:1671
+msgid "Good knowledge in WP, CMS and good in php"
+msgstr "Bon niveau en WP, CMS et bon en php"
+
+#: xili-includes/xl-class-admin.php:1672
+msgid "WP theme and /or plugin developper"
+msgstr "Développeur de themes WP et/ou de Plugin pour WP"
+
+#: xili-includes/xl-class-admin.php:1674
+msgid "Subject:"
+msgstr "Objet :"
+
+#: xili-includes/xl-class-admin.php:1677
+msgid "Choose topic..."
+msgstr "Choisir le thème..."
+
+#: xili-includes/xl-class-admin.php:1679
+msgid "Question"
+msgstr "Question"
+
+#: xili-includes/xl-class-admin.php:1680
+msgid "Encouragement"
+msgstr "Encouragement"
+
+#: xili-includes/xl-class-admin.php:1681
+msgid "Support need"
+msgstr "Demande de support"
+
+#: xili-includes/xl-class-admin.php:1683
+msgid "Your message here…"
+msgstr "Ecrire votre message…"
+
+#: xili-includes/xl-class-admin.php:1686
+msgid "Before send the mail, be accurate, check the infos to inform support and complete textarea. A copy (Cc:) is sent to webmaster email (modify it if needed)."
+msgstr "Avant d'envoyer le courriel, soyez précis, cocher les infos à envoyer au support et compléter les autres champs. Une copie est envoyée au webmestre (courriel à modifier si nécessaire)."
+
+#: xili-includes/xl-class-admin.php:1689
+msgid "Send email"
+msgstr "Envoyer le courriel"
+
+#: xili-includes/xl-class-admin.php:1703
+msgid "CAUTION: When checking below, after deactivating xili-language plugin, if delete it through plugins list, ALL the xili-language datas in database will be definitively ERASED !!! (only multilingual features)"
+msgstr "ATTENTION : En cochant ci-dessous, après avoir désactivé l'extension xili-language si sa suppression est lancée, TOUTES les données de l'extension seront définitivement SUPPRIMEES !!! (pas les articles et liens mais leurs affectations multilingues)"
+
+#: xili-includes/xl-class-admin.php:1705
+msgid "Delete DB plugin's datas"
+msgstr "Supprimer les données de l'extension dans la base de données !"
+
+#: xili-includes/xl-class-admin.php:1722
+#: xili-includes/xl-class-admin.php:2152
+msgid "ID"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1723
+#: xili-includes/xl-class-admin.php:1766
+msgid "ISO Name"
+msgstr "Nom ISO"
+
+#: xili-includes/xl-class-admin.php:1724
+#: xili-includes/xl-class-admin.php:1774
+msgid "Full name"
+msgstr "Nom complet "
+
+#: xili-includes/xl-class-admin.php:1725
+#: xili-includes/xl-class-admin.php:1770
+msgid "Language slug"
+msgstr "Code "
+
+#: xili-includes/xl-class-admin.php:1726
+#: xili-includes/xl-class-admin.php:1779
+msgid "Order"
+msgstr "Ordre "
+
+#: xili-includes/xl-class-admin.php:1727
+msgid "Vis."
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1728
+msgid "Posts"
+msgstr "Articles"
+
+#: xili-includes/xl-class-admin.php:1729
+msgid "Action"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1737
+msgid "Add a language"
+msgstr "Ajouter une langue"
+
+#: xili-includes/xl-class-admin.php:1760
+msgid "Examples"
+msgstr "Exemples "
+
+#: xili-includes/xl-class-admin.php:1763
+msgid "ISO Language-Codes"
+msgstr "Code ISO de la langue"
+
+#: xili-includes/xl-class-admin.php:1763
+msgid "ISO Country-Codes"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1767
+#, php-format
+msgid "two or five chars like 'ja' or 'zh_TW', see %s docs"
+msgstr "deux ou cinq signes tel que 'ja' ou 'zh_TW', voir la doc sur %s"
+
+#: xili-includes/xl-class-admin.php:1775
+msgid "as visible in list or menu: english, chinese"
+msgstr "tel qu'affiché en liste ou au menu : english, chinese"
+
+#: xili-includes/xl-class-admin.php:1781
+msgid "hidden"
+msgstr "masquée"
+
+#: xili-includes/xl-class-admin.php:1782
+msgid "Server Entities Charset:"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:1788
+msgid "Erase multilingual features of concerned posts by this language being erased !"
+msgstr "ATTENTION en cochant : les spécifications des articles concernés par cette langue seront effacés définitivement !"
+
+#: xili-includes/xl-class-admin.php:1819
+msgid "Choose…"
+msgstr "Choisir…"
+
+#: xili-includes/xl-class-admin.php:1898
+#: xili-includes/xl-class-admin.php:2152
+#: xili-includes/xl-class-admin.php:2181
+msgid "Edit"
+msgstr "Modifier"
+
+#: xili-includes/xl-class-admin.php:1900
+msgid "Delete"
+msgstr "Supprimer"
+
+#: xili-includes/xl-class-admin.php:1956
+msgid "Uncommon filename"
+msgstr "Nom de fichier incorrect"
+
+#: xili-includes/xl-class-admin.php:1961
+msgid "Site's values"
+msgstr "Données du site"
+
+#: xili-includes/xl-class-admin.php:1987
+msgid "xl-style.css is in sub-folder <em>xili-css</em> of current theme folder"
+msgstr "xl-style.css est dans le sous-dossier <em>xili-css</em> du thème courant"
+
+#: xili-includes/xl-class-admin.php:1992
+#, php-format
+msgid "xl-style.css is in sub-folder <em>xili-css</em> of %s folder"
+msgstr "xl-style.css est dans le sous-dossier <em>xili-css</em> du dossier %s"
+
+#: xili-includes/xl-class-admin.php:1997
+msgid "xl-style.css is in sub-folder <em>xili-css</em> of xili-language plugin folder (example)"
+msgstr "xl-style.css est dans le sous-dossier <em>xili-css</em> de l'extension xili-language (exemple à ne pas modifier)"
+
+#: xili-includes/xl-class-admin.php:1999
+msgid "no xl-style.css"
+msgstr "pas fichier xl-style.css"
+
+#: xili-includes/xl-class-admin.php:2020
+#, php-format
+msgid "%s of this %s"
+msgstr "%s : %s"
+
+#: xili-includes/xl-class-admin.php:2020
+msgid "Translations"
+msgstr "Traductions"
+
+#: xili-includes/xl-class-admin.php:2046
+#, php-format
+msgid "This list gathers together the titles and infos about (now and future) linked posts by language. For more info, visit the <a href=\"%s\">wiki</a> website."
+msgstr "La liste ci-contre regroupe les titres et informations sur les articles liés (présent ou futur) selon leur langue. Plus plus d'infos, visiter <a href=\"%s\">les pages wiki</a>."
+
+#: xili-includes/xl-class-admin.php:2081
+msgid "Your browser language preset by default for this new post..."
+msgstr "Préselection de la langue du navigateur pour ce nouvel article..."
+
+#: xili-includes/xl-class-admin.php:2152
+msgid "Title"
+msgstr "Titre"
+
+#: xili-includes/xl-class-admin.php:2152
+msgid "Status"
+msgstr "Statut"
+
+#: xili-includes/xl-class-admin.php:2162
+msgid "Create and edit"
+msgstr "Créer et éditer"
+
+#: xili-includes/xl-class-admin.php:2162
+msgid "Create"
+msgstr "Créer"
+
+#: xili-includes/xl-class-admin.php:2179
+msgid "uneditable"
+msgstr "non modifiable"
+
+#: xili-includes/xl-class-admin.php:2191
+#: xili-includes/xl-class-admin.php:2235
+msgid "Privately Published"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:2194
+#: xili-includes/xl-class-admin.php:2238
+msgid "Published"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:2197
+#: xili-includes/xl-class-admin.php:2241
+msgid "Scheduled"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:2200
+#: xili-includes/xl-class-admin.php:2244
+msgid "Pending Review"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:2207
+#: xili-includes/xl-class-admin.php:2251
+msgid "Draft"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:2218
+#: xili-includes/xl-class-admin.php:2261
+msgid "Search linked post"
+msgstr "Recherche articles liés "
+
+#: xili-includes/xl-class-admin.php:2218
+#: xili-includes/xl-class-admin.php:2261
+#: xili-includes/xl-class-admin.php:2632
+msgid "Search"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:2220
+#: xili-includes/xl-class-admin.php:2718
+msgid "not yet translated"
+msgstr "non traduit"
+
+#: xili-includes/xl-class-admin.php:2221
+#: xili-includes/xl-class-admin.php:2265
+#, php-format
+msgid "For create a linked draft translation in %s"
+msgstr "Pour créer un brouillon de traduction en %s"
+
+#: xili-includes/xl-class-admin.php:2247
+msgid "Trash"
+msgstr "Corbeille"
+
+#: xili-includes/xl-class-admin.php:2264
+#, php-format
+msgid "not yet translated in %s"
+msgstr "non traduit en %s"
+
+#: xili-includes/xl-class-admin.php:2278
+#, php-format
+msgid "select language %s !"
+msgstr "choisie la langue %s !"
+
+#: xili-includes/xl-class-admin.php:2311
+msgid "Refresh links series"
+msgstr "Rafraichir la série des liens"
+
+#: xili-includes/xl-class-admin.php:2311
+msgid "Refresh links"
+msgstr "Rafraichir les liens"
+
+#: xili-includes/xl-class-admin.php:2315
+msgid "Propagate categories"
+msgstr "Diffuser les catégories"
+
+#: xili-includes/xl-class-admin.php:2317
+msgid "set post to:"
+msgstr "cocher en :"
+
+#: xili-includes/xl-class-admin.php:2623
+#, php-format
+msgid "Find %s"
+msgstr "Trouver les %s"
+
+#: xili-includes/xl-class-admin.php:2643
+msgid "Select"
+msgstr "Choisir"
+
+#: xili-includes/xl-class-admin.php:2703
+#, php-format
+msgid "Post in %s. Link to see list of languages…"
+msgstr "Article en %s. Lien pour voir la liste des langues..."
+
+#: xili-includes/xl-class-admin.php:2706
+#, php-format
+msgid "Post in %s."
+msgstr "Article en %s."
+
+#: xili-includes/xl-class-admin.php:2720
+#: xili-includes/xl-class-admin.php:2949
+msgid "translated in:"
+msgstr "traduit en :"
+
+#: xili-includes/xl-class-admin.php:2749
+#, php-format
+msgid "link to edit post %d in %s"
+msgstr "lien pour éditer l'article %d en %s"
+
+#: xili-includes/xl-class-admin.php:2750
+#, php-format
+msgid "<a href=\"%1$s\" title=\"%2$s\" class=\"lang-%4$s\" >%3$s</a>"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:2886
+msgid "&mdash; No Change &mdash;"
+msgstr "&mdash; Pas de changement &mdash;"
+
+#: xili-includes/xl-class-admin.php:2908
+msgid "View all languages"
+msgstr "Voir toutes les langues"
+
+#: xili-includes/xl-class-admin.php:2910
+msgid "Without language"
+msgstr "Langue non définie"
+
+#: xili-includes/xl-class-admin.php:2966
+msgid "Translated in"
+msgstr "traduit en :"
+
+#: xili-includes/xl-class-admin.php:2969
+msgid "Name"
+msgstr "Nom "
+
+#: xili-includes/xl-class-admin.php:2975
+#: xili-includes/xl-class-admin.php:2984
+msgid "Link to edit translations"
+msgstr "Lien pour éditer les traductions"
+
+#: xili-includes/xl-class-admin.php:2975
+#: xili-includes/xl-class-admin.php:2984
+msgid "Edit translations"
+msgstr "Modifier les traductions"
+
+#: xili-includes/xl-class-admin.php:2978
+msgid "Description"
+msgstr "Description"
+
+#: xili-includes/xl-class-admin.php:2991
+msgid "This list above gathers the translations of name and description saved in current local-xx_XX.mo files of the current theme."
+msgstr "Cette liste ci-dessus regroupe les traductions des noms et des descriptions dans les fichiers courants local-xx_XX.mo du thème courant."
+
+#: xili-includes/xl-class-admin.php:3003
+#, php-format
+msgid "xili-dictionary: msgid list updated (n=%1s, d=%2s"
+msgstr ""
+
+#: xili-includes/xl-class-admin.php:3005
+msgid "xili-dictionary plugin is not active to prepare language local .po files."
+msgstr "L'extension xili-dictionary n'est pas activée pour préparer les fichiers de traduction local .po."
+
+#: xili-includes/xl-class-admin.php:3124
+msgid "No translations saved in theme's .mo files"
+msgstr "Pas de traduction sauvé dans les fichiers .mo du thème"
+
+#: xili-includes/xl-class-admin.php:3124
+msgid "Original with translations saved in theme's files: "
+msgstr "Traductions sauvées dans les fichiers du thème :"
+
+#: xili-includes/xl-class-admin.php:3128
+msgid "No translations saved in site's .mo files"
+msgstr "Pas de traduction présente dans les fichiers du site"
+
+#: xili-includes/xl-class-admin.php:3128
+msgid "Original with translations saved in site's files: "
+msgstr "Traductions présentes dans les fichiers du site :"
+
+#: xili-includes/xl-class-admin.php:3136
+msgid "Not yet translated in any language"
+msgstr "non encore traduit"
+
+#: xili-includes/xl-class-admin.php:3227
+msgid "Link's language"
+msgstr "Language du lien"
+
+#: xili-includes/xl-class-admin.php:3244
+msgid "Check the language for this link"
+msgstr "Cocher la langue affectée au lien"
+
+#: xili-includes/xl-class-admin.php:3255
+msgid "Ever"
+msgstr "Toute"
+
+#: xili-includes/xl-class-admin.php:3328
+msgid "In this page, the list of languages used by the multilingual website is set."
+msgstr "Sur cet onglet, la liste des langues utilisée par le site multilingue est définie."
+
+#: xili-includes/xl-class-admin.php:3329
+msgid "Here, you decide what happens when a visitor arrives on the website homepage with his browser commonly set according to his mother language. Xili-language offers multiple ways according your content strategy."
+msgstr "Ici, on définit ce qui arrive quand un visiteur arrive sur la page d'accueil avec son navigateur le plus souvent réglé sur sa langue maternelle. Xili-language propose plusieurs façons selon la ligne éditoriale du site."
+
+#: xili-includes/xl-class-admin.php:3330
+msgid "This sub-page will present how to set navigation menu in multilingual context with xili-language."
+msgstr "Cette page permet de définir les menus de navigation (ajout liste des languages)."
+
+#: xili-includes/xl-class-admin.php:3331
+msgid "This form to email to dev.xiligroup.com team your observations."
+msgstr "Ce formulaire permet l'envoi d'un courriel à dev.xiligroup.com avec vos observations."
+
+#: xili-includes/xl-class-admin.php:3339
+#, php-format
+msgid "About this tab %s:"
+msgstr "A propos de l'onglet %s :"
+
+#: xili-includes/xl-class-admin.php:3342
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Xili Wiki Post</a>"
+msgstr "<a href=\"%s\" target=\"_blank\">Document xili wiki</a>"
+
+#: xili-includes/xl-class-admin.php:3346
+msgid "Things to remember to set xili-language:"
+msgstr "Eléments à retenir pour paramétrer xili-language afin d'obtenir un site multilingue :"
+
+#: xili-includes/xl-class-admin.php:3348
+msgid "Verify that the theme is localizable (like kubrick, fusion or twentyten or others...)."
+msgstr "Vérifier que le thème utilisé soit bien localisable (tel que kubrick, fusion, twentyten ou twentyeleven et autres...)."
+
+#: xili-includes/xl-class-admin.php:3349
+msgid "Define the list of targeted languages."
+msgstr "Définir la liste des langues utilisées."
+
+#: xili-includes/xl-class-admin.php:3350
+msgid "Prepare .po and .mo files for each language with poEdit or xili-dictionary plugin."
+msgstr "Préparer les fichiers .po et .mo de chaque langue avec poEdit ou mieux l'extension xili-dictionary."
+
+#: xili-includes/xl-class-admin.php:3351
+msgid "If your website contains custom post type: check those which need to be multilingual. xili-language will add automatically edit meta boxes."
+msgstr "Si votre site contient des contenus personnalisés (custom post): cocher ceux qui seront multilingues. xili-language va ajouter automatiquement les boites d'édition et de choix."
+
+#: xili-includes/xl-class-admin.php:3355
+msgid "For more information:"
+msgstr "Pour plus d'informations :"
+
+#: xili-includes/xl-class-admin.php:3356
+msgid "<a href=\"http://dev.xiligroup.com/xili-language\" target=\"_blank\">Xili-language Plugin Documentation</a>"
+msgstr "<a href=\"http://dev.xiligroup.com/xili-language\" target=\"_blank\">Documentation de l'extension xili-language</a>"
+
+#: xili-includes/xl-class-admin.php:3357
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Xili Wiki Documentation</a>"
+msgstr "<a href=\"%s\" target=\"_blank\">Documents xili wiki</a>"
+
+#: xili-includes/xl-class-admin.php:3358
+msgid "<a href=\"http://forum2.dev.xiligroup.com/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"http://forum2.dev.xiligroup.com/\" target=\"_blank\">Forum Support</a>"
+
+#: xili-includes/xl-class-admin.php:3359
+msgid "<a href=\"http://codex.wordpress.org/\" target=\"_blank\">WordPress Documentation</a>"
+msgstr "<a href=\"http://codex.wordpress.org/\" target=\"_blank\">Documentation WordPress (codex)</a>"
+
+#: xili-includes/xl-class-admin.php:3363
+msgid "About this tab"
+msgstr "A propos de l'onglet"
+
+#: xili-includes/xl-class-admin.php:3369
+msgid "Things to remember"
+msgstr "Eléments à retenir"
+
+#: xili-includes/xl-class-admin.php:3375
+msgid "For more information"
+msgstr "Pour plus d'informations"
+
+#~ msgid "select one of these languages !"
+#~ msgstr "choisir une des langues !"
+
+#~ msgid "Browser language"
+#~ msgstr "Langue du navigateur"
+
+#~ msgid "The list of languages is not defined. Go to: "
+#~ msgstr "La liste des langues n'est pas définie. Activer les "
+
+#~ msgid "ID of %s in other languages:"
+#~ msgstr "N° des %s en d'autres langues"
+
+#~ msgid "to auto search linked %s. (read docs)"
+#~ msgstr "pour auto-chercher les liens %s (lire la doc)"
+
+#~ msgid "Display"
+#~ msgstr "Voir"
+
+#~ msgid "Check"
+#~ msgstr "Cocher"
+
+#~ msgid "Delete language ?"
+#~ msgstr "Supprimer la langue ?"
+
+#~ msgid "english"
+#~ msgstr "anglais"
+
+#~ msgid "belgium french"
+#~ msgstr "belge"
+
+#~ msgid "french"
+#~ msgstr "français"
+
+#~ msgid "german"
+#~ msgstr "allemand"
+
+#~ msgid "Page ID"
+#~ msgstr "N° de page"
+
+#~ msgid "Page's language"
+#~ msgstr "Langue de la page"
+
+#~ msgid "Linked pages"
+#~ msgstr "Pages liées"
+
+#~ msgid "Select by default browser language of visitor"
+#~ msgstr "Choisir par défaut la langue du navigateur de l'internaute."
+
+#~ msgid "Set undefined posts..."
+#~ msgstr "Affecter une langue aux articles indéfinis..."
+
+#~ msgid "Choose target language…"
+#~ msgstr "Choisir la langue cible…"
+
+#~ msgid "Error: other post not present !!!"
+#~ msgstr "Erreur : l'article est absent !!!"
+
+#~ msgid "xili-language plugin : THEME_TEXTDOMAIN UNDEFINED"
+#~ msgstr "Extension xili-language : Constante THEME_TEXTDOMAIN non définie"
+
+#~ msgid "no index.php in theme, domain not set"
+#~ msgstr "pas de fichier index.php dans le thème, domain non affecté"
+
+#~ msgid "Cc:"
+#~ msgstr "Cc :"
