@@ -1,10 +1,10 @@
 === xili-language ===
 Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
-Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready, media
-Requires at least: 3.3.2
+Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready
+Requires at least: 3.3.1
 Tested up to: 3.4.1
-Stable tag: 2.7.0
+Stable tag: 2.7.1
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -47,7 +47,7 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 
 **TRILOGY FOR MULTILINGUAL CMS WEBSITE** including [xili-language plugin](http://wordpress.org/extend/plugins/xili-language/)
-
+Please verify that you have installed the latest versions of:
 * [xili-dictionary plugin](http://wordpress.org/extend/plugins/xili-dictionary/): With xili-dictionary, it is easier to create or update online, via admin/dashboard UI, the files .mo of each language.
 * [xili-tidy-tags plugin](http://wordpress.org/extend/plugins/xili-tidy-tags/): With xili-tidy-tags, it is now possible to display sub-selection (cloud) of **tags** according language and semantic trans-language group (trademark,…). 
 
@@ -73,9 +73,10 @@ Contrary to popular belief, GPL doesn't say that everything must be zero-cost, j
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * **as is** : see no warranty chapter in license GPLv2.
 
-= New version 2.7.0 =
-* Last Updated 2012-07-22
+= New version 2.7.0, 2.7.1 =
+* Last Updated 2012-08-20
 * multilingual features in media library, see [wiki xili about media attached texts](http://wiki.xiligroup.org/index.php/Xili-language:_Media_and_language_of_title_and_caption_or_description)
+* fixes - for best results, update xili_dictionary to 2.1.3 and xili_tidy_tags to 1.8.
 = Version 2.6.0, 2.6.1, 2.6.2 =
 * Able to detect and use local files (local-xx_XX.mo) containing translations of local website datas created by xili-dictionary >= 2.1.
 * More infos in categories list about translations. Links with xili-dictionary.
@@ -290,6 +291,8 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
+= 2.7.1 (2012-08-20)=
+* new starting, fixes
 = 2.7.0 (2012-07-22)=
 * multilingual features in media library - centralize alert messages and ready for link to wiki
 = 2.6.3 (2012-07-08)=
@@ -423,7 +426,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20120722 - MS - dev.xiligroup.com
+© 20120820 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
