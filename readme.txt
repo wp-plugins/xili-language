@@ -47,7 +47,9 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 
 **TRILOGY FOR MULTILINGUAL CMS WEBSITE** including [xili-language plugin](http://wordpress.org/extend/plugins/xili-language/)
+
 Please verify that you have installed the latest versions of:
+
 * [xili-dictionary plugin](http://wordpress.org/extend/plugins/xili-dictionary/): With xili-dictionary, it is easier to create or update online, via admin/dashboard UI, the files .mo of each language.
 * [xili-tidy-tags plugin](http://wordpress.org/extend/plugins/xili-tidy-tags/): With xili-tidy-tags, it is now possible to display sub-selection (cloud) of **tags** according language and semantic trans-language group (trademark,…). 
 
