@@ -293,11 +293,11 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
-= 2.7.1 (2012-08-20)=
+= 2.7.1 (2012-08-20) =
 * new starting, fixes
-= 2.7.0 (2012-07-22)=
+= 2.7.0 (2012-07-22) =
 * multilingual features in media library - centralize alert messages and ready for link to wiki
-= 2.6.3 (2012-07-08)=
+= 2.6.3 (2012-07-08) =
 * fixes notice when page-on-front - new icons - test propagate cats
 = 2.6.2 (2012-06-28) =
 * Incorporate news pointer widget to hightlight infos.
