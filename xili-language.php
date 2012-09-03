@@ -11,7 +11,7 @@ Text Domain: xili-language
 Domain Path: /languages/
 */
 
-# updated 120831 - 2.8.0 - fixes, new: admin side language selection
+# updated 120831 - 2.8.0 - fixes, new: admin side language selection - b : langstate
 # updated 120819 - 120723 - 2.7.1 - fixes lang_perma detect for permalinks add-ons - new start via action
 # updated 120721 - 2.7.0 - multilingual features in media library - centralize alert messages and ready for link to wiki
 # updated 120708 - 2.6.3 - fixes notice when page-on-front - new icons - test propagate cats
@@ -1504,7 +1504,8 @@ class xili_language {
 			} else { /* front page - switch between lang (and post/page) is done in query posts_where_lang filter see above */
 				
 				
-				if ( isset ( $wp_query->query_vars[QUETAG] ) && '' != $wp_query->query_vars[QUETAG] ) {
+				if ( isset ( $wp_query->query_vars[QUETAG] ) && '' != $wp_query->query_vars[QUETAG] ) { 
+					$this->langstate = true; // 2.8.0 b
 					$curlang = $wp_query->query_vars[QUETAG];	// home series type 
 				} else {
 					
@@ -1554,7 +1555,7 @@ class xili_language {
 
 		if ( $dir = get_bloginfo('text_direction') ) /*use hook for future use */
 			$attributes[] = "dir=\"$dir\"";
-		if ( $this->langstate == true ) {	
+		if ( $this->langstate = true ) {	
 			if (strlen($this->curlang) == 5) {
 				$lang = str_replace('_','-',substr( $this->curlang, 0, 3).strtoupper( substr( $this->curlang, -2))); 
 			} else {
