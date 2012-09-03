@@ -11,7 +11,7 @@ Text Domain: xili-language
 Domain Path: /languages/
 */
 
-# updated 120831 - 2.8.0 - fixes, new: admin side language selection - b : langstate
+# updated 120903 - 2.8.0 - fixes, new: admin side language selection - b : langstate
 # updated 120819 - 120723 - 2.7.1 - fixes lang_perma detect for permalinks add-ons - new start via action
 # updated 120721 - 2.7.0 - multilingual features in media library - centralize alert messages and ready for link to wiki
 # updated 120708 - 2.6.3 - fixes notice when page-on-front - new icons - test propagate cats
