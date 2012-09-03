@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready
 Requires at least: 3.3.1
 Tested up to: 3.4.1
-Stable tag: 2.7.1
+Stable tag: 2.8.0
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -15,6 +15,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 * xili-language plugin provides an automatic selection of language in theme according to the language of displayed post, series of posts, page or articles. *If the post is in gaelic, the texts of the theme will be in gaelic if the author checks the post as gaelic and if the theme contains the right .mo file for this target language.*
 
 * A new interface with a list of titles (and links) to help you write articles and their translations.
+
+* To help authoring, current user can choose language of his dashboard.
 
 * xili-language select *on the fly* the multilingual .mo files present in the theme's folder.
 
@@ -75,8 +77,12 @@ Contrary to popular belief, GPL doesn't say that everything must be zero-cost, j
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * **as is** : see no warranty chapter in license GPLv2.
 
-= New version 2.7.0, 2.7.1 =
-* Last Updated 2012-08-20
+= New version 2.8.0 =
+* Last Updated 2012-09-02
+* Dashboard language choosen by each user (if WP .mo locale files are available), 
+* Improved preset list of languages
+* Fixes
+= Version 2.7.0, 2.7.1 =
 * multilingual features in media library, see [wiki xili about media attached texts](http://wiki.xiligroup.org/index.php/Xili-language:_Media_and_language_of_title_and_caption_or_description)
 * fixes - for best results, update xili_dictionary to 2.1.3 and xili_tidy_tags to 1.8.
 = Version 2.6.0, 2.6.1, 2.6.2 =
@@ -270,6 +276,10 @@ Visit links list editor settings page and set for each link the language.
 
 The page as frontpage must have its clones in each other languages. Like for posts, if the user's browser is not in the default language, xili-language will display the page in the corresponding language if set by the editor. [home page of website dev.xiligroup.com](http://dev.xiligroup.com/) uses this feature.
 
+= How to enlarge language list of the dashboard ? =
+
+Since version 2.8, the current user (author) can choose language of his dashboard. To enlarge list of available languages, you must upload the xx_YY.mo files of other localized WP installs in the folder wp-content/languages/. For example, here a list for a trilingual website (english, french, german : fr_FR.mo, de_DE.mo.
+See this [codex page](http://codex.wordpress.org/WordPress_in_Your_Language) *about WP in your language* to find kit containing wanted files.
 
 == Screenshots ==
 Here a selection of main screenshots.
@@ -293,11 +303,13 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
-= 2.7.1 (2012-08-20)=
+= 2.8.0 (2012-09-02) =
+* Dashboard language choosen by each user, improved preset list of languages, fixes
+= 2.7.1 (2012-08-20) =
 * new starting, fixes
-= 2.7.0 (2012-07-22)=
+= 2.7.0 (2012-07-22) =
 * multilingual features in media library - centralize alert messages and ready for link to wiki
-= 2.6.3 (2012-07-08)=
+= 2.6.3 (2012-07-08) =
 * fixes notice when page-on-front - new icons - test propagate cats
 = 2.6.2 (2012-06-28) =
 * Incorporate news pointer widget to hightlight infos.
@@ -428,7 +440,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20120820 - MS - dev.xiligroup.com
+© 20120902 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
