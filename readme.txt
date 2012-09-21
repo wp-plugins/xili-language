@@ -1,10 +1,10 @@
 === xili-language ===
 Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
-Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready
+Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress
 Requires at least: 3.3.1
-Tested up to: 3.4.1
-Stable tag: 2.8.0
+Tested up to: 3.4.2
+Stable tag: 2.8.1
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -20,7 +20,7 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 * xili-language select *on the fly* the multilingual .mo files present in the theme's folder.
 
-* xili-language uses custom taxonomy to specify language of post, page and custom post.
+* xili-language uses a custom taxonomy to specify language of post, page and custom post.
 
 * xili-language plugin works on Wordpress installation in mono (standalone) or multisite (network) mode.
 
@@ -39,7 +39,7 @@ xili-language lets you create and manage multilingual WP site in several languag
 * [xili wiki](http://wiki.xiligroup.org/index.php/Xili-language_v2.6:_what%27s_new_with_xili-dictionary_v2.1),
 * [multilingual](http://multilingual.wpmu.xilione.com) theme and how to,
 * [news and history](http://dev.xiligroup.com/xili-language/),
-* [forum](http://forum2.dev.xiligroup.com/) to read experience of users and obtain some support,
+* [forum](http://dev.xiligroup.com/?post_type=forum) to read experience of users and obtain some support,
 * **For webmaster**:  Before to be moved in wiki, [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster,
 
 * and finally the source code of the plugin itself if you read php!
@@ -77,8 +77,9 @@ Contrary to popular belief, GPL doesn't say that everything must be zero-cost, j
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * **as is** : see no warranty chapter in license GPLv2.
 
-= New version 2.8.0 =
-* Last Updated 2012-09-02
+= New version 2.8.0, 2.8.1 =
+* Last Updated 2012-09-21
+* Improvements for bbPress >= 2.1 with multilingual forums. See this [post in wiki](http://wiki.xiligroup.org/index.php/Xili-language:_multilingual_forums_with_bbPress_add-on).
 * Dashboard language choosen by each user (if WP .mo locale files are available), 
 * Improved preset list of languages
 * Fixes
@@ -245,7 +246,7 @@ Yes, use contact form [here](http://dev.xiligroup.com/?page_id=10).
 
 = Support Forum or contact form ? =
 
-Effectively, prefer [forum](http://forum2.dev.xiligroup.com/) to obtain some support.
+Effectively, prefer [forum](http://dev.xiligroup.com/?post_type=forum) to obtain some support.
 
 = Does xiligroup provide free themes ? =
 
@@ -303,6 +304,8 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
+= 2.8.1 (2012-09-21) =
+* fixes sticky perma, improvements for bbPress, new filters in admin, fixes fee links meta
 = 2.8.0 (2012-09-02) =
 * Dashboard language choosen by each user, improved preset list of languages, fixes
 = 2.7.1 (2012-08-20) =
@@ -393,7 +396,7 @@ Here a selection of main screenshots.
 = 1.8.2 (2010-10-30) =
 * as expected by some webmasters, 'in' before language is not displayed before name in language list.
 * better automatic insertion of nav menu for theme with several location. 
-* now compatible with child theme - see [Forum](http://forum2.dev.xiligroup.com/forum.php?id=1)
+* now compatible with child theme - see [Forum](http://dev.xiligroup.com/?forum=xili-language-plugin)
 * improve date to strftime format translation.
 = 1.8.0 (2010-10-08) =
 * now, if checked in settings, a custom post type can be multilingual as post or page type.
@@ -440,7 +443,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20120902 - MS - dev.xiligroup.com
+© 20120921 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
@@ -453,7 +456,7 @@ v2.1.0 is compatible with settings of previous release BUT introduces now a way 
 
 = Technical infos =
 
-* REMEMBER : xili-language follows the WordPress story since more than 4 years. Initially designed for webmasters with knowledge in WP, PHP,… step by step the plugin will improved to be more and more plug and play. So don't forget to visit this [demo site](http://multilingual.wpmu.xilione.com), see this [other demo](http://2011.wpmu.xilione.com/) and [Forum](http://forum2.dev.xiligroup.com/).
+* REMEMBER : xili-language follows the WordPress story since more than 4 years. Initially designed for webmasters with knowledge in WP, PHP,… step by step the plugin will improved to be more and more plug and play. So don't forget to visit this [demo site](http://multilingual.wpmu.xilione.com), see this [other demo](http://2011.wpmu.xilione.com/) and [Forum](http://dev.xiligroup.com/?forum=xili-language-plugin).
 
 **Prerequisite:**
 Verify that your theme is international compatible (translatable terms like `_e('the term','mythemedomaine')` and no displayed texts 'hardcoded' (example in default theme of WP named *twentyten* or *twentyeleven* ).
@@ -475,7 +478,7 @@ A [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical feature
 **More infos and docs**
 
 * Other posts, articles and more descriptions [here](http://dev.xiligroup.com/xili-language/ "why xili-language ?") and [here in action](http://multilingual.wpmu.xilione.com).
-* Visit also [Forum](http://forum2.dev.xiligroup.com/) to obtain more support or contribute to others by publishing reports about your experience.
+* Visit also [Forum](http://dev.xiligroup.com/?forum=xili-language-plugin) to obtain more support or contribute to others by publishing reports about your experience.
 
 = Compatibility =
 
@@ -488,6 +491,6 @@ xili-language is full compatible with the plugin [xilitheme-select](http://wordp
 More informations about other plugins in the website [dev.xiligroup.com](http://dev.xiligroup.com/ "xiligroup plugins") or in [WP Repository](http://wordpress.org/extend/plugins/search.php?q=xili&sort=)
 
 *The plugin is frequently updated*. Visit [Other versions](http://wordpress.org/extend/plugins/xili-language/developers/).
-See also the [dev.xiligroup Forum](http://forum2.dev.xiligroup.com/).
+See also the [dev.xiligroup Forum](http://dev.xiligroup.com/?forum=xili-language-plugin).
 
 © 2008-2012 - MS - dev.xiligroup.com
