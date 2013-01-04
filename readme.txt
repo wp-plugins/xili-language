@@ -2,9 +2,9 @@
 Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress
-Requires at least: 3.3.1
-Tested up to: 3.4.2
-Stable tag: 2.8.1
+Requires at least: 3.4.2
+Tested up to: 3.5.0
+Stable tag: 2.8.3
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -77,8 +77,14 @@ Contrary to popular belief, GPL doesn't say that everything must be zero-cost, j
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * **as is** : see no warranty chapter in license GPLv2.
 
-= New version 2.8.0, 2.8.1 =
-* Last Updated 2012-09-21
+= New version 2.8.3 =
+* Last Updated 2013-01-03
+* Adaptation for new .mo behavior of WP 3.5 - multilingual features in media library maintained as specified before with taxonomy language.
+* Pointer only one time
+* Tests on WP 3.5: insert in empty nav menu - improved admin UI - ready for alias and language permalinks (with xili-language premium services)
+* Will be 2.9 with WP 3.5.1 tested when available...
+
+= Version 2.8.0, 2.8.1 =
 * Improvements for bbPress >= 2.1 with multilingual forums. See this [post in wiki](http://wiki.xiligroup.org/index.php/Xili-language:_multilingual_forums_with_bbPress_add-on).
 * Dashboard language choosen by each user (if WP .mo locale files are available), 
 * Improved preset list of languages
@@ -304,6 +310,11 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
+= 2.8.3 (2012-12-16, 2013-01-03) =
+* Tests on WP 3.5: insert in empty nav menu - improved admin UI - ready for alias and language permalinks
+* Adaptation for new .mo behavior of WP 3.5 - multilingual features in media library maintained as specified before with taxonomy language.
+* Pointer only one time
+* Will be 2.9 with WP 3.5.1 tested when available...
 = 2.8.1 (2012-09-21) =
 * fixes sticky perma, improvements for bbPress, new filters in admin, fixes fee links meta
 = 2.8.0 (2012-09-02) =
@@ -443,7 +454,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20120921 - MS - dev.xiligroup.com
+© 20120102 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
@@ -493,4 +504,4 @@ More informations about other plugins in the website [dev.xiligroup.com](http://
 *The plugin is frequently updated*. Visit [Other versions](http://wordpress.org/extend/plugins/xili-language/developers/).
 See also the [dev.xiligroup Forum](http://dev.xiligroup.com/?forum=xili-language-plugin).
 
-© 2008-2012 - MS - dev.xiligroup.com
+© 2008-2013 - MS - dev.xiligroup.com
