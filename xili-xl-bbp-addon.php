@@ -3,18 +3,19 @@
 Plugin Name: xili-xl-bbp-addon
 Plugin URI: http://dev.xiligroup.com
 Description: add multilingual functions and features to bbPress (Localized forums). Delivered in xili-language package. If option activated, bbPress default theme will use bbpress.css in your theme directory.
-Version: 2.8.1
+Version: 2.8.3
 Author: MS
 Author URI: http://dev.xiligroup.com
 */
 /*
 
 Changelog:
+2.8.3: - 20130104 - Maintenance release
 2.8.1: - 20120915 - Initial release as class
 
 */
 
-define('XILIXLBBPADDON_VER','2.8.1');
+define('XILIXLBBPADDON_VER','2.8.3');
 
 class xili_xl_bbp_addon {
 	
