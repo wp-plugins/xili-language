@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress
 Requires at least: 3.4.2
 Tested up to: 3.5.0
-Stable tag: 2.8.3
+Stable tag: 2.8.3.1
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -309,6 +309,9 @@ Here a selection of main screenshots.
 * See illustrated presentations in the [wiki](http://wiki.xiligroup.org/).
 
 == Changelog ==
+
+= 2.8.3.1 (2013-01-06) = 
+* Maintenance release, fixes class exists in bbp addon
 
 = 2.8.3 (2012-12-16, 2013-01-03) =
 * Tests on WP 3.5: insert in empty nav menu - improved admin UI - ready for alias and language permalinks
