@@ -1,7 +1,7 @@
 <?php
 /**
  * class xili_language_admin - 2.6.3 - 2.7.1 - 2.8.0 - 2.8.3
- *
+ * temp fixes support settings issue
  */
  
 class xili_language_admin extends xili_language {
@@ -1359,7 +1359,7 @@ class xili_language_admin extends xili_language {
 					$this->xili_settings['wplang'] = ( isset( $_POST['wplangenable'] ) ) ? $_POST['wplangenable'] : '' ;
 					$this->xili_settings['version'] = ( isset( $_POST['versionenable'] ) ) ? $_POST['versionenable'] : '' ;
 					$this->xili_settings['xiliplug'] = ( isset( $_POST['xiliplugenable'] ) ) ? $_POST['xiliplugenable'] : '' ;
-					update_option('xili_language_settings', $this->xili_settings);
+					// update_option('xili_language_settings', $this->xili_settings); - temp fixes 20130127
 					$contextual_arr = array();
 					if ( $this->xili_settings['url'] == 'enable' ) $contextual_arr[] = "url=[ ".get_bloginfo ('url')." ]" ;
 					if ( isset($_POST['onlocalhost']) ) $contextual_arr[] = "url=local" ;
