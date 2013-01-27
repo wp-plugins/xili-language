@@ -10,7 +10,7 @@ License: GPLv2
 Text Domain: xili-language
 Domain Path: /languages/
 */
-# updated 130126 - 2.8.4 - fixes get_terms cache at init, fixes support settings issue, add nounce in admin UI
+# updated 130127 - 2.8.4 - fixes get_terms cache at init, fixes support settings (s) issue, add nounce in admin UI
 # updated 130106 - 2.8.3.1 - Maintenance release, fixes xili-tidy-tags class exists in bbp addon
 # updated 121202 - 130103 - 2.8.3 - insert in empty nav menu - improved admin UI - fixes WP 3.5 new process (lang sub-folder)
 # updated 120929 - 121118 - 2.8.2 - improvement query var - add date format without locale (no_locale)

@@ -1,6 +1,6 @@
 <?php
 /**
- * class xili_language_admin - 2.6.3 - 2.7.1 - 2.8.0 - 2.8.3 - 2.8.4
+ * class xili_language_admin - 2.6.3 - 2.7.1 - 2.8.0 - 2.8.3 - 2.8.4 (s)
  *
  */
  
@@ -1364,16 +1364,23 @@ class xili_language_admin extends xili_language {
 		
 			case 'sendmail'; // 1.8.5
 					check_admin_referer( 'xili-postinpost-sendmail' ); 
-					// no data saved in settings - 20130126
-					$contextual_arr = array();
-					if ( isset( $_POST['urlenable'] ) ) $contextual_arr[] = "url=[ ".get_bloginfo ('url')." ]" ;
-					if ( isset( $_POST['onlocalhost']) ) $contextual_arr[] = "url=local" ;
-					if ( isset( $_POST['themeenable'] ) ) $contextual_arr[] = "theme=[ ".get_option ('stylesheet')." ]" ;
-					if ( isset( $_POST['wplangenable'] ) ) $contextual_arr[] = "WPLANG=[ ".WPLANG." ]" ;
-					if ( isset( $_POST['versionenable'] ) ) $contextual_arr[] = "WP version=[ ".$wp_version." ]" ;
-					if ( isset( $_POST['xiliplugenable'] ) ) $contextual_arr[] = "xiliplugins=[ ". $this->check_other_xili_plugins() ." ]" ;
 					
-					$contextual_arr[] = $_POST['webmestre']; // 1.9.1
+					$this->xili_settings['url'] = ( isset( $_POST['urlenable'] ) ) ? $_POST['urlenable'] : '' ;
+					$this->xili_settings['theme'] = ( isset( $_POST['themeenable'] ) ) ? $_POST['themeenable'] : '' ;
+					$this->xili_settings['wplang'] = ( isset( $_POST['wplangenable'] ) ) ? $_POST['wplangenable'] : '' ;
+					$this->xili_settings['version-wp'] = ( isset( $_POST['versionenable'] ) ) ? $_POST['versionenable'] : '' ;
+					$this->xili_settings['xiliplug'] = ( isset( $_POST['xiliplugenable'] ) ) ? $_POST['xiliplugenable'] : '' ;
+					$this->xili_settings['webmestre-level'] = $_POST['webmestre']; // 2.8.4
+					update_option('xili_language_settings', $this->xili_settings);
+					$contextual_arr = array();
+					if ( $this->xili_settings['url'] == 'enable' ) $contextual_arr[] = "url=[ ".get_bloginfo ('url')." ]" ;
+					if ( isset($_POST['onlocalhost']) ) $contextual_arr[] = "url=local" ;
+					if ( $this->xili_settings['theme'] == 'enable' ) $contextual_arr[] = "theme=[ ".get_option ('stylesheet')." ]" ;
+					if ( $this->xili_settings['wplang'] == 'enable' ) $contextual_arr[] = "WPLANG=[ ".WPLANG." ]" ;
+					if ( $this->xili_settings['version-wp'] == 'enable' ) $contextual_arr[] = "WP version=[ ".$wp_version." ]" ;
+					if ( $this->xili_settings['xiliplug'] == 'enable' ) $contextual_arr[] = "xiliplugins=[ ". $this->check_other_xili_plugins() ." ]" ;
+					
+					$contextual_arr[] = $this->xili_settings['webmestre-level'];  // 1.9.1
 					
 					$headers = 'From: xili-language plugin page <' . get_bloginfo ('admin_email').'>' . "\r\n" ;
 		   			if ( '' != $_POST['ccmail'] ) { 
@@ -2036,7 +2043,7 @@ class xili_language_admin extends xili_language {
 		</label><br />
 		<?php } ?>
 		<label for="versionenable">
-			<input type="checkbox" id="versionenable" name="versionenable" value="enable" <?php if( $this->xili_settings['version']=='enable') echo 'checked="checked"' ?> />&nbsp;<?php echo "WP version: ".$wp_version ; ?>
+			<input type="checkbox" id="versionenable" name="versionenable" value="enable" <?php if( isset ($this->xili_settings['version-wp']) && $this->xili_settings['version-wp']=='enable') echo 'checked="checked"' ?> />&nbsp;<?php echo "WP version: ".$wp_version ; ?>
 		</label><br /><br />
 		<?php $list = $this->check_other_xili_plugins();
 		if (''!= $list ) {?>
@@ -2047,11 +2054,12 @@ class xili_language_admin extends xili_language {
 		</p><p class="textright">
 		<label for="webmestre"><?php _e('Type of webmaster:','xili-language'); ?>
 		<select name="webmestre" id="webmestre" class="width23">
-			<option value="?" ><?php _e('Define your experience as webmaster…','xili-language'); ?></option>
-			<option value="newbie" ><?php _e('Newbie in WP','xili-language'); ?></option>
-			<option value="wp-php" ><?php _e('Good knowledge in WP and few in php','xili-language'); ?></option>
-			<option value="wp-php-dev" ><?php _e('Good knowledge in WP, CMS and good in php','xili-language'); ?></option>
-			<option value="wp-plugin-theme" ><?php _e('WP theme and /or plugin developper','xili-language'); ?></option>
+			<?php if ( !isset ( $this->xili_settings['webmestre-level'] ) ) $this->xili_settings['webmestre-level'] = '?' ; ?>
+			<option value="?" <?php selected( $this->xili_settings['webmestre-level'], '?' ); ?>><?php _e('Define your experience as webmaster…','xili-language'); ?></option>
+			<option value="newbie" <?php selected( $this->xili_settings['webmestre-level'], "newbie" ); ?>><?php _e('Newbie in WP','xili-language'); ?></option>
+			<option value="wp-php" <?php selected( $this->xili_settings['webmestre-level'], "wp-php" ); ?>><?php _e('Good knowledge in WP and few in php','xili-language'); ?></option>
+			<option value="wp-php-dev" <?php selected( $this->xili_settings['webmestre-level'], "wp-php-dev" ); ?>><?php _e('Good knowledge in WP, CMS and good in php','xili-language'); ?></option>
+			<option value="wp-plugin-theme" <?php selected( $this->xili_settings['webmestre-level'], "wp-plugin-theme" ); ?>><?php _e('WP theme and /or plugin developper','xili-language'); ?></option>
 		</select></label><br /><br />
 		<label for="subject"><?php _e('Subject:','xili-language'); ?>
 		<input class="widefat width23" id="subject" name="subject" type="text" value="" /></label>
