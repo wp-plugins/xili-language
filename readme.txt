@@ -3,8 +3,8 @@ Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress
 Requires at least: 3.4.2
-Tested up to: 3.5.0
-Stable tag: 2.8.3.1
+Tested up to: 3.5.1
+Stable tag: 2.8.4
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -44,8 +44,9 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 * and finally the source code of the plugin itself if you read php!
 
-= Provided as examples =
-* Based on **twentyten** and **twentyeleven** themes. Since WordPress 3.0, the default theme named **twentyten** can be used without php coding for a multilingual site [as shown here](http://multilingual.wpmu.xilione.com) or for **twentyeleven** [here](http://2011.wpmu.xilione.com/).
+= Themes provided as examples =
+* Since WordPress 3.0, the default theme named **twentyten** can be used without php coding for a multilingual site [as shown here](http://multilingual.wpmu.xilione.com).
+* Another child examples: **twentyeleven** [here](http://2011.wpmu.xilione.com/), **twentytwelve** [here](http://2012.wpmu.xilione.com/).
 
 
 **TRILOGY FOR MULTILINGUAL CMS WEBSITE** including [xili-language plugin](http://wordpress.org/extend/plugins/xili-language/)
@@ -70,25 +71,31 @@ Please verify that you have installed the latest versions of:
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a cms like multilingual website.
 
 = Licence, donation, services, "as is", ... =
-Contrary to popular belief, GPL doesn't say that everything must be zero-cost, just that when you receive the software (plugin or theme) that it not restrict your freedoms in how you use it. *Free open source plugin does not mean free services*
+Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*, just that when you receive the software (plugin or theme) that it not restrict your freedoms in how you use it. *Free open source plugin does not mean free services*
 
 * Texts of licence: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html)
 * Donation link via paypal in sidebar of [dev.xiligroup site](http://dev.xiligroup.com/)
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * **as is** : see no warranty chapter in license GPLv2.
 
-= New version 2.8.3 =
-* Last Updated 2013-01-03
+
+= Version 2.8.4 =
+* Last Updated 2013-01-27
+* Add page_for_posts features
+* Tests on WP 3.5.1
+* fixes (support settings issue)
+
+= Version 2.8.3 =
 * Adaptation for new .mo behavior of WP 3.5 - multilingual features in media library maintained as specified before with taxonomy language.
 * Pointer only one time
 * Tests on WP 3.5: insert in empty nav menu - improved admin UI - ready for alias and language permalinks (with xili-language premium services)
-* Will be 2.9 with WP 3.5.1 tested when available...
 
 = Version 2.8.0, 2.8.1 =
 * Improvements for bbPress >= 2.1 with multilingual forums. See this [post in wiki](http://wiki.xiligroup.org/index.php/Xili-language:_multilingual_forums_with_bbPress_add-on).
 * Dashboard language choosen by each user (if WP .mo locale files are available), 
 * Improved preset list of languages
 * Fixes
+
 = Version 2.7.0, 2.7.1 =
 * multilingual features in media library, see [wiki xili about media attached texts](http://wiki.xiligroup.org/index.php/Xili-language:_Media_and_language_of_title_and_caption_or_description)
 * fixes - for best results, update xili_dictionary to 2.1.3 and xili_tidy_tags to 1.8.
@@ -310,6 +317,12 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
+= 2.8.4 (2013-01-27) =
+* add page_for_posts features
+* fixes get_terms cache at init
+* fixes support settings issue
+* improve admin UI
+
 = 2.8.3.1 (2013-01-06) = 
 * Maintenance release, fixes class exists in bbp addon
 
@@ -457,7 +470,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20120102 - MS - dev.xiligroup.com
+© 20130127 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
