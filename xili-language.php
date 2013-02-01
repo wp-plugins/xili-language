@@ -2448,6 +2448,7 @@ class xili_language {
 	 *
 	 */
 	function translate_page_for_posts_ID ( $original_id ) {
+		if ( empty ( $original_id ) ) return $original_id; // 2.8.4.1
 		global $wp_query ;
 			if ( isset($wp_query->query_vars['page_id']) && in_array ( $wp_query->query_vars['page_id'] , $this->page_for_posts_array ) ) {
 					
