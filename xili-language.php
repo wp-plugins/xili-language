@@ -10,7 +10,7 @@ License: GPLv2
 Text Domain: xili-language
 Domain Path: /languages/
 */
-# updated 130202 - 2.8.4.1 - fixes page_for_posts issue when empty and static_front_page - adapt text in settings
+# updated 130202 - 2.8.4.1 - fixes page_for_posts issue when empty and static_front_page, works with permalink - adapt texts in settings
 # updated 130127 - 2.8.4 - fixes get_terms cache at init, fixes support settings (s) issue, add nounce in admin UI
 # updated 130106 - 2.8.3.1 - Maintenance release, fixes xili-tidy-tags class exists in bbp addon
 # updated 121202 - 130103 - 2.8.3 - insert in empty nav menu - improved admin UI - fixes WP 3.5 new process (lang sub-folder)
@@ -54,7 +54,7 @@ define('XILILANGUAGE_VER', '2.8.4.1'); /* used in admin UI*/
 define('XILILANGUAGE_WP_VER', '3.3'); /* used in error - see at end */
 define('XILILANGUAGE_PHP_VER', '5.0.0'); /* used in error - see at end */
 define('XILILANGUAGE_PREV_VER', '2.4.3');
-define('XILILANGUAGE_DEBUG', false ); /* used in dev step UI see #4160 - xili_xl_error_log () */
+define('XILILANGUAGE_DEBUG', true ); /* used in dev step UI see #4160 - xili_xl_error_log () */
 
 
 
@@ -151,7 +151,10 @@ class xili_language {
 	var $examples_list = array();
 	
 	var $page_for_posts_array = array();
+	var $page_for_posts_name_array = array(); // used if is_permalink
+	var $page_for_posts_name_to_id_array = array(); // used if is_permalink
 	var $page_for_posts_original = false; // 2.8.4
+	var $is_permalink = false;
 	
 	/**** Construct is future ****/
 	
@@ -229,7 +232,7 @@ class xili_language {
 		//$this->lang_perma = ( has_filter ( 'term_link', 'insert_lang_4cat' ) ) ? true : false ;	// 1.4.1
 		$this->show_page_on_front = ( 'page' == $this->get_option_wo_xili('show_on_front') ) ; //xili_xl_error_log ('show 225' . serialize($this->show_page_on_front ));
 		
-		
+		$this->is_permalink = ( '' == get_option( 'permalink_structure' ) ) ? false : true; // 2.8.4
 		
 		if ( !$class_admin )  { // filtering only one time 2.6
 			add_action( 'init', array(&$this,'init_textdomain'), 9);
@@ -796,12 +799,22 @@ class xili_language {
 			$front_pages_array[$key] = $page_id; 
 			// page_for_posts
 			$id = get_post_meta ( $front_page_for_posts_id, QUETAG.'-'.$key, true );
-			$page_id = ( ''!= $id ) ? $id : $front_page_for_posts_id ;  
-			$front_pages_for_posts_array[$key] = $page_id;	
+			$page_id = ( ''!= $id ) ? $id : 0 ;  
+			if ( $page_id > 0 ) 
+				$front_pages_for_posts_array[$key] = $page_id;
+			if ( $this->is_permalink && $page_id > 0 ) {
+				
+				$pagecontent = get_page ($page_id);
+				$front_pages_for_posts_name_array[$key] = $pagecontent->post_name ;	
+				$this->page_for_posts_name_to_id_array[$pagecontent->post_name] = $page_id;
+			}
 		} 
 		
 		$this->show_page_on_front_array = $front_pages_array;
 		$this->page_for_posts_array = $front_pages_for_posts_array;
+		if ( $this->is_permalink ) {
+			$this->page_for_posts_name_array = $front_pages_for_posts_name_array;
+		}
 		
 		 // debug temp
 		$do = ( !isset ( $this->xili_settings['show_page_on_front_array'] ) || $this->xili_settings['show_page_on_front_array'] != $front_pages_array ) ? true : false ;
@@ -1119,7 +1132,7 @@ class xili_language {
 					if ( isset( $query_object->query_vars['xlrp'] ) && $query_object->query_vars['xlrp'] == 1 ) $insert_join = true ; // called by xili recent posts
 					
 				} else { 
-					if ( ( $query_object->is_home && $this->xili_settings['homelang'] == 'modify') || $query_object->query_vars['ignore_sticky_posts']) {
+					if ( ( $query_object->is_home && $query_object->is_posts_page) || ( $query_object->is_home && $this->xili_settings['homelang'] == 'modify') || $query_object->query_vars['ignore_sticky_posts']) {
 						
 							$insert_join = true ; //xili_xl_error_log ('************ join ************' . serialize ( $query_object->query_vars['post_type']));
 						
@@ -1319,18 +1332,34 @@ class xili_language {
 					
 				}
 			} else {	 
-				if (  ($query_object->is_home && !$this->show_page_on_front && $this->xili_settings['homelang'] == 'modify') || ($query_object->is_home && $query_object->is_posts_page && $this->xili_settings['homelang'] == 'modify') )  {
-					xili_xl_error_log ( "****** ici 1304 force change ******" . serialize ( $query_object->query_vars['post_type']) );
+				if (  ($query_object->is_home && !$this->show_page_on_front && $this->xili_settings['homelang'] == 'modify') || ($query_object->is_home && $query_object->is_posts_page ) )  {
+					
 						// force change if loop - home or page_for_posts
 						if ( $query_object->is_posts_page ) { // 2.8.4
-							$pageidtolang = array_flip ( $this->page_for_posts_array ) ;
-							if ( isset ( $query_object->query_vars['page_id'] ) && isset ( $pageidtolang[$query_object->query_vars['page_id']] ) ) {
-								$curlang = $pageidtolang[$query_object->query_vars['page_id']];
+						
+							if ( $this->is_permalink ) { // 2.8.4.1
+								xili_xl_error_log ( "****** ici 1338 force change ******" . serialize ( $query_object->query_vars['pagename']) );
+								$pagenametolang = array_flip ( $this->page_for_posts_name_array ) ;
+								if ( isset ( $query_object->query_vars['pagename'] ) && isset ( $pagenametolang[$query_object->query_vars['pagename']] ) ) {
+									$curlang = $pagenametolang[$query_object->query_vars['pagename']];
+									xili_xl_error_log ( 'Name + ' . $curlang );
+								} else {
+									
+									$curlang = $this->choice_of_browsing_language();
+							
+								}
 								
 							} else {
-								
-								$curlang = $this->choice_of_browsing_language();
-						
+								xili_xl_error_log ( "****** ici 1352 force change ******" . serialize ( $query_object->query_vars['page_id']) );
+								$pageidtolang = array_flip ( $this->page_for_posts_array ) ;
+								if ( isset ( $query_object->query_vars['page_id'] ) && isset ( $pageidtolang[$query_object->query_vars['page_id']] ) ) {
+									$curlang = $pageidtolang[$query_object->query_vars['page_id']];
+									xili_xl_error_log ( 'ID + ' . $curlang );
+								} else {
+									
+									$curlang = $this->choice_of_browsing_language();
+							
+								}
 							}
 						} else {
 							$curlang = $this->choice_of_browsing_language();
@@ -2448,12 +2477,31 @@ class xili_language {
 	 * @since 2.8.4
 	 *
 	 */
-	function translate_page_for_posts_ID ( $original_id ) {
+	function translate_page_for_posts_ID ( $original_id ) { 
 		if ( empty ( $original_id ) ) return $original_id; // 2.8.4.1
 		global $wp_query ;
+		xili_xl_error_log ( ' #2454 ------->>>' .  $original_id . serialize ( $this->page_for_posts_name_array ) );
+		
+		if ( $this->is_permalink  ) {
+			if ( isset($wp_query->query_vars['pagename']) && in_array ( $wp_query->query_vars['pagename'] , $this->page_for_posts_name_array ) ) {
+					
+				xili_xl_error_log ( serialize ($this->page_for_posts_name_array) . ' #2457 ------->>>' . $wp_query->query_vars['pagename']  );
+				$wp_query->is_page = false;
+				$wp_query->is_home = true;
+				$wp_query->is_posts_page = true;
+				
+				return $this->page_for_posts_name_to_id_array[$wp_query->query_vars['pagename']];
+				
+			} else {
+				
+				return $original_id;
+				
+			}
+			 
+		} else { // no permalinks
 			if ( isset($wp_query->query_vars['page_id']) && in_array ( $wp_query->query_vars['page_id'] , $this->page_for_posts_array ) ) {
 					
-				xili_xl_error_log ( serialize ($this->page_for_posts_array) . ' #2445 ------->>>' . $wp_query->query_vars['page_id']  );
+				xili_xl_error_log ( serialize ($this->page_for_posts_array) . ' #2478 ------->>>' . $wp_query->query_vars['page_id']  );
 				$wp_query->is_page = false;
 				$wp_query->is_home = true;
 				$wp_query->is_posts_page = true;
@@ -2465,6 +2513,7 @@ class xili_language {
 				return $original_id;
 				
 			}
+		}
 	}
 	
 	/**

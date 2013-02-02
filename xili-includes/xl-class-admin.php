@@ -1,6 +1,6 @@
 <?php
 /**
- * class xili_language_admin - 2.6.3 - 2.7.1 - 2.8.0 - 2.8.3 - 2.8.4 (s)
+ * class xili_language_admin - 2.6.3 - 2.7.1 - 2.8.0 - 2.8.3 - 2.8.4 - 2.8.4.1
  *
  */
  
@@ -3660,7 +3660,7 @@ class xili_language_admin extends xili_language {
 			$a = $this->is_msg_saved_in_localmos ( $tag->name, 'msgid', '', 'single' ); echo $a[0];
 			
 			if ( class_exists('xili_dictionary' ) && current_user_can ('xili_dictionary_set')) {
-				$link = admin_url().'/edit.php?s='.str_replace (' ', '+', $tag->name ).'&post_status=all&post_type=xdmsg&action=-1&m=0&lang&writer_name=0&paged=1&action2=-1';
+				$link = admin_url().'edit.php?s='.str_replace (' ', '+', $tag->name ).'&post_status=all&post_type=xdmsg&action=-1&m=0&lang&writer_name=0&paged=1&action2=-1';
 			
 				printf( '<a href="%1$s" title="%2$s" >%3$s</a>', $link, __('Link to edit translations', 'xili-language') , __('Edit translations', 'xili-language') );
 			}
@@ -3669,7 +3669,7 @@ class xili_language_admin extends xili_language {
 			$a = $this->is_msg_saved_in_localmos ( $tag->description, 'msgid', '', 'single' ); echo $a[0];
 			
 			if ( class_exists('xili_dictionary' ) && current_user_can ('xili_dictionary_set')) {
-				$link = admin_url().'/edit.php?s='.str_replace (' ', '+', $tag->description ).'&post_status=all&post_type=xdmsg&action=-1&m=0&lang&writer_name=0&paged=1&action2=-1';
+				$link = admin_url().'edit.php?s='.str_replace (' ', '+', $tag->description ).'&post_status=all&post_type=xdmsg&action=-1&m=0&lang&writer_name=0&paged=1&action2=-1';
 			
 				printf( '<a href="%1$s" title="%2$s" >%3$s</a>', $link, __('Link to edit translations', 'xili-language') , __('Edit translations', 'xili-language') );
 			}

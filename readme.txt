@@ -295,7 +295,7 @@ Here a selection of main screenshots.
 * add page_for_posts features
 * fixes get_terms cache at init
 * fixes support settings issue
-* improve admin UI
+* improved admin UI
 
 = 2.8.3.1 (2013-01-06) = 
 * Maintenance release, fixes class exists in bbp addon
