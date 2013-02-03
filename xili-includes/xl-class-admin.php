@@ -2069,7 +2069,7 @@ class xili_language_admin extends xili_language {
 		<?php } else { ?>
 			<input type="hidden" name="onlocalhost" id="onlocalhost" value="localhost" />
 		<?php } ?>
-		<p><em><?php _e('When checking and giving detailled infos, support will be better !', 'xili-language'); ?></em></p>
+		<br /><em><?php _e('When checking and giving detailled infos, support will be better !', 'xili-language'); ?></em><br />
 		<label for="themeenable">
 			<input type="checkbox" id="themeenable" name="themeenable" value="enable" <?php if( $theme == 'enable' ) echo 'checked="checked"' ?> />&nbsp;<?php echo "Theme name= ".get_option ('stylesheet') ; ?>
 		</label><br />
@@ -2111,10 +2111,11 @@ class xili_language_admin extends xili_language {
 		<p>
 		<?php _e('Before send the mail, be accurate, check the infos to inform support and complete textarea. A copy (Cc:) is sent to webmaster email (modify it if needed).','xili-language'); ?>
 		</p>
+		<?php wp_nonce_field('xili-postinpost-sendmail'); ?>
 		<div class='submit'>
 		<input id='sendmail' name='sendmail' type='submit' tabindex='6' value="<?php _e('Send email','xili-language') ?>" /></div>
-		<?php wp_nonce_field('xili-postinpost-sendmail'); ?>
-		<div class="clearb1"></div>
+		
+		<div class="clearb1">&nbsp;</div><br/>
 		<?php
 	}
 	
