@@ -79,9 +79,9 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * **as is** : see no warranty chapter in license GPLv2.
 
 
-= Version 2.8.4 =
-* Last Updated 2013-02-02
-* Add page_for_posts features when static page as front page
+= Version 2.8.4, 2.8.4.1 =
+* Last Updated 2013-02-03
+* Add page_for_posts features when static page as front page [see wiki post](http://wiki.xiligroup.org/index.php/Xili-language:_page_for_posts)
 * Tests on WP 3.5.1
 * fixes (support settings issue)
 
@@ -291,7 +291,7 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
-= 2.8.4.1 (2013-02-02) =
+= 2.8.4.1 (2013-02-03) =
 * add page_for_posts features
 * fixes get_terms cache at init
 * fixes support settings issue
@@ -434,7 +434,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20130202 - MS - dev.xiligroup.com
+© 20130203 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.

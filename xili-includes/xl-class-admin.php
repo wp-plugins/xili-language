@@ -2,6 +2,7 @@
 /**
  * class xili_language_admin - 2.6.3 - 2.7.1 - 2.8.0 - 2.8.3 - 2.8.4 - 2.8.4.1
  *
+ * 2013-02-03
  */
  
 class xili_language_admin extends xili_language {
@@ -1138,8 +1139,8 @@ class xili_language_admin extends xili_language {
 				$this->xili_settings['authorbrowseroption'] = $this->authorbrowseroption;
 				
 				$this->xili_settings['widget'] = ( isset($_POST['xili_language_widgetenable'] ) ) ? $_POST['xili_language_widgetenable'] : ""; //1.8.8 
-				
 				$this->xili_settings['homelang'] = ( isset($_POST['xili_language_home_lang'] ) ) ? $_POST['xili_language_home_lang'] : ""; // 1.3.2 
+				$this->xili_settings['pforp_select'] = $_POST['xili_language_pforp_select']; // 2.8.4 - page_for_posts sub-selection
 				/* since 1.8.0 */
 				$types = get_post_types(array('show_ui'=>1));
 				if ( count($types) > 2 ) {
@@ -1533,6 +1534,13 @@ class xili_language_admin extends xili_language {
 				// postboxes setup
 				postboxes.add_postbox_toggles('<?php echo $the_hook; ?>');
 			
+			<?php if ( $the_hook == $this->thehook4 ) {	/* expert */ ?>
+				$('#show-manual-box').change(function() { 
+					
+						$('#manual-menu-box').toggle();
+					
+				});	
+			<?php } ?>
 			<?php if ( $the_hook == $this->thehook ) {	?>
 				// for examples list
 				$('#language_name_list').change(function() {
@@ -1597,7 +1605,7 @@ class xili_language_admin extends xili_language {
 					printf(__('a static <a href="%1$s">page</a>.', 'xili-language'), "edit.php?post_type=page") ;
 					$page_for_posts = get_option('page_for_posts');
 					if ( !empty ( $page_for_posts ) ) {
-						echo '<br />';
+						echo '<br /><br /><br />';
 						_e('Another page is set to display the latest posts (in default theme).', 'xili-language');
 					}
 				} else {
@@ -1649,8 +1657,17 @@ class xili_language_admin extends xili_language {
 
 			<?php  if ( !$this->show_page_on_front ) { ?>
 				<br /> &nbsp;&nbsp;<label for="xili_language_home_lang"><?php _e('Modify home query','xili-language') ?> <input id="xili_language_home_lang" name="xili_language_home_lang" type="checkbox" value="modify" <?php if($this->xili_settings['homelang'] == 'modify') echo 'checked="checked"' ?> /></label>
-				<?php }  ?>
-					</fieldset>
+			<?php }  
+				
+				$page_for_posts = get_option('page_for_posts'); // 2.8.4.1
+				if ( !empty ( $page_for_posts ) ) { ?>
+					<br /><br /><label for="xili_lang_neither_browser" ><?php _e("In list inside page",'xili-language'); ?>:&nbsp;
+					<select name="xili_language_pforp_select" id="xili_language_pforp_select" >
+						<option value="no_select" <?php selected( $this->xili_settings['pforp_select'] , 'no_select'); ?> ><?php _e("No selection of latest posts",'xili-language'); ?></option>
+						<option value="select" <?php selected( $this->xili_settings['pforp_select'] , 'select'); ?> ><?php _e("Selection of latest posts",'xili-language'); ?></option>
+					</select></label><?php
+				}
+				?></fieldset>
 		<br />
 		</div>
 		<div style="overflow:hidden">		
@@ -1984,8 +2001,8 @@ class xili_language_admin extends xili_language {
 		 	
 		</fieldset>
 	 	<br /> 	
-	 	
-	 	<fieldset class="box"><legend><?php echo __("Theme's nav menu items settings",'xili-language'); ?></legend>
+	 	<label for="show-manual-box" class="selectit"><input name="show-manual-box" id="show-manual-box" type="checkbox" value="show">&nbsp;<?php _e('Show toolbox for manual insertion (reserved purposes)','xili-language'); ?></label>
+	 	<fieldset id="manual-menu-box" class="box hiddenbox"><legend><?php echo __("Theme's nav menu items settings",'xili-language'); ?></legend>
 		 	<p><?php
 		 	if ( $menu_locations ) {
 		 		$loc_count = count( $menu_locations ); ?>
@@ -2291,6 +2308,7 @@ class xili_language_admin extends xili_language {
 			echo ".fullwidth { width:97%; }\n";
 			echo ".width23 { width:70% ; }\n";
 			echo ".box { margin:2px; padding:6px 6px; border:1px solid #ccc; } \n";
+			echo ".hiddenbox {display:none}\n";
 			echo ".rightbox { margin:2px 5px 2px 49%; width:47%;} \n";
 			echo ".leftbox {border:0px; width:45%; float:left;} \n";
 			echo ".clearb1 {clear:both; height:1px;} \n";

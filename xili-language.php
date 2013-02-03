@@ -10,7 +10,7 @@ License: GPLv2
 Text Domain: xili-language
 Domain Path: /languages/
 */
-# updated 130202 - 2.8.4.1 - fixes page_for_posts issue when empty and static_front_page, works with permalink - adapt texts in settings
+# updated 130203 - 2.8.4.1 - fixes page_for_posts issue when empty and static_front_page, works with permalink - adapt texts in settings
 # updated 130127 - 2.8.4 - fixes get_terms cache at init, fixes support settings (s) issue, add nounce in admin UI
 # updated 130106 - 2.8.3.1 - Maintenance release, fixes xili-tidy-tags class exists in bbp addon
 # updated 121202 - 130103 - 2.8.3 - insert in empty nav menu - improved admin UI - fixes WP 3.5 new process (lang sub-folder)
@@ -206,8 +206,13 @@ class xili_language {
 				$this->xili_settings['version'] = '2.3';
 				update_option('xili_language_settings', $this->xili_settings);  //
 			}
+			if ($this->xili_settings['version'] == '2.3') { /* 2.8.4 */	
+				$this->xili_settings['pforp_select'] = "select"; // no_select, 
+				$this->xili_settings['version'] = '2.4';
+				update_option('xili_language_settings', $this->xili_settings);  //
+			}
 			
-			if ( ! isset ( $this->xili_settings['version'] ) || $this->xili_settings['version'] != '2.3') { // repair or restart from new
+			if ( ! isset ( $this->xili_settings['version'] ) || $this->xili_settings['version'] != '2.4') { // repair or restart from new
 				$this->initial_settings ();
 				update_option('xili_language_settings', $this->xili_settings);  
 			}
@@ -364,7 +369,7 @@ class xili_language {
 	function initial_settings () { 
 		$this->xili_settings = array(
 			    'taxonomy'		=> 'language',
-			    'version' 		=> '2.3',
+			    'version' 		=> '2.4',
 			    'reqtag'		=> 'lang', // query_var
 			    'browseroption' => '',
 			    'authorbrowseroption' => '',
@@ -391,7 +396,8 @@ class xili_language {
 				'available_langs' => array(),
 				'creation_redirect' => 'redirect', // 2.6 to redirect to new post after creation
 				'external_xl_style' => "on", // activate external xl-style.css - on by default :2.6.3
-				'nav_menu_separator' => "|" // 2.8.3
+				'nav_menu_separator' => "|", // 2.8.3
+				'pforp_select' => "select" // 2.8.4
 		    );
 	}
 	
@@ -1132,7 +1138,7 @@ class xili_language {
 					if ( isset( $query_object->query_vars['xlrp'] ) && $query_object->query_vars['xlrp'] == 1 ) $insert_join = true ; // called by xili recent posts
 					
 				} else { 
-					if ( ( $query_object->is_home && $query_object->is_posts_page) || ( $query_object->is_home && $this->xili_settings['homelang'] == 'modify') || $query_object->query_vars['ignore_sticky_posts']) {
+					if ( ( $query_object->is_home && $query_object->is_posts_page) && $this->xili_settings['pforp_select'] != 'no_select' || ( $query_object->is_home && $this->xili_settings['homelang'] == 'modify') || $query_object->query_vars['ignore_sticky_posts']) {
 						
 							$insert_join = true ; //xili_xl_error_log ('************ join ************' . serialize ( $query_object->query_vars['post_type']));
 						
@@ -1332,7 +1338,7 @@ class xili_language {
 					
 				}
 			} else {	 
-				if (  ($query_object->is_home && !$this->show_page_on_front && $this->xili_settings['homelang'] == 'modify') || ($query_object->is_home && $query_object->is_posts_page ) )  {
+				if (  ($query_object->is_home && !$this->show_page_on_front && $this->xili_settings['homelang'] == 'modify') || ($query_object->is_home && $query_object->is_posts_page && $this->xili_settings['pforp_select'] != 'no_select' ) )  {
 					
 						// force change if loop - home or page_for_posts
 						if ( $query_object->is_posts_page ) { // 2.8.4
@@ -2800,7 +2806,7 @@ class xili_language {
 	 * @return list of languages of site for sidebar list.
 	 */
 	function xili_language_list( $before = '<li>', $after ='</li>', $option='', $echo = true, $hidden = false ) {
-		global $post;
+		global $post, $wp_query;
 		$lang_perma = $this->lang_perma; // since 2.1.1
 		
 		$before_class = false ;
@@ -2840,6 +2846,9 @@ class xili_language {
 					if ( ( is_single() || is_page() ) && !is_front_page() ) {	
 						$link = $this->link_of_linked_post ( $post->ID, $language->slug ) ;
 						$title = sprintf (__('Current post in %s', $this->thetextdomain ), __($language->description, $this->thetextdomain ) ) ;
+					} else if (  $wp_query->is_posts_page ) { // 2.8.4
+						$link = $this->link_of_linked_post ( get_option( 'page_for_posts' ) , $language->slug ) ;
+						$title = sprintf (__('Latest posts in %s',the_theme_domain()), __($language->description, $this->thetextdomain) ) ;
 					} else {
 						$link = ( $lang_perma ) ? str_replace ( '%lang%', $language_qv, $currenturl ) : $currenturl.QUETAG."=".$language_qv ;
 						$title = sprintf (__('Posts selected in %s', $this->thetextdomain ), __($language->description, $this->thetextdomain ) ) ;
@@ -2887,9 +2896,12 @@ class xili_language {
 							$class = " class='menu-item menu-item-type-custom lang-".$language->slug." current-lang current-menu-item'";
 						}
 						
-						if ( ( is_single() || is_page() ) && !is_front_page() ) {	
+						if ( (( is_single() || is_page() ) && !is_front_page()) ) {	
 							$link = $this->link_of_linked_post ( $post->ID, $language->slug ) ;
 							$title = sprintf (__('Current post in %s',the_theme_domain()), __($language->description, $this->thetextdomain) ) ;
+						} else if (  $wp_query->is_posts_page ) { // 2.8.4
+							$link = $this->link_of_linked_post ( get_option( 'page_for_posts' ) , $language->slug ) ;
+							$title = sprintf (__('Latest posts in %s',the_theme_domain()), __($language->description, $this->thetextdomain) ) ;
 						} else {
 							$link = ( $lang_perma ) ? str_replace ( '%lang%', $language_qv, $currenturl ) : $currenturl.QUETAG."=".$language_qv ;
 							$title = sprintf ( __('Posts selected in %s',the_theme_domain()), __($language->description, $this->thetextdomain ) ) ;
