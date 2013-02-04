@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress
 Requires at least: 3.4.2
 Tested up to: 3.5.1
-Stable tag: 2.8.3.1
+Stable tag: 2.8.4.1
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -79,44 +79,18 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * **as is** : see no warranty chapter in license GPLv2.
 
 
-= Version 2.8.4 =
-* Last Updated 2013-01-27
-* Add page_for_posts features
+= Version 2.8.4, 2.8.4.1 =
+* Last Updated 2013-02-03
+* Add page_for_posts features when static page as front page [see wiki post](http://wiki.xiligroup.org/index.php/Xili-language:_page_for_posts)
 * Tests on WP 3.5.1
 * fixes (support settings issue)
 
 = Version 2.8.3 =
 * Adaptation for new .mo behavior of WP 3.5 - multilingual features in media library maintained as specified before with taxonomy language.
 * Pointer only one time
-* Tests on WP 3.5: insert in empty nav menu - improved admin UI - ready for alias and language permalinks (with xili-language premium services)
+* Tests on WP 3.5: insertion in empty nav menu - improved admin UI - ready for alias and language permalinks (with xili-language premium services)
 
-= Version 2.8.0, 2.8.1 =
-* Improvements for bbPress >= 2.1 with multilingual forums. See this [post in wiki](http://wiki.xiligroup.org/index.php/Xili-language:_multilingual_forums_with_bbPress_add-on).
-* Dashboard language choosen by each user (if WP .mo locale files are available), 
-* Improved preset list of languages
-* Fixes
-
-= Version 2.7.0, 2.7.1 =
-* multilingual features in media library, see [wiki xili about media attached texts](http://wiki.xiligroup.org/index.php/Xili-language:_Media_and_language_of_title_and_caption_or_description)
-* fixes - for best results, update xili_dictionary to 2.1.3 and xili_tidy_tags to 1.8.
-= Version 2.6.0, 2.6.1, 2.6.2 =
-* Able to detect and use local files (local-xx_XX.mo) containing translations of local website datas created by xili-dictionary >= 2.1.
-* More infos in categories list about translations. Links with xili-dictionary.
-* Incorporate news pointer widget to hightlight infos (some need to be dismissed two times !)
-* MAJOR UPDATE: See short presentation of new in the [wiki xili](http://wiki.xiligroup.org/index.php/Xili-language_v2.6:_what%27s_new_with_xili-dictionary_v2.1))
-
-= Version 2.5.0 =
-* A new metabox now contains the list of (now and future) linked translated posts. The new design benefits from the gains of the concept of xili-dictionary 2.0.  
-* This box replaces the previous two metaboxes designed at the origin of xili-language. For more info, visit the [wiki website](http://wiki.xiligroup.org).
-
-= Versions 2.4.0, 2.4.4 =
-* Settings pages are now organized in 4 tabs with more online infos.
-* automatic rtl.css adding if present in theme like twentyten or twentyeleven - So supports better arabic, persian, hebraic and other *right to left* languages.
-* new way and options to manage dates translation using class wp_locale - before activation: read carefully [this keynote](http://dev.xiligroup.com/?p=2275)
-* ready for the new version of xili-dictionary 2 that uses now custom post type to store msg lines.
-* compatible with themes with language files in sub-sub-folder of theme.
-
-= News from 1.8.0 to 2.4.0 =
+= News from 1.8.0 to 2.8.2 =
 
 * see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
@@ -317,51 +291,41 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
-= 2.8.4 (2013-01-27) =
+= 2.8.4.1 (2013-02-03) =
 * add page_for_posts features
 * fixes get_terms cache at init
 * fixes support settings issue
-* improve admin UI
+* improved admin UI
 
 = 2.8.3.1 (2013-01-06) = 
 * Maintenance release, fixes class exists in bbp addon
 
-= 2.8.3 (2012-12-16, 2013-01-03) =
-* Tests on WP 3.5: insert in empty nav menu - improved admin UI - ready for alias and language permalinks
-* Adaptation for new .mo behavior of WP 3.5 - multilingual features in media library maintained as specified before with taxonomy language.
-* Pointer only one time
-* Will be 2.9 with WP 3.5.1 tested when available...
-= 2.8.1 (2012-09-21) =
-* fixes sticky perma, improvements for bbPress, new filters in admin, fixes fee links meta
-= 2.8.0 (2012-09-02) =
-* Dashboard language choosen by each user, improved preset list of languages, fixes
-= 2.7.1 (2012-08-20) =
-* new starting, fixes
-= 2.7.0 (2012-07-22) =
-* multilingual features in media library - centralize alert messages and ready for link to wiki
-= 2.6.3 (2012-07-08) =
-* fixes notice when page-on-front - new icons - test propagate cats
-= 2.6.2 (2012-06-28) =
-* Incorporate news pointer widget to hightlight infos.
+= Version 2.8.0, 2.8.1 (2012-09-21) =
+* Improvements for bbPress >= 2.1 with multilingual forums. See this [post in wiki](http://wiki.xiligroup.org/index.php/Xili-language:_multilingual_forums_with_bbPress_add-on).
+* Dashboard language choosen by each user (if WP .mo locale files are available), 
+* Improved preset list of languages
+* Fixes
 
-= 2.6.0 (2012-05-28) =
-* short presentation in the [wiki](http://wiki.xiligroup.org/index.php/Xili-language_v2.6:_what%27s_new_with_xili-dictionary_v2.1)
+= Version 2.7.0, 2.7.1 (2012-08-20) =
+* multilingual features in media library, see [wiki xili about media attached texts](http://wiki.xiligroup.org/index.php/Xili-language:_Media_and_language_of_title_and_caption_or_description)
+* fixes - for best results, update xili_dictionary to 2.1.3 and xili_tidy_tags to 1.8.
+= Version 2.6.0 to 2.6.3 (2012-07-08)=
 * Able to detect and use local files (local-xx_XX.mo) containing translations of local website datas created by xili-dictionary >= 2.1.
 * More infos in categories list about translations. Links with xili-dictionary.
+* Incorporate news pointer widget to hightlight infos (some need to be dismissed two times !)
+* MAJOR UPDATE: See short presentation of new in the [wiki xili](http://wiki.xiligroup.org/index.php/Xili-language_v2.6:_what%27s_new_with_xili-dictionary_v2.1))
 
-= 2.5.0 (2012-04-18) =
-* new metabox centralizing translations and links of posts, in head: hreflang link meta
-* pre-tests with WP 3.4: fixes metaboxes columns
+= Version 2.5.0 (2012-04-18) =
+* A new metabox now contains the list of (now and future) linked translated posts. The new design benefits from the gains of the concept of xili-dictionary 2.0.  
+* This box replaces the previous two metaboxes designed at the origin of xili-language. For more info, visit the [wiki website](http://wiki.xiligroup.org).
 
-= 2.4.3, 2.4.4 (2012-03-29) =
-* Fixes posts list language column in WP 3.2.1
-* ready for the new version of xili-dictionary 2 that uses now custom post type to store msg line.
-* compatible with themes with language files in sub-sub-folder of theme.
-= 2.4.0, 1 (2012-01-28) = 
-* Settings pages are now organized in 4 tabs.
-* improvements of readme started.
+= Versions 2.4.0, 2.4.4 (2012-03-29) =
+* Settings pages are now organized in 4 tabs with more online infos.
 * automatic rtl.css adding if present in theme like twentyten or twentyeleven - So supports better arabic, persian, hebraic and other *right to left* languages.
-* new optional way and options to manage dates translation using class wp_locale - before activation: see [this keynote](http://dev.xiligroup.com/?p=2275)
+* new way and options to manage dates translation using class wp_locale - before activation: read carefully [this keynote](http://dev.xiligroup.com/?p=2275)
+* ready for the new version of xili-dictionary 2 that uses now custom post type to store msg lines.
+* compatible with themes with language files in sub-sub-folder of theme.
+
 = 2.3.0, 2.3.2 (2011-11-13) = 
 * fixes and avoid notices, fixes support emailing 
 * optimized findposts ajax for linked posts
@@ -470,7 +434,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20130127 - MS - dev.xiligroup.com
+© 20130203 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
