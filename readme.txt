@@ -41,6 +41,7 @@ xili-language lets you create and manage multilingual WP site in several languag
 * [news and history](http://dev.xiligroup.com/xili-language/),
 * [forum](http://dev.xiligroup.com/?post_type=forum) to read experience of users and obtain some support,
 * **For webmaster**:  Before to be moved in wiki, [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster,
+* **For german speaking webmaster** some [documentations and posts](http://2012.wpmu.xilione.com/?lang=de_de) are written by YogieAnamCara of [sensorgrafie](http://www.sensorgrafie.de)
 
 * and finally the source code of the plugin itself if you read php!
 
@@ -79,8 +80,9 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * **as is** : see no warranty chapter in license GPLv2.
 
 
-= Version 2.8.4, 2.8.4.1 =
-* Last Updated 2013-02-03
+= Version 2.8.4, 2.8.4.1, 2.8.4.2 =
+* Last Updated 2013-02-16
+* Fixes clone of medias both on WP 3.4 and WP 3.5
 * Add page_for_posts features when static page as front page [see wiki post](http://wiki.xiligroup.org/index.php/Xili-language:_page_for_posts)
 * Tests on WP 3.5.1
 * fixes (support settings issue)
@@ -291,6 +293,8 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
+= 2.8.4.2 (2013-02-16) =
+* media cloning again available in WP 3.5.x, add infos about attached
 = 2.8.4.1 (2013-02-03) =
 * add page_for_posts features
 * fixes get_terms cache at init
@@ -434,7 +438,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20130203 - MS - dev.xiligroup.com
+© 20130216 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
