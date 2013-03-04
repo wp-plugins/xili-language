@@ -80,8 +80,9 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * **as is** : see no warranty chapter in license GPLv2.
 
 
-= Version 2.8.4, 2.8.4.1, 2.8.4.2 =
-* Last Updated 2013-02-16
+= Version 2.8.4, 2.8.4.1, 2.8.4.2, 2.8.4.3 =
+* Last Updated 2013-03-03
+* plugin domain switching improved, cleaning __construct source, fixes
 * Fixes clone of medias both on WP 3.4 and WP 3.5
 * Add page_for_posts features when static page as front page [see wiki post](http://wiki.xiligroup.org/index.php/Xili-language:_page_for_posts)
 * Tests on WP 3.5.1
@@ -292,7 +293,9 @@ Here a selection of main screenshots.
 * See illustrated presentations in the [wiki](http://wiki.xiligroup.org/).
 
 == Changelog ==
-
+= 2.8.4.3 (2013-03-03) =
+* testing phase before releasing 2.8.5 as current
+* plugin domain switching improved, clean __construct source, fixes
 = 2.8.4.2 (2013-02-16) =
 * media cloning again available in WP 3.5.x, add infos about attached
 = 2.8.4.1 (2013-02-03) =
@@ -438,7 +441,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20130216 - MS - dev.xiligroup.com
+© 20130303 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
