@@ -11,7 +11,7 @@ Text Domain: xili-language
 Domain Path: /languages/
 */
 
-# updated 130313 - 2.8.5 - add feature to improve pages list insertion
+# updated 130313 - 2.8.5 - add feature to improve pages list insertion - 130321 - 2.8.5b security fix
 # updated 130303 - 2.8.4.3 - infos in cats removed (added in XD), plugin domain switching improved, clean __construct source, fixes
 # updated 130216 - 2.8.4.2 - fixes Notice, media cloning again available in WP 3.5.x
 # updated 130203 - 2.8.4.1 - fixes page_for_posts issue when empty and static_front_page, works with permalink - adapt texts in settings
@@ -54,7 +54,7 @@ Domain Path: /languages/
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 
-define('XILILANGUAGE_VER', '2.8.5'); /* used in admin UI*/
+define('XILILANGUAGE_VER', '2.8.5.1'); /* used in admin UI*/
 define('XILILANGUAGE_WP_VER', '3.3'); /* used in error - see at end */
 define('XILILANGUAGE_PHP_VER', '5.0.0'); /* used in error - see at end */
 define('XILILANGUAGE_PREV_VER', '2.4.3');
@@ -807,6 +807,7 @@ class xili_language {
 	 *
 	 */
 	function lang_qv_slug_trans ( $lang_qv ){
+		$lang_qv = sanitize_key( $lang_qv ); // security fixes - 2.8.6
 		if ( isset( $this->langs_shortqv_slug_array[$lang_qv]) ) {
 			return $this->langs_shortqv_slug_array[$lang_qv];
 		} else {
