@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, wpmu, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress
 Requires at least: 3.4.2
 Tested up to: 3.5.1
-Stable tag: 2.8.6
+Stable tag: 2.8.7
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -46,8 +46,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 * and finally the source code of the plugin itself if you read php!
 
 = Themes provided as examples =
-* Since WordPress 3.0, the default theme named **twentyten** can be used without php coding for a multilingual site [as shown here](http://multilingual.wpmu.xilione.com).
-* Another child examples: **twentyeleven** [here](http://2011.wpmu.xilione.com/), **twentytwelve** [here](http://2012.wpmu.xilione.com/).
+* Since WordPress 3.0, the default theme named **twentyten** can be used without php coding for a multilingual site [as shown here twentyten-xili](http://multilingual.wpmu.xilione.com).
+* Another child theme examples: **twentyeleven** [twentyeleven-xili](http://2011.wpmu.xilione.com/), **twentytwelve** [twentytwelve-xili](http://2012.wpmu.xilione.com/), **twentythirteen** [twentythirteen-xili](http://2013.extend.xiligroup.org/).
 
 
 **TRILOGY FOR MULTILINGUAL CMS WEBSITE** including [xili-language plugin](http://wordpress.org/extend/plugins/xili-language/)
@@ -62,7 +62,7 @@ Please verify that you have installed the latest versions of:
 
 * xili-language plugin **does not create additional tables in the database**. xili-language simply makes proper use of the taxonomy tables and postmeta table offered by WordPress to define language and link items between them. Because xili-language plugin does not modify deeply the post edit UI, it is possible to use **iPhone / iPod Touch** Wordpress app to prepare and draft the post.
 
-* xili-language plugin does not replace the author or the editor. No automatic translation. Content strategist is the master of the languages, the contents and the navigation inside the website. With xili-dictionary, webmaster can translate the theme's items. For design, the creator is free to choose text or graphic. xili-language does not provide flags !
+* xili-language plugin does not replace the author or the editor. No automatic translation. Content strategist is the master of the languages, the contents and the navigation inside the website. With xili-dictionary, webmaster can translate the theme's items. For design, the creator is free to choose text or graphic. xili-language does not provide flags (or few as example in child-theme example like [twentytwelve-xili](http://2012.wpmu.xilione.com) )!
 
 = Newbie, WP user, Developer,… =
 
@@ -79,8 +79,13 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * **as is** : see no warranty chapter in license GPLv2.
 
+= Version 2.8.7 =
+* Last Updated 2013-04-16
+* fixes lang_perma if search, fixes IE matching(z8po), add option 'Posts selected in' for language_list title link
+* tests with WP 3.6 beta
+
 = Version 2.8.6 =
-* Last Updated 2013-03-22
+
 * Fixes security issues
 * Improves searchform
 * Continues tests with WP 3.6 alpha and Twenty Thirteen theme
@@ -304,6 +309,10 @@ Here a selection of main screenshots.
 
 == Changelog ==
 
+= Version 2.8.7 (2013-04-16) =
+* fixes lang_perma if search, 
+* fixes IE matching(z8po), add option 'Posts selected in' for language_list title link (used by XD)
+
 = Version 2.8.6 (2013-03-22) =
 
 * Fixes security issues
@@ -463,7 +472,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20130322 - MS - dev.xiligroup.com
+© 20130416 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
