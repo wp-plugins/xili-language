@@ -59,7 +59,7 @@ define('XILILANGUAGE_VER', '2.8.7'); /* used in admin UI*/
 define('XILILANGUAGE_WP_VER', '3.4'); /* used in error - see at end */
 define('XILILANGUAGE_PHP_VER', '5.0.0'); /* used in error - see at end */
 define('XILILANGUAGE_PREV_VER', '2.4.3');
-define('XILILANGUAGE_DEBUG', true ); /* used in dev step UI see #4160 - xili_xl_error_log () */
+define('XILILANGUAGE_DEBUG', false ); /* used in dev step UI see #4160 - xili_xl_error_log () */
 
 
 
