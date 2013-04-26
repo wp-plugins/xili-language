@@ -84,6 +84,7 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * fixes notice with bbPress 2.3 #2309
 * try to find .mo files at automattic svn and GlotPress
 * best title in href language list
+* new filter - xl_propagate_post_attributes - to personalize post's attributes propagation during translation generation.
 = Version 2.8.7 =
 
 * fixes lang_perma if search, fixes IE matching(z8po), add option 'Posts selected in' for language_list title link
@@ -319,6 +320,7 @@ Here a selection of main screenshots.
 * fixes notice with bbPress 2.3 - Tracs #2309
 * try to find .mo files at automattic svn and GlotPress
 * best title in href language list
+* new filter - xl_propagate_post_attributes - to personalize post's attributes propagation during translation generation. - Filters demo in twentythirteen-xili child theme [example](http://2013.extend.xiligroup.org).
 
 = Version 2.8.7 (2013-04-16) =
 * fixes lang_perma if search, 
