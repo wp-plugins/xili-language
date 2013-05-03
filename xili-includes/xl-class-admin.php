@@ -5,7 +5,7 @@
  * 2013-03-13 (05)
  * 2013-03-17 (2.8.6)
  * 2013-04-16 (2.8.7)
- * 2013-05-02 (2.8.8)
+ * 2013-05-03 (2.8.8)
  */
  
 class xili_language_admin extends xili_language {
@@ -1580,9 +1580,11 @@ class xili_language_admin extends xili_language {
 							$a = $this->download_mo_from_translate_wordpress( $language->name, $wp_version, $theme , 1 ) ; 
 							
 						} else if ( isset( $_POST['downloadtheme_'.$language->name] ) && 'Choose' !== $_POST['downloadtheme_'.$language->name] ) {
+							
 							if ( $s[0] == 'Auto' ) {
 							
 								$theme = $_POST['downloadtheme_'.$language->name];
+								
 								$automattic_root = 'http://svn.automattic.com/wordpress-i18n/';
 								$url_base = $automattic_root."{$language->name}/tags/";
 								$versions_to_check = $this->versions_to_check ( $url_base ); // to recover version
@@ -4805,7 +4807,10 @@ class xili_language_admin extends xili_language {
 		
 		// thanks for format  - markoheijnen - http://buddypress.trac.wordpress.org/raw-attachment/ticket/4857/translatecode-003.php, http://buddypress.trac.wordpress.org/attachment/ticket/4857/translatecode-003.php
 		
-			$url = $translate_wordpress_root . $theme_name . '/' . $locale_subfolder . '/default/export-translations?format='.$suffix ;
+		// temp patch for twentythirteen 20130503
+			$theme_subfolder = ( $theme_name == 'twentythirteen' ) ? 'twenty-thirteen' : $theme_name ;
+			
+			$url = $translate_wordpress_root . $theme_subfolder . '/' . $locale_subfolder . '/default/export-translations?format='.$suffix ;
 			
 			$request = wp_remote_get( $url , array( 'filename' => get_theme_root()."/$theme_name/languages/$locale.".$suffix , 'timeout' => 15, 'stream' => true, 'body' => array() ) );
 			
