@@ -226,9 +226,8 @@ See this [codex page](http://codex.wordpress.org/WordPress_in_Your_Language) *ab
 Since 2.8.8, xili-language is able to help you to download admin translation files from Automattic and GlotPress site. See the 4th tab in settings. For official themes ( Twentyten and others), the .mo files can also be downloaded.
 
 == Screenshots ==
-Here a selection of main screenshots.
 
-* See illustrated presentations in the [wiki](http://wiki.xiligroup.org/).
+Here a selection of main screenshots. See illustrated presentations in the [wiki](http://wiki.xiligroup.org/).
 
 1. an example of wp-content/themes folder and his languages sub-folder.
 2. Source coding extract with 'international' text in 'xiliphone' theme.
