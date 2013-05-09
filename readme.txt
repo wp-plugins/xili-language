@@ -227,7 +227,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Screenshots ==
 
-1. an example of wp-content/themes folder and his languages sub-folder.
+1. An example of wp-content/themes folder and his languages sub-folder.
 2. Source coding extract with 'international' text in 'xiliphone' theme.
 3. The plugin settings UI - first tab: the languages list and edit form to add or edit.
 4. The plugin settings UI - second tab: Settings of front-end and languages behaviour.
@@ -242,7 +242,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 13. Blogroll and bookmarks taxonomies and language sub-selection.
 14. Since 2.2.0, new xili-language trilogy menu in admin bar menu to group main settings for multilingual website.
 
-**See also illustrated presentations** in the [wiki](http://wiki.xiligroup.org/).
+See also illustrated presentations in the [wiki](http://wiki.xiligroup.org/).
 
 == Changelog ==
 
