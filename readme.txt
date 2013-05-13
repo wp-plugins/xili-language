@@ -3,8 +3,8 @@ Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress
 Requires at least: 3.4.2
-Tested up to: 3.6-beta2
-Stable tag: 2.8.7
+Tested up to: 3.6
+Stable tag: 2.8.8
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -26,7 +26,7 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 = Prequisite =
 * A project of a website with articles in different languages.
-* **A localizable theme** : Every themes with **localization** (or translation-ready like twentyten) can be easily used (and improved) for realtime multilingual sites.
+* A **localizable theme** : Every themes with **localization** (or translation-ready like twentyten) can be easily used (and improved) for realtime multilingual sites.
 * A tool to translate .po files of the theme and built .mo files (poEdit or better xili-dictionary - *see below* ). 
 * see [this page in wiki.xiligroup.org](http://wiki.xiligroup.org/index.php/Xili-language:_Getting_started,_prerequisites).
 
@@ -40,8 +40,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 * [multilingual](http://multilingual.wpmu.xilione.com) theme and how to,
 * [news and history](http://dev.xiligroup.com/xili-language/),
 * [forum](http://dev.xiligroup.com/?post_type=forum) to read experience of users and obtain some support,
-* **For webmaster**:  Before to be moved in wiki, [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster,
-* **For german speaking webmaster** some [documentations and posts](http://2012.wpmu.xilione.com/?lang=de_de) are written by YogieAnamCara of [sensorgrafie](http://www.sensorgrafie.de)
+* For **webmaster**:  Before to be moved in wiki, [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster,
+* For **german speaking webmaster** some [documentations and posts](http://2012.wpmu.xilione.com/?lang=de_de) are written by YogieAnamCara of [sensorgrafie](http://www.sensorgrafie.de)
 
 * and finally the source code of the plugin itself if you read php!
 
@@ -66,7 +66,7 @@ Please verify that you have installed the latest versions of:
 
 = Newbie, WP user, Developer,… =
 
-* **Newbie:** originally built for webmaster and developer, the plugin trilogy progress since 5 years to be more and more plug and play for newbies who can read and spend a little time mainly for translation.
+* Dear **Newbie:** originally built for webmaster and developer, the plugin trilogy progress since 5 years to be more and more plug and play for newbies who can read and spend a little time mainly for translation.
 
 * xili-language is also dedicated for theme's creator or webmaster with knowledges in CMS and WP and having (or not) tools to create .mo language files. Through API (hook), the plugin add automatic tools (or links or filters) for sidebar or top menus. Categories or Archives lists are translated also. 
 * xili-language provides also series of functions which can be *hooked* in the functions.php file of the theme that you create i.e. for a cms like multilingual website.
@@ -77,10 +77,10 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * Texts of licence: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html)
 * Donation link via paypal in sidebar of [dev.xiligroup site](http://dev.xiligroup.com/)
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
-* **as is** : see no warranty chapter in license GPLv2.
+* Plugin is shipped **as is** : see no warranty chapter in license GPLv2.
 
 = Version 2.8.8 =
-* Last Updated 2013-05-09
+* Last Updated 2013-05-12
 * see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Roadmap =
@@ -226,9 +226,6 @@ See this [codex page](http://codex.wordpress.org/WordPress_in_Your_Language) *ab
 Since 2.8.8, xili-language is able to help you to download admin translation files from Automattic and GlotPress site. See the 4th tab in settings. For official themes ( Twentyten and others), the .mo files can also be downloaded.
 
 == Screenshots ==
-Here a selection of main screenshots.
-
-* See illustrated presentations in the [wiki](http://wiki.xiligroup.org/).
 
 1. an example of wp-content/themes folder and his languages sub-folder.
 2. Source coding extract with 'international' text in 'xiliphone' theme.
@@ -245,9 +242,10 @@ Here a selection of main screenshots.
 13. Blogroll and bookmarks taxonomies and language sub-selection.
 14. Since 2.2.0, new xili-language trilogy menu in admin bar menu to group main settings for multilingual website.
 
+
 == Changelog ==
 
-= Version 2.8.8 (2013-05-09) =
+= Version 2.8.8 (2013-05-12) =
 * New way - via Menus builder - to insert languages list
 * Includes class usable to build child theme multilingual features admin UI
 * try to find .mo files at Automattic svn and GlotPress
@@ -258,28 +256,23 @@ Here a selection of main screenshots.
 * fixes notice with bbPress 2.3 - Tracs #2309
 * for installation in WP network, option to erase settings of the current site if deactivation (the settings are not changed in other sites).
 * add capabilities removing when deactivating.
+* the_other_posts function improved.
+* Continues tests with WP 3.6 beta3 and Twenty Thirteen theme
 
 = Version 2.8.7 (2013-04-16) =
 * fixes lang_perma if search, 
 * fixes IE matching(z8po), add option 'Posts selected in' for language_list title link (used by XD)
 
-= Version 2.8.6 (2013-03-22) =
+= 2.8.4, 2.8.6 (2013-03-22) =
 
 * Fixes security issues
 * Improves searchform
-* Continues tests with WP 3.6 alpha and Twenty Thirteen theme
-
-= 2.8.5 (2013-03-13) = 
 * more option in automatic nav menu insertion
 * cleaning sources after test phases (2.8.4.x)
 * pre-tests with WP 3.6 alpha and Twenty Thirteen theme
-
-= 2.8.4.3 (2013-03-03) =
 * testing phase before releasing 2.8.5 as current
 * plugin domain switching improved, clean __construct source, fixes
-= 2.8.4.2 (2013-02-16) =
 * media cloning again available in WP 3.5.x, add infos about attached
-= 2.8.4.1 (2013-02-03) =
 * add page_for_posts features
 * fixes get_terms cache at init
 * fixes support settings issue
@@ -320,64 +313,53 @@ Here a selection of main screenshots.
 * IMPORTANT: DON'T FORGET TO BACKUP BEFORE UPGRADING.
 * ready for multi nav menus [see this post](http://2011.wpmu.xilione.com/?p=160)
 * ready for enlarged selection of undefined posts
-= 2.2.2, 3 (2011-10-08) = 
+= 2.2.0, 2.2.3 (2011-10-08) = 
 * improved code - clean warning - permalink rare issues solved when page switch on front (next)
 * fixes - `wp_list_pages` improved for current language subselection (see code)
 * improved date formatting options if no *Server Entities Charset* for rare languages like khmer.
 * improved search form - findposts ajax added in linked metabox for post and page
-= 2.2.0, 1 (2011-07-21) =
 * fixes error in navmenu and defaults options of xili_language_list.
 * source reviewed, folder reorganized, ready for option with lang inside permalink. Screenshots renewed from WP 3.2 RC
 * deep tests with official release of WP 3.2
-= 2.1.0, 1 (2011-0628) = 
+= 2.1.0, 2.1.1 (2011-06-28) = 
 * fixes uninstall white screen, fixes focus error
 * new navigation when singular linked post in xili_language_list, multiple nav menus location, new filter for xili_nav_lang_list see code..
 * when a singular (single or page) is displayed, linked posts of other languages are set in xili-language-list links . Previously, it was possible to offer this behaviour by using hook (filter) provided by the plugin. Now, for newbies, it will be easier to link posts according languages with widget.
 * for previous users of navigation menus : v2.1.0 is compatible with settings of previous release BUT introduces now a way to choose multiple menu locations - so revisit the settings page to confirm your previous choice or sets to new navigation way including singular links.
 = 2.0.0 (2011-04-10) =
 * erase old coding remaining for 2.9.x - Improve (progressively) readme...
-= 1.9.0, 1 (2011-03-16) =
+= 1.9.0, 1.9.1 (2011-03-16) =
 * fixes in xili widget recent posts - only post-type display by default - input added to add list of type (post,video,…) 
 * fixes query_var issues when front-page as page or list of posts (thanks to A B-M)
 * Released as current for 3.1
 
-= 1.8.9.1, 1.8.9.3 (2011-01-24) =
+= 1.8.0, 1.8.9.3 (2011-01-24) =
 * bulk edit in posts list
 * add option to adapt nav home menu item
-
 * add `n` in date formatting translation.
 * new column in dashboard to see visibility of a language in Languages list - new checkbox in edit and one in widget to subselect only visible langs.
 * twentyten-xili child theme : now use version 1.0
 * Webmaster : xili_language_list hook has now 5 params - see source.
 * Webmaster : to get linked post ID, don't use `get_post_meta` but `xl_get_linked_post_in` function (see lin #4115) (future changes in linking mechanisms)
- 
-= 1.8.9 (2010-12-12) =
 * filter by languages in Posts edit list.
 * add filter 'xili_nav_lang_list' to control nav menu automatic insertion by php webmasters.
 * add filter 'xili_nav_page_list' to control automatic sub-selection of pages.
 * add id and class for separator in nav menu automatic insertion.
 * set language available in quick-edit mode of posts list.
-
-= 1.8.6 to 1.8.8 (2010-12-05) =
 * complete gettext filters - include optional activation of the 3 widgets. - add use `WPLANG` with 2 chars as *ja* for japanese
 * add gettext filter to change domain for visitor side of widget and other plugins.
 * optional total uninstall with all datas and options set by xili-language.
 * readme rewritten - email metabox at bottom.
-
-= 1.8.5 (2010-11-15) =
 * improve automatic languages sub-folder detection and caution message if `load_textdomain()` is missing and not active in functions.php
 * repairs oversight about bookmarks taxonomies (blogroll) : now it is possible in widget to sub-select links according language and in template tag `wp_list_bookmarks()`
-= 1.8.3 - 1.8.4 (2010-11-07) =
 * query for posts with undefined language `lang=*` ( **since 2.3 replaced** by `lang=.` ), improved widget languages list (condition)
 * widgets rewritten as widget class extend.
 * search form improved
 * fixes
-= 1.8.2 (2010-10-30) =
 * as expected by some webmasters, 'in' before language is not displayed before name in language list.
 * better automatic insertion of nav menu for theme with several location. 
 * now compatible with child theme - see [Forum](http://dev.xiligroup.com/?forum=xili-language-plugin)
 * improve date to strftime format translation.
-= 1.8.0 (2010-10-08) =
 * now, if checked in settings, a custom post type can be multilingual as post or page type.
 
 = 1.7.0 - 1.7.1 (2010-07-21) =
@@ -422,7 +404,7 @@ Here a selection of main screenshots.
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20130510 - MS - dev.xiligroup.com
+© 20130512 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
