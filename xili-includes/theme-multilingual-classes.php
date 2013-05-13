@@ -158,7 +158,7 @@ if ( ! class_exists ( 'xili_language_theme_options' )  ) {
 		
 			printf ("<!-- Website powered by child-theme %s-xili v. %s of dev.xiligroup.com -->\n", $this->theme_name, $this->child_version ) ;
 			echo '<link rel="shortcut icon" href="' . get_stylesheet_directory_uri() . '/images/favicon.ico" type="image/x-icon"/>'."\n";
-			echo '<link rel="apple-touch-icon" href="' . get_stylesheet_directory_uri() . 'images/apple-touch-icon.png"/>'."\n";
+			echo '<link rel="apple-touch-icon" href="' . get_stylesheet_directory_uri() . '/images/apple-touch-icon.png"/>'."\n";
 	
 		}
 		
