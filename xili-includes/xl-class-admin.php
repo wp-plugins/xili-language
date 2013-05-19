@@ -1737,14 +1737,18 @@ class xili_language_admin extends xili_language {
 			if ( $show )  {
 				
 				// GlotPress
+				$glot = false;
 				if ( $language->name != 'en_US' ) {
+					
 					if ( $ver = $this->check_versions_in_glotpress ( $language->name, $wp_version ) ) {
-						if ( $ver == 'dev' ) {  // 2.8.8k
+						if ( $ver == 'dev' ) { //2.8.8k
 							echo '<p><em>'.__('Development Version available on GlotPress WordPress.org server','xili-language').'</em></p>';
 						} else {
 							echo '<p><em>'. sprintf( __('Version %s ready to be downloaded on GlotPress WordPress.org server','xili-language'), $wp_version ).'</em></p>';
 						}
+						$glot = true; 
 					} else {
+						$glot = false;
 						echo '<p>'.__('Not available from GlotPress WordPress.org server','xili-language').'</p>';
 					}
 				}
@@ -1755,18 +1759,28 @@ class xili_language_admin extends xili_language {
 				
 				if ( $language->name == 'en_US' ) {
 					echo '<p>'.__('Root language of WordPress','xili-language').'</p>';
+					$auto = false;
 				} else if ( $version = $this->find_if_version_exists( $language->name, $versions_to_check, $url_base ) ) {
 					echo '<p><em>'. sprintf( __('Version %s ready to be downloaded from Automattic SVN server','xili-language'), $version ).'</em></p>';
 					
+					$auto = true;
+					$i++;
+				} else {
+					$auto = false;
+					echo '<p>'.__('Not available from Automattic SVN server','xili-language').'</p>';
+				}
+				
+				if ( $glot || $auto ) {
+				
 					echo __('Server to download','xili-language');
 					echo ' : <select id="download_'.$language->name.'" name="download_'.$language->name.'" >';
 					echo '<option value="Choose" >' . __('Choose server...','xili-language') . '</option>';
-					echo '<option value="Auto_'.$version.'">' . __( 'Try from Automattic', 'xili-language' ) . '</option>' ;
-					echo '<option value="GlotPress_'.$version.'">' . __( 'Try from GlotPress', 'xili-language' ) . '</option>' ;
+					if ( $auto )	
+						echo '<option value="Auto_'.$version.'">' . __( 'Try from Automattic', 'xili-language' ) . '</option>' ;
+					if ( $glot )	
+					   echo '<option value="GlotPress_'.$version.'">' . __( 'Try from GlotPress', 'xili-language' ) . '</option>' ;
+						
 					echo '</select>';
-					$i++;
-				} else {
-					echo '<p>'.__('Not available from Automattic SVN server','xili-language').'</p>';
 				}			
 			
 			}	
