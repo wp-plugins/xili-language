@@ -1739,7 +1739,7 @@ class xili_language_admin extends xili_language {
 				// GlotPress
 				if ( $language->name != 'en_US' ) {
 					if ( $ver = $this->check_versions_in_glotpress ( $language->name, $wp_version ) ) {
-						if ( $ver = 'dev' ) { 
+						if ( $ver == 'dev' ) {  // 2.8.8k
 							echo '<p><em>'.__('Development Version available on GlotPress WordPress.org server','xili-language').'</em></p>';
 						} else {
 							echo '<p><em>'. sprintf( __('Version %s ready to be downloaded on GlotPress WordPress.org server','xili-language'), $wp_version ).'</em></p>';
