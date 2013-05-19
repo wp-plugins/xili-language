@@ -10,6 +10,7 @@ License: GPLv2
 Text Domain: xili-language
 Domain Path: /languages/
 */
+# 2.8.8k - 130519 - temporary fixes for ka_GE (replace ge_GE for Georgian) - changes https to http for glotpress (WP server changed)
 # updated 130422 - 130512 - 2.8.8 - fixes notice with bbPress 2.3 - try to find .mo files at automattic svn and GlotPress - best title in href language list - new way to insert languages list in navigation menu - better filter in menu/widget title - clean $wp_roles on deactivating - fixes findposts js - the_other_posts improved to return list.
 # updated 130416 - 2.8.7 - fixes lang_perma if search, fixes IE matching(z8po), add option 'Posts selected in' for language_list title link
 # updated 130322 - 2.8.6 - verify QUETAG value - improve html attributes - improves searchform js
@@ -685,7 +686,7 @@ class xili_language {
 		'fi_FI' => __('finnish', 'xili-language'),
 		'fo' => __('faroese', 'xili-language'),
 		'fr_FR' => __('french', 'xili-language'),
-		'ge_GE' => __('georgian', 'xili-language'),
+		'ka_GE' => __('georgian', 'xili-language'), // 2.8.8k
 		'gl_ES' => __('galician', 'xili-language'),
 		'he_IL' => __('hebrew', 'xili-language'),
 		'hr' => __('croatian', 'xili-language'),

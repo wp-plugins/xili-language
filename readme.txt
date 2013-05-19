@@ -245,7 +245,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Changelog ==
 
-= Version 2.8.8 (2013-05-12) =
+= Version 2.8.8 (2013-05-12, 2013-05-19) =
 * New way - via Menus builder - to insert languages list
 * Includes class usable to build child theme multilingual features admin UI
 * try to find .mo files at Automattic svn and GlotPress
@@ -258,6 +258,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * add capabilities removing when deactivating.
 * the_other_posts function improved.
 * Continues tests with WP 3.6 beta3 and Twenty Thirteen theme
+* 2013-05-19 - temporary fixes for ka_GE (replace ge_GE for Georgian) - changes https to http for GlotPress (WP server changed)
 
 = Version 2.8.7 (2013-04-16) =
 * fixes lang_perma if search, 

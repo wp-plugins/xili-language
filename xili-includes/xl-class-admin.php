@@ -6,6 +6,7 @@
  * 2013-03-17 (2.8.6)
  * 2013-04-16 (2.8.7)
  * 2013-05-03 (2.8.8)
+ * 2013-05-19 (2.8.8k)
  */
  
 class xili_language_admin extends xili_language {
@@ -1870,7 +1871,7 @@ class xili_language_admin extends xili_language {
 		$version_folder = $this->glotPress_version_folder ( $version ) ;
 		
 		// Get the list of available translation from Translate WordPress. This is expected to be JSON.
-		$translations = wp_remote_get( sprintf( 'https://translate.wordpress.org/api/projects/wp/%1$s', $version_folder ) );
+		$translations = wp_remote_get( sprintf( 'http://translate.wordpress.org/api/projects/wp/%1$s', $version_folder ) ); // 2.8.8k
 		if ( is_wp_error( $translations ) || wp_remote_retrieve_response_code( $translations ) !== 200 )
 			return false ;
 
