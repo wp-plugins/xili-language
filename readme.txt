@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress
 Requires at least: 3.4.2
 Tested up to: 3.6
-Stable tag: 2.8.8
+Stable tag: 2.8.9
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -79,8 +79,8 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * Plugin is shipped **as is** : see no warranty chapter in license GPLv2.
 
-= Version 2.8.8 =
-* Last Updated 2013-05-12
+= Version 2.8.9 =
+* Last Updated 2013-05-26 : Class for multilingual child theme improved,
 * see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Roadmap =
@@ -245,7 +245,11 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Changelog ==
 
-= Version 2.8.8 (2013-05-12) =
+= Version 2.8.9 (2013-05-26) =
+* class for -xili child theme improved (see [twentythirteen-xili](http://2013.extend.xiligroup.org) example ).
+* jetpack: live change of admin UI language.
+* fixes, __construct in widget classes (php5).
+= Version 2.8.8 (2013-05-12, 2013-05-19) =
 * New way - via Menus builder - to insert languages list
 * Includes class usable to build child theme multilingual features admin UI
 * try to find .mo files at Automattic svn and GlotPress
@@ -258,6 +262,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * add capabilities removing when deactivating.
 * the_other_posts function improved.
 * Continues tests with WP 3.6 beta3 and Twenty Thirteen theme
+* 2013-05-19 - temporary fixes for ka_GE (replace ge_GE for Georgian) - changes https to http for GlotPress (WP server changed)
 
 = Version 2.8.7 (2013-04-16) =
 * fixes lang_perma if search, 
