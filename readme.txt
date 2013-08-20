@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 2.8.10
+Stable tag: 2.9.0
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -79,9 +79,10 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * Plugin is shipped **as is** : see no warranty chapter in license GPLv2.
 
-= Version 2.8.9, 2.8.10 =
-* tested with WP 3.6 R.C.1
-* Last Updated 2013-07-16 : Class for multilingual child theme improved,
+= Version 2.9.0 =
+* tested with WP 3.6 final, multilingual 2013 child theme [available as example here](http://2013.extend.xiligroup.org),
+* Last Updated 2013-08-20
+* more accurate warning message if `load_theme_textdomain` not available in child or parent theme,
 * see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Roadmap =
@@ -245,6 +246,10 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 
 == Changelog ==
+
+= Version 2.9.0 (2013-08-20) =
+* tested with WP 3.6 final,
+* more accurate warning message if `load_theme_textdomain` not available in child or parent theme,
 
 = Version 2.8.10 (2013-07-16) =
 * tested with WP 3.6 RC1,
@@ -416,7 +421,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20130716 - MS - dev.xiligroup.com
+© 20130820 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
