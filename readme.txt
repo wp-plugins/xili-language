@@ -237,7 +237,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 6. The language dashboard in post writting UI under the content textarea. For more infos and how to, visit the [wiki website](http://wiki.xiligroup.org/index.php/Xili-language_v2.5#Getting_started_:_linking_posts_with_different_language).
 7. List of posts with language column and infos about linked posts. For more infos and how to, visit the [wiki website](http://wiki.xiligroup.org/index.php/Xili-language_v2.5).
 8. Dashboard: Posts edit list with language sub-selection, quick edit and bulk edit available.
-9. xili-dictionary v.2
+9. Tab in settings to manage language files.
 10. xili-tidy-tags: Admin Tools UI - see this compatible plugin to group tags according languages.
 11. xili-language widget: Admin widgets UI - since 0.9.9.6, "multiple" languages list widget.
 12. xili-language: Widget to display recent posts in choosen target language.
@@ -421,7 +421,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20130820 - MS - dev.xiligroup.com
+© 20130902 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
