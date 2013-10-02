@@ -248,7 +248,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 = Version 2.9.1 (2013-10-02) =
 * improved theme for options classes (multilingual-classes.php)
 * fixes rare notice
-* language list menu adapted for xtt groups
+* language list menu adapted for [xili-tidy-tags v1.9](http://wordpress.org/extend/plugins/xili-tidy-tags/) new multilingual groups of tags.
 * addon bbPress adapted for xtt groups
 
 = Version 2.9.0 (2013-08-20) =
