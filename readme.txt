@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 2.9.2
+Stable tag: 2.9.1
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -79,8 +79,8 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * Plugin is shipped **as is** : see no warranty chapter in license GPLv2.
 
-= Version 2.9.2 =
-* Last Updated 2013-10-08
+= Version 2.9.1 =
+* Last Updated 2013-10-02
 * see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Roadmap =
@@ -244,9 +244,6 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 
 == Changelog ==
-
-= Version 2.9.2 (2013-10-08) =
-* restrict home queries to fixe nextgen gallery plugin issue (even in admin side) CPT queries !
 
 = Version 2.9.1 (2013-10-02) =
 * improved theme for options classes (multilingual-classes.php)
@@ -428,7 +425,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20131008 - MS - dev.xiligroup.com
+© 20131002 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
