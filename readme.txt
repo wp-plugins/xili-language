@@ -428,7 +428,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20131008 - MS - dev.xiligroup.com
+© 20131010 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.

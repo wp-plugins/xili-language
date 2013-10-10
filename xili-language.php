@@ -11,7 +11,7 @@ Text Domain: xili-language
 Domain Path: /languages/
 */
 
-# updated 131008 - 2.9.2 - restrict home queries ( nextgen gallery issue even in admin side )
+# updated 131010 - 2.9.2 - restrict home queries ( nextgen gallery issue even in admin side )
 # updated 131002 - 2.9.1 - improved theme for options classes (multilingual-classes.php) - fixes rare notice - addon bbPress adapted for xtt groups
 # updated 130820 - 2.9.0 - Release tested with final WP 3.6, more accurate warning message if load_theme_textdomain is not available
 # updated 1306, 130716 - 2.8.10 - test for jetpack, WP3.6-rc1
@@ -1343,9 +1343,9 @@ class xili_language {
 					
 				} else { 
 					if ( ( $query_object->is_home && $query_object->is_posts_page) && $this->xili_settings['pforp_select'] != 'no_select' || ( $query_object->is_home && $this->xili_settings['homelang'] == 'modify') || $query_object->query_vars['ignore_sticky_posts']) {
-							if ( in_array ( $query_object->query_vars['post_type'], array_keys ($this->authorized_custom_post_type () ) ) )
+							if ( '' == $query_object->query_vars['post_type'] || in_array ( $query_object->query_vars['post_type'], array_keys ($this->authorized_custom_post_type () ) ) )
 								$insert_join = true ; //xili_xl_error_log ('************ join ************' . serialize ( $query_object->query_vars['post_type']));
-						error_log ( '*************<<<<<<<<< '. serialize ( array_keys ( $this->authorized_custom_post_type ())  ) );
+						//error_log ( $query_object->query_vars['post_type'] . ' <<< *************<<<<<<<<< '. serialize ( array_keys ( $this->authorized_custom_post_type ())  ) );
 					}
 				}
 			}
@@ -1578,7 +1578,7 @@ class xili_language {
 						} else {
 							$curlang = $this->choice_of_browsing_language();
 						}
-						if ( in_array ( $query_object->query_vars['post_type'], array_keys ($this->authorized_custom_post_type () ) ) ) {
+						if ( '' == $query_object->query_vars['post_type'] || in_array ( $query_object->query_vars['post_type'], array_keys ($this->authorized_custom_post_type () ) ) ) {
 							$wherereqtag = $this->langs_ids_array[$curlang];
 							$where .= " AND xtt.taxonomy = '".TAXONAME."' ";
 							$where .= " AND xtt.term_id = $wherereqtag ";	
