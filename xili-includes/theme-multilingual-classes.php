@@ -4,6 +4,7 @@
 // part of xili-language plugin (theme-multilingual-classes.php) - can be copied in theme sub-folder functions-xili if renamed (multilingual-classes.php)
 // xl 2.9.1 - tmc v.1.2
 // xl 2.9.10 - 2013-xili v1.0.2 - tmc v.1.3.1
+// xl 2.9.11 - 2014-xili v0.1 - tmc v.1.3.2
 
 if ( ! class_exists ( 'xili_language_theme_options' )  ) {
 	
@@ -721,6 +722,7 @@ if ( ! class_exists ( 'xili_language_theme_options_admin' )  ) {
 		    	
 		    	add_settings_section( 'xili_option_section_6', __('Header image assignment', $this->admin_ui_domain), array( $this, 'xili_display_one_section'), $this->settings_name );
 		    	
+		    	$section = 0;
 		    	// list the images
 		    	if ( get_uploaded_header_images() ) {
 		    	// add fields and language pop-up
@@ -728,7 +730,7 @@ if ( ! class_exists ( 'xili_language_theme_options_admin' )  ) {
 		    		$this_upload_headers = get_uploaded_header_images();
 		    		
 		    		$this->show_header_assignment_fields ( $this_upload_headers );
-			
+					$section++;
 		    	}
 		    	
 		    	$this_default_headers = $this->get_processed_default_headers () ;
@@ -736,6 +738,24 @@ if ( ! class_exists ( 'xili_language_theme_options_admin' )  ) {
 		    	if ( !empty ( $this_default_headers ) ) {
 		    		
 					$this->show_header_assignment_fields ( $this_default_headers );
+		    		$section++;
+		    	}
+		    	
+		    	if ( $section == 0 ) {
+		    		$header_setting_url = admin_url('/themes.php?page=custom-header'  );
+		    		$field_args = array(
+				      'option_name' => $this->settings_name,
+				      'title'	  => __('Message:', $this->admin_ui_domain ),
+				      'type'      => 'message',
+				      'id'        => 'no_header_image',
+				      'name'      => 'no_header_image',
+				      'desc'      => __('This theme does not contains header image !', $this->admin_ui_domain ) . '<br />' . sprintf( __( 'The images must be uploaded (and cropped) in the %1$sheader settings%2$s page.', $this->admin_ui_domain),'<a href="'.$header_setting_url.'">' ,'</a>' ),
+				      
+				      'label_for' => 'no_header_image',
+				      'class'     => 'css_class propagate'
+				    );
+		    		
+		    		add_settings_field( $field_args['id'], $field_args['title'] , array( $this, 'xili_display_one_setting'), $this->settings_name, 'xili_option_section_6', $field_args );
 		    		
 		    	}
 			
@@ -825,6 +845,11 @@ if ( ! class_exists ( 'xili_language_theme_options_admin' )  ) {
 		    $options = $this->get_theme_xili_options();
 		    
 		    switch ( $type ) {
+		    	
+		    	  case 'message';
+		    		echo ($desc != '') ? "<span class='description'>$desc</span>" : "...";
+		          break;
+		          
 		          case 'text':
 		          	$set = ( isset ( $options[$id] ) ) ? $options[$id] : '';
 		          	$set = stripslashes($set);
