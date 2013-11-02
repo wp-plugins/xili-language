@@ -246,11 +246,11 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 == Changelog ==
 
 = Version 2.9.10 (2013-11-02) =
-* fixes CPT find_posts ajax for each post_type
-* improved theme_multilingual_class
-* tested with 3.7.1
+* fixes CPT find_posts ajax for each post_type,
+* improved theme multilingual_class,
+* tested with 3.7.1,
 * inline edit and bulk edit improved,
-* incorporate a new feature : List of a sub-selection of pages (according current language of webpage) can be inserted everywhere in nav menu. A powerful way to create very dynamic menus (with a bit of patience!
+* incorporate a new feature : List of a sub-selection of pages (according current language of webpage) can be inserted everywhere in nav menu. A powerful way to create very dynamic menus (with a bit of patience!)
 
 = Version 2.9.2, 2.9.3 (2013-10-11) =
 * restrict home queries to fixe issue of nextgen gallery plugin 2.0 (is_home true in admin side :-( ) CPT queries !
