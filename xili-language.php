@@ -3255,6 +3255,7 @@ class xili_language {
 				foreach ( $pagelist as $onepage ) {
 						
 						$class = ( is_page ($onepage->ID) ) ? ' current-menu-item' : '';
+						$i++;
 						
 						$new_lang_menu_item = (object) array();
 						$id = $menu_object->ID * 1000 + $i;
