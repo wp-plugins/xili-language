@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress
 Requires at least: 3.6
 Tested up to: 3.7.1
-Stable tag: 2.9.10
+Stable tag: 2.9.11
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -79,8 +79,8 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * Plugin is shipped **as is** : see no warranty chapter in license GPLv2.
 
-= Version 2.9.10 =
-* Last Updated 2013-11-01
+= Version 2.9.11 =
+* Last Updated 2013-11-03
 * see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Roadmap =
@@ -245,12 +245,12 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Changelog ==
 
-= Version 2.9.10 (2013-11-02) =
-* fixes CPT find_posts ajax for each post_type
-* improved theme_multilingual_class
-* tested with 3.7.1
+= Version 2.9.11 (2013-11-03) =
+* fixes CPT find_posts ajax for each post_type,
+* improved theme multilingual_class,
+* tested with 3.7.1,
 * inline edit and bulk edit improved,
-* incorporate a new feature : List of a sub-selection of pages (according current language of webpage) can be inserted everywhere in nav menu. A powerful way to create very dynamic menus (with a bit of patience!
+* incorporate a new feature : List of a sub-selection of pages (according current language of webpage) can be inserted everywhere in nav menu. A powerful way to create very dynamic menus (with a bit of patience!)
 
 = Version 2.9.2, 2.9.3 (2013-10-11) =
 * restrict home queries to fixe issue of nextgen gallery plugin 2.0 (is_home true in admin side :-( ) CPT queries !
@@ -435,7 +435,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20131102 - MS - dev.xiligroup.com
+© 20131103 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
