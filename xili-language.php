@@ -11,7 +11,7 @@ Text Domain: xili-language
 Domain Path: /languages/
 */
 
-# updated 131101 - 2.9.10 - fixes CPT selection ajax find-posts, new theme-multilingual-class 1.3 - tested with 3.7.1 - inline edit and bulk edit improved, incorporate a new feature : List of a sub-selection of pages (according current language of webpage) can be inserted everywhere in nav menu.
+# updated 131103 - 2.9.10 - fixes CPT selection ajax find-posts, new theme-multilingual-class 1.3 - tested with 3.7.1 - inline edit and bulk edit improved, incorporate a new feature : List of a sub-selection of pages (according current language of webpage) can be inserted everywhere in nav menu.
 # updated 131011 - 2.9.3 - maintenance version as current in repository
 # updated 131010 - 2.9.2 - restrict home queries to authorized post_type ( nextgen gallery issue even in admin side )
 # updated 131002 - 2.9.1 - improved theme for options classes (multilingual-classes.php) - fixes rare notice - addon bbPress adapted for xtt groups
@@ -3226,16 +3226,20 @@ class xili_language {
 	 * insert languages list objects in nav menu at insertion point (filter wp_nav_menu_objects)
 	 *
 	 * @since 2.8.8
-	 *
+	 * @updated 2.9.11
 	 * 
 	 */
 	function insert_language_objects_in_nav_menu ( $sorted_menu_items, $args ) {
 		global $post, $wp_query;
 		// detect insertion point menu object and menu type
+		
+		$new_sorted_menu_items = array();
+		
 		foreach ( $sorted_menu_items as $key => $menu_object ) {
+			
 			if ( $menu_object->url == $this->insertion_point_dummy_link_page ) {
 				$classes = $menu_object->classes;
-				$new_menu_objects = array();
+				
 				$i = 0;
 				
 				$defaults = array(
@@ -3249,38 +3253,31 @@ class xili_language {
 				extract( $r, EXTR_SKIP );
 				
 				$pagelist = get_pages ( $r );
-				
-				//error_log (serialize ( $pagelist ));
-				
+		
 				foreach ( $pagelist as $onepage ) {
 						
-						$class = ( is_page ($onepage->ID) ) ? ' current-menu-item' : '';
-						$i++;
-						
-						$new_lang_menu_item = (object) array();
-						$id = $menu_object->ID * 1000 + $i;
-						$new_lang_menu_item->ID = $id;
-						$new_lang_menu_item->url = $onepage->guid;
-						$new_lang_menu_item->title = $onepage->post_title;;
-						$new_lang_menu_item->attr_title = '...';
-						
-						$new_lang_menu_item->menu_item_parent = $menu_object->menu_item_parent;
-						$new_lang_menu_item->db_id = $menu_object->db_id;
-						$new_lang_menu_item->target = $menu_object->target;
-						
-						$new_lang_menu_item->classes = array_merge ( $menu_object->classes, explode ( ' ', $class ) );
-						
-						$new_menu_objects[ $id  ] = $new_lang_menu_item;
-				//
+					$class = ( is_page ($onepage->ID) ) ? ' current-menu-item' : '';
+					$i++;
+					
+					$new_lang_menu_item = (object) array();
+					$id = $menu_object->ID * 1000 + $i;
+					$new_lang_menu_item->ID = $id;
+					$new_lang_menu_item->url = $onepage->guid;
+					$new_lang_menu_item->title = $onepage->post_title;;
+					$new_lang_menu_item->attr_title = '...';
+					
+					$new_lang_menu_item->menu_item_parent = $menu_object->menu_item_parent;
+					$new_lang_menu_item->db_id = $menu_object->db_id;
+					$new_lang_menu_item->target = $menu_object->target;
+					
+					$new_lang_menu_item->classes = array_merge ( $menu_object->classes, explode ( ' ', $class ) );
+					
+					$new_sorted_menu_items[] = $new_lang_menu_item;
+		
 				}
+											 
+			} else if ( $menu_object->url == $this->insertion_point_dummy_link ) { // language
 				
-				$first_array = array_splice ($sorted_menu_items, 0, $key); 
-  				$sorted_menu_items = array_merge ($first_array, $new_menu_objects, $sorted_menu_items);
-				// replace insertion point by array
-				unset ( $sorted_menu_items[$key - 1] );
-				continue;
-				
-			} else if ( $menu_object->url == $this->insertion_point_dummy_link ) {
 				$classes = $menu_object->classes;
 				
 				$keys = array () ;
@@ -3366,20 +3363,19 @@ class xili_language {
 						
 						$new_lang_menu_item->classes = array_merge ( $menu_object->classes, explode ( ' ', $class ) );
 						
-						$new_menu_objects[ $id  ] = $new_lang_menu_item;
+						$new_sorted_menu_items[] = $new_lang_menu_item;
 						
-					}
-				}
-				
-				$first_array = array_splice ($sorted_menu_items, 0, $key); 
-  				$sorted_menu_items = array_merge ($first_array, $new_menu_objects, $sorted_menu_items);
-				// replace insertion point by array
-				unset ( $sorted_menu_items[$key - 1] );
-				continue;
+					} // language
+				} // display
+						
+			} else { // no dummy insertion
+						
+				   $new_sorted_menu_items[] = $menu_object;
 			}
-		}
+								
+		} // foreach menu
 		
-		return $sorted_menu_items;
+		return $new_sorted_menu_items;
 	}
 	
 	/**
