@@ -153,6 +153,10 @@ Archives tags is a very complex template tag in his background and not very easy
 
 == Frequently Asked Questions ==
 
+= 2.9.10 : In appareance/menus, I do not see the boxes of insertion point (languages list and sub-selection pages) ? =
+
+To show insertion point metaboxes, remember to check them inside Screen Options. (top right tab near Help tab)
+
 = What about WP Network (previous WPMU) and the trilogy ? =
 [xili-language](http://wordpress.org/extend/plugins/xili-language/), [xili-tidy-tags](http://wordpress.org/extend/plugins/xili-tidy-tags/), [xili-dictionary](http://wordpress.org/extend/plugins/xili-dictionary/)
 Since WP 3.0-alpha, if multisite is activated, the trilogy is now compatible and will include progressively some improvements dedicaded especially for WP Network context. Future specific docs will be available for registered webmasters.
@@ -435,7 +439,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20131103 - MS - dev.xiligroup.com
+© 20131104 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
