@@ -1,10 +1,10 @@
 === xili-language ===
 Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
-Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress
+Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress, jetpack
 Requires at least: 3.6
 Tested up to: 3.7.1
-Stable tag: 2.9.20
+Stable tag: 2.9.21
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -18,7 +18,7 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 * To help authoring, current user can choose language of his dashboard.
 
-* xili-language select *on the fly* the multilingual .mo files present in the theme's folder.
+* xili-language select *on the fly* the multilingual .mo files present in the theme's folder (no cookies, no redirections like "301").
 
 * xili-language uses a custom taxonomy to specify language of post, page and custom post.
 
@@ -79,8 +79,8 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * Services : As authors of plugin, dev.xiligroup team is able to provide services (consulting, training, support) with affordable prices for WP multilingual contexts in corporate or commercial websites. 
 * Plugin is shipped **as is** : see no warranty chapter in license GPLv2.
 
-= Version 2.9.20 =
-* Last Updated 2013-11-10
+= Version 2.9.21 =
+* Last Updated 2013-11-24
 * see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Roadmap =
@@ -153,7 +153,7 @@ Archives tags is a very complex template tag in his background and not very easy
 
 == Frequently Asked Questions ==
 
-= 2.9.10 : In appareance/menus, I do not see the boxes of insertion point (languages list, sub-selection pages, Menus selection) ? =
+= 2.9.10 : In appareance/menus, I do not see the boxes of insertion point (languages list and sub-selection pages) ? =
 
 To show insertion point metaboxes, remember to check them inside Screen Options. (top right tab near Help tab)
 
@@ -248,6 +248,11 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 
 == Changelog ==
+
+= Version 2.9.21 (2013-11-24) =
+* improves frontpage as page language,
+* improves browser preferred languages priority
+* pre-tested on WP 3.8 beta1
 
 = Version 2.9.20 (2013-11-10) =
 * add a new way to create parts of menu assigned to a language via menu insertion point.
@@ -442,7 +447,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20131110 - MS - dev.xiligroup.com
+© 20131124 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
