@@ -975,8 +975,8 @@ class xili_language {
 		if ( is_admin () && $do && !$this->class_admin ) { 
 			update_option( 'xili_language_settings', $this->xili_settings ); 
 		}
-		// 2.9.21
-		if ( $flush = 'edited' &&  $this->is_permalink ) flush_rewrite_rules( false );
+		// 2.9.21 22
+		if ( $flush == 'edited' &&  $this->is_permalink ) flush_rewrite_rules( false );
 	}
 	
 	/**
