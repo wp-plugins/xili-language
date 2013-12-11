@@ -1645,16 +1645,15 @@ class xili_language_admin extends xili_language {
         				$nav_menus = wp_get_nav_menus( array('orderby' => 'name') );
         				// reduce to those without location
         				$nav_menus_wo = array();
+        				$already_located = array(); // to avoid multiple items 2.9.22
         				foreach ( $locations as $_location => $_name ) {
-        				
-        					foreach ( $nav_menus as $menu ) {
-								if ( isset( $menu_locations[$_location] ) && $menu_locations[$_location] == $menu->term_id ) {
-									
-								} else {
-									$nav_menus_wo[] = $menu;
-								}
-        				
-        					}
+        					if ( isset( $menu_locations[$_location] ) && $menu_locations[$_location] > 0 )
+        						$already_located[] = $menu_locations[$_location];
+        				}
+        				foreach ( $nav_menus as $menu ) {
+        					if ( $already_located != array() && !in_array ( $menu->term_id, $already_located ) ) {
+								$nav_menus_wo[] = $menu;
+							}
 						}
 						
         				if ( $nav_menus_wo ) {
