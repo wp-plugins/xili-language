@@ -3,7 +3,7 @@ Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress, jetpack
 Requires at least: 3.6
-Tested up to: 3.7.1
+Tested up to: 3.8
 Stable tag: 2.9.21
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
@@ -47,7 +47,7 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 = Themes provided as examples =
 * Since WordPress 3.0, the default theme named **twentyten** can be used without php coding for a multilingual site [as shown here twentyten-xili](http://multilingual.wpmu.xilione.com).
-* Another child theme examples: **twentyeleven** [twentyeleven-xili](http://2011.wpmu.xilione.com/), **twentytwelve** [twentytwelve-xili](http://2012.wpmu.xilione.com/), **twentythirteen** [twentythirteen-xili](http://2013.extend.xiligroup.org/).
+* Another child theme examples: **twentyeleven** [twentyeleven-xili](http://2011.wpmu.xilione.com/), **twentytwelve** [twentytwelve-xili](http://2012.wpmu.xilione.com/), **twentythirteen** [twentythirteen-xili](http://2013.extend.xiligroup.org/), **twentyfourteen** [twentyfourteen-xili](http://2014.extend.xiligroup.org/).
 
 
 **TRILOGY FOR MULTILINGUAL CMS WEBSITE** including [xili-language plugin](http://wordpress.org/extend/plugins/xili-language/)
@@ -182,6 +182,8 @@ Twenty Twelve [2012](http://2012.wpmu.xilione.com/)
 Responsive [responsive](http://childxili.wpmu.xilione.com/)
 
 Twenty Thirteen [2013](http://2013.extend.xiligroup.org/)
+
+Twenty Fourteen [2014](http://2014.extend.xiligroup.org/)
 
 
 And as you can see in [stats](http://wordpress.org/extend/plugins/xili-language/stats/), thousand of sites use xili-language.
@@ -497,4 +499,4 @@ More informations about other plugins in the website [dev.xiligroup.com](http://
 *The plugin is frequently updated*. Visit [Other versions](http://wordpress.org/extend/plugins/xili-language/developers/).
 See also the [dev.xiligroup Forum](http://dev.xiligroup.com/?forum=xili-language-plugin).
 
-© 2008-2013 - MS - dev.xiligroup.com
+© 2008-2014 - MS - dev.xiligroup.com
