@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress, jetpack
 Requires at least: 3.7
 Tested up to: 3.8.1
-Stable tag: 2.10.2
+Stable tag: 2.11.0
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -24,8 +24,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 * xili-language plugin works on Wordpress installation in mono (standalone) or multisite (network) mode.
 
-= Version 2.10.2 =
-* Last Updated 2014-02-27 (5 years after first public release ;-)
+= Version 2.11.0 =
+* Last Updated 2014-03-10 (5 years after first public release ;-)
 * W A R N I N G - see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Prequisite =
@@ -144,7 +144,16 @@ Sub selection of archives for `wp_get_archives()` with &lang= (see § below)
 
 improved `xiliml_the_others_posts()` function and theme tag to be used in multilingual category loop and by option (array) to return an array of linked posts in other languages (useful for CMS webmasters) (array of lang  and id ) - the id is easily transformable in permalink with function `get_permalink()` when using this array.
 
+= xili-language and specific functions =
+
+Requires knowledges in ph and WP !
+After class in sources files, some functions are available - see sources for details.
+
+* `the_curlang()` returns by default the slug of the current language of the displayed webpage. If param is specified, return ISO, Full Name or alias of current webpage - see sources -
+* `is_xili_curlang( $lang )` tests (returns true or false) after testing language of current webpage. Param can be a language slug (as string) or a list of slugs (as an array). Example: `is_xili_curlang( 'fr_fr' )` returns true if webpage is in french - since 2.11+
+
 * widget for recent comments that can subselect those for current language. (a function `xiliml_recent_comments()` is also available if you want to create a template tag with resulting objects array).
+
 
 
 = Archives selection =
@@ -250,6 +259,12 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 
 == Changelog ==
+
+= Version 2.11.0 (2014-03-10) =
+* function added is_xili_curlang( $lang ).
+* improves infos in form for alias refreshing in permalinks,
+* new locales (based on jetpack)
+* clean wp-pointer params
 
 = Version 2.10.1 (2014-02-27) =
 * fixes issues and improves permalink class
@@ -469,7 +484,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20140228 - MS - dev.xiligroup.com
+© 20140310 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
