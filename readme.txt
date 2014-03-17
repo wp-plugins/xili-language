@@ -3,8 +3,8 @@ Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress, jetpack
 Requires at least: 3.7
-Tested up to: 3.8.1
-Stable tag: 2.11.0
+Tested up to: 3.9-beta1
+Stable tag: 2.11.1
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -24,8 +24,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 * xili-language plugin works on Wordpress installation in mono (standalone) or multisite (network) mode.
 
-= Version 2.11.0 =
-* Last Updated 2014-03-10 (5 years after first public release ;-)
+= Version 2.11.1 =
+* Last Updated 2014-03-17 (5 years after first public release ;-)
 * W A R N I N G - see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Prequisite =
@@ -260,6 +260,10 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Changelog ==
 
+= Version 2.11.1 (2014-03-17) =
+* add filter to enable Featured_Content class of current theme and disable Featured_Content class of JetPack.
+* improved languages list for post_format and date (permalinks option - donators)
+* first adaptation for WP 3.9 (beta1): Ajax/Json findposts js
 = Version 2.11.0 (2014-03-10) =
 * function added is_xili_curlang( $lang ).
 * improves infos in form for alias refreshing in permalinks,
@@ -484,7 +488,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20140310 - MS - dev.xiligroup.com
+© 20140313 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
