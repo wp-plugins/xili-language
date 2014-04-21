@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress, jetpack
 Requires at least: 3.7
 Tested up to: 3.9
-Stable tag: 2.11.2
+Stable tag: 2.11.3
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -24,8 +24,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 * xili-language plugin works on Wordpress installation in mono (standalone) or multisite (network) mode.
 
-= Version 2.11.2 =
-* Last Updated 2014-04-13 (5 years after first public release ;-)
+= Version 2.11.3 =
+* Last Updated 2014-04-21 (5 years after first public release ;-)
 * W A R N I N G - see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Prequisite =
@@ -146,10 +146,10 @@ improved `xiliml_the_others_posts()` function and theme tag to be used in multil
 
 = xili-language and specific functions =
 
-Requires knowledges in ph and WP !
+Requires knowledges in php and WP !
 After class in sources files, some functions are available - see sources for details.
 
-* `the_curlang()` returns by default the slug of the current language of the displayed webpage. If param is specified, return ISO, Full Name or alias of current webpage - see sources -
+* `the_curlang()` returns by default the slug of the current language of the displayed webpage (alias `xili_curlang()` since 2.11+). If param is specified, return ISO, Full Name or alias of current webpage - see sources -
 * `is_xili_curlang( $lang )` tests (returns true or false) after testing language of current webpage. Param can be a language slug (as string) or a list of slugs (as an array). Example: `is_xili_curlang( 'fr_fr' )` returns true if webpage is in french - since 2.11+
 
 * widget for recent comments that can subselect those for current language. (a function `xiliml_recent_comments()` is also available if you want to create a template tag with resulting objects array).
@@ -161,6 +161,12 @@ After class in sources files, some functions are available - see sources for det
 Archives tags is a very complex template tag in his background and not very easy source hookable. So we decided to add few features : by adding query in vars of the function, it will be possible to display a monthly list of archives for a selected language - `wp_get_archives('..your.vars..&lang=fr_fr')` - or the current the theme language - `wp_get_archives('..your.vars..&lang=')` -. The displayed list of links will be translated and link restrited to display only archives of this language.
 
 == Frequently Asked Questions ==
+
+= What is menus insertion point in navigation menus ? =
+
+It is the most recent way to add multilingual menus at a location in a theme. This method uses insertion point that will live choose the menu structure according current targeted language.
+
+[see this howto page](http://2014.extend.xiligroup.org/en/865/how-to-a-multilingual-navigation-menu/)
 
 = XL version > 2.9.10 : In appareance/menus, I do not see the boxes of insertion point (languages list, sub-selection pages or sub-selection menus) ? =
 
@@ -260,6 +266,8 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Changelog ==
 
+= Version 2.11.3 (2014-04-21) =
+* minor fixes - style improved in translations metabox
 = Version 2.11.2 (2014-04-13) =
 * more tests with 3.9
 * accurate counter for CPT
@@ -492,7 +500,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20140413 - MS - dev.xiligroup.com
+© 20140421 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
