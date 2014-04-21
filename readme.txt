@@ -162,6 +162,13 @@ Archives tags is a very complex template tag in his background and not very easy
 
 == Frequently Asked Questions ==
 
+= What is menus insertion point in navigation menus ? =
+
+It is the most recent way to add multilingual menus at a location in a theme. This method uses insertion point that will live choose the menu structure according current targeted language.
+
+[see this howto page](http://2014.extend.xiligroup.org/en/865/how-to-a-multilingual-navigation-menu/)
+
+
 = XL version > 2.9.10 : In appareance/menus, I do not see the boxes of insertion point (languages list, sub-selection pages or sub-selection menus) ? =
 
 To show insertion point metaboxes, remember to check them inside Screen Options. (top right tab near Help tab)
