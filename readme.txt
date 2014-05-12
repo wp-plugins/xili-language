@@ -264,7 +264,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 1. an example of wp-content/themes folder and his languages sub-folder.
 2. Source coding extract with 'international' text in 'xiliphone' theme.
 3. The plugin settings UI - first tab: the languages list and edit form to add or edit.
-4. The plugin settings UI - second tab: Settings of front-end and languages behaviour.
+4. The plugin settings UI - second tab: Settings of front side (front-end) and languages behaviour.
 5. The plugin settings UI - third tab: Settings for navigation menus and experts.
 6. The language dashboard in post writting UI under the content textarea. For more infos and how to, visit the [wiki website](http://wiki.xiligroup.org/index.php/Xili-language_v2.5#Getting_started_:_linking_posts_with_different_language).
 7. List of posts with language column and infos about linked posts. For more infos and how to, visit the [wiki website](http://wiki.xiligroup.org/index.php/Xili-language_v2.5).
@@ -275,7 +275,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 12. xili-language: Widget to display recent posts in choosen target language.
 13. Blogroll and bookmarks taxonomies and language sub-selection.
 14. Since 2.2.0, new xili-language trilogy menu in admin bar menu to group main settings for multilingual website.
-15. Since 2.12.0, Authoring rules (propagation of post features) when creating translated posts are ajustable through the 5th settings tab.
+15. Since 2.12.0, Authoring settings (Custom post types, bookmarks) (rules propagation of post features) when creating translated posts are ajustable through the 5th settings tab.
 
 == Changelog ==
 
@@ -287,7 +287,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * widgets adapted for theme customize appearance screen (WP 3.9+).
 * fixes - returns from developers and webmasters are welcome.
 * code cleanup.
-* tests with WP 3.9.1
+* tested with WP 3.9.1
 
 = Version 2.11.3 (2014-04-21) =
 * minor fixes - style improved in translations metabox
