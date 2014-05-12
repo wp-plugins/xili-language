@@ -10,7 +10,7 @@ License: GPLv2
 Text Domain: xili-language
 Domain Path: /languages/
 */
-# updated 140512 - 2.12.0 - includes propagate options previously available only in theme's class, 2 tabs of settings rewritten, multiple post_types query included (thanks to muh)
+# updated 140512 - 2.12.0 - includes propagate options previously available only in theme's class, 2 tabs of settings rewritten, multiple post_types query included (thanks to muh), new xili18n shortcode
 # updated 140421 - 2.11.3 - fixes - style improved in translations metabox
 # updated 140411 - 2.11.2 - accurate counter for CPT - more tests with 3.9 - improving nav menu classes assignation with _wp_menu_item_classes_by_context
 # updated 140317 - 2.11.1 - add filter to enable Featured_Content class of current theme and disable Featured_Content class of JetPack. Changes ajax/json for WP3.9. Fixes and improves menus links (format, date)
@@ -461,12 +461,15 @@ class xili_language {
 		add_action( 'xiliml_the_category', array(&$this, 'the_category' ), 10, 3);
 		add_filter( 'xiliml_langinsearchform', array(&$this, 'xiliml_langinsearchform' ), 10, 3); // 1.8.2 action to filter
 
-	// verify theme and set ltd for both parent and admin child
+		// verify theme and set ltd for both parent and admin child
 		add_filter( 'override_load_textdomain', array(&$this,'xiliml_override_load'), 10, 3); // since 1.5.0
 		add_filter( 'theme_locale', array(&$this,'xiliml_theme_locale'), 10, 2);	// two times if is_admin()
 
-		//
+		// propagation when creation
 		add_action( 'xl_propagate_post_attributes', array(&$this,'propagate_categories'), 10, 2); // 2.8.8
+
+		// to translate inside content according current post language - 2.12.0
+		add_shortcode ( 'xili18n', array(&$this,'xili18n_shortcode' ) );
 
 	}
 
@@ -3987,10 +3990,37 @@ for (var i=0; i < this.form.' .QUETAG .'.length ; i++) { if(this.form.'.QUETAG.'
 		return $point;
 	}
 
+	/**
+	 * SHORTCODE: insert translated msgid content according current language
+	 *
+	 * [xili18n msgid='yes']
+	 * [xili18n msgid='yes' ctxt='front']
+	 * [xili18n msgid='yes' ctxt='front' textdomain='default'] - core wp language file
+	 * return w only em strong
+	 * return '' if issues in textdomain or msgid
+	 *
+	 * @since 2.12.0
+	 */
+	function xili18n_shortcode ( $atts, $content = null ) {
+		extract(shortcode_atts(array(
+			'msgid' => '',
+			'textdomain' => $this->thetextdomain, // by default theme textdomain
+			'ctxt' => '' // context to adapt translation
+		), $atts));
+		if ( $msgid && $textdomain ) {
+			if ( $ctxt ) {
+				$string = translate_with_gettext_context ( $msgid, $ctxt, $textdomain ) ;
 
-
-
-
+			} else {
+				$string = translate ( $msgid, $textdomain );
+			}
+			$string = preg_replace( '@<(script|style)[^>]*?>.*?</\\1>@si', '', $string );
+			$string = strip_tags( $string, '<em><strong><br>' );
+			return $string;
+		} else {
+			return '';
+		}
+	}
 
 } /* **************** end of xili-language class ******************* */
 
