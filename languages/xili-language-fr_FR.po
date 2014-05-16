@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: xili_language\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-11 16:52+0100\n"
-"PO-Revision-Date: 2014-05-11 16:54+0100\n"
+"PO-Revision-Date: 2014-05-12 23:12+0100\n"
 "Last-Translator: dev.xiligroup <contact@xiligroup.com>\n"
 "Language-Team: dev.xiligroup.com <contact@xiligroup.com>\n"
 "Language: fr_FR\n"
@@ -683,7 +683,7 @@ msgstr "Docs sur xili-language"
 
 #: ../xili-includes/xl-class-admin.php:916
 msgid "Changelog tab of xili-language"
-msgstr "Tabulation Changelog du dépôt de l’extension xili-language"
+msgstr "Onglet Changelog du dépôt de l’extension xili-language"
 
 #: ../xili-includes/xl-class-admin.php:924
 msgid "xili-language updated"
