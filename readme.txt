@@ -2,7 +2,7 @@
 Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress, jetpack
-Requires at least: 3.8
+Requires at least: 3.8.3
 Tested up to: 3.9.1
 Stable tag: 2.13.0
 License: GPLv2
@@ -25,7 +25,7 @@ xili-language lets you create and manage multilingual WP site in several languag
 * xili-language plugin works on Wordpress installation in mono (standalone) or on one site belonging to a multisite (network) install.
 
 = Version 2.13.0 =
-* Last Updated 2014-05-26 (5 years after first public release ;-)
+* Last Updated 2014-05-27 (5 years after first public release ;-)
 * W A R N I N G - see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Prequisite =
