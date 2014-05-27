@@ -2822,7 +2822,7 @@ class xili_language_admin extends xili_language {
 	/**
      * one line in section
      */
-	function display_one_setting($args ){
+	function display_one_setting( $args ){
 		extract( $args );
 		switch ( $option_name ) {
 			case $this->settings_authoring_settings:
@@ -2841,9 +2841,9 @@ class xili_language_admin extends xili_language {
 				if ( false !== strpos ( $id, 'link_cat_' ) ) {
 					$link_cat_id = str_replace ( 'link_cat_' , '', $id );
 					if ( $link_cat_id == 'all' ) {
-						$options[$id] = $this->xili_settings['link_categories_settings']['all'];
+						$options[$id] = ( isset($this->xili_settings['link_categories_settings']['all']) ) ? $this->xili_settings['link_categories_settings']['all'] : '';
 					} else {
-						$options[$id] = $this->xili_settings['link_categories_settings']['category'][$link_cat_id];
+						$options[$id] =  $this->xili_settings['link_categories_settings']['category'][$link_cat_id];
 					}
 				}
 
