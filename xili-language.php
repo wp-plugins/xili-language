@@ -1964,6 +1964,7 @@ class xili_language {
 	 * select .mo file
 	 * @since 0.9.0
 	 * @updated 0.9.7.1 - 1.1.9 - 1.5.2 wpmu - 1.8.9.1 (domain select) - 2.8.3 (WP 3.5)
+	 * @updated 2.13.1 - thanks to Edouard
 	 * call by function xiliml_language_wp()
 	 * @param $curlang .
 	 */
@@ -1988,8 +1989,8 @@ class xili_language {
 		if ( '' != $filename ) {
 			$filename .= '.mo'; // xx_YY.mo
 
-
-			$mofile = $this->get_template_directory . $langfolder . "/$filename";	// only child subfolder
+			$mofile = $this->get_template_directory . $langfolder . "/$filename";	// only child or parent subfolder
+			$parent_mofile = ( is_child_theme() ) ? $this->get_parent_theme_directory . $this->xili_settings['parent_langs_folder'] . "/$filename" : '';
 
 			if ( is_multisite() ) { /* completes theme's language with db structure languages (cats, desc,…) */
 				if ( ( $uploads = wp_upload_dir() ) && false === $uploads['error'] ) {
@@ -2002,17 +2003,14 @@ class xili_language {
 			// local has ever priority
 			// 2.12.1 - now able to search in WP_LANG_DIR/themes/
 			if ( ! ( $loaded = load_textdomain( $themetextdomain, $this->get_template_directory . $langfolder."/local-" . $filename ) ) ) { // here to be the last value
-				$mofile = WP_LANG_DIR . "/themes/{$themetextdomain}-local-{$filename}";
-				load_textdomain( $themetextdomain, $mofile );
+				$local_mofile = WP_LANG_DIR . "/themes/{$themetextdomain}-local-{$filename}";
+				load_textdomain( $themetextdomain, $local_mofile );
 			}
 
 			// if merging method with child theme set - 2.8.8
 			// parent mo downloaded with priority
-			if ( $this->xili_settings['mo_parent_child_merging'] == 'parent-priority' ) {
-
-				$mofile = $this->get_parent_theme_directory . $this->xili_settings['parent_langs_folder'] . "/$filename";
-				$parent_load = load_textdomain( $themetextdomain, $mofile );
-
+			if ( $parent_mofile && $this->xili_settings['mo_parent_child_merging'] == 'parent-priority' ) {
+				$parent_load = load_textdomain( $themetextdomain, $parent_mofile );
 			}
 
 			// **** new files place since WP 3.5 = wp-content/languages/ and domain-xx_YY.mo **** //
@@ -2032,13 +2030,9 @@ class xili_language {
 				load_textdomain( $themetextdomain, $mofile );
 			}
 			// parent mo downloaded without priority
-			if ( $this->xili_settings['mo_parent_child_merging'] == 'child-priority' ) {
-
-				$mofile = $this->get_parent_theme_directory . $this->xili_settings['parent_langs_folder'] . "/$filename";
-				$parent_load = load_textdomain( $themetextdomain, $mofile );
-
+			if ( $parent_mofile && $this->xili_settings['mo_parent_child_merging'] == 'child-priority' ) {
+				$parent_load = load_textdomain( $themetextdomain, $parent_mofile );
 			}
-
 
 			// 2.8.1
 			do_action ( 'xiliml_add_frontend_mofiles' , $themetextdomain, $this->langs_slug_name_array[$curlang] ); // to add bbpress good mo
