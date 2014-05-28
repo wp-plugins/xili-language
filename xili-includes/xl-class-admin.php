@@ -1869,46 +1869,48 @@ class xili_language_admin extends xili_language {
 	 *
 	 */
 	function _update_menus_insertion_points( $terms, $args) {
-		$screen = get_current_screen();
-		if ('nav-menus' != $screen->base)
-			return $terms ;
+		if ( function_exists ('get_current_screen')) { // thanks to giuseppecabgmail.com - customize broken
+			$screen = get_current_screen();
+			if ('nav-menus' != $screen->base)
+				return $terms ;
 
-		$query = new WP_Query;
-		$menu_items = $query->query(
-			array(
-			'meta_key' => '_menu_item_url',
-			'meta_value' => '#insertmenu',
-			'post_status' => 'publish',
-			'post_type' => 'nav_menu_item',
-			'posts_per_page' => -1,
-			)
-		);
-		if ( $menu_items ) {
-			foreach ($menu_items as $menu_item) {
-				$classes = get_post_meta( $menu_item->ID, '_menu_item_classes', true );
-				if ( false === strpos( serialize($classes), 'xlmenuslug')) { // update previous menus insertion points
-					$to_modify = 0;
-					$menu_classes = array();
-					foreach ($classes as $class) {
-						if ( false !== strpos( $class, 'xlmenulist-')) {
-							$to_modify++;
-							$menu_id_list = str_replace ( 'xlmenulist-', '', $class );
-							$menu_ids = explode ( '-', $menu_id_list );
-							$newclass = 'xlmenuslug';
-							// search slug
-							foreach ( $menu_ids as $menu_id ) {
-								if ( term_exists( (int)$menu_id, 'nav_menu' ) ) {
-									$nav_menu = get_term ((int)$menu_id, 'nav_menu' );
-									$newclass .= $this->menu_slug_sep . $nav_menu->slug;
+			$query = new WP_Query;
+			$menu_items = $query->query(
+				array(
+				'meta_key' => '_menu_item_url',
+				'meta_value' => '#insertmenu',
+				'post_status' => 'publish',
+				'post_type' => 'nav_menu_item',
+				'posts_per_page' => -1,
+				)
+			);
+			if ( $menu_items ) {
+				foreach ($menu_items as $menu_item) {
+					$classes = get_post_meta( $menu_item->ID, '_menu_item_classes', true );
+					if ( false === strpos( serialize($classes), 'xlmenuslug')) { // update previous menus insertion points
+						$to_modify = 0;
+						$menu_classes = array();
+						foreach ($classes as $class) {
+							if ( false !== strpos( $class, 'xlmenulist-')) {
+								$to_modify++;
+								$menu_id_list = str_replace ( 'xlmenulist-', '', $class );
+								$menu_ids = explode ( '-', $menu_id_list );
+								$newclass = 'xlmenuslug';
+								// search slug
+								foreach ( $menu_ids as $menu_id ) {
+									if ( term_exists( (int)$menu_id, 'nav_menu' ) ) {
+										$nav_menu = get_term ((int)$menu_id, 'nav_menu' );
+										$newclass .= $this->menu_slug_sep . $nav_menu->slug;
+									}
 								}
+								//
+								$menu_classes[] = $newclass;
+							} else {
+								$menu_classes[] = $class;
 							}
-							//
-							$menu_classes[] = $newclass;
-						} else {
-							$menu_classes[] = $class;
 						}
+						if ( $to_modify > 0 ) update_post_meta( $menu_item->ID, '_menu_item_classes', $menu_classes );
 					}
-					if ( $to_modify > 0 ) update_post_meta( $menu_item->ID, '_menu_item_classes', $menu_classes );
 				}
 			}
 		}
