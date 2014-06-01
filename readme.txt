@@ -278,7 +278,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 15. Since 2.12.0, Authoring settings (Custom post types, bookmarks) (rules propagation of post features) when creating translated posts are ajustable through the 5th settings tab.
 
 == Changelog ==
-= Version 2.13.0 (2014-05-28) =
+= Version 2.13.1 (2014-05-28) =
 * fixes theme customize broken,
 * issue fixed with xx-YY.mo file if no child
 
