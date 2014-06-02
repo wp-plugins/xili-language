@@ -26,7 +26,7 @@
  * 2014-05-16 (2.12.1) improved choice for mergin .mo if child, message for export xml
  * 2014-05-26 (2.12.2) fixes notice when importing xml. Improved GlotPress import (try /dev/)
  * 2014-05-28 (2.13.1) fixes theme customize broken ( wp_get_nav_menus filter called )
- * 2014-06-02 (2.13.2) fixes settings for new CPT, better selector (msgid for XD), XD again in bar admin
+ * 2014-06-02 (2.13.2 b) fixes settings for new CPT, better selector (msgid for XD), XD again in bar admin
  *
  * @package xili-language
  */
@@ -4005,13 +4005,11 @@ class xili_language_admin extends xili_language {
 			// count for each CPT
 			$counts = array();
 			$title = array();
-			$custompoststype = $this->authorized_custom_post_type();
+			$custompoststype = $this->authorized_custom_post_type( true ); // 2.13.2 b
 
 			foreach ( $custompoststype as $key => $customtype ) {
-				if ( $customtype['multilingual'] == 'enable' ) {
-					$counts[$key] = $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM $wpdb->term_relationships, $wpdb->posts WHERE $wpdb->posts.ID = $wpdb->term_relationships.object_id AND post_status = 'publish' AND term_taxonomy_id = %d AND post_type = %s", $language->term_id, $key ) );
-					$title[] = $customtype['name'] .' = ' . $counts[$key];
-				}
+				$counts[$key] = $wpdb->get_var( $wpdb->prepare( "SELECT COUNT(*) FROM $wpdb->term_relationships, $wpdb->posts WHERE $wpdb->posts.ID = $wpdb->term_relationships.object_id AND post_status = 'publish' AND term_taxonomy_id = %d AND post_type = %s", $language->term_id, $key ) );
+				$title[] = $customtype['name'] .' = ' . $counts[$key];
 			}
 			$title = implode (' | ', $title );
 			$posts_count = ( $language->count > 0 ) ? '<a title= "'.$title.'" href="edit.php?lang='.$language->slug.'">'.$language->count . '</a>' : $language->count;
@@ -5500,11 +5498,11 @@ class xili_language_admin extends xili_language {
 
 		if ( in_array ( $post_type, $CPTs) ) {
 
-		$listlanguages = $this->get_listlanguages();
+			$listlanguages = $this->get_listlanguages();
 
-		$without = ( defined ('XDMSG') && $post_type == XDMSG ) ? __('Only msgid', 'xili-language') : __('Without language', 'xili-language') ;
-		$view_all = ( defined ('XDMSG') && $post_type == XDMSG ) ? __('All msg', 'xili-language') : __('View all languages','xili-language') ;
-		$cpt_name = ( defined ('XDMSG') && $post_type == XDMSG ) ? __('msgstr in %s', 'xili-language') : '%s' ;
+			$without = ( defined ('XDMSG') && $post_type == XDMSG ) ? __('Only msgid', 'xili-language') : __('Without language', 'xili-language') ;
+			$view_all = ( defined ('XDMSG') && $post_type == XDMSG ) ? __('All msg', 'xili-language') : __('View all languages','xili-language') ;
+			$cpt_name = ( defined ('XDMSG') && $post_type == XDMSG ) ? __('msgstr in %s', 'xili-language') : '%s' ;
 			?>
 			<select name="<?php echo QUETAG ?>" id="<?php echo QUETAG ?>" class='postform'>
 				<option value=""> <?php echo $view_all; ?> </option>

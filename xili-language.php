@@ -11,6 +11,7 @@ Text Domain: xili-language
 Domain Path: /languages/
 */
 
+# updated 140602 - 2.13.2b - authorized_custom_post_type() fixed
 # updated 140602 - 2.13.2 - fixes settings for new CPT, better selector (msgid for XD), XD again in bar admin, widget language file merged in main file of plugin
 # updated 140528 - 2.13.1 - fixes theme customize broken, issue fixed with xx-YY.mo file if no child theme (set_mofile)
 # updated 140526 - 2.13.0 - xml import improved, GlotPress importation improved
@@ -679,7 +680,7 @@ class xili_language {
 	 */
 	function init_and_register_language_post_taxonomy () {
 
-		$post_type_array = array_keys( $this->authorized_custom_post_type() ); // to be fully registered for xml export // 2.12.1
+		$post_type_array = array_keys( $this->authorized_custom_post_type( true ) ); // to be fully registered for xml export // 2.12.1 - 2.13.2 b only fully authorized
 
  		if ( class_exists( 'xili_dictionary' ) ) $post_type_array[] = 'xdmsg' ; // XD active
 
@@ -1279,8 +1280,10 @@ class xili_language {
 	 *
 	 * @since 2.5
 	 *
+	 * @updated 2.13.2b
+	 *
 	 */
-	function authorized_custom_post_type () {
+	function authorized_custom_post_type ( $fully = false ) {
 
 		$custompoststype = $this->xili_settings['multilingual_custom_post'] ;
 		$custom = get_post_type_object ('post');
@@ -1289,7 +1292,15 @@ class xili_language {
 		$custom = get_post_type_object ('page');
 		$clabels = $custom->labels;
 		$custompoststype['page'] = array( 'name' => $custom->label, 'singular_name' => $clabels->singular_name , 'multilingual' => 'enable');
-		return $custompoststype;
+		if ( $fully ) {
+			$custompoststype_enabled = array ();
+			foreach ( $custompoststype as $post_type => $one ) {
+				if ( post_type_exists( $post_type ) && $one['multilingual'] == 'enable' ) $custompoststype_enabled[$post_type] = $one;
+			}
+			return $custompoststype_enabled;
+		} else {
+			return $custompoststype;
+		}
 	}
 
 	/**
@@ -1664,9 +1675,9 @@ class xili_language {
 					// 2.12 - // thanks to muh if multiple post_types
 					if ( empty( $query_object->query_vars['post_type'] ) ) { // string or array
 						$insertWhere = true;
-					} else if ( is_string($query_object->query_vars['post_type']) && in_array ( $query_object->query_vars['post_type'], array_keys ( $this->authorized_custom_post_type () ) ) ){
+					} else if ( is_string($query_object->query_vars['post_type']) && in_array ( $query_object->query_vars['post_type'], array_keys ( $this->authorized_custom_post_type ( true ) ) ) ){
 						$insertWhere = true;
-					} else if (is_array($query_object->query_vars['post_type']) && !count(array_diff($query_object->query_vars['post_type'], array_keys( $this->authorized_custom_post_type() ) ) ) ){
+					} else if (is_array($query_object->query_vars['post_type']) && !count(array_diff($query_object->query_vars['post_type'], array_keys( $this->authorized_custom_post_type( true ) ) ) ) ){
 						$insertWhere = true;
 					} else {
 						$insertWhere = false;
