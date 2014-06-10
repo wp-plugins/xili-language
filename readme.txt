@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress, jetpack
 Requires at least: 3.8.3
 Tested up to: 3.9.1
-Stable tag: 2.13.2
+Stable tag: 2.14.0
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -24,8 +24,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 * xili-language plugin works on Wordpress installation in mono (standalone) or on one site belonging to a multisite (network) install.
 
-= Version 2.13.2 b =
-* Last Updated 2014-06-02 (5 years after first public release ;-)
+= Version 2.14.0 =
+* Last Updated 2014-06-09 (5 years after first public release ;-)
 * W A R N I N G - see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Prequisite =
@@ -278,6 +278,11 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 15. Since 2.12.0, Authoring settings (Custom post types, bookmarks) (rules propagation of post features) when creating translated posts are ajustable through the 5th settings tab.
 
 == Changelog ==
+
+= Version 2.14.0 (2014-06-09) =
+* Richer ways to manage plugin terms translations,
+* permalinks class improved for CPT and CT,
+* new shortcode [xili-show-if lang=fr_FR ]contenu de la page boutique multilingue[/xili-show-if] - content displayed if lang = current language...
 
 = Version 2.13.2 b (2014-06-02) =
 * fixes settings for new CPT, authorized_custom_post_type fixed
@@ -541,7 +546,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20140602 - MS - dev.xiligroup.com
+© 20140610 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
