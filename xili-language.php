@@ -1323,20 +1323,21 @@ class xili_language {
 	 */
 	function authorized_custom_taxonomies ( $post_type_array, $public = true ){
 		$authorized_custom_taxonomies = array(); // to merge
-		foreach ( $post_type_array as $post_type ) {
-			$taxonomies = get_object_taxonomies( $post_type, 'objects' );
-			if ( $public ) {
-				$public_cpt_taxonomies = array();
-				foreach ( $taxonomies as $taxonomy => $one_t) {
-					if ( $one_t->public ) $public_cpt_taxonomies[] = $taxonomy;
+		if ( is_array($post_type_array) && array() != $post_type_array ) {
+			foreach ( $post_type_array as $post_type ) {
+				$taxonomies = get_object_taxonomies( $post_type, 'objects' );
+				if ( $public ) {
+					$public_cpt_taxonomies = array();
+					foreach ( $taxonomies as $taxonomy => $one_t) {
+						if ( $one_t->public ) $public_cpt_taxonomies[] = $taxonomy;
+					}
+					$authorized_custom_taxonomies = array_merge ( $authorized_custom_taxonomies, $public_cpt_taxonomies );
+				} else {
+					$authorized_custom_taxonomies = array_merge ( $authorized_custom_taxonomies, array_keys( $taxonomies ) ); // public and none public
 				}
-				$authorized_custom_taxonomies = array_merge ( $authorized_custom_taxonomies, $public_cpt_taxonomies );
-			} else {
-				$authorized_custom_taxonomies = array_merge ( $authorized_custom_taxonomies, array_keys( $taxonomies ) ); // public and none public
 			}
+			$authorized_custom_taxonomies = array_diff ( $authorized_custom_taxonomies, array( 'category', 'post_tag', 'post_format', TAXONAME )); // exclude buit-in
 		}
-		$authorized_custom_taxonomies = array_diff ( $authorized_custom_taxonomies, array( 'category', 'post_tag', 'post_format', TAXONAME )); // exclude buit-in
-
 		return $authorized_custom_taxonomies;
 	}
 
