@@ -25,7 +25,7 @@ xili-language lets you create and manage multilingual WP site in several languag
 * xili-language plugin works on Wordpress installation in mono (standalone) or on one site belonging to a multisite (network) install.
 
 = Version 2.14.0 =
-* Last Updated 2014-06-09 (5 years after first public release ;-)
+* Last Updated 2014-06-10 (5 years after first public release ;-)
 * W A R N I N G - see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Prequisite =
@@ -279,10 +279,10 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Changelog ==
 
-= Version 2.14.0 (2014-06-09) =
+= Version 2.14.0 (2014-06-10) =
 * Richer ways to manage plugin terms translations,
 * permalinks class improved for CPT and CT,
-* new shortcode [xili-show-if lang=fr_FR ]contenu de la page boutique multilingue[/xili-show-if] - content displayed if lang = current language...
+* new shortcode `[xili-show-if lang=fr_FR ]contenu de la page boutique multilingue[/xili-show-if]` - content displayed if lang = current language...
 
 = Version 2.13.2 b (2014-06-02) =
 * fixes settings for new CPT, authorized_custom_post_type fixed
