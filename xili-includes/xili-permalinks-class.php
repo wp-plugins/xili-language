@@ -10,6 +10,7 @@
  * @updated 2.11.1 - 2014-03-17 - fixes notice - improved linl (date, postformat)
  * @updated 2.13.2 - 2014-06-02 - fixes shortlink
  * @updated 2.13.3 - 2014-06-09 - fixes preg_match - functions optimized
+ * @updated 2.14.0 - 2014-06-12 - fixes notices
  *
  */
 
@@ -126,7 +127,7 @@ class XL_Permalinks_rules {
 		$enabled_post_types = array_keys ( $xili_language->authorized_custom_post_type ( true ) );
 
 		// add taxonomies linked to enabled posts
-		$authorized_custom_taxonomies =  $xili_language -> authorized_custom_taxonomies ( $enabled_post_types ) ;
+		$authorized_custom_taxonomies = $xili_language -> authorized_custom_taxonomies ( $enabled_post_types ) ;
 
 		$types = array_merge( $this->always_rewrite, $enabled_post_types , array_merge ( array('category'), $authorized_custom_taxonomies ) );
 
@@ -213,7 +214,7 @@ class XL_Permalinks_rules {
 
 		global $xili_language;
 
-		$enabled_custom_posts = array(); // fixes with only enabled 2.10.1
+		$enabled_custom_posts = $enabled_custom_post_types = array(); // fixes with only enabled 2.10.1
 
 		foreach ( $xili_language->xili_settings['multilingual_custom_post'] as $post_type => $values ) {
 			if ( $values['multilingual'] == 'enable') {
@@ -237,7 +238,7 @@ class XL_Permalinks_rules {
 			$tax_base[] = ($tag_base_option) ? $tag_base_option : 'tag';
 		}
 
-		$authorized_custom_taxonomies =  $xili_language -> authorized_custom_taxonomies ( $enabled_custom_post_types ) ;
+		$authorized_custom_taxonomies = $xili_language -> authorized_custom_taxonomies ( $enabled_custom_post_types ) ;
 		$tax_base = array_merge ( $tax_base, $this->always_insert, $authorized_custom_taxonomies );
 
 		$tax_base_slash = array();
@@ -438,7 +439,7 @@ class XL_Permalinks_rules {
 
 			$enabled_post_type = array_keys ( $xili_language->authorized_custom_post_type ( true ) );
 			// taxonomies linked to enabled posts
-			$authorized_custom_taxonomies =  $xili_language -> authorized_custom_taxonomies ( $enabled_post_type ) ;
+			$authorized_custom_taxonomies = $xili_language -> authorized_custom_taxonomies ( $enabled_post_type ) ;
 
 			if ( in_array ( $taxonomy , $authorized_custom_taxonomies ) ) {	// test if linked to authorized CPT
 
