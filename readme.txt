@@ -261,15 +261,15 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Screenshots ==
 
-1. an example of wp-content/themes folder and his languages sub-folder.
-2. Source coding extract with 'international' text in 'xiliphone' theme.
-3. The plugin settings UI - first tab: the languages list and edit form to add or edit.
-4. The plugin settings UI - second tab: Settings of front side (front-end) and languages behaviour.
-5. The plugin settings UI - third tab: Settings for navigation menus and experts.
-6. The language dashboard in post writting UI under the content textarea. For more infos and how to, visit the [wiki website](http://wiki.xiligroup.org/index.php/Xili-language_v2.5#Getting_started_:_linking_posts_with_different_language).
-7. List of posts with language column and infos about linked posts. For more infos and how to, visit the [wiki website](http://wiki.xiligroup.org/index.php/Xili-language_v2.5).
-8. Dashboard: Posts edit list with language sub-selection, quick edit and bulk edit available.
-9. Tab in settings to manage language files.
+01. an example of wp-content/themes folder and his languages sub-folder.
+02. Source coding extract with 'international' text in 'xiliphone' theme.
+03. The plugin settings UI - first tab: the languages list and edit form to add or edit.
+04. The plugin settings UI - second tab: Settings of front side (front-end) and languages behaviour.
+05. The plugin settings UI - third tab: Settings for navigation menus and experts.
+06. The language dashboard in post writting UI under the content textarea. For more infos and how to, visit the [wiki website](http://wiki.xiligroup.org/index.php/Xili-language_v2.5#Getting_started_:_linking_posts_with_different_language).
+07. List of posts with language column and infos about linked posts. For more infos and how to, visit the [wiki website](http://wiki.xiligroup.org/index.php/Xili-language_v2.5).
+08. Dashboard: Posts edit list with language sub-selection, quick edit and bulk edit available.
+09. Tab in settings to manage language files.
 10. xili-tidy-tags: Admin Tools UI - see this compatible plugin to group tags according languages.
 11. xili-language widget: Admin widgets UI - since 0.9.9.6, "multiple" languages list widget.
 12. xili-language: Widget to display recent posts in choosen target language.
