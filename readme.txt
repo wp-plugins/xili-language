@@ -262,7 +262,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 == Screenshots ==
 
 01. An example of wp-content/themes folder and his languages sub-folder containing mo and po files.
-02. Source coding extract with 'international' text in 'xiliphone' theme.
+02. Source coding extract with 'international' text and functions in 'xiliphone' theme.
 03. The plugin settings UI - first tab: the languages list and edit form to add or edit.
 04. The plugin settings UI - second tab: Settings of front side (front-end) and languages behaviour.
 05. The plugin settings UI - third tab: Settings for navigation menus and experts.
@@ -551,7 +551,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20140615 - MS - dev.xiligroup.com
+© 20140702 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
