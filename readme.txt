@@ -4,7 +4,7 @@ Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress, jetpack
 Requires at least: 3.8.3
 Tested up to: 3.9.1
-Stable tag: 2.14.1
+Stable tag: 2.15.0
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -24,8 +24,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 * xili-language plugin works on Wordpress installation in mono (standalone) or on one site belonging to a multisite (network) install.
 
-= Version 2.14.1 =
-* Last Updated 2014-06-15 (5 years after first public release ;-)
+= Version 2.15.0 =
+* Last Updated 2014-07-27 (5 years after first public release ;-)
 * W A R N I N G - see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Prequisite =
@@ -84,7 +84,7 @@ Contrary to popular belief, *GPL doesn't say that everything must be zero-cost*,
 * Plugin is shipped **as is** : see no warranty chapter in license GPLv2.
 
 = Roadmap =
-
+* Flag in media library: more parameters for theme's developers.
 * Improved documentation for getting starts, template tags and functions - [started here in xili wiki](http://wiki.xiligroup.org) or [here in news](http://2014.extend.xiligroup.org/).
 * Delivery of a *premium* services kit (with powerful features and attractive fees) packaged with professional training and support.
 * Updating sources *(parts are 5 years old)* with new libraries provided since WP 3.5.
@@ -261,7 +261,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Screenshots ==
 
-01. an example of wp-content/themes folder and his languages sub-folder.
+01. An example of wp-content/themes folder and his languages sub-folder containing mo and po files.
 02. Source coding extract with 'international' text in 'xiliphone' theme.
 03. The plugin settings UI - first tab: the languages list and edit form to add or edit.
 04. The plugin settings UI - second tab: Settings of front side (front-end) and languages behaviour.
@@ -279,6 +279,9 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Changelog ==
 
+= Version 2.15.0 (2014-07-27) =
+* new way to use flag in language list (switcher) style new 'current_theme_supports' named 'custom_xili_flag' (automatically set for 5 bundled themes like 2014)
+* new shortcode xili-flag (url of custom flag) `[xili-flag lang='fr_FR']` returns url of french flag
 = Version 2.14.1 (2014-06-15) =
 * settings news pointer, css improved
 * add debug options
@@ -551,7 +554,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20140615 - MS - dev.xiligroup.com
+© 20140727 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
@@ -594,7 +597,7 @@ xili-language is compatible with the plugin [xili-dictionary](http://dev.xiligro
 
 xili-language is compatible with the plugin [xili-tidy-tags](http://dev.xiligroup.com/xili-tidy-tags/ ). xili-tidy-tags lets you create multiple group of tags. That way, you can have a tag cloud for tags in English, another cloud for French tags, another for Spanish ones, and so on. You can also use the plugin for more than multilingual blogs. Basically, you can create any group of tags you want.
 
-xili-language is full compatible with the plugin [xilitheme-select](http://wordpress.org/extend/plugins/xilitheme-select/ "xilitheme-select") to be used with iPhone, iPod Touch or other mobiles.
+xili-language is full compatible with the plugin [xilitheme-select](http://wordpress.org/extend/plugins/xilitheme-select/ "xilitheme-select") to be used with iPhone, iPod Touch or other mobiles. Also with [xili re/un-attach media](http://wordpress.org/extend/plugins/xili-re-un-attach-media/) !
 
 More informations about other plugins in the website [dev.xiligroup.com](http://dev.xiligroup.com/ "xiligroup plugins") or in [WP Repository](http://wordpress.org/extend/plugins/search.php?q=xili&sort=)
 
