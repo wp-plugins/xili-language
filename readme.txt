@@ -279,8 +279,8 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Changelog ==
 
-= version 2.15.1 (2014-08-24)
-* params in add_theme_support ( 'custom_xili_flag', args ) - possible default flags in theme (see twentyfourteen-xili as example),
+= version 2.15.1 (2014-08-24) =
+* params in add_theme_support ( 'custom_xili_flag', $args ) - possible default flags in theme (see twentythirteen-xili as example),
 * improved get_listlanguages() function
 
 = Version 2.15.0 (2014-07-27) =
