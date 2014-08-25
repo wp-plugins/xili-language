@@ -571,7 +571,7 @@ v2.1.0 is compatible with settings of previous release BUT introduces now a way 
 
 = Technical infos =
 
-* REMEMBER : xili-language follows the WordPress story since more than 5 years. Initially designed for webmasters with knowledge in WP, PHP,… step by step the plugin will improved to be more and more plug and play. So don't forget to visit this [demo site](http://multilingual.wpmu.xilione.com), see this [other demo](http://2011.wpmu.xilione.com/) and [Forum](http://dev.xiligroup.com/?forum=xili-language-plugin).
+* REMEMBER : xili-language follows the WordPress story since more than 5 years. Initially designed for webmasters with knowledge in WP, PHP,… step by step the plugin will improved to be more and more plug and play. So don't forget to visit this [latest demo and news](http://2014.extend.xiligroup.org), see this [other demo](http://2013.extend.xiligroup.org) and [Forum](http://dev.xiligroup.com/?forum=xili-language-plugin).
 
 **Prerequisite:**
 Verify that your theme is international compatible (translatable terms like `_e('the term','mythemedomaine')` and no displayed texts 'hardcoded' (example in default bundled theme of WP named *twentyten* or *twentyeleven* ).
