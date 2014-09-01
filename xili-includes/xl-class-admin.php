@@ -5212,7 +5212,7 @@ class xili_language_admin extends xili_language {
 		<div class="misc-pub-section" >
 		<label for="context" class="selectit"><input <?php checked ( $context , 'custom_xili_flag' ); ?> name="context" type="checkbox" id="context" value="custom_xili_flag" /><?php _e( 'Set as flag', 'xili-language' ) ?></label>
 		</div>
-		<?
+		<?php
 	}
 
 	/**
