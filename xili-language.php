@@ -568,7 +568,8 @@ class xili_language {
 				'enable_fc_theme_class' => 'enable', // 2.11.1 - priority to theme Featured Content Class and not jetpack
 				'theme_alias_cache' => array(),
 				'langs_group_id' => 0,
-				'langs_group_tt_id'=> 0 // 2.15.1
+				'langs_group_tt_id'=> 0, // 2.15.1
+				'languages_list' => array() // 2.15.2
 		);
 	}
 
@@ -811,7 +812,7 @@ class xili_language {
 				$desc = $desc_array[0];
 
 				$slug = strtolower( $this->default_lang ) ; // 2.3.1
-				$wp_lang = get_WPLANG();
+				$wp_lang = $this->get_WPLANG();
 				if ( $wp_lang == '' || $this->default_lang == 'en_US' || $this->default_lang == '' ) {
 					$term = 'fr_FR'; $desc = 'french'; $slug = 'fr_fr' ;
 				}
