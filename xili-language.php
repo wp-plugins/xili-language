@@ -5808,11 +5808,11 @@ function xili_jetpack_lang_init ( ) {
 }
 
 function xili_jetpack_lang_reload ( $locale = 'en_US', $domain = 'default' ) {
-
+	global $xili_language;
 	if ( $domain == 'xili-language' && class_exists ( 'jetpack' ) ) { // because plugin jetpack domain not filterable
 		$locale = get_user_option( 'user_locale' );
 		if ( empty( $locale ) ) {
-			$wplang = $this->get_WPLANG();
+			$wplang = $xili_language->get_WPLANG();
 			$locale = ( '' != $wplang  ) ? $wplang : 'en_US';
 
 			if ( is_multisite() ) {
