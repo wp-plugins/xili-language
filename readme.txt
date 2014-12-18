@@ -24,9 +24,9 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 * xili-language plugin works on Wordpress installation in mono (standalone) or on one site belonging to a multisite (network) install.
 
-= Version 2.16.0 = * Last Updated 2014-12-18 * W A R N I N G - see [tab and
-chapters in changelog](http://wordpress.org/extend/plugins/xili-
-language/changelog/)
+= Version 2.16.0 =
+* Last Updated 2014-12-18
+* W A R N I N G - see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Prequisite =
 * A project of a website with articles in different languages.
