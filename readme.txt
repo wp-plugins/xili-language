@@ -286,7 +286,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * fixes find_files if no wp-content/languages/themes
 
 = version 2.16.0 (2014-12-18) =
-* ready for twentyfifteen and 4.1 Dinah
+* ready for Twenty Fifteen and 4.1 Dinah, see [multilingual child theme named twentyfifteen-xili](http://2015.extend.xiligroup.org) !
 * now search also parent mo files in WP_LANG_DIR/themes if not in theme folder
 = version 2.15.4 (2014-12-16) =
 * ready for twentyfifteen and 4.1-RC1
