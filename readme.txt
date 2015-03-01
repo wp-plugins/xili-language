@@ -2,9 +2,9 @@
 Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress, jetpack
-Requires at least: 3.9.2
-Tested up to: 4.1
-Stable tag: 2.16.1
+Requires at least: 4.0.0
+Tested up to: 4.2-alpha
+Stable tag: 2.16.2
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -24,8 +24,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 * xili-language plugin works on Wordpress installation in mono (standalone) or on one site belonging to a multisite (network) install.
 
-= Version 2.16.1 =
-* Last Updated 2014-12-21
+= Version 2.16.2 =
+* Last Updated 2015-02-28
 * W A R N I N G - see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Prequisite =
@@ -40,9 +40,9 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 = Links and documentation to read before activating =
 * Check out the [screenshots](http://wordpress.org/extend/plugins/xili-language/screenshots/) to see it in action and other tabs [here](http://wordpress.org/extend/plugins/xili-language/other_notes/).
-* [xili wiki](http://wiki.xiligroup.org/),
 * [latest news inside twentyfourteen-xili example](http://2014.extend.xiligroup.org/),
 * [latest bundled child theme of twentyfifteen: twentyfifteen-xili example](http://2015.extend.xiligroup.org/),
+* [xili wiki](http://wiki.xiligroup.org/),
 * [news and history](http://dev.xiligroup.com/xili-language/),
 * [forum](http://dev.xiligroup.com/?post_type=forum) to read experience of users and obtain some support,
 * For **webmaster**: Before to be moved in wiki, [table](http://dev.xiligroup.com/?p=1432) summarizes all the technical features (widgets, template tags, functions and hooks) of this powerful plugin for personalized CMS created by webmaster,
@@ -51,8 +51,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 * and finally the source code of the plugin itself if you read php!
 
 = Themes provided as examples =
-* Since WordPress 3.0, the default theme named **twentyten** can be used without php coding for a multilingual site [as shown here twentyten-xili](http://multilingual.wpmu.xilione.com).
-* Another child theme examples of embedded parent themes: **twentyeleven** [twentyeleven-xili](http://2011.wpmu.xilione.com/), **twentytwelve** [twentytwelve-xili](http://2012.wpmu.xilione.com/), **twentythirteen** [twentythirteen-xili](http://2013.extend.xiligroup.org/), **twentyfourteen** [twentyfourteen-xili](http://2014.extend.xiligroup.org/), **twentyfifteen** [twentyfifteen-xili](http://2015.extend.xiligroup.org/).
+* Since WordPress 4.1, the default theme named **twentyfifteen** can be used without php coding for a multilingual site [as shown here twentyfifteen-xili](http://2015.extend.xiligroup.org).
+* Other child theme examples of bundled parent themes: **twentyeleven** [twentyeleven-xili](http://2011.wpmu.xilione.com/), **twentytwelve** [twentytwelve-xili](http://2012.wpmu.xilione.com/), **twentythirteen** [twentythirteen-xili](http://2013.extend.xiligroup.org/), **twentyfourteen** [twentyfourteen-xili](http://2014.extend.xiligroup.org/), **twentyfifteen** [twentyfifteen-xili](http://2015.extend.xiligroup.org/).
 
 
 **TRILOGY FOR MULTILINGUAL CMS WEBSITE** including [xili-language plugin](http://wordpress.org/extend/plugins/xili-language/)
@@ -199,25 +199,23 @@ IDs of all types of post (post, page, CPT) are listed in Translation box (second
 If your theme follow the WP core rules (like in Twenty Twelve) with rtl.css file, RTL languages are well displayed.
 
 = Where can I see websites using this plugin ? =
-
-dev.xiligroup.com [here](http://dev.xiligroup.com/?p=187 "why xili-language ?") and examples child theme below:
-
-Twenty Ten [2010](http://multilingual.wpmu.xilione.com/)
-
-Twenty Eleven [2011](http://2011.wpmu.xilione.com/)
-
-Twenty Twelve [2012](http://2012.wpmu.xilione.com/)
-
-Responsive [responsive](http://childxili.wpmu.xilione.com/)
-
-Twenty Thirteen [2013](http://2013.extend.xiligroup.org/)
+Twenty Fifteen [2015](http://2015.extend.xiligroup.org/)
 
 Twenty Fourteen [2014](http://2014.extend.xiligroup.org/)
 
-Twenty Fifteen [2015](http://2015.extend.xiligroup.org/)
+Twenty Thirteen [2013](http://2013.extend.xiligroup.org/)
 
+Responsive [responsive](http://childxili.wpmu.xilione.com/)
 
-And as you can see in [stats](http://wordpress.org/extend/plugins/xili-language/stats/), thousand of sites use xili-language.
+Twenty Twelve [2012](http://2012.wpmu.xilione.com/)
+
+Twenty Eleven [2011](http://2011.wpmu.xilione.com/)
+
+Twenty Ten [2010](http://multilingual.wpmu.xilione.com/)
+
+dev.xiligroup.com [here](http://dev.xiligroup.com/?p=187 "why xili-language ?") and examples child theme below:
+
+And as you can see in [stats](http://wordpress.org/extend/plugins/xili-language/stats/), thousand of sites use xili-language (Stats in March 2015 are not good and must be fixed due to bad versioning sorting).
 
 = For commercial websites, is it possible to buy support ? =
 Yes, use contact form [here](http://dev.xiligroup.com/?page_id=10). Multiple commercial theme were customized for clients using multilingual CMS.
@@ -281,6 +279,10 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 15. Since 2.12.0, Authoring settings (Custom post types, bookmarks) (rules propagation of post features) when creating translated posts are ajustable through the 5th settings tab.
 
 == Changelog ==
+
+= version 2.16.2 (2015-02-28) =
+* fixes warning if dropdown categories,
+* improves translation
 
 = version 2.16.1 (2014-12-21) =
 * fixes find_files if no wp-content/languages/themes
@@ -578,7 +580,7 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 * …
 = 0.9.0 (2009-02-28) = first public release (beta)
 
-© 20141221 - MS - dev.xiligroup.com
+© 20150228 - MS - dev.xiligroup.com
 
 == Upgrade Notice ==
 Please read the readme.txt before upgrading.
