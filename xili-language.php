@@ -2824,7 +2824,7 @@ xili_xl_error_log ( '# '. __LINE__ .' ****** query_vars post_type ***'. serializ
 	 * here basic translation - to improve depending theme features : use hook 'xiliml_get_archives_link'
 	 */
 	function xiliml_get_archives_link( $link_html ) {
-		if ( has_filter('xiliml_link_translate_desc')) return apply_filters('xiliml_get_archives_link', $link_html,$this->get_archives_called, $this->curlang );
+		if ( has_filter('xiliml_get_archives_link')) return apply_filters('xiliml_get_archives_link', $link_html,$this->get_archives_called, $this->curlang );
 		extract( $this->get_archives_called, EXTR_SKIP );
 		if ( isset( $lang ) && '' != $lang ) {
 			$permalink = get_option('permalink_structure');
@@ -2855,7 +2855,7 @@ xili_xl_error_log ( '# '. __LINE__ .' ****** query_vars post_type ***'. serializ
 					}
 					$time = strtotime($month.'/1/'.$year);
 					$line2print = the_xili_local_time('%B %Y',$time); /* use server local*/
-					$link_html = str_replace($line, $line2print, $link_html);
+					if ( $line2print ) str_replace( $line, $line2print, $link_html ); //1.6.3.1
 				}
 				if ( !$this->lang_perma ) $link_html = str_replace("'>", $sep.$lang."'>", $link_html);
 			} elseif ($format == 'link') {
