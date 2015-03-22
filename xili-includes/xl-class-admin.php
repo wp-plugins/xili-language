@@ -39,7 +39,7 @@
  * 2014-12-21 (2.16.1) fixes find_files if no wp-content/languages/themes
  *
  * 2015-02-28 - 2.16.2 - rewrite selected(), checked()
- * 2015-03-13 - 2.16.4 - enable new admin_custom_xili_flag - detect in media library before than in other places (plugin, theme) as before
+ * 2015-03-22 - 2.16.4 - enable new admin_custom_xili_flag - detect in media library before than in other places (plugin, theme) as before
  *
  * @package xili-language
  */
@@ -5804,7 +5804,7 @@ class xili_language_admin extends xili_language {
 	}
 
 	/**
-	 * style for posts (and categories) list
+	 * style for posts (and taxonomies) list
 	 *
 	 *
 	 */
@@ -5852,7 +5852,6 @@ class xili_language_admin extends xili_language {
 
 					if ( class_exists( 'xili_tidy_tags' ) ) {
 						echo "div#xtt-edit-tag span.curlang.lang-" . $language->slug ." { margin-left:5px; color:#f5f5f5; display:inline-block; height:18px; width:25px; text-indent:-9999px ; }\n";
-
 					}
 
 				} else {

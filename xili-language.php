@@ -11,7 +11,7 @@ Text Domain: xili-language
 Domain Path: /languages/
 */
 
-# updated 150313 - 2.16.4 - custom_xili_flag for admin side - search in theme/images/flags - better selection of active widgets - improved permalinks class
+# updated 150322 - 2.16.4 - custom_xili_flag for admin side - search in theme/images/flags - better selection of active widgets - improved permalinks class
 # updated 150306 - 2.16.3 - fixes warning of archives link w/o perma - widget archives filtered if curlang - add xili_Widget_Categories class (need registering by author)
 # updated 150228 - 2.16.2 - fixes warning if dropdown categories, some rewritten lines
 
@@ -539,7 +539,7 @@ class xili_language {
 
 		add_action ( 'wp_head', array(&$this,'insert_xili_flag_css_in_header' ), 12 ); // 2.15 after bundled old version
 
-		add_action ('after_setup_theme', array(&$this,'bundled_themes_support_flag' ), 12 ); // bundled themes
+		add_action ( 'after_setup_theme', array(&$this,'bundled_themes_support_flag' ), 12 ); // bundled themes
 
 	}
 
@@ -1633,10 +1633,12 @@ class xili_language {
 		$reqtags = array();
 		$thereqtags = array();
 		$need_join = false; // 2.12
-		xili_xl_error_log ( '# '. __LINE__ .' ****** where start ******'.$where );
-		if ( isset ( $query_object->query_vars[QUETAG] )) { xili_xl_error_log( '# '. __LINE__ .' where  = ' . $query_object->query_vars[QUETAG] );}
+		xili_xl_error_log ('# '. __LINE__ .' START where  = ' . $where . ' + main_query = ' . (( $query_object->is_main_query() ) ? 'true' : 'false') );
+		if ( isset ( $query_object->query_vars[QUETAG] )) {
+			xili_xl_error_log( '# '. __LINE__ .' where  = ' . $query_object->query_vars[QUETAG] );
+		}
 
-		if ( "" != $this->sublang ) { // see above
+		if ( "" != $this->sublang ) { // see above - add undefined post
 
 			$lang = str_replace ( LANG_UNDEF, '' , $this->sublang ); //$query_object->query_vars[QUETAG] ) ;
 			if ( "" == $lang ) {
@@ -1664,9 +1666,9 @@ class xili_language {
 					if ( $query_object->is_page && isset( $query_object->query_vars[QUETAG]) ) {
 
 					} elseif (!($query_object->is_home && $this->show_page_on_front )) {
-
 						$do_it = true;
 					}
+
 					if ( $query_object->is_tax && $query_object->query_vars['taxonomy'] == 'category' ) {
 						$do_it = true;
 					}
@@ -1682,7 +1684,7 @@ class xili_language {
 					}
 				}
 			}
-			xili_xl_error_log ('# '. __LINE__ .' ici - doit where  = ' . serialize($do_it) );
+			xili_xl_error_log ('# '. __LINE__ .' ICI** - doit where  = ' . serialize($do_it) . ' + main_query = ' . (( $query_object->is_main_query() ) ? 'true' : 'false') );
 
 			if ( $do_it ) { // insertion of selection
 
@@ -1695,32 +1697,20 @@ class xili_language {
 					foreach ($reqtags as $reqtag){
 						$thereqtagids[] = $this->langs_ids_array[$reqtag];
 					}
-					$need_join = true;
 					$wherereqtag = implode(", ", $thereqtagids);
-					$where .= " AND xtt.taxonomy = '".TAXONAME."' ";
-					$where .= " AND xtt.term_id IN ( $wherereqtag )";
 
 				} else { /* only one lang */
 					$query_object->query_vars[QUETAG] = sanitize_term_field('slug', $query_object->query_vars[QUETAG], 0, 'post_tag', 'db');
 					$reqtag = $query_object->query_vars[QUETAG];
 					$wherereqtag = $this->langs_ids_array[ $this->lang_qv_slug_trans($reqtag) ];
-
-					/*if ( ! isset( $query_object->query_vars['post_format'] ) ) {
-
-						xili_xl_error_log ( '# '. __LINE__ .' '. $query_object->query_vars['page_id'] . ' <-----+++****where blog page_for_posts ' . $query_object->query_vars[QUETAG] . '-' . get_option('page_on_front'));
-						$need_join = true;
-						$where .= " AND xtt.taxonomy = '".TAXONAME."' ";
-						$where .= " AND xtt.term_id = $wherereqtag ";
-					} else { */
-						$need_join = true;
-						$where .= " AND xtt.taxonomy = '".TAXONAME."' ";
-						$where .= " AND xtt.term_id = $wherereqtag ";
-					/*}*/
 				}
+				$need_join = true;
+				$where .= " AND xtt.taxonomy = '".TAXONAME."' ";
+				$where .= " AND xtt.term_id = $wherereqtag ";
 
 			} else { // is_home and page
 
-				if ( $query_object->is_home && $this->show_page_on_front ) {
+				if ( $query_object->is_main_query() && $query_object->is_home && $this->show_page_on_front ) { // 2.16.4 + test main
 					$query_object->is_home = false ; // renew the values because the query contains lang=
 					$query_object->is_page = true ;
 					$query_object->is_singular = true ;
@@ -1729,10 +1719,10 @@ class xili_language {
 
 					$where = str_replace ("'post'","'page'",$where); // post_type =
 					$where .= " AND 3=3 AND {$wpdb->posts}.ID = " . $query_object->query_vars['page_id'];
-					xili_xl_error_log ( '# '. __LINE__ .' '.$query_object->query_vars['page_id'] . ' <-----+++**** where home ' . $query_object->query_vars[QUETAG] . '-' . get_option('page_on_front'));
+					xili_xl_error_log ( '# '. __LINE__ .' '.$query_object->query_vars['page_id'] . ' <-----+++**** where home ' . $query_object->query_vars[QUETAG] . ' - page_on_front = ' . get_option('page_on_front'));
 				}
 
-				if ( $this->lang_perma && $this->show_page_on_front) { // 2.1.1
+				if ( $this->lang_perma && $this->show_page_on_front ) { // 2.1.1
 
 					if ( $query_object->query_vars[QUETAG] != "" && isset ( $query_object->query_vars['taxonomy'] ) && $query_object->query_vars['taxonomy'] == TAXONAME ) {
 
@@ -1762,6 +1752,8 @@ class xili_language {
 						$wp_query->queried_object_id = $query_object->query_vars['page_id'];
 						$wp_query->queried_object->ID = $query_object->query_vars['page_id'];
 
+						xili_xl_error_log ( '# '. __LINE__ .' '.$query_object->query_vars['page_id'] . ' <-----+++**** where perma home ' . $query_object->query_vars[QUETAG] . ' - page_on_front = ' . get_option('page_on_front'));
+
 					}
 				}
 			}
@@ -1769,7 +1761,7 @@ class xili_language {
 		} else { // no query tag
 
 			if ( ( isset ( $query_object->query_vars['caller_get_posts'] ) && $query_object->query_vars['caller_get_posts']) || ( isset ( $query_object->query_vars['ignore_sticky_posts'] ) && $query_object->query_vars['ignore_sticky_posts']) ) {
-				// nothing
+				// nothing - caller_get_posts deprecated => ignore_sticky_posts
 			} else {
 				if ( ($query_object->is_home && !$this->show_page_on_front && $this->xili_settings['homelang'] == 'modify') || ($query_object->is_home && $query_object->is_posts_page && $this->xili_settings['pforp_select'] != 'no_select' ) ) {
 
@@ -1838,7 +1830,7 @@ class xili_language {
 			}
 		}
 		xili_xl_error_log ( '# '. __LINE__ .' ****** END WHERE *** ***'.$where );
-		$this->ready_to_join_filter = $need_join; // 2.12
+		$this->ready_to_join_filter = $need_join; // 2.12 - join filter after where filter
 		return $where;
 	}
 
