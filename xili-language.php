@@ -11,7 +11,7 @@ Text Domain: xili-language
 Domain Path: /languages/
 */
 
-# updated 150322 - 2.16.4 - custom_xili_flag for admin side - search in theme/images/flags - better selection of active widgets - improved permalinks class
+# updated 150323 - 2.16.4 - custom_xili_flag for admin side - search in theme/images/flags - better selection of active widgets - improved permalinks class
 # updated 150306 - 2.16.3 - fixes warning of archives link w/o perma - widget archives filtered if curlang - add xili_Widget_Categories class (need registering by author)
 # updated 150228 - 2.16.2 - fixes warning if dropdown categories, some rewritten lines
 
@@ -2568,7 +2568,7 @@ class xili_language {
 					}
 
 
-				} else if ( has_post_format($format) && isset($wp_query->query_vars['post_format']) ) { error_log('has_post_format *****ARCHIVE******');
+				} else if ( has_post_format($format) && isset($wp_query->query_vars['post_format']) ) { //error_log('has_post_format *****ARCHIVE******');
 					$currenturl = get_post_format_link ($format).$sep;
 				} else {
 					$currenturl = get_bloginfo('url').'/?';
@@ -3058,22 +3058,23 @@ class xili_language {
 	 * @since 1.6.1
 	 * called by hook option_sticky_posts
 	 * @updated 2.8.1
+	 * @updated 2.16.4
 	 */
 	function translate_sticky_posts_ID( $original_array ) {
 		global $wp_query ;
-		if ( !is_admin() && is_home() ) { // because impossible to register the value in admin UI -
+		if ( !is_admin() && $wp_query->is_main_query() && is_home() ) { // because impossible to register the value in admin UI -
 		// and because tracs http://core.trac.wordpress.org/ticket/14115
 			if ($original_array != array()) {
 				$translated_array = array();
 				if ( isset( $wp_query->query_vars[QUETAG] )) { //if (isset($_GET[QUETAG])) { // $_GET not usable by lang perma mode 2.8.1
-					$curlang = $wp_query->query_vars[QUETAG]; // $_GET[QUETAG];
+					$curlang = $this->lang_qv_slug_trans ( $wp_query->query_vars[QUETAG] ); // compatible with lang perma mode 2.16.4 alias
 				} else {
 					$curlang = $this->choice_of_browsing_language(); // rule defined in admin UI
 				}
 				foreach ($original_array as $id) {
 					$langpost = $this->get_cur_language($id);
 					$post_lang = $langpost[QUETAG];
-					if ($post_lang != $curlang) { // only if necessary
+					if ( $post_lang != $curlang ) { // only if necessary
 						$trans_id = $this-> linked_post_in( $id, $curlang ) ; // get_post_meta($id, 'lang-'.$curlang, true);
 						if ( '' != $trans_id ) {
 							$translated_array[] = $trans_id;
@@ -4147,7 +4148,7 @@ class xili_language {
 		foreach ($listlanguages as $language) {
 			if ( is_search() ) {
 				if ( isset( $wp_query->query_vars[QUETAG] ) ) { // to rebuilt form after search query
-					$selected = ( ( $language->slug == $wp_query->query_vars[QUETAG] ) ) ? 'checked="checked"' : "" ; //2.2.2
+					$selected = ( ( $language->slug == $this->lang_qv_slug_trans ( $wp_query->query_vars[QUETAG] ) ) ) ? 'checked="checked"' : "" ; //2.2.2
 				} else {
 					$selected = "";
 				}
