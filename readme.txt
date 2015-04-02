@@ -3,8 +3,8 @@ Contributors: michelwppi, MS dev.xiligroup.com
 Donate link: http://dev.xiligroup.com/
 Tags: theme,post,plugin,posts,page,category,admin,multilingual, bilingual, taxonomy,dictionary,.mo file,.po file,localization, widget, language, international, i18n, l10n, WP network, multisite, blogroll, japanese, khmer, rtl, translation-ready, bbpress, jetpack
 Requires at least: 4.0.0
-Tested up to: 4.2-beta2
-Stable tag: 2.16.4
+Tested up to: 4.2-beta3
+Stable tag: 2.16.5
 License: GPLv2
 xili-language lets you create and manage multilingual WP site in several languages with yours or most famous localizable themes. Ready for CMS design.
 
@@ -24,8 +24,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 
 * xili-language plugin works on Wordpress installation in mono (standalone) or on one site belonging to a multisite (network) install.
 
-= Version 2.16.4 =
-* Last Updated 2015-03-23
+= Version 2.16.5 =
+* Last Updated 2015-04-01
 * W A R N I N G - see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Prequisite =
@@ -279,6 +279,10 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 15. Since 2.12.0, Authoring settings (Custom post types, bookmarks) (rules propagation of post features) when creating translated posts are ajustable through the 5th settings tab.
 
 == Changelog ==
+= version 2.16.5 (2015-04-01) =
+* WP-REST-API - json compatibility
+* fixes is_main_query and option stickies
+
 = version 2.16.4 (2015-03-23) =
 * intermediate version before 2.17 for WP 4.2 (tested with beta2) - used with WP 4.1.x
 * custom_xili_flag for admin side (admin side flag are uploadable - no need to take attention to name or type (.png, .jpg, gif)
