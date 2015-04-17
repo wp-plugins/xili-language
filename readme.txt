@@ -606,13 +606,13 @@ v2.1.0 is compatible with settings of previous release BUT introduces now a way 
 
 == More infos ==
 
-1. [Technical infos](#1.-Technical-infos)
-   1.1. [Prerequisite](#1.1.-Prerequisite)
-   1.2. [CMS](#1.2.-CMS)
-   1.3. [Documentation for developers](#1.3.-Documentation-for-developers)
-   1.4. [More infos and docs](#1.4.-More-infos-and-docs)
-2. [Flags](#2.-Flags)
-3. [Compatibility](#3.-Compatibility)
+1. [Technical infos](#1.-Technical-infos)  
+   1.1. [Prerequisite](#1.1.-Prerequisite)  
+   1.2. [CMS](#1.2.-CMS)  
+   1.3. [Documentation for developers](#1.3.-Documentation-for-developers)  
+   1.4. [More infos and docs](#1.4.-More-infos-and-docs)  
+2. [Flags](#2.-Flags)  
+3. [Compatibility](#3.-Compatibility)  
 
 == 1. Technical infos ==
 
