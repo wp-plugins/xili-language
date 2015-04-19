@@ -40,6 +40,7 @@
  *
  * 2015-02-28 - 2.16.2 - rewrite selected(), checked()
  * 2015-03-23 - 2.16.4 - enable new admin_custom_xili_flag - detect in media library before than in other places (plugin, theme) as before
+ * 2015-04-18 - 2.16.6 - clean code for older version option 3.8
  *
  * @package xili-language
  */
@@ -469,12 +470,8 @@ class xili_language_admin extends xili_language {
 	}
 
 	function add_node_if_version ( $args ) {
-		global $wp_admin_bar, $wp_version;
-		if ( version_compare($wp_version, '3.3', '<') ) {
-			$wp_admin_bar->add_menu( $args );
-		} else {
-			$wp_admin_bar->add_node( $args );
-		}
+		global $wp_admin_bar;
+		$wp_admin_bar->add_node( $args );
 	}
 
 	/**
@@ -2564,7 +2561,6 @@ class xili_language_admin extends xili_language {
 	 * @since 2.12.0
 	 */
 	function author_rules() {
-		global $wp_version ;
 
 		$themessages = array('ok');
 		$emessage = "";
@@ -3234,7 +3230,6 @@ class xili_language_admin extends xili_language {
 	 * @updated 2.5, 2.9.12
 	 */
 	function setting_form_content( $the_hook, $data ) {
-		global $wp_version;
 
 		$poststuff_class = "";
 		$postbody_class = 'class="metabox-holder columns-2"';
@@ -4713,86 +4708,73 @@ class xili_language_admin extends xili_language {
 	 * @since 2.2.2
 	 */
 	function find_post_script () {
-		global $wp_version , $post ;
+		global $post ;
 		if ( get_post_type($post->ID) != 'attachment' ) {
 			wp_enqueue_script( 'wp-ajax-response' );
 			wp_enqueue_script( 'jquery-ui-draggable' );
 			$suffix = defined( 'WP_DEBUG') && WP_DEBUG ? '.dev' : '.min'; // 2.8.8
-
-			if ( version_compare($wp_version, '3.8.9', '>') ) {
-				wp_enqueue_script( 'xili-find-post', plugin_dir_url ( $this->file_file ) . 'js/xili-findposts'.$suffix.'.js','' , XILILANGUAGE_VER );
-			} else {
-				wp_enqueue_script( 'xili-find-post', plugin_dir_url ( $this->file_file ) . 'js/xili-findposts8'.$suffix.'.js','' , XILILANGUAGE_VER );
-			}
+			wp_enqueue_script( 'xili-find-post', plugin_dir_url ( $this->file_file ) . 'js/xili-findposts'.$suffix.'.js','' , XILILANGUAGE_VER );
 		}
 	}
 
 
 	function wp_ajax_find_post_types() {
-			global $wp_version ;
+		//global $wp_version ;
 
-			check_ajax_referer( 'find-post-types' );
+		check_ajax_referer( 'find-post-types' );
 
-			$post_types = get_post_types( array( 'public' => true ), 'objects' );
-			unset( $post_types['attachment'] );
+		$post_types = get_post_types( array( 'public' => true ), 'objects' );
+		unset( $post_types['attachment'] );
 
-			$s = wp_unslash( $_POST['ps'] );
-			$searchand = $search = '';
-			$args = array(
-				'post_type' => array($_POST['post_type']), //array_keys( $post_types ),
-				'post_status' => 'any',
-				'posts_per_page' => 50,
-			);
-			if ( '' !== $s )
-				$args['s'] = $s;
+		$s = wp_unslash( $_POST['ps'] );
+		$searchand = $search = '';
+		$args = array(
+			'post_type' => array($_POST['post_type']), //array_keys( $post_types ),
+			'post_status' => 'any',
+			'posts_per_page' => 50,
+		);
+		if ( '' !== $s )
+			$args['s'] = $s;
 
-			$posts = get_posts( $args );
+		$posts = get_posts( $args );
 
-			if ( ! $posts )
-				wp_die( __('No items found.') );
+		if ( ! $posts )
+			wp_die( __('No items found.') );
 
 
-			$html = '<table class="widefat" cellspacing="0"><thead><tr><th class="found-radio"><br /></th><th>'.__('Title').'</th><th class="no-break">'.__('Type').'</th><th class="no-break">'.__('Date').'</th><th class="no-break">'.__('Status').'</th></tr></thead><tbody>';
-			foreach ( $posts as $post ) {
-				$title = trim( $post->post_title ) ? $post->post_title : __( '(no title)' );
+		$html = '<table class="widefat" cellspacing="0"><thead><tr><th class="found-radio"><br /></th><th>'.__('Title').'</th><th class="no-break">'.__('Type').'</th><th class="no-break">'.__('Date').'</th><th class="no-break">'.__('Status').'</th></tr></thead><tbody>';
+		foreach ( $posts as $post ) {
+			$title = trim( $post->post_title ) ? $post->post_title : __( '(no title)' );
 
-				switch ( $post->post_status ) {
-					case 'publish' :
-					case 'private' :
-						$stat = __('Published');
-						break;
-					case 'future' :
-						$stat = __('Scheduled');
-						break;
-					case 'pending' :
-						$stat = __('Pending Review');
-						break;
-					case 'draft' :
-						$stat = __('Draft');
-						break;
-				}
-
-				if ( '0000-00-00 00:00:00' == $post->post_date ) {
-					$time = '';
-				} else {
-					/* translators: date format in table columns, see http://php.net/date */
-					$time = mysql2date(__('Y/m/d'), $post->post_date);
-				}
-
-				$html .= '<tr class="found-posts"><td class="found-radio"><input type="radio" id="found-'.$post->ID.'" name="found_post_id" value="' . esc_attr($post->ID) . '"></td>';
-				$html .= '<td><label for="found-'.$post->ID.'">' . esc_html( $title ) . '</label></td><td class="no-break">' . esc_html( $post_types[$post->post_type]->labels->singular_name ) . '</td><td class="no-break">'.esc_html( $time ) . '</td><td class="no-break">' . esc_html( $stat ). ' </td></tr>' . "\n\n";
+			switch ( $post->post_status ) {
+				case 'publish' :
+				case 'private' :
+					$stat = __('Published');
+					break;
+				case 'future' :
+					$stat = __('Scheduled');
+					break;
+				case 'pending' :
+					$stat = __('Pending Review');
+					break;
+				case 'draft' :
+					$stat = __('Draft');
+					break;
 			}
 
-			$html .= '</tbody></table>';
-			if ( version_compare( $wp_version, '3.8.9', '>' ) ) {
-				wp_send_json_success( $html );
+			if ( '0000-00-00 00:00:00' == $post->post_date ) {
+				$time = '';
 			} else {
-				$x = new WP_Ajax_Response();
-				$x->add( array(
-					'data' => $html
-				));
-				$x->send();
+				/* translators: date format in table columns, see http://php.net/date */
+				$time = mysql2date(__('Y/m/d'), $post->post_date);
 			}
+
+			$html .= '<tr class="found-posts"><td class="found-radio"><input type="radio" id="found-'.$post->ID.'" name="found_post_id" value="' . esc_attr($post->ID) . '"></td>';
+			$html .= '<td><label for="found-'.$post->ID.'">' . esc_html( $title ) . '</label></td><td class="no-break">' . esc_html( $post_types[$post->post_type]->labels->singular_name ) . '</td><td class="no-break">'.esc_html( $time ) . '</td><td class="no-break">' . esc_html( $stat ). ' </td></tr>' . "\n\n";
+		}
+
+		$html .= '</tbody></table>';
+		wp_send_json_success( $html );
 	}
 
 
@@ -5123,13 +5105,11 @@ class xili_language_admin extends xili_language {
 	 * @param unknown_type $found_action -
 	 */
 	function xili_find_posts_div($found_action = '', $post_type, $post_label ) {
-		global $wp_version;
+
 	?>
 		<div id="find-posts" class="find-box" style="display:none;">
 			<div id="find-posts-head" class="find-box-head"><?php printf( __( 'Find %s','xili-language' ), $post_label ) ; ?>
-				<?php if ( version_compare($wp_version, '3.8.9', '>') ) { ?>
-					<div id="find-posts-close"></div>
-				<?php } ?>
+				<div id="find-posts-close"></div>
 			</div>
 			<div class="find-box-inside">
 				<div class="find-box-search">
@@ -5150,9 +5130,6 @@ class xili_language_admin extends xili_language {
 				<div id="find-posts-response"></div>
 			</div>
 			<div class="find-box-buttons">
-				<?php if ( version_compare($wp_version, '3.8.9', '<') ) { ?>
-					<input id="find-posts-close" type="button" class="button alignleft" value="<?php esc_attr_e('Close'); ?>" />
-				<?php } ?>
 				<?php submit_button( __( 'Select' ), 'button-primary alignright', 'find-posts-submit', false ); ?>
 			</div>
 		</div>
@@ -5162,9 +5139,7 @@ class xili_language_admin extends xili_language {
 	/**************** Attachment post language *******************/
 
 	function add_language_attachment_fields ($form_fields, $post) {
-		global $wp_version;
 
-		// 2.9.0
 		if ( current_theme_supports( 'custom-header') ) {
 			$meta_header = get_post_meta($post->ID, '_wp_attachment_is_custom_header', true );
 			if ( !empty( $meta_header ) && $meta_header == get_option('stylesheet') ) {
@@ -5181,7 +5156,6 @@ class xili_language_admin extends xili_language {
 			$form_fields['_final'] = '<strong>'.__('This media is a flag for multilingual context. See the box on the right sidebar...', 'xili-language') .'</strong><br /><br /><small>© xili-language v.'.XILILANGUAGE_VER .'</small>';
 			return $form_fields ;
 		}
-
 
 		$attachment_id = $post->ID;
 
@@ -5218,16 +5192,10 @@ class xili_language_admin extends xili_language {
 			);
 		}
 
-		if ( version_compare( $wp_version, '3.5', '<') ) { // 2.8.4.2
-			$clone = ( get_current_screen()->base == "media" ) ? true : false ;
+		if ( isset ( $post->ID ) && get_current_screen() ) { // test ajax WP 3.5
+			$clone = ( get_current_screen()->base == "post" && get_post_type( $post->ID ) == 'attachment' ) ? true : false ;
 		} else {
-			if ( isset ( $post->ID ) && get_current_screen() ) { // test ajax WP 3.5
-				$clone = ( get_current_screen()->base == "post" && get_post_type( $post->ID ) == 'attachment' ) ? true : false ;
-
-			} else {
-				$clone = false; // not visible if called by ajax
-			}
-
+			$clone = false; // not visible if called by ajax
 		}
 
 		if ( '' != $attachment_post_language && $clone ) { // only in media edit not in media-upload
@@ -5248,12 +5216,10 @@ class xili_language_admin extends xili_language {
 				'helps'      => $helps
 			);
 
-
-			$type_post = ( version_compare( $wp_version, '3.5', '<') ) ? 'attachment' : 'post' ;
-			$result = $this->translated_in ( $attachment_id, 'link', $type_post );
+			$result = $this->translated_in ( $attachment_id, 'link', 'post' );
 
 			$trans = $this->translated_in ( $attachment_id, 'array');
-			$html_input = '<br />'; //'<div class="updated" style="background: #f5f5f5; border:#dfdfdf 1px solid;">';
+			$html_input = '<br />';
 			if ( $result == '' ) {
 				$html_input .= __('not yet translated', 'xili-language') ;
 			} else {
@@ -5261,14 +5227,13 @@ class xili_language_admin extends xili_language {
 				$html_input .= '&nbsp;:&nbsp;<span class="translated-in">' . $result .'</span><br />';
 			}
 
-			if ( version_compare( $wp_version, '3.5', '>=') ) { // 2.8.4.2 - post_parent not present
-				$html_input .= '<input type="hidden" id="xl_post_parent" name="xl_post_parent" value="'. $post->post_parent . '" />';
-			}
+			$html_input .= '<input type="hidden" id="xl_post_parent" name="xl_post_parent" value="'. $post->post_parent . '" />';
+
 
 			$html_input .= '<br /><select name="attachments['.$attachment_id.'][create_clone_attachment_with_language]" ><option value="undefined">'.__('Select…','xili-language').'</option>';
 			foreach ($listlanguages as $language) {
 				if ( $language->slug != $attachment_post_language && !isset ($trans[$language->slug] )) {
-					$selected = '' ; //(''!=$attachment_post_language && $language->slug == $attachment_post_language) ? 'selected=selected' : '';
+					$selected = '' ;
 					$html_input .= '<option value="'.$language->slug.'" '.$selected.'>'.$language->description.' ('.$language->name.')</option>';
 				}
 			}
@@ -5566,7 +5531,7 @@ class xili_language_admin extends xili_language {
 	// attachment_fields_to_save apply_filters('attachment_fields_to_save', $post, $attachment);
 
 	function set_attachment_fields_to_save ( $post, $attachment ) {
-		global $wpdb, $wp_version;
+		global $wpdb;
 
 		if ( isset($attachment['attachment_post_language']) ){
 			if ( $attachment['attachment_post_language'] != '' && $attachment['attachment_post_language'] != 'undefined' ) {
@@ -5581,12 +5546,7 @@ class xili_language_admin extends xili_language {
 
 			$clone['post_title'] = sprintf(__('Translate in %2$s: %1$s', 'xili-language'),$clone['post_title'], $attachment['create_clone_attachment_with_language'] );
 
-			if ( version_compare( $wp_version, '3.5', '>=') ) {
-				$parent_id = $post['xl_post_parent']; // 2.8.4.2
-			} else {
-				$parent_id = $post['post_parent'];
-			}
-
+			$parent_id = $post['xl_post_parent']; // 2.8.4.2 hidden input
 
 			$linked_parent_id = xl_get_linked_post_in ( $parent_id, $attachment['create_clone_attachment_with_language'] );
 			$clone['post_parent'] = $linked_parent_id; // 0 if unknown linked id of parent in assigned language
