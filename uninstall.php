@@ -33,7 +33,7 @@ class xili_language_uninstall {
 				switch_to_blog($blog_id);
 				$this->uninstall($blog_id);
 			}
-			restore_current_blog($blog_id);
+			restore_current_blog();
 		}
 		else {
 			$this->uninstall();
@@ -50,7 +50,7 @@ class xili_language_uninstall {
 		global $wpdb;
 		$xl_settings = get_option('xili_language_settings');
 
-		if ( isset( $xl_settings['delete_settings'] ) && $xl_settings['delete_settings'] == 'delete' ) { // only if instance in multisite is checked
+		if ( isset( $xl_settings['delete_settings'] ) && in_array ( $xl_settings['delete_settings'] , array ( 'delete_this', 'delete' ) ) ) { // only if instance in multisite is checked
 
 			$this->delete_taxonomies ($xl_settings); // see below
 

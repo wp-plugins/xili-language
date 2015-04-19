@@ -11,7 +11,7 @@ Text Domain: xili-language
 Domain Path: /languages/
 */
 
-# updated 150417 - 2.17.0 - is_rtl() replaces get_bloginfo - 4.2-RC1 - stickies improved with JSON REST API
+# updated 150418 - 2.17.0 - is_rtl() replaces get_bloginfo - 4.2-RC1 - stickies improved with JSON REST API - deleting multisite install improved
 
 # updated 150401 - 2.16.5 - WP JSON REST API compatibility - fixes is_main_query and option stickies -
 # updated 150323 - 2.16.4 - custom_xili_flag for admin side - search in theme/images/flags - better selection of active widgets - improved permalinks class
@@ -635,61 +635,6 @@ class xili_language {
 		$wp_roles->remove_cap ( 'editor', 'xili_language_menu' );
 		$wp_roles->remove_cap ( 'editor', 'xili_language_clone_tax' );
 
-		// remove settings if..
-		if ( is_multisite() && isset ( $this->xili_settings['delete_settings'] ) && $this->xili_settings['delete_settings'] == "delete_this" ) {
-
-			$languages = get_terms($this->xili_settings['taxonomy'], array('hide_empty' => false));
-			foreach ($languages as $language ) {
-				$postmeta_suffixes[] = $language->slug ;
-			}
-			foreach ($languages as $language ) {
-
-				$term_id = $language->term_id;
-
-				$post_IDs = get_objects_in_term( array( $term_id ), array( $this->xili_settings['taxonomy'] ) );
-
-				foreach ( $post_IDs as $post_ID ) {
-				// delete postmeta lang-xx_xx
-					foreach ( $postmeta_suffixes as $postmeta_suffix ) {
-						if ( $language->slug != $postmeta_suffix ) delete_post_meta( $post_ID, $this->xili_settings['reqtag'].'-'.$postmeta_suffix ) ;
-					}
-				// delete relationships posts
-					wp_delete_object_term_relationships( $post_ID, $this->xili_settings['taxonomy'] );
-				}
-
-				wp_delete_object_term_relationships( $term_id, $this->xili_settings['taxolangsgroup'] );
-
-				// link_language links
-				$links = get_objects_in_term( array( $term_id ), array( 'link_'.$this->xili_settings['taxonomy'] ) );
-
-				foreach ( $links as $link ) {
-					wp_delete_object_term_relationships( $link, 'link_'.$this->xili_settings['taxonomy'] );
-				}
-
-				// delete terms
-				$linklang = term_exists($language->slug,'link_'.$this->xili_settings['taxonomy']);
-				if ( $linklang ) wp_delete_term( $term_id, 'link_'.$this->xili_settings['taxonomy'] );
-				wp_delete_term( $term_id, $this->xili_settings['taxonomy'] );
-
-			}
-			$term_group = term_exists( 'ev_er', 'link_'.$this->xili_settings['taxonomy'] ); /* special ever language for links */
-			// link_language links
-			$links = get_objects_in_term( array( $term_group['term_id'] ), array( 'link_'.$this->xili_settings['taxonomy'] ) );
-
-			foreach ( $links as $link ) {
-				wp_delete_object_term_relationships( $link_id, 'link_'.$this->xili_settings['taxonomy'] );
-			}
-			wp_delete_term( $term_group['term_id'], 'link_'.$this->xili_settings['taxonomy'] );
-
-			// delete taxonomie groups ['taxolangsgroup'] - when count = 0
-			$thegroup = get_terms( TAXOLANGSGROUP, array('hide_empty' => false,'slug' => 'the-langs-group', 'get' => 'all' ) );
-			wp_delete_term( $thegroup[0]->term_id, TAXOLANGSGROUP );
-
-			delete_option('xili_language_widgets_options');
-			delete_option('xili_widget_recent_comments');
-			delete_option('xili_widget_recent_entries');
-			delete_option('xili_language_settings');
-		}
 	}
 
 	function get_WPLANG () {
