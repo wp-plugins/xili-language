@@ -1122,9 +1122,9 @@ class xili_language_admin extends xili_language {
 		$this->admin_messages['alert']['menu_auto_inserted'] = sprintf(__('Be aware that language list is already automatically inserted (see above) and %s','xili-language'), $this->admin_messages['alert']['default'] ) ;
 
 		if ( is_multisite() ) {
-			$this->admin_messages['alert']['plugin_deinstalling'] = sprintf(__('CAUTION: If checked below, during deactivating xili-language plugin, ALL the xili-language datas in database will be definitively ERASED !!! (only multilingual features on <strong>this</strong> website of the WP network (multisite) install). %s', 'xili-language'), $this->admin_messages['alert']['default'] ) ;
+			$this->admin_messages['alert']['plugin_deinstalling'] = sprintf(__('CAUTION: If checked below, before deactivating xili-language plugin, ALL the xili-language datas in database will be definitively ERASED when this plugin files will be deleted !!! (only multilingual features on <strong>this</strong> website of the WP network (multisite) install). %s', 'xili-language'), $this->admin_messages['alert']['default'] ) ;
 		} else {
-			$this->admin_messages['alert']['plugin_deinstalling'] = sprintf(__('CAUTION: When checking below, after deactivating xili-language plugin, if delete it through plugins list, ALL the xili-language datas in database will be definitively ERASED !!! (only multilingual features). %s', 'xili-language'), $this->admin_messages['alert']['default'] ) ;
+			$this->admin_messages['alert']['plugin_deinstalling'] = sprintf(__('CAUTION: When checking below, before deactivating xili-language plugin, if delete it through plugins list, ALL the xili-language datas in database will be definitively ERASED when this plugin files will be deleted !!! (only multilingual features). %s', 'xili-language'), $this->admin_messages['alert']['default'] ) ;
 		}
 
 		$this->admin_messages['alert']['erasing_language'] = __('Erase (only) multilingual features of concerned posts when this language will be erased !','xili-language');
