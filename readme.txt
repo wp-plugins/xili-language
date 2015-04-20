@@ -27,7 +27,7 @@ xili-language lets you create and manage multilingual WP site in several languag
 * xili-language plugin works on Wordpress installation for WebApp with JSON REST API - see [changelog](http://wordpress.org/extend/plugins/xili-language/changelog/) because [WP JSON REST API](https://wordpress.org/plugins/json-rest-api/) 1.2.1 in under full development but yet powerful.
 
 = Version 2.17.0 =
-* Last Updated 2015-04-17
+* Last Updated 2015-04-18
 * W A R N I N G - see [tab and chapters in changelog](http://wordpress.org/extend/plugins/xili-language/changelog/)
 
 = Prequisite =
@@ -285,9 +285,11 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Changelog ==
 
-= version 2.17.0 (2015-04-17) =
+= version 2.17.0 (2015-04-18) =
 * tested with WP 4.2-RC1
 * tested with WP JSON REST API version 1.2.1 - [see tests for Webapp with Framework7](https://github.com/dev-xiligroup/framework7)
+* improved uninstall process in multisite (network) wp install
+* updated list of languages (file locale.php from jetpack latest version)
 * WARNING : users of child theme examples (bundled series like twentyten to twentyfifteen-xili) must update and use latest releases soon available in [github](https://github.com/dev-xiligroup?tab=repositories) - *backup before langs subfolder to keep previous translations* -
 
 = version 2.16.6 (2015-04-01) =
