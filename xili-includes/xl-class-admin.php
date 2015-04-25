@@ -3020,7 +3020,6 @@ class xili_language_admin extends xili_language {
 						$options[$id] = ( isset($this->xili_settings['link_categories_settings']['category'][$link_cat_id]) ) ? $this->xili_settings['link_categories_settings']['category'][$link_cat_id] : '';
 					}
 				}
-
 				break;
 
 			case $this->settings_frontend :
@@ -3030,13 +3029,13 @@ class xili_language_admin extends xili_language {
 				$options['home_item_nav_menu'] = $this->xili_settings['home_item_nav_menu'];
 				$options['pforp_select'] = $this->xili_settings['pforp_select'];
 				$options['allcategories_lang'] = $this->xili_settings['allcategories_lang'];
-
 				break;
 			case $this->settings_author_rules: // multiple names (based on current theme)
 				$options = $this->get_theme_author_rules_options();
-
+				break;
 			case $this->flag_settings_name :
 				$options = $this->get_xili_flag_options();
+				break;
 		}
 
 		switch ( $type ) {
