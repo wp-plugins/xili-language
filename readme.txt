@@ -27,8 +27,8 @@ xili-language lets you create and manage multilingual WP site in several languag
 * xili-language plugin works on Wordpress installation for WebApp with JSON REST API - see [changelog](https://wordpress.org/extend/plugins/xili-language/changelog/) because [WP JSON REST API](https://wordpress.org/plugins/json-rest-api/) 1.2.1 in under full development but yet powerful.
 * As *educational plateform* in constant changing since 2009, xili-language trilogy tries to use most of the WordPress Core functions and features (Custom taxonomy, API, metabox, pointer, help, pomo libraries, ...). The options are adjustable.
 
-= Version 2.20.0 =
-* Last Updated 2015-08-31
+= Version 2.20.1 =
+* Last Updated 2015-09-03
 * W A R N I N G - see [tab and chapters in changelog](https://wordpress.org/extend/plugins/xili-language/changelog/)
 
 > For bbPress users, xili xl-bbp-addon plugin is no more a plugin. Components are optionally (if bbPress active) included. An option is also added in Experts tab of settings.
