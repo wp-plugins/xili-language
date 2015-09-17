@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
 						if ( !$(this).parent().hasClass("field-link-target") ) { $(this).css("visibility", "hidden") } ;  // attr disabled pb avec remove...
 						$(this).children('input').each( function(){
 							if ( $(this).hasClass("edit-menu-item-attr-title") ) {
-								inputvalue2 = $(this).attr("value") ; $(this).attr("style", "border:yellow solid 2px") ;
+								inputvalue2 = $(this).attr("value") ;
 							}
 						});
 					});
