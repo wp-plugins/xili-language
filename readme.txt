@@ -309,6 +309,8 @@ Since 2.8.8, xili-language is able to help you to download admin translation fil
 
 == Changelog ==
 
+Also read latest news (and infos) on this [multilingual website](http://2014.extend.xiligroup.org/en/category/news/).
+
 = version 2.21.0 (2015-09-28) =
 * widget xili-language list now has 3 styles (list, with images/flags, both images+texts) - generates css only if widget(s) active and visible
 * more deep tests to recover Polylang previous install with xili-tidy-tags (1.11.2) and xili-dictionary (2.12.2+) (see https://github.com/dev-xiligroup/) - the process is semi-automatic and needs a special preparation (backup, activation,...) Soon docs... Ask in support form.
